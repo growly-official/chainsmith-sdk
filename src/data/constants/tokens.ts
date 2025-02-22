@@ -1,0 +1,16 @@
+export const POPULAR_MEMES = [
+  'PEPE',
+  'FLOKI',
+  'BONK',
+  'DOGE',
+  'SHIB',
+  'WIF',
+  'NEIRO',
+  'BRETT',
+  'DEGEN',
+  'BOME',
+  'DOGS',
+  'DOG',
+  'TURBO',
+  'MYRO',
+];

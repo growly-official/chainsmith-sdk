@@ -1,0 +1,50 @@
+{
+  "name": "chainsmith-sdk",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "lint": "eslint --debug --fix '**/*.{js,jsx,ts,tsx}'",
+    "format": "bunx prettier --config .prettierrc.cjs '**/*.{js,jsx,ts,tsx}' --write",
+    "check": "bunx prettier --config .prettierrc.cjs '**/*.{js,jsx,ts,tsx}' --check && eslint '**/*.{js,jsx,ts,tsx}'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tavily/core": "^0.3.1",
+    "@uniswap/v2-sdk": "^4.8.0",
+    "@uniswap/v3-sdk": "^3.20.0",
+    "ethers": "^6.13.5",
+    "reflect-metadata": "^0.2.2",
+    "tslog": "^4.9.3",
+    "tsyringe": "^4.8.0",
+    "viem": "^2.22.23",
+    "zustand": "^5.0.3",
+    "ajv": "^8.12.0",
+    "moment": "^2.29.4",
+    "prettier": "^3.4.2",
+    "react-icons": "^4.10.1",
+    "typescript": "~5.6.2"
+  },
+  "devDependencies": {
+    "@parcel/transformer-typescript-types": "^2.8.3",
+    "@types/lodash": "^4.14.202",
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
+    "@typescript-eslint/typescript-estree": "^8.23.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "eslint-plugin-storybook": "^0.8.0",
+    "pre-commit": "^1.2.2",
+    "ts-node": "^10.9.2",
+    "fs-extra": "^9.0.1",
+    "globby": "^11.0.2"
+  }
+}

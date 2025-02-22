@@ -1,0 +1,12 @@
+**/dist
+**/build
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+**/.next
+**/out
+**/tmp
+**/temp
+**/templates
+**/widget

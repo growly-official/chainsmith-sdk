@@ -1,0 +1,5 @@
+export const WRAPPED_S = 0x039e2fb66102314ce7b64ce5ce3e5183bc94ad38;
+export const WETH_S = 0x50c42deacd8fc9773493ed674b675be577f2634b;
+export const BRIDGED_USDC = 0x29219dd400f2bf60e5a23d13be72b486d4038894;
+export const BRIDGED_EURC = 0xe715cba7b5ccb33790cebff1436809d36cb17e57;
+export const BRIDGED_USDT = 0x6047828dc181963ba44974801ff68e538da5eaf9;
