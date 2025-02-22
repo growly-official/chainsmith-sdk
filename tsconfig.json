@@ -23,5 +23,6 @@
     "esModuleInterop": true,
     "composite": true
   },
-  "include": ["**/*.ts", "**/*.json"]
+  "include": ["**/*.ts", "**/*.json"],
+  "exclude": ["**/node_modules", "**/dist"]
 }

@@ -8,13 +8,14 @@ import type {
 
 // Map token static list data.
 export const intoChainTokenAddressMap = (
-  m: TTokenListResponse[]
+  m: TTokenListResponse[],
+  chainId?: TChainId
 ): Record<TChainId, Record<TTokenAddress, TContractTokenMetadata>> => {
   const tokenList = m.flatMap((item: TTokenListResponse) => item.tokens);
   const chainMap: Record<TChainId, Record<TTokenAddress, TContractTokenMetadata>> = {};
   for (const token of tokenList) {
-    chainMap[token.chainId] = {
-      ...chainMap[token.chainId],
+    chainMap[token.chainId || chainId] = {
+      ...chainMap[token.chainId || chainId],
       [token.address]: token,
     };
   }

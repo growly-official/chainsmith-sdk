@@ -11,6 +11,11 @@
     "check": "bunx prettier --config .prettierrc.cjs '**/*.{js,jsx,ts,tsx}' --check && eslint '**/*.{js,jsx,ts,tsx}'"
   },
   "keywords": [],
+  "precommit.silent": true,
+  "pre-commit": [
+    "format",
+    "lint"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
