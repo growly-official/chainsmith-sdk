@@ -6,6 +6,11 @@ export type TGetMultichainTokenList = (
 ) => Promise<TMultichain<TChainTokenList>>;
 
 export type TGetChainTokenList = (
+  walletAddress?: TAddress,
+  chain?: TChain
+) => Promise<TChainTokenList>;
+
+export type TGetChainTokenList = (
   chain: TChain,
   walletAddress?: TAddress
 ) => Promise<TChainTokenList>;
@@ -13,4 +18,9 @@ export type TGetChainTokenList = (
 export type IGetMultichainTokenPortfolio = (
   walletAddress?: TAddress,
   chains?: TChain[]
+) => Promise<TTokenPortfolio>;
+
+export type IGetChainTokenPortfolio = (
+  walletAddress?: TAddress,
+  chain?: TChain
 ) => Promise<TTokenPortfolio>;

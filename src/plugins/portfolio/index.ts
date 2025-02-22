@@ -13,6 +13,7 @@ import { MultichainTokenPlugin } from '../token/index.ts';
 import { aggregateMultichainTokenBalance } from '../../utils/portfolio.util.ts';
 import type {
   IGetMultichainTokenPortfolio,
+  IGetChainTokenPortfolio,
   TGetChainTokenList,
   TGetMultichainTokenList,
 } from './types.d.ts';
@@ -44,6 +45,23 @@ export class MultichainPortfolioPlugin {
     }
   };
 
+  getChainTokenPortfolio: WithAdapter<
+    [IMarketDataAdapter, IOnchainTokenAdapter],
+    IGetChainTokenPortfolio
+  > = adapters => async (walletAddress?: TAddress, chain?: TChain) => {
+    try {
+      const _walletAddress = this.storage.readRamOrReturn({ walletAddress });
+      const _chain = chain || this.storage.readDisk('chains')[0];
+      const chainTokenList = await this.getChainTokenList(adapters)(_walletAddress, _chain);
+      return aggregateMultichainTokenBalance({
+        [_chain.chainName]: chainTokenList,
+      });
+    } catch (error: any) {
+      this.logger.error(`Failed to get chain token portfolio: ${error}`);
+      throw new Error(error);
+    }
+  };
+
   getMultichainTokenList: WithManyAdapters<
     [IMarketDataAdapter, IOnchainTokenAdapter],
     TGetMultichainTokenList
@@ -62,6 +80,20 @@ export class MultichainPortfolioPlugin {
     }
   };
 
+  getChainTokenList: WithManyAdapters<
+    [IMarketDataAdapter, IOnchainTokenAdapter],
+    TGetChainTokenList
+  > = adapters => async (walletAddress?: TAddress, chain?: TChain) => {
+    try {
+      const _walletAddress = this.storage.readRamOrReturn({ walletAddress });
+      const _chain = chain || this.storage.readDisk('chains')[0];
+      return this.getMarketTokenList(adapters)(_chain, _walletAddress);
+    } catch (error: any) {
+      this.logger.error(`Failed to get chain token portfolio: ${error}`);
+      throw new Error(error);
+    }
+  };
+
   getMarketTokenList: WithAdapter<[IMarketDataAdapter, IOnchainTokenAdapter], TGetChainTokenList> =
     ([marketDataAdapter, onchainTokenAdapter]) =>
     async (chain: TChain, walletAddress?: TAddress): Promise<TMarketTokenList> => {
@@ -73,7 +105,7 @@ export class MultichainPortfolioPlugin {
         const _walletAddress = this.storage.readRamOrReturn({ walletAddress });
         const nativeToken = await this.tokenPlugin.getNativeToken(client, _walletAddress);
         const contractTokens = await this.tokenPlugin.getContractTokens(onchainTokenAdapter)(
-          chain.chainName,
+          chain,
           _walletAddress
         );
         const tokens = [nativeToken, ...contractTokens];

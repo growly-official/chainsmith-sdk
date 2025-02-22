@@ -1,6 +1,6 @@
 import { autoInjectable } from 'tsyringe';
 import type { IOnchainTokenAdapter } from '../../types/adapter.d.ts';
-import type { TChainName, TAddress } from '../../types/chains.d.ts';
+import type { TAddress, TChain } from '../../types/chains.d.ts';
 import type { TContractToken } from '../../types/tokens.d.ts';
 import type { TAlchemyRequest, TAlchemyResponse } from './types.d.ts';
 import { EvmTokenPlugin } from '../../plugins/evm/index.ts';
@@ -21,8 +21,7 @@ export class AlchemyAdapter implements IOnchainTokenAdapter {
     this.apiKey = apiKey;
   }
 
-  async listAllOwnedTokens(chainName: TChainName, address: TAddress): Promise<TContractToken[]> {
-    const chain = getChainByName(chainName);
+  async listAllOwnedTokens(chain: TChain, address: TAddress): Promise<TContractToken[]> {
     // Note: let the maxCount=100 by default
     const res = await axios.post(
       alchemy(this.apiKey)(chain),

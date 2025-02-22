@@ -2,6 +2,7 @@ import 'reflect-metadata';
 import { AdapterRegistry, buildDefaultChains } from './config.ts';
 import { Wallets } from '../src/data/index.ts';
 import { ChainsmithSdk } from '../src/index.ts';
+import { buildChainsWithCustomRpcUrls } from '../src/utils/chain.util.ts';
 
 const chains = buildDefaultChains(['base', 'mainnet', 'optimism']);
 const sdk = ChainsmithSdk.init(chains);
@@ -49,8 +50,24 @@ async function fetchChainlistMetadata() {
   return metadataList;
 }
 
+async function fetchSonicChainData() {
+  const chains = buildChainsWithCustomRpcUrls({ sonic: 'https://rpc.soniclabs.com' }, 'evm');
+  const sdk = ChainsmithSdk.init(chains);
+  const ownedTokens = await sdk.token.listChainOwnedTokens(AdapterRegistry.ShadowExchange)(
+    Wallets.SONIC_WALLET_CHUNGTIN
+  );
+  console.log(ownedTokens);
+
+  const portfolio = await sdk.portfolio.getChainTokenPortfolio([
+    AdapterRegistry.CoinMarketcap,
+    AdapterRegistry.ShadowExchange,
+  ])(Wallets.SONIC_WALLET_CHUNGTIN);
+  console.log(portfolio);
+}
+
 testExternalities(false, fetchMultichainTokenPortfolio);
 testExternalities(false, fetchMultichainTokenList);
 testExternalities(false, fetchEvmscanTokenActivitiesWorks);
 testExternalities(false, fetchDexScreenerParis);
-testExternalities(true, fetchChainlistMetadata);
+testExternalities(false, fetchChainlistMetadata);
+testExternalities(true, fetchSonicChainData);

@@ -28,15 +28,25 @@ type TGetMultichainTokenActivities = (
   address?: TAddress,
   chains?: TChain[]
 ) => Promise<TMultichain<TTokenTransferActivity[]>>;
+
+type TGetChainTokenActivities = (
+  address?: TAddress,
+  chain?: TChain
+) => Promise<TTokenTransferActivity[]>;
+
 type TGetMultichainOwnedTokens = (
   address?: TAddress,
   chains?: TChain[]
 ) => Promise<TMultichain<TContractToken[]>>;
+
+type TGetChainOwnedTokens = (address?: TAddress, chain?: TChain) => Promise<TContractToken[]>;
+
 type TGetTokenPrice = (
   client?: TClient,
   tokenAddress?: TTokenAddress
 ) => Promise<TMarketToken | undefined>;
-type TGetOwnedTokens = (chain: TChainName, walletAddress?: TAddress) => Promise<TContractToken[]>;
+
+type TGetOwnedTokens = (chain: TChain, walletAddress?: TAddress) => Promise<TContractToken[]>;
 
 @autoInjectable()
 export class MultichainTokenPlugin {
@@ -70,11 +80,26 @@ export class MultichainTokenPlugin {
         const multichainTokens: TMultichain<TContractToken[]> = {};
         for (const chain of this.storagePlugin.readDiskOrReturn({ chains })) {
           multichainTokens[chain.chainName] = await adapter.listAllOwnedTokens(
-            chain.chainName,
+            chain,
             this.storagePlugin.readRamOrReturn({ walletAddress })
           );
         }
         return multichainTokens;
+      } catch (error: any) {
+        this.logger.error(`Failed to get multichain tokens: ${error.message}`);
+        throw new Error(error);
+      }
+    };
+
+  listChainOwnedTokens: WithAdapter<IOnchainTokenAdapter, TGetChainOwnedTokens> =
+    adapter => async (walletAddress?: TAddress, chain?: TChain) => {
+      try {
+        const _chain = chain || this.storagePlugin.readDisk('chains')[0];
+        if (!_chain) throw new Error('No chain provided');
+        return adapter.listAllOwnedTokens(
+          _chain,
+          this.storagePlugin.readRamOrReturn({ walletAddress })
+        );
       } catch (error: any) {
         this.logger.error(`Failed to get multichain tokens: ${error.message}`);
         throw new Error(error);
@@ -101,8 +126,26 @@ export class MultichainTokenPlugin {
     }
   };
 
+  listChainTokenTransferAcitivities: WithAdapter<
+    IOnchainActivityAdapter,
+    TGetChainTokenActivities
+  > = adapter => async (walletAddress?: TAddress, chain?: TChain) => {
+    try {
+      const _chain = chain || this.storagePlugin.readDisk('chains')[0];
+      if (!_chain) throw new Error('No chain provided');
+      return adapter.listAllTokenActivities(
+        chain.chainName,
+        this.storagePlugin.readRamOrReturn({ walletAddress }),
+        100
+      );
+    } catch (error: any) {
+      this.logger.error(`Failed to get token activities: ${error.message}`);
+      throw new Error(error);
+    }
+  };
+
   getContractTokens: WithAdapter<IOnchainTokenAdapter, TGetOwnedTokens> =
-    adapter => async (chain: TChainName, walletAddress?: TAddress) => {
+    adapter => async (chain: TChain, walletAddress?: TAddress) => {
       try {
         const contractTokens = await adapter.listAllOwnedTokens(
           chain,
