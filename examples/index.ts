@@ -54,14 +54,14 @@ async function fetchSonicChainData() {
   const chains = buildChainsWithCustomRpcUrls({ sonic: 'https://rpc.soniclabs.com' }, 'evm');
   const sdk = ChainsmithSdk.init(chains);
   const ownedTokens = await sdk.token.listChainOwnedTokens(AdapterRegistry.ShadowExchange)(
-    Wallets.SONIC_WALLET_CHUNGTIN
+    Wallets.SONIC_WALLET_BEETS_TREASURY
   );
   console.log(ownedTokens);
 
   const portfolio = await sdk.portfolio.getChainTokenPortfolio([
     AdapterRegistry.ShadowExchange,
     AdapterRegistry.ShadowExchange,
-  ])(Wallets.SONIC_WALLET_CHUNGTIN);
+  ])(Wallets.SONIC_WALLET_BEETS_TREASURY);
   console.log(portfolio);
 }
 

@@ -20,14 +20,20 @@ import {
   BRIDGED_USDT,
   WRAPPED_S,
   SONIC_USDC,
+  WETH_S,
 } from '../../../data/constants/sonic/tokens.ts';
 import { isZeroAddress } from '../../../utils/token.util.ts';
 
-// TODO: If token is stablecoin, return the balance directly
 const STABLE_COINS = [BRIDGED_USDC, BRIDGED_USDT, SONIC_USDC];
+
+const isStablecoin = (token: TContractTokenMetadata) =>
+  !!STABLE_COINS.find(t => t === token.address);
 
 const wrapTokenAddressType = (token: TContractTokenMetadata): TContractTokenMetadata => {
   if (token.type === 'native') return findTokenByAddress(WRAPPED_S);
+  // TODO: Dynamic fetching
+  if (token.symbol === 'stS') return findTokenByAddress(WRAPPED_S);
+  if (token.symbol.includes('ETH')) return findTokenByAddress(WETH_S);
   return token;
 };
 
@@ -81,6 +87,10 @@ export class ShadowExchangeAdapter implements IOnchainTokenAdapter, IMarketDataA
       // Try with both directions.
       const stablecoinDetails = findTokenByAddress(stablecoin);
       const tokenDetails = wrapTokenAddressType(token);
+      if (isStablecoin(tokenDetails)) {
+        marketPrice = 1;
+        break;
+      }
       try {
         const tokenPairs = [
           {
@@ -137,7 +147,7 @@ export class ShadowExchangeAdapter implements IOnchainTokenAdapter, IMarketDataA
     }
     return {
       tokens: marketTokens,
-      totalUsdValue: 0,
+      totalUsdValue,
     };
   }
 
@@ -192,9 +202,8 @@ export class ShadowExchangeAdapter implements IOnchainTokenAdapter, IMarketDataA
 
   sqrtPriceX96ToNumber(sqrtPriceX96: bigint, tokenADecimal: number, tokenBDecimal: number) {
     const buyOneOfToken0 =
-      (Number(sqrtPriceX96) / 2 ** 96) ** 2 /
-      parseFloat((10 ** tokenADecimal / 10 ** tokenBDecimal).toFixed(tokenBDecimal));
-    const buyOneOfToken1 = parseFloat((1 / buyOneOfToken0).toFixed(tokenADecimal));
+      (Number(sqrtPriceX96) / 2 ** 96) ** 2 / 10 ** (tokenADecimal - tokenBDecimal);
+    const buyOneOfToken1 = 1 / buyOneOfToken0;
     return {
       // Price of token A in value of token B
       priceOfTokenAinB: buyOneOfToken0,
