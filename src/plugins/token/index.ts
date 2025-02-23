@@ -10,7 +10,6 @@ import type {
   TToken,
   TTokenAddress,
   TTokenTransferActivity,
-  TChainName,
 } from '../../types/index.d.ts';
 import { formatReadableToken } from '../../wrapper.ts';
 import { Logger } from 'tslog';
