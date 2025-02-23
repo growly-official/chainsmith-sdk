@@ -7,3 +7,5 @@ export * from './birdeye/index.ts';
 export * from './privy/index.ts';
 export * from './tavily/index.ts';
 export * from './sonic/index.ts';
+// Extended utilities for adapters.
+export * from './extended/index.ts';

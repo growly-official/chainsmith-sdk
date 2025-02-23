@@ -3,7 +3,6 @@ import { autoInjectable } from 'tsyringe';
 import type {
   IMarketDataAdapter,
   IOnchainTokenAdapter,
-  WithAdapter,
   WithManyAdapters,
 } from '../../types/adapter.d.ts';
 import type { TAddress, TChain, TMarketTokenList, TMultichain } from '../../types/index.d.ts';
@@ -27,7 +26,7 @@ export class MultichainPortfolioPlugin {
     private storage: StoragePlugin
   ) {}
 
-  getMultichainTokenPortfolio: WithAdapter<
+  getMultichainTokenPortfolio: WithManyAdapters<
     [IMarketDataAdapter, IOnchainTokenAdapter],
     IGetMultichainTokenPortfolio
   > = adapters => async (walletAddress?: TAddress, chains?: TChain[]) => {
@@ -45,7 +44,7 @@ export class MultichainPortfolioPlugin {
     }
   };
 
-  getChainTokenPortfolio: WithAdapter<
+  getChainTokenPortfolio: WithManyAdapters<
     [IMarketDataAdapter, IOnchainTokenAdapter],
     IGetChainTokenPortfolio
   > = adapters => async (walletAddress?: TAddress, chain?: TChain) => {
@@ -96,7 +95,10 @@ export class MultichainPortfolioPlugin {
     }
   };
 
-  getMarketTokenList: WithAdapter<[IMarketDataAdapter, IOnchainTokenAdapter], TGetChainTokenList> =
+  getMarketTokenList: WithManyAdapters<
+    [IMarketDataAdapter, IOnchainTokenAdapter],
+    TGetChainTokenList
+  > =
     ([marketDataAdapter, onchainTokenAdapter]) =>
     async (chain: TChain, walletAddress?: TAddress): Promise<TMarketTokenList> => {
       try {
