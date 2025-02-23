@@ -59,7 +59,7 @@ async function fetchSonicChainData() {
   console.log(ownedTokens);
 
   const portfolio = await sdk.portfolio.getChainTokenPortfolio([
-    AdapterRegistry.CoinMarketcap,
+    AdapterRegistry.ShadowExchange,
     AdapterRegistry.ShadowExchange,
   ])(Wallets.SONIC_WALLET_CHUNGTIN);
   console.log(portfolio);

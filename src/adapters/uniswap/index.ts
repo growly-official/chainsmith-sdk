@@ -1,5 +1,5 @@
 import { Logger } from 'tslog';
-import type { TUniswapGetConstantParameters, TUniswapQuoteConfig } from './types.d.ts';
+import type { TUniswapGetPoolConfig, TUniswapQuoteConfig } from './types.d.ts';
 import type {
   TContractToken,
   TMarketToken,
@@ -12,7 +12,6 @@ import type {
 } from '../../types/index.d.ts';
 import { Files } from '../../data/index.ts';
 import Quoter from '@uniswap/v3-periphery/artifacts/contracts/lens/Quoter.sol/Quoter.json' with { type: 'json' };
-import { fromReadableAmount } from './utils.ts';
 import type { IMarketDataAdapter } from '../../types/adapter.d.ts';
 import { CHAIN_TO_ADDRESSES_MAP, Token, WETH9 } from '@uniswap/sdk-core';
 import { computePoolAddress, FeeAmount } from '@uniswap/v3-sdk';
@@ -21,7 +20,11 @@ import { getChainByName, getChainIdByName } from '../../utils/chain.util.ts';
 import { createClient, formatUnits, getContract, http } from 'viem';
 import { UniswapV3PoolAbi } from '../../data/abis/index.ts';
 import { autoInjectable } from 'tsyringe';
-import { intoChainTokenAddressMap, intoChainTokenSymbolMap } from '../../utils/token.util.ts';
+import {
+  intoChainTokenAddressMap,
+  intoChainTokenSymbolMap,
+  fromReadableAmount,
+} from '../../utils/token.util.ts';
 
 const wrapUniswapTokenType = (token: TContractTokenMetadata) => {
   if (token.symbol === 'ETH') return WETH9[token.chainId];
@@ -78,30 +81,15 @@ export class UniswapSdkAdapter implements IMarketDataAdapter {
     chainName: TChainName,
     tokens: TContractToken[]
   ): Promise<{ tokens: TMarketToken[]; totalUsdValue: number }> {
-    const chain = getChainByName(chainName);
-    if (!chain) throw new Error('No chain found');
-    const rpc = this.getRpcUrl(chain);
+    this.logger.info('Fetch token prices...');
 
     let totalUsdValue = 0;
-    const USDC = this.chainTokenSymbolMap[chain.id]['USDC'];
     const marketTokens: TMarketToken[] = [];
     for (const token of tokens) {
-      this.quote(chain, rpc, {
-        amountIn: 1,
-        in: wrapUniswapTokenType(USDC),
-        out: wrapUniswapTokenType(token),
-        poolFee: FeeAmount.MEDIUM,
-      }).then(p => {
-        const usdValue = p * token.balance;
-        totalUsdValue += usdValue;
-        marketTokens.push({
-          ...token,
-          usdValue,
-          marketPrice: p,
-          tags: [],
-          date_added: '',
-        });
-      });
+      const marketToken = await this.fetchTokenWithPrice(chainName, token);
+      const usdValue = marketToken.usdValue;
+      totalUsdValue += usdValue;
+      marketTokens.push(marketToken);
     }
     return {
       tokens: marketTokens,
@@ -130,10 +118,10 @@ export class UniswapSdkAdapter implements IMarketDataAdapter {
     }
   };
 
-  async getPoolConstants(
+  async getPool(
     chain: TChain,
     rpcUrl: string,
-    params: TUniswapGetConstantParameters
+    params: TUniswapGetPoolConfig
   ): Promise<{
     token0: string;
     token1: string;
@@ -191,7 +179,7 @@ export class UniswapSdkAdapter implements IMarketDataAdapter {
         address: (CHAIN_TO_ADDRESSES_MAP as any)[chain.id]?.quoterAddress as any,
         abi: Quoter.abi,
       });
-      const poolConstants = await this.getPoolConstants(chain, rpcUrl, config);
+      const poolConstants = await this.getPool(chain, rpcUrl, config);
       const quotedAmountOut: any = await quoterContract.read.quoteExactInputSingle([
         poolConstants.token0,
         poolConstants.token1,

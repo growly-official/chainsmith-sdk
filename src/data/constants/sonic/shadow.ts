@@ -1,0 +1,13 @@
+// Concentrated Liquidity Contract ADdresses
+export const ShadowV3Factory = '0xcD2d0637c94fe77C2896BbCBB174cefFb08DE6d7';
+export const FeeCollector = '0xcc0365F8f453C55EA7471C9F89767928c8f8d27F';
+export const ShadowV3PoolDeployer = '0x8BBDc15759a8eCf99A92E004E0C64ea9A5142d59';
+export const ShadowV3GaugeFactory = '0xf914Cc768040B4268A779C3084a3E9cdA6E8a1A8';
+export const NonfungiblePositionManager = '0xA57FA38b3fd45922394e9E1077748A2383F1542E';
+export const NonfungiblePositionManagerNew = '0x12E66C8F215DdD5d48d150c8f46aD0c6fB0F4406';
+export const UniversalRouter = '0x92643Dc4F75C374b689774160CDea09A0704a9c2';
+export const SwapRouter = '0x5543c6176feb9b4b179078205d7c29eea2e2d695';
+export const QuoterV2 = '0x219b7ADebc0935a3eC889a148c6924D51A07535A';
+export const TickLens = '0x095bBC37f439EEf5dcF733205B51447d03202E14';
+export const NonfungibleTokenPositionDescriptor = '0xdaA4B06A6710576441367aB90b31689a562C4607';
+export const QuoterV1 = '0x3003B4FeAFF95e09683FEB7fc5d11b330cd79Dc7';

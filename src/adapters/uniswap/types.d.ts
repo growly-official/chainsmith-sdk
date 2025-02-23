@@ -8,7 +8,7 @@ export type TUniswapQuoteConfig = {
   poolFee: FeeAmount;
 };
 
-export type TUniswapGetConstantParameters = {
+export type TUniswapGetPoolConfig = {
   in: Token;
   out: Token;
   poolFee: FeeAmount;

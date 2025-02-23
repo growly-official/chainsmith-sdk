@@ -61,7 +61,8 @@ export type TPriceData = {
   marketRank?: number;
 };
 
-export type TMarketToken<T = any> = TToken<T> & TPriceData & { tags: string[]; date_added: string };
+export type TMarketToken<T = any> = TToken<T> &
+  TPriceData & { tags: string[]; date_added?: string };
 
 export type TTokenMetadataPrice<T = any> = TTokenMetadata &
   TExtraField<T> &

@@ -4,7 +4,6 @@ import type { TAddress, TChain } from '../../types/chains.d.ts';
 import type { TContractToken } from '../../types/tokens.d.ts';
 import type { TAlchemyRequest, TAlchemyResponse } from './types.d.ts';
 import { EvmTokenPlugin } from '../../plugins/evm/index.ts';
-import { getChainByName } from '../../utils/chain.util.ts';
 import { alchemy } from '../../rpc/index.ts';
 import axios from 'axios';
 

@@ -52,6 +52,7 @@ export class MultichainPortfolioPlugin {
     try {
       const _walletAddress = this.storage.readRamOrReturn({ walletAddress });
       const _chain = chain || this.storage.readDisk('chains')[0];
+      if (!_chain) throw new Error('No chain provided');
       const chainTokenList = await this.getChainTokenList(adapters)(_walletAddress, _chain);
       return aggregateMultichainTokenBalance({
         [_chain.chainName]: chainTokenList,
@@ -87,6 +88,7 @@ export class MultichainPortfolioPlugin {
     try {
       const _walletAddress = this.storage.readRamOrReturn({ walletAddress });
       const _chain = chain || this.storage.readDisk('chains')[0];
+      if (!_chain) throw new Error('No chain provided');
       return this.getMarketTokenList(adapters)(_chain, _walletAddress);
     } catch (error: any) {
       this.logger.error(`Failed to get chain token portfolio: ${error}`);
