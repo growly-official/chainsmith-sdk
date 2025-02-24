@@ -20,12 +20,11 @@ const tryAdapters =
     throw new Error(`All adapters failed for method: ${method}`);
   };
 
-export const multiple = (adapters: IAdapter[]) => {
+export function multiple<T extends IAdapter>(adapters: T[]): T {
   // Get the intersection of method names across all adapters
   const commonMethods = adapters.reduce((acc, adapter) => {
     return acc.length === 0 ? Object.keys(adapter) : intersection(acc, adapter);
   }, Object.keys(adapters[0]));
-
   return new Proxy(
     {},
     {
@@ -35,5 +34,5 @@ export const multiple = (adapters: IAdapter[]) => {
         return tryAdapters(adapters, method);
       },
     }
-  );
-};
+  ) as any;
+}

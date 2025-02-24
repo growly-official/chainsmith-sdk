@@ -3,6 +3,7 @@ import { AdapterRegistry, buildDefaultChains } from './config.ts';
 import { Wallets } from '../src/data/index.ts';
 import { ChainsmithSdk } from '../src/index.ts';
 import { buildChainsWithCustomRpcUrls } from '../src/utils/chain.util.ts';
+import { multiple } from '../src/adapters/index.ts';
 
 const chains = buildDefaultChains(['base', 'mainnet', 'optimism']);
 const sdk = ChainsmithSdk.init(chains);
@@ -59,7 +60,7 @@ async function fetchSonicChainData() {
   console.log(ownedTokens);
 
   const portfolio = await sdk.portfolio.getChainTokenPortfolio([
-    AdapterRegistry.ShadowExchange,
+    multiple([AdapterRegistry.ShadowExchange, AdapterRegistry.CoinMarketcap]),
     AdapterRegistry.ShadowExchange,
   ])(Wallets.SONIC_WALLET_BEETS_TREASURY);
   console.log(portfolio);
