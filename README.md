@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/e2750716-ef0a-4977-be29-db691126e31b)
+
 # Chainsmith SDK [WIP]
 
 Viem-compatible abstraction library to simplify the interaction with multiple blockchains via user-friendly high level APIs.
