@@ -1,5 +1,5 @@
 
-<img src="https://github.com/user-attachments/assets/e2750716-ef0a-4977-be29-db691126e31b" width="50px"/>
+<img src="https://github.com/user-attachments/assets/e2750716-ef0a-4977-be29-db691126e31b" width="150px"/>
 
 # Chainsmith SDK [WIP]
 
