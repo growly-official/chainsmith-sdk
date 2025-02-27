@@ -64,6 +64,9 @@ async function fetchSonicChainData() {
     AdapterRegistry.ShadowExchange,
   ])(Wallets.SONIC_WALLET_BEETS_TREASURY);
   console.log(portfolio);
+
+  const points = await sdk.sonicPoint.fetchUserPointsStats(Wallets.SONIC_WALLET_BEETS_TREASURY);
+  console.log(points);
 }
 
 testExternalities(false, fetchMultichainTokenPortfolio);

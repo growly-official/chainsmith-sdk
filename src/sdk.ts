@@ -6,6 +6,7 @@ import {
   StoragePlugin,
   EvmTokenPlugin,
   EvmChainPlugin,
+  SonicPointPlugin,
 } from './plugins/index.ts';
 import type { TChain } from './types/index.d.ts';
 
@@ -15,6 +16,7 @@ export default class ChainsmithSdk {
     public portfolio: MultichainPortfolioPlugin,
     public token: MultichainTokenPlugin,
     public social: MultiPlatformSocialPlugin,
+    public sonicPoint: SonicPointPlugin,
     public storage: StoragePlugin,
     public evmToken: EvmTokenPlugin,
     public evmChain: EvmChainPlugin
