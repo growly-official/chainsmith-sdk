@@ -25,6 +25,7 @@ export const AdapterRegistry = {
   Evmscan: new adapters.EvmscanAdapter(ETHERSCAN_BASE_URL, ETHERSCAN_API_KEY),
   DexScreener: new adapters.DexScreenerAdapter(),
   ShadowExchange: new adapters.ShadowExchangeAdapter(new EvmTokenPlugin()),
+  PaintSwap: new adapters.PaintSwapAdapter(),
 };
 
 export const buildDefaultChains = (chainNames: TChainName[]) =>
