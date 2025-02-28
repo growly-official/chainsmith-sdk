@@ -1,16 +1,18 @@
-type TNFTBalance = {
-  chainId: number;
-  collectionAddress: string;
-  collectionName: string;
-  collectionImage: string;
-  floorPrice: number;
-  totalCount: number;
-  totalValue: number; // USD
+export type TNftBalance = TNftCollectionMetadata & {
+  balance: number;
 };
 
-type TNFTActivityV2 = {
-  // Remove collectionName and action (since we're reading directly from explorer)
-  chainId: number;
+export type TNftCollectionMetadata = {
+  chainId: TChainId;
+  address: string;
+  name: string;
+  image: string;
+  floorPrice: number;
+  currency: string;
+};
+
+export type TNftTransferActivity = {
+  chainId: TChainId;
 
   blockHash: string;
   from: TAddress;

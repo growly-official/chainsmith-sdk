@@ -70,13 +70,11 @@ async function fetchSonicChainData() {
 }
 
 async function fetchPaintSwapData() {
-  // const collectibles = await AdapterRegistry.PaintSwap.getUserOwnedCollections(
-  //   Wallets.SONIC_WALLET_CHUNGTIN
-  // );
-  // console.log(collectibles);
-
-  const nfts = await AdapterRegistry.PaintSwap.getUserNFTs(Wallets.SONIC_WALLET_CHUNGTIN);
-  console.log(nfts);
+  const nftBalance = await AdapterRegistry.PaintSwap.fetchNFTBalance(
+    'sonic',
+    Wallets.SONIC_WALLET_CHUNGTIN
+  );
+  console.log(nftBalance);
 }
 
 testExternalities(false, fetchMultichainTokenPortfolio);

@@ -1,3 +1,11 @@
+export interface TPaintSwapUserNFTResp {
+  nfts: TPaintSwapUserNFT[];
+}
+
+export interface TPaintSwapUserOwnedResp {
+  owned: TPaintSwapUserOwnedCollection[];
+}
+
 export interface TPaintSwapUserNFT {
   id: string;
   address: string;
