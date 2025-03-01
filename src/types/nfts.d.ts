@@ -20,7 +20,7 @@ export type TNftTransferActivity = {
   timestamp: string;
   hash: string;
 
-  tokenId: string;
+  tokenID: string;
   tokenName: string;
   tokenSymbol: TTokenSymbol;
 };

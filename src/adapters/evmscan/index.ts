@@ -1,5 +1,10 @@
 import { Logger } from 'tslog';
-import type { TChainName, TAddress, TTokenTransferActivity } from '../../types/index.d.ts';
+import type {
+  TChainName,
+  TAddress,
+  TTokenTransferActivity,
+  TNftTransferActivity,
+} from '../../types/index.d.ts';
 import { getChainByName, objectToQueryString } from '../../utils/index.ts';
 import type { IOnchainActivityAdapter } from '../../types/adapter.d.ts';
 import type { TEVMScanResponse, TEVMScanTokenActivity } from './types.d.ts';
@@ -69,6 +74,55 @@ export class EvmscanAdapter implements IOnchainActivityAdapter {
         to: t.to as TAddress,
         value: t.value || 0,
         timestamp: t.timeStamp,
+      };
+    });
+  }
+
+  async listAllNftActivities(
+    chainName: TChainName,
+    address: TAddress,
+    limit: number
+  ): Promise<TNftTransferActivity[]> {
+    if (address.length == 0) return [];
+
+    const chain = getChainByName(chainName);
+    chain.nativeCurrency.symbol;
+
+    let nftActivities: TEVMScanTokenActivity[] = [];
+
+    let offset = 0;
+    let previousResultCount = 0;
+
+    // eslint-disable-next-line no-constant-condition
+    while (true) {
+      const evmScanResp = await this.getTokenActivities('tokennfttx', address, chain.id, {
+        offset,
+      });
+      const currentResultCount = evmScanResp.result.length;
+      // Ensure no duplicates are added to the nft array.
+      const uniqueResults = evmScanResp.result.filter(
+        (item: any) => !nftActivities.some(activity => activity.hash === item.hash)
+      );
+      nftActivities = nftActivities.concat(uniqueResults as TEVMScanTokenActivity[]);
+
+      if (currentResultCount === 0 || currentResultCount === previousResultCount) break;
+      previousResultCount = currentResultCount;
+      offset += limit;
+    }
+
+    return nftActivities.map(t => {
+      return {
+        ...t,
+        chainId: chain.id,
+        blockHash: t.blockHash,
+        hash: t.hash,
+        from: t.from as TAddress,
+        to: t.to as TAddress,
+        timestamp: t.timeStamp,
+
+        tokenID: t.tokenID,
+        tokenName: t.tokenName,
+        tokenSymbol: t.tokenSymbol,
       };
     });
   }

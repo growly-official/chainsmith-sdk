@@ -33,9 +33,13 @@ export interface IOnchainActivityAdapter extends IAdapter {
     limit: number
   ): Promise<TTokenTransferActivity[]>;
 
-  // TODO: Add raw transaction
-  //
-  // TODO: Add NFT transfer activity
+  listAllNftActivities(
+    chain: TChainName,
+    address: TAddress,
+    limit: number
+  ): Promise<TNftTransferActivity[]>;
+
+  // TODO: Add raw transaction txList
 }
 
 export interface IOnchainNftAdapter extends IAdapter {
