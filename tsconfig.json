@@ -1,15 +1,17 @@
 {
   "compilerOptions": {
     "outDir": "./dist",
-    "module": "NodeNext",
+    "module": "Preserve",
     "declaration": true,
     "removeComments": true,
+    "moduleResolution": "bundler",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "target": "es2017",
     "allowImportingTsExtensions": true,
-    "noEmit": true,
+    "emitDeclarationOnly": true,
+    "noEmit": false,
     "sourceMap": true,
     "baseUrl": "./",
     "incremental": true,
@@ -23,5 +25,5 @@
     "esModuleInterop": true
   },
   "include": ["**/*.ts", "**/*.json"],
-  "exclude": ["node_modules", "**/dist"]
+  "exclude": ["**/node_modules", "**/dist"]
 }
