@@ -105,8 +105,7 @@ export class MultichainPortfolioPlugin {
             totalUsdValue += marketToken.usdValue;
             marketTokens.push(marketToken);
           } catch (e) {
-            console.log(e);
-            continue;
+            this.logger.error(`Fails to get market token ${token.symbol}: ${e.message}`);
           }
         }
         return {

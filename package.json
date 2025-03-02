@@ -9,7 +9,9 @@
     "example": "tsc && node --loader ts-node/esm -r dotenv/config -r tsconfig-paths/register ./examples/index.ts",
     "lint": "eslint --debug --fix '**/*.{js,jsx,ts,tsx}'",
     "format": "bunx prettier --config .prettierrc.cjs '**/*.{js,jsx,ts,tsx}' --write",
-    "check": "bunx prettier --config .prettierrc.cjs '**/*.{js,jsx,ts,tsx}' --check && eslint '**/*.{js,jsx,ts,tsx}'"
+    "check": "bunx prettier --config .prettierrc.cjs '**/*.{js,jsx,ts,tsx}' --check && eslint '**/*.{js,jsx,ts,tsx}'",
+    "typecheck": "tsc",
+    "typecheck:watch": "tsc -w"
   },
   "keywords": [],
   "precommit.silent": true,

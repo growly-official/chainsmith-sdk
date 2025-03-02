@@ -64,7 +64,7 @@ export function intersectMultipleArrays(arrays: any[]) {
     .sort();
 }
 
-export function getAllFuncs(toCheck) {
+export function getAllFuncs(toCheck: Record<string, any>) {
   const props = [];
   let obj = toCheck;
   do {

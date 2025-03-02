@@ -7,7 +7,12 @@ import type {
   TContractTokenMetadata,
   TMarketToken,
 } from '../../../types/tokens.d.ts';
-import type { TShadowGetPoolConfig } from './types.d.ts';
+import type {
+  TShadowEpochData,
+  TShadowGetPoolConfig,
+  TShadowMixedPairs,
+  TShadowToken,
+} from './types.d.ts';
 import { Files } from '../../../data/index.ts';
 import { createClient } from '../../../wrapper.ts';
 import { autoInjectable } from 'tsyringe';
@@ -23,6 +28,7 @@ import {
   WETH_S,
 } from '../../../data/constants/sonic/tokens.ts';
 import { isZeroAddress } from '../../../utils/token.util.ts';
+import axios from 'axios';
 
 const STABLE_COINS = [BRIDGED_USDC, BRIDGED_USDT, SONIC_USDC];
 
@@ -49,6 +55,82 @@ const findTokenByAddress = (address: string): TContractTokenMetadata => {
     chainId: getChainIdByName('sonic'),
   };
 };
+
+@autoInjectable()
+export class ShadowExchangeApiAdapter implements IMarketDataAdapter {
+  name = 'sonic.ShadowExchangeApiAdapter';
+  logger = new Logger({ name: this.name });
+
+  mixedPairsResult?: TShadowMixedPairs;
+  tokenMap?: Record<string, TShadowToken>;
+
+  async fetchTokenWithPrice(
+    _chain: TChainName,
+    token: TContractToken
+  ): Promise<TMarketToken | undefined> {
+    const tokenDetails = wrapTokenAddressType(token);
+    const tokenMap = await this.#getTokenMap();
+    const tokenPriceData = tokenMap[tokenDetails.symbol];
+    if (!tokenPriceData || Number(tokenPriceData.priceUSD) == 0) throw new Error('No price found');
+    return {
+      ...token,
+      ...tokenDetails,
+      usdValue: parseFloat(tokenPriceData.priceUSD) * token.balance,
+      marketPrice: tokenPriceData.price,
+      tags: [],
+    };
+  }
+
+  async fetchTokensWithPrice(
+    chain: TChainName,
+    tokens: TContractToken[]
+  ): Promise<{ tokens: TMarketToken[]; totalUsdValue: number }> {
+    let totalUsdValue = 0;
+    const marketTokens: TMarketToken[] = [];
+    for (const token of tokens) {
+      const marketToken = await this.fetchTokenWithPrice(chain, token);
+      marketTokens.push(marketToken);
+      totalUsdValue += marketToken.usdValue * token.balance;
+    }
+    return {
+      tokens: marketTokens,
+      totalUsdValue,
+    };
+  }
+
+  async #getTokenMap(): Promise<Record<string, TShadowToken>> {
+    try {
+      const mixedPairsResult = await this.getMixedPairs();
+      if (!this.tokenMap) {
+        const tokenMap = {};
+        for (const token of mixedPairsResult.tokens) {
+          tokenMap[token.symbol] = token;
+        }
+        this.tokenMap = tokenMap;
+      }
+      return this.tokenMap;
+    } catch (error) {
+      throw new Error('Failed to get token map');
+    }
+  }
+
+  async getMixedPairs(): Promise<TShadowMixedPairs> {
+    try {
+      if (!this.mixedPairsResult) {
+        const res = await axios.get('https://api.shadow.so/mixed-pairs');
+        return res.data;
+      }
+      return this.mixedPairsResult;
+    } catch (error) {
+      throw new Error('Failed to get mixed pairs');
+    }
+  }
+
+  async getProtocolStatitics(): Promise<TShadowEpochData> {
+    const res = await axios.get('https://api.shadow.so/info');
+    return res.data;
+  }
+}
 
 @autoInjectable()
 export class ShadowExchangeAdapter implements IOnchainTokenAdapter, IMarketDataAdapter {
@@ -109,7 +191,7 @@ export class ShadowExchangeAdapter implements IOnchainTokenAdapter, IMarketDataA
             `Fetch pair ${tokenIn.symbol} (${tokenIn.address}) <> ${tokenOut.symbol} (${tokenOut.address})`
           );
           try {
-            const priceResponse = await this.getPriceFromSqrtPriceX96(chain, tokenIn, tokenOut);
+            const priceResponse = await this.#getPriceFromSqrtPriceX96(chain, tokenIn, tokenOut);
             if (priceResponse[key] > 0) {
               marketPrice = priceResponse[key];
               break;
@@ -153,7 +235,7 @@ export class ShadowExchangeAdapter implements IOnchainTokenAdapter, IMarketDataA
     };
   }
 
-  async getPriceFromSqrtPriceX96(
+  async #getPriceFromSqrtPriceX96(
     chain: TChain,
     tokenIn: TContractTokenMetadata,
     tokenOut: TContractTokenMetadata
@@ -164,7 +246,7 @@ export class ShadowExchangeAdapter implements IOnchainTokenAdapter, IMarketDataA
     const client = createClient({
       chain,
     });
-    const poolInfo = await this.getPoolInfo(chain, {
+    const poolInfo = await this.#getPoolInfo(chain, {
       tokenIn,
       tokenOut,
       tickSpacing: 10, // TODO: Investigate the correct ticks
@@ -177,10 +259,10 @@ export class ShadowExchangeAdapter implements IOnchainTokenAdapter, IMarketDataA
     });
     const slot0 = await poolContract.read.slot0();
     const sqrtPriceX96 = slot0[0];
-    return this.sqrtPriceX96ToNumber(sqrtPriceX96, tokenIn.decimals, tokenOut.decimals);
+    return sqrtPriceX96ToNumber(sqrtPriceX96, tokenIn.decimals, tokenOut.decimals);
   }
 
-  async getPoolInfo(chain: TChain, config: TShadowGetPoolConfig): Promise<string> {
+  async #getPoolInfo(chain: TChain, config: TShadowGetPoolConfig): Promise<string> {
     this.logger.info(`Get pool info...`);
     try {
       const client = createClient({
@@ -201,16 +283,16 @@ export class ShadowExchangeAdapter implements IOnchainTokenAdapter, IMarketDataA
       throw new Error(error);
     }
   }
+}
 
-  sqrtPriceX96ToNumber(sqrtPriceX96: bigint, tokenADecimal: number, tokenBDecimal: number) {
-    const buyOneOfToken0 =
-      (Number(sqrtPriceX96) / 2 ** 96) ** 2 / 10 ** (tokenADecimal - tokenBDecimal);
-    const buyOneOfToken1 = 1 / buyOneOfToken0;
-    return {
-      // Price of token A in value of token B
-      priceOfTokenAinB: buyOneOfToken0,
-      // Price of token B in value of token A
-      priceofTokenBinA: buyOneOfToken1,
-    };
-  }
+function sqrtPriceX96ToNumber(sqrtPriceX96: bigint, tokenADecimal: number, tokenBDecimal: number) {
+  const buyOneOfToken0 =
+    (Number(sqrtPriceX96) / 2 ** 96) ** 2 / 10 ** (tokenADecimal - tokenBDecimal);
+  const buyOneOfToken1 = 1 / buyOneOfToken0;
+  return {
+    // Price of token A in value of token B
+    priceOfTokenAinB: buyOneOfToken0,
+    // Price of token B in value of token A
+    priceofTokenBinA: buyOneOfToken1,
+  };
 }

@@ -24,6 +24,7 @@ export const AdapterRegistry = {
   Uniswap: new adapters.UniswapSdkAdapter(rpc.alchemy(ALCHEMY_API_KEY)),
   Evmscan: new adapters.EvmscanAdapter(ETHERSCAN_BASE_URL, ETHERSCAN_API_KEY),
   DexScreener: new adapters.DexScreenerAdapter(),
+  ShadowExchangeApi: new adapters.ShadowExchangeApiAdapter(),
   ShadowExchange: new adapters.ShadowExchangeAdapter(new EvmTokenPlugin()),
 };
 
