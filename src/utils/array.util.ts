@@ -40,3 +40,38 @@ export function cloneArray<T>(arr: T[]) {
 export function maybeEmptyArray<T>(arr: T[] | undefined) {
   return arr || [];
 }
+
+export function intersectMultipleArrays(arrays: any[]) {
+  if (!arrays || arrays.length === 0) {
+    return [];
+  }
+
+  if (arrays.length === 1) {
+    return arrays[0].slice().sort(); // Return a sorted copy
+  }
+
+  return arrays
+    .reduce((acc, currentArray) => {
+      const intersection = [];
+      const accSet = new Set(acc);
+      for (const element of currentArray) {
+        if (accSet.has(element)) {
+          intersection.push(element);
+        }
+      }
+      return intersection;
+    })
+    .sort();
+}
+
+export function getAllFuncs(toCheck) {
+  const props = [];
+  let obj = toCheck;
+  do {
+    props.push(...Object.getOwnPropertyNames(obj));
+  } while ((obj = Object.getPrototypeOf(obj)));
+
+  return props.sort().filter((e, i, arr) => {
+    if (e != arr[i + 1] && typeof toCheck[e] == 'function') return true;
+  });
+}

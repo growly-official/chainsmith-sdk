@@ -11,7 +11,7 @@ import type {
   TTokenAddress,
   TTokenTransferActivity,
 } from '../../types/index.d.ts';
-import { formatReadableToken } from '../../wrapper.ts';
+import { createClient, formatReadableToken } from '../../wrapper.ts';
 import { Logger } from 'tslog';
 import { getClientChain } from '../../utils/index.ts';
 import type {
@@ -46,6 +46,8 @@ type TGetTokenPrice = (
 ) => Promise<TMarketToken | undefined>;
 
 type TGetOwnedTokens = (chain: TChain, walletAddress?: TAddress) => Promise<TContractToken[]>;
+
+type TGetTokens = (chain?: TChain, walletAddress?: TAddress) => Promise<TToken[]>;
 
 @autoInjectable()
 export class MultichainTokenPlugin {
@@ -142,6 +144,22 @@ export class MultichainTokenPlugin {
       throw new Error(error);
     }
   };
+
+  getTokens: WithAdapter<IOnchainTokenAdapter, TGetTokens> =
+    adapter => async (chain: TChain, walletAddress?: TAddress) => {
+      try {
+        const client = createClient({
+          chain,
+        });
+        const _walletAddress = this.storagePlugin.readRamOrReturn({ walletAddress });
+        const nativeToken = await this.getNativeToken(client, _walletAddress);
+        const contractTokens = await this.getContractTokens(adapter)(chain, _walletAddress);
+        return [nativeToken, ...contractTokens];
+      } catch (error: any) {
+        this.logger.error(`Failed to get tokens: ${error}`);
+        throw new Error(error);
+      }
+    };
 
   getContractTokens: WithAdapter<IOnchainTokenAdapter, TGetOwnedTokens> =
     adapter => async (chain: TChain, walletAddress?: TAddress) => {

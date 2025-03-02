@@ -1,8 +1,5 @@
 import type { IAdapter } from '../../types/adapter.d.ts';
-
-function intersection(o1, o2) {
-  return Object.keys(o1).filter({}.hasOwnProperty.bind(o2));
-}
+import { intersectMultipleArrays, getAllFuncs } from '../../utils/array.util.ts';
 
 const tryAdapters =
   (adapters: IAdapter[], method: string) =>
@@ -22,9 +19,7 @@ const tryAdapters =
 
 export function multiple<T extends IAdapter>(adapters: T[]): T {
   // Get the intersection of method names across all adapters
-  const commonMethods = adapters.reduce((acc, adapter) => {
-    return acc.length === 0 ? Object.keys(adapter) : intersection(acc, adapter);
-  }, Object.keys(adapters[0]));
+  const commonMethods = intersectMultipleArrays(adapters.map(getAllFuncs));
   return new Proxy(
     {},
     {

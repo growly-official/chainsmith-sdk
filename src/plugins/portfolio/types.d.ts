@@ -1,26 +1,21 @@
-import { TTokenPortfolio } from '../../types/index.d.ts';
+import { TTokenPortfolio, TToken, TMarketTokenList } from '../../types/index.d.ts';
 
-export type TGetMultichainTokenList = (
+export type TGetMultichainMarketTokens = (
   walletAddress?: TAddress,
   chains?: TChain[]
-) => Promise<TMultichain<TChainTokenList>>;
+) => Promise<TMultichain<TMarketTokenList>>;
 
-export type TGetChainTokenList = (
+export type TGetMarketTokens = (
   walletAddress?: TAddress,
   chain?: TChain
-) => Promise<TChainTokenList>;
-
-export type TGetChainTokenList = (
-  chain: TChain,
-  walletAddress?: TAddress
-) => Promise<TChainTokenList>;
+) => Promise<TMarketTokenList>;
 
 export type IGetMultichainTokenPortfolio = (
   walletAddress?: TAddress,
   chains?: TChain[]
 ) => Promise<TTokenPortfolio>;
 
-export type IGetChainTokenPortfolio = (
+export type IGetTokenPortfolio = (
   walletAddress?: TAddress,
   chain?: TChain
 ) => Promise<TTokenPortfolio>;

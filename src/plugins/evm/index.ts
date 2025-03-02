@@ -31,7 +31,8 @@ const CHAIN_LIST_URLS = {
 
 @autoInjectable()
 export class EvmChainPlugin {
-  logger = new Logger({ name: 'EvmChainPlugin' });
+  name = 'EvmChainPlugin';
+  logger = new Logger({ name: this.name });
 
   getChainMetadata = async (chainId: TChainId): Promise<TChainMetadataListResponse | undefined> => {
     const metadata = Files.ChainList.ChainMetadataMap[chainId];

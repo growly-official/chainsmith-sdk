@@ -80,7 +80,7 @@ export class ShadowExchangeAdapter implements IOnchainTokenAdapter, IMarketDataA
     chainName: TChainName,
     token: TContractToken
   ): Promise<TMarketToken | undefined> {
-    this.logger.info(`Fetch a token ${token.symbol} price...`);
+    this.logger.info(`fetchTokenWithPrice: ${chainName}, ${token.symbol}`);
     const chain = getChainByName(chainName);
     let marketPrice = 0;
     for (const stablecoin of STABLE_COINS) {
@@ -123,9 +123,11 @@ export class ShadowExchangeAdapter implements IOnchainTokenAdapter, IMarketDataA
         continue;
       }
     }
+    const usdValue = marketPrice * token.balance;
+    if (usdValue == 0) throw new Error('No price found');
     return {
       ...token,
-      usdValue: marketPrice * token.balance,
+      usdValue,
       marketPrice,
       tags: [],
     };
@@ -165,7 +167,7 @@ export class ShadowExchangeAdapter implements IOnchainTokenAdapter, IMarketDataA
     const poolInfo = await this.getPoolInfo(chain, {
       tokenIn,
       tokenOut,
-      tickSpacing: 50, // TODO: Investigate the correct ticks
+      tickSpacing: 10, // TODO: Investigate the correct ticks
     });
     if (isZeroAddress(poolInfo)) throw new Error('No pool found');
     const poolContract: any = getContract({

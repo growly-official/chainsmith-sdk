@@ -15,7 +15,7 @@ function testExternalities(enabled: boolean, f: () => Promise<any>) {
 async function fetchMultichainTokenList() {
   const wallets = {};
   for (const wallet of [Wallets.ETH_MAINNET_WALLET_PCMINH]) {
-    const portfolio = await sdk.portfolio.getMultichainTokenList([
+    const portfolio = await sdk.portfolio.getMultichainMarketTokenList([
       AdapterRegistry.CoinMarketcap,
       AdapterRegistry.Alchemy,
     ])(wallet);
@@ -54,12 +54,12 @@ async function fetchChainlistMetadata() {
 async function fetchSonicChainData() {
   const chains = buildChainsWithCustomRpcUrls({ sonic: 'https://rpc.soniclabs.com' }, 'evm');
   const sdk = ChainsmithSdk.init(chains);
-  const ownedTokens = await sdk.token.listChainOwnedTokens(AdapterRegistry.ShadowExchange)(
-    Wallets.SONIC_WALLET_BEETS_TREASURY
-  );
-  console.log(ownedTokens);
+  // const ownedTokens = await sdk.token.listChainOwnedTokens(AdapterRegistry.ShadowExchange)(
+  //   Wallets.SONIC_WALLET_BEETS_TREASURY
+  // );
+  // console.log(ownedTokens);
 
-  const portfolio = await sdk.portfolio.getChainTokenPortfolio([
+  const portfolio = await sdk.portfolio.getTokenPortfolio([
     multiple([AdapterRegistry.ShadowExchange, AdapterRegistry.CoinMarketcap]),
     AdapterRegistry.ShadowExchange,
   ])(Wallets.SONIC_WALLET_BEETS_TREASURY);
