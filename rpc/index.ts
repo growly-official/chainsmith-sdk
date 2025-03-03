@@ -1,6 +1,6 @@
-import { TBaseChain } from '@chaintypes/chains';
+import { TBaseChain } from 'types';
 import { getChainDefultRpcUrl } from '../utils/chain.util';
-import { EvmChainList } from '@data/index';
+import { EvmChainList } from 'data';
 
 const ALCHEMY_CHAIN_ENDPOINT = {
   [EvmChainList.mainnet.id]: alchemyRpcUrl('eth-mainnet'),

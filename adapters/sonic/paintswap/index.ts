@@ -1,8 +1,7 @@
 import axios from 'axios';
-import type { TAddress, TChainName, TNftBalance } from '@chaintypes/index';
+import type { TAddress, TChainName, TNftBalance, IOnchainNftAdapter } from '../../../types';
 import { Logger } from 'tslog';
 import { autoInjectable } from 'tsyringe';
-import type { IOnchainNftAdapter } from '@/types/adapter';
 import { getChainIdByName, objectToQueryString } from '../../../utils/index';
 import type {
   TPaintSwapUserNFT,
