@@ -1,4 +1,4 @@
-import type { TAddress, TChainId, TChainName } from './chains.d';
+import type { TAddress, TChainId, TChainName } from './chains';
 
 export type TTokenAddress = TAddress;
 export type TTokenId = number;
@@ -66,7 +66,7 @@ export type TMarketToken<T = any> = TToken<T> &
 
 export type TTokenMetadataPrice<T = any> = TTokenMetadata &
   TExtraField<T> &
-  Pick<TPriceData, 'marketPrice', 'marketRank'> & { tags: string[] };
+  Pick<TPriceData, 'marketPrice' | 'marketRank'> & { tags: string[] };
 
 export type TTokenActivityStats = {
   sumCount: number;

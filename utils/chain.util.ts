@@ -7,7 +7,7 @@ import type {
   TMultichain,
   TChainName,
   TClient,
-} from '../types/index.d';
+} from '../types';
 import { ChainTypeBuilder } from '../wrapper';
 
 export function getChainEcosystem(name: TChainName): TChainEcosystem {

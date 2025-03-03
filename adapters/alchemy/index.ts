@@ -1,10 +1,10 @@
 import { autoInjectable } from 'tsyringe';
-import type { IOnchainTokenAdapter } from '../../types/adapter.d';
-import type { TAddress, TChain } from '../../types/chains.d';
-import type { TContractToken } from '../../types/tokens.d';
+import type { IOnchainTokenAdapter } from '@/types/adapter';
+import type { TAddress, TChain } from '@chaintypes/chains';
+import type { TContractToken } from '@chaintypes/tokens';
 import type { TAlchemyRequest, TAlchemyResponse } from './types.d';
-import { EvmTokenPlugin } from '../../plugins/evm/index';
-import { alchemy } from '../../rpc/index';
+import { EvmTokenPlugin } from '@plugins/evm';
+import { alchemy } from '@rpc/index';
 import axios from 'axios';
 
 @autoInjectable()

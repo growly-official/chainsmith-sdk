@@ -1,3 +1,6 @@
+import { TAddress, TChainId } from './chains';
+import { TTokenSymbol } from './tokens';
+
 export type TNftBalance = TNftCollectionMetadata & {
   balance: number;
 };

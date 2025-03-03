@@ -1,4 +1,4 @@
-import type { IAdapter } from '../../types/adapter.d';
+import type { IAdapter } from '@/types/adapter.js';
 import { autoInjectable } from 'tsyringe';
 import { tavily } from '@tavily/core';
 import { ITavilySearchOptions, TTavilySearchResponse } from './types.js';

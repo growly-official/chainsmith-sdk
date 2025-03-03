@@ -1,5 +1,5 @@
-import type { TMultichain } from './chains.d';
-import type { TMarketToken, TTokenSymbol, TTokenMetadataPrice } from './tokens.d';
+import type { TMultichain } from './chains';
+import type { TMarketToken, TTokenSymbol, TTokenMetadataPrice } from './tokens';
 
 export type TChainStats = {
   totalChains: string[];

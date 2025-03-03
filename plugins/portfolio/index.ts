@@ -4,17 +4,15 @@ import type {
   IMarketDataAdapter,
   IOnchainTokenAdapter,
   WithManyAdapters,
-} from '../../types/adapter.d';
-import type {
   TAddress,
   TChain,
   TMarketTokenList,
   TMultichain,
   TMarketToken,
-} from '../../types/index.d';
-import { StoragePlugin } from '../storage/index';
-import { MultichainTokenPlugin } from '../token/index';
-import { aggregateMultichainTokenBalance } from '../../utils/portfolio.util';
+} from '@chaintypes/index';
+import { StoragePlugin } from '../storage';
+import { MultichainTokenPlugin } from '../token';
+import { aggregateMultichainTokenBalance } from '@utils/portfolio.util';
 import type {
   IGetMultichainTokenPortfolio,
   IGetTokenPortfolio,

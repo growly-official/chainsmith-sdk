@@ -6,13 +6,16 @@ import type {
   TContractToken,
   TChain,
   TNftBalance,
-} from './index.d';
+  TToken,
+  TTokenTransferActivity,
+  TNftTransferActivity,
+} from '.';
 
 export type WithAdapter<A extends IAdapter, R> = (adapter: A) => R;
 export type WithManyAdapters<A extends IAdapter[], R> = (adapters: A) => R;
 export interface IAdapter {
   name: string;
-  logger?: Logger;
+  logger?: Logger<any>;
 }
 
 export type SingleAdapterPlugin<T> = IAdapter & T;

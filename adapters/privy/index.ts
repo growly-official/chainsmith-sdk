@@ -1,4 +1,4 @@
-import type { ISmartWalletAdapter } from '../../types/adapter.d';
+import type { ISmartWalletAdapter } from '@/types/adapter';
 import { autoInjectable } from 'tsyringe';
 
 @autoInjectable()

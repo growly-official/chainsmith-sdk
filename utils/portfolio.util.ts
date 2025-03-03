@@ -7,7 +7,7 @@ import type {
   TChainAggregationBalance,
   TTokenPortfolioStats,
   TTokenChainData,
-} from '../types/index.d';
+} from '../types';
 import * as _ from 'lodash';
 import { getChainIdByName } from './chain.util';
 import { POPULAR_MEMES } from '../data/constants/tokens';

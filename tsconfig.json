@@ -10,6 +10,7 @@
     "removeComments": false,
     "noLib": false,
     "noEmit": true,
+    "baseUrl": ".",
     "emitDeclarationOnly": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -21,7 +22,16 @@
     "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
     "strictPropertyInitialization": false,
-    "types": ["node"]
+    "types": ["node"],
+    "paths": {
+      "@/*": ["./*"],
+      "@adapters/*": ["./adapters/*"],
+      "@data/*": ["./data/*"],
+      "@chaintypes/*": ["./types/*"],
+      "@plugins/*": ["./plugins/*"],
+      "@rpc/*": ["./rpc/*"],
+      "@utils/*": ["./utils/*"]
+    }
   },
   "include": ["**/*.ts", "**/*.json"],
   "exclude": ["**/node_modules", "**/dist"]

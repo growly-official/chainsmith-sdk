@@ -82,5 +82,5 @@ testExternalities(false, fetchMultichainTokenList);
 testExternalities(false, fetchEvmscanTokenActivitiesWorks);
 testExternalities(false, fetchDexScreenerParis);
 testExternalities(false, fetchChainlistMetadata);
-testExternalities(false, fetchSonicChainData);
+testExternalities(true, fetchSonicChainData);
 testExternalities(true, fetchPaintSwapData);

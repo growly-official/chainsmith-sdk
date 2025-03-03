@@ -1,4 +1,4 @@
-import { TTokenPortfolio, TMarketTokenList } from '../../types/index.d';
+import { TTokenPortfolio, TMarketTokenList } from '@chaintypes';
 
 export type TGetMultichainMarketTokens = (
   walletAddress?: TAddress,

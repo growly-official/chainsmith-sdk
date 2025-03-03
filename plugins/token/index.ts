@@ -10,7 +10,7 @@ import type {
   TToken,
   TTokenAddress,
   TTokenTransferActivity,
-} from '../../types/index.d';
+} from '@chaintypes/index';
 import { createClient, formatReadableToken } from '../../wrapper';
 import { Logger } from 'tslog';
 import { getClientChain } from '../../utils/index';
@@ -19,7 +19,7 @@ import type {
   IOnchainActivityAdapter,
   IOnchainTokenAdapter,
   WithAdapter,
-} from '../../types/adapter.d';
+} from '@/types/adapter';
 import { StoragePlugin } from '../storage/index';
 import { EvmTokenPlugin } from '../evm/index';
 
