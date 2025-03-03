@@ -22,16 +22,7 @@
     "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
     "strictPropertyInitialization": false,
-    "types": ["node"],
-    "paths": {
-      "@/*": ["./*"],
-      "@adapters/*": ["./adapters/*"],
-      "@data/*": ["./data/*"],
-      "@chaintypes/*": ["./types/*"],
-      "@plugins/*": ["./plugins/*"],
-      "@rpc/*": ["./rpc/*"],
-      "@utils/*": ["./utils/*"]
-    }
+    "types": ["node"]
   },
   "include": ["**/*.ts", "**/*.json"],
   "exclude": ["**/node_modules", "**/dist"]

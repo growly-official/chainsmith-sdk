@@ -9,9 +9,9 @@ import type {
   TTokenAddress,
   TTokenSymbol,
   TContractTokenMetadata,
-} from '@chaintypes/index';
+  IMarketDataAdapter,
+} from '../../types';
 import { Files } from '../../data/index';
-import type { IMarketDataAdapter } from '@/types/adapter';
 import { CHAIN_TO_ADDRESSES_MAP, Token, WETH9 } from '@uniswap/sdk-core';
 import { computePoolAddress, FeeAmount } from '@uniswap/v3-sdk';
 import { type GetChainRpcEndpoint } from '../../rpc/index';

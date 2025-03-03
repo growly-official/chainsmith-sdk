@@ -5,8 +5,8 @@ import type {
   TTokenTransferActivity,
   TNftTransferActivity,
   IOnchainActivityAdapter,
-} from '@chaintypes/index';
-import { getChainByName, objectToQueryString } from '@utils/index';
+} from '../../types';
+import { getChainByName, objectToQueryString } from '../../utils';
 import type { TEVMScanResponse, TEVMScanTokenActivity } from './types.d';
 import axios from 'axios';
 import { autoInjectable } from 'tsyringe';
