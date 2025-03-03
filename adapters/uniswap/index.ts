@@ -10,7 +10,7 @@ import type {
   TTokenSymbol,
   TContractTokenMetadata,
   IMarketDataAdapter,
-} from '../../types';
+} from '../../types/index';
 import { Files } from '../../data/index';
 import { CHAIN_TO_ADDRESSES_MAP, Token, WETH9 } from '@uniswap/sdk-core';
 import { computePoolAddress, FeeAmount } from '@uniswap/v3-sdk';

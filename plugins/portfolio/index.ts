@@ -9,9 +9,9 @@ import type {
   TMarketTokenList,
   TMultichain,
   TMarketToken,
-} from '../../types';
-import { StoragePlugin } from '../storage';
-import { MultichainTokenPlugin } from '../token';
+} from '../../types/index';
+import { StoragePlugin } from '../storage/index';
+import { MultichainTokenPlugin } from '../token/index';
 import { aggregateMultichainTokenBalance } from '../../utils/portfolio.util';
 import type {
   IGetMultichainTokenPortfolio,

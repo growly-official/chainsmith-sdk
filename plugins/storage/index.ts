@@ -1,6 +1,6 @@
 import { singleton } from 'tsyringe';
 import { createStore, StoreApi } from 'zustand';
-import type { TChain, TClient } from '../../types';
+import type { TChain, TClient } from '../../types/index';
 import { TPlugin } from '../index';
 
 export type Disk = ChainsmithStorage['disk'];

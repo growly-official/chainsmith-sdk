@@ -14,7 +14,7 @@ import type {
   IOnchainActivityAdapter,
   IOnchainTokenAdapter,
   WithAdapter,
-} from '../../types';
+} from '../../types/index';
 import { createClient, formatReadableToken } from '../../wrapper';
 import { Logger } from 'tslog';
 import { getClientChain } from '../../utils/index';

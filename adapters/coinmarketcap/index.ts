@@ -12,7 +12,7 @@ import type {
   TTokenId,
   TTokenSymbol,
   IMarketDataAdapter,
-} from '../../types';
+} from '../../types/index';
 import type {
   TCMCDetailMap,
   TCMCStaticMap,

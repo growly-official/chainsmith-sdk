@@ -13,7 +13,7 @@ import type {
   TMultichain,
   TTokenListResponse,
   TTokenSymbol,
-} from '../../types';
+} from '../../types/index';
 import { autoInjectable } from 'tsyringe';
 import { Logger } from 'tslog';
 import axios from 'axios';
