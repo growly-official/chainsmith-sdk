@@ -13,7 +13,7 @@ export const COINMARKETCAP_API_BASE_URL = 'https://pro-api.coinmarketcap.com';
 export const COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY || '';
 
 export const ETHERSCAN_BASE_URL = 'https://api.etherscan.io/v2/api';
-export const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || "";
+export const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || '';
 
 export const AdapterRegistry = {
   Alchemy: new adapters.AlchemyAdapter(ALCHEMY_API_KEY, new EvmTokenPlugin()),

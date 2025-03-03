@@ -26,7 +26,7 @@ export function intoChainTokenAddressMap(
   const chainMap: Record<TChainId, Record<TTokenAddress, TContractTokenMetadata>> = {};
   for (const token of tokenList) {
     chainMap[token.chainId || chainId || 0] = {
-      ...chainMap[token.chainId || chainId ||0],
+      ...chainMap[token.chainId || chainId || 0],
       [token.address]: token,
     };
   }
