@@ -26,6 +26,7 @@ export const AdapterRegistry = {
   DexScreener: new adapters.DexScreenerAdapter(),
   ShadowExchangeApi: new adapters.ShadowExchangeApiAdapter(),
   ShadowExchange: new adapters.ShadowExchangeAdapter(new EvmTokenPlugin()),
+  PaintSwap: new adapters.PaintSwapAdapter(),
 };
 
 export const buildDefaultChains = (chainNames: TChainName[]) =>

@@ -69,9 +69,18 @@ async function fetchSonicChainData() {
   console.log(points);
 }
 
+async function fetchPaintSwapData() {
+  const nftBalance = await AdapterRegistry.PaintSwap.fetchNFTBalance(
+    'sonic',
+    Wallets.SONIC_WALLET_CHUNGTIN
+  );
+  console.log(nftBalance);
+}
+
 testExternalities(false, fetchMultichainTokenPortfolio);
 testExternalities(false, fetchMultichainTokenList);
 testExternalities(false, fetchEvmscanTokenActivitiesWorks);
 testExternalities(false, fetchDexScreenerParis);
 testExternalities(false, fetchChainlistMetadata);
-testExternalities(true, fetchSonicChainData);
+testExternalities(false, fetchSonicChainData);
+testExternalities(true, fetchPaintSwapData);
