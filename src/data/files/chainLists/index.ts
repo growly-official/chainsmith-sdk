@@ -1,4 +1,4 @@
-import ChainMetadataList from './chainMetadataList.json' with { type: 'json' };
-import ChainMetadataMap from './chainMetadataMap.json' with { type: 'json' };
+const ChainMetadataList = require('./chainMetadataList.json');
+const ChainMetadataMap = require('./chainMetadataMap.json');
 
 export { ChainMetadataList, ChainMetadataMap };

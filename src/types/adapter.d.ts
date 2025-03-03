@@ -6,7 +6,7 @@ import type {
   TContractToken,
   TChain,
   TNftBalance,
-} from './index.d.ts';
+} from './index.d';
 
 export type WithAdapter<A extends IAdapter, R> = (adapter: A) => R;
 export type WithManyAdapters<A extends IAdapter[], R> = (adapters: A) => R;

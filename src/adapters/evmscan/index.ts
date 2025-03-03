@@ -4,14 +4,14 @@ import type {
   TAddress,
   TTokenTransferActivity,
   TNftTransferActivity,
-} from '../../types/index.d.ts';
-import { getChainByName, objectToQueryString } from '../../utils/index.ts';
-import type { IOnchainActivityAdapter } from '../../types/adapter.d.ts';
-import type { TEVMScanResponse, TEVMScanTokenActivity } from './types.d.ts';
+} from '../../types/index.d';
+import { getChainByName, objectToQueryString } from '../../utils/index';
+import type { IOnchainActivityAdapter } from '../../types/adapter.d';
+import type { TEVMScanResponse, TEVMScanTokenActivity } from './types.d';
 import axios from 'axios';
 import { autoInjectable } from 'tsyringe';
 
-export * from './utils.ts';
+export * from './utils';
 
 type GetTokenActivityQueryOptions = {
   page: number;

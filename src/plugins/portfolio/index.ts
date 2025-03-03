@@ -4,23 +4,23 @@ import type {
   IMarketDataAdapter,
   IOnchainTokenAdapter,
   WithManyAdapters,
-} from '../../types/adapter.d.ts';
+} from '../../types/adapter.d';
 import type {
   TAddress,
   TChain,
   TMarketTokenList,
   TMultichain,
   TMarketToken,
-} from '../../types/index.d.ts';
-import { StoragePlugin } from '../storage/index.ts';
-import { MultichainTokenPlugin } from '../token/index.ts';
-import { aggregateMultichainTokenBalance } from '../../utils/portfolio.util.ts';
+} from '../../types/index.d';
+import { StoragePlugin } from '../storage/index';
+import { MultichainTokenPlugin } from '../token/index';
+import { aggregateMultichainTokenBalance } from '../../utils/portfolio.util';
 import type {
   IGetMultichainTokenPortfolio,
   IGetTokenPortfolio,
   TGetMarketTokens,
   TGetMultichainMarketTokens,
-} from './types.d.ts';
+} from './types.d';
 
 @autoInjectable()
 export class MultichainPortfolioPlugin {

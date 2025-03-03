@@ -1,10 +1,10 @@
-import type { TAddress, TChainName } from '../types/chains.d.ts';
+import type { TAddress, TChainName } from '../types/chains.d';
 import type {
   TLongestHoldingToken,
   TMarketToken,
   TTokenActivityStats,
   TTokenTransferActivity,
-} from '../types/tokens.d.ts';
+} from '../types/tokens.d';
 
 type Holding = {
   amount: number;

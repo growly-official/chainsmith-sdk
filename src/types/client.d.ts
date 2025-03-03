@@ -1,5 +1,5 @@
 import { PublicClient, PrivateKeyAccount, WalletClient, Transport, Chain, Account } from 'viem';
-import type { TChain } from './chains.d.ts';
+import type { TChain } from './chains.d';
 
 export interface TCreateClientParameters {
   chain: TChain;

@@ -10,18 +10,18 @@ import type {
   TToken,
   TTokenAddress,
   TTokenTransferActivity,
-} from '../../types/index.d.ts';
-import { createClient, formatReadableToken } from '../../wrapper.ts';
+} from '../../types/index.d';
+import { createClient, formatReadableToken } from '../../wrapper';
 import { Logger } from 'tslog';
-import { getClientChain } from '../../utils/index.ts';
+import { getClientChain } from '../../utils/index';
 import type {
   IMarketDataAdapter,
   IOnchainActivityAdapter,
   IOnchainTokenAdapter,
   WithAdapter,
-} from '../../types/adapter.d.ts';
-import { StoragePlugin } from '../storage/index.ts';
-import { EvmTokenPlugin } from '../evm/index.ts';
+} from '../../types/adapter.d';
+import { StoragePlugin } from '../storage/index';
+import { EvmTokenPlugin } from '../evm/index';
 
 type TGetMultichainTokenActivities = (
   address?: TAddress,

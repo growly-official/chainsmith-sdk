@@ -1,4 +1,4 @@
-import type { TAddress, TChainId, TChainName } from './chains.d.ts';
+import type { TAddress, TChainId, TChainName } from './chains.d';
 
 export type TTokenAddress = TAddress;
 export type TTokenId = number;

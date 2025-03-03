@@ -1,5 +1,5 @@
 import { Logger } from 'tslog';
-import type { TUniswapGetPoolConfig, TUniswapQuoteConfig } from './types.d.ts';
+import type { TUniswapGetPoolConfig, TUniswapQuoteConfig } from './types.d';
 import type {
   TContractToken,
   TMarketToken,
@@ -9,22 +9,23 @@ import type {
   TTokenAddress,
   TTokenSymbol,
   TContractTokenMetadata,
-} from '../../types/index.d.ts';
-import { Files } from '../../data/index.ts';
-import Quoter from '@uniswap/v3-periphery/artifacts/contracts/lens/Quoter.sol/Quoter.json' with { type: 'json' };
-import type { IMarketDataAdapter } from '../../types/adapter.d.ts';
+} from '../../types/index.d';
+import { Files } from '../../data/index';
+import type { IMarketDataAdapter } from '../../types/adapter.d';
 import { CHAIN_TO_ADDRESSES_MAP, Token, WETH9 } from '@uniswap/sdk-core';
 import { computePoolAddress, FeeAmount } from '@uniswap/v3-sdk';
-import { type GetChainRpcEndpoint } from '../../rpc/index.ts';
-import { getChainByName, getChainIdByName } from '../../utils/chain.util.ts';
+import { type GetChainRpcEndpoint } from '../../rpc/index';
+import { getChainByName, getChainIdByName } from '../../utils/chain.util';
 import { createClient, formatUnits, getContract, http } from 'viem';
-import { UniswapV3PoolAbi } from '../../data/abis/index.ts';
+import { UniswapV3PoolAbi } from '../../data/abis/index';
 import { autoInjectable } from 'tsyringe';
 import {
   intoChainTokenAddressMap,
   intoChainTokenSymbolMap,
   fromReadableAmount,
-} from '../../utils/token.util.ts';
+} from '../../utils/token.util';
+
+const Quoter = require('@uniswap/v3-periphery/artifacts/contracts/lens/Quoter.sol/Quoter.json');
 
 const wrapUniswapTokenType = (token: TContractTokenMetadata) => {
   if (token.symbol === 'ETH') return WETH9[token.chainId];

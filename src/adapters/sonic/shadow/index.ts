@@ -1,33 +1,29 @@
-import { getChainByName, getChainIdByName } from '../../../utils/chain.util.ts';
-import { EvmTokenPlugin } from '../../../plugins/index.ts';
-import type { IMarketDataAdapter, IOnchainTokenAdapter } from '../../../types/adapter.d.ts';
-import type { TAddress, TChain, TChainName } from '../../../types/chains.d.ts';
-import type {
-  TContractToken,
-  TContractTokenMetadata,
-  TMarketToken,
-} from '../../../types/tokens.d.ts';
+import { getChainByName, getChainIdByName } from '../../../utils/chain.util';
+import { EvmTokenPlugin } from '../../../plugins/index';
+import type { IMarketDataAdapter, IOnchainTokenAdapter } from '../../../types/adapter.d';
+import type { TAddress, TChain, TChainName } from '../../../types/chains.d';
+import type { TContractToken, TContractTokenMetadata, TMarketToken } from '../../../types/tokens.d';
 import type {
   TShadowEpochData,
   TShadowGetPoolConfig,
   TShadowMixedPairs,
   TShadowToken,
-} from './types.d.ts';
-import { Files } from '../../../data/index.ts';
-import { createClient } from '../../../wrapper.ts';
+} from './types.d';
+import { Files } from '../../../data/index';
+import { createClient } from '../../../wrapper';
 import { autoInjectable } from 'tsyringe';
 import { Logger } from 'tslog';
 import { getContract } from 'viem';
-import { ShadowV3Factory } from '../../../data/constants/sonic/shadow.ts';
-import { shadowPoolFactoryV3Abi, shadowPoolV3Abi } from '../../../data/abis/index.ts';
+import { ShadowV3Factory } from '../../../data/constants/sonic/shadow';
+import { shadowPoolFactoryV3Abi, shadowPoolV3Abi } from '../../../data/abis/index';
 import {
   BRIDGED_USDC,
   BRIDGED_USDT,
   WRAPPED_S,
   SONIC_USDC,
   WETH_S,
-} from '../../../data/constants/sonic/tokens.ts';
-import { isZeroAddress } from '../../../utils/token.util.ts';
+} from '../../../data/constants/sonic/tokens';
+import { isZeroAddress } from '../../../utils/token.util';
 import axios from 'axios';
 
 const STABLE_COINS = [BRIDGED_USDC, BRIDGED_USDT, SONIC_USDC];

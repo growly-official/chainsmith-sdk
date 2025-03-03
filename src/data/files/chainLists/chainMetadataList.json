@@ -7408,7 +7408,7 @@
     "explorers": [
       {
         "name": "tscscan",
-        "url": "https://www.tscscan.io",
+        "url": "https://wwwcscan.io",
         "icon": "netxscan",
         "standard": "none"
       }
@@ -17748,7 +17748,7 @@
     "name": "PublicMint Testnet",
     "title": "Public Mint Testnet",
     "chain": "PublicMint",
-    "rpc": ["https://rpc.tst.publicmint.io:8545"],
+    "rpc": ["https://rpct.publicmint.io:8545"],
     "faucets": [],
     "nativeCurrency": {
       "name": "USD",
@@ -17763,7 +17763,7 @@
     "explorers": [
       {
         "name": "PublicMint Explorer",
-        "url": "https://explorer.tst.publicmint.io",
+        "url": "https://explorert.publicmint.io",
         "standard": "EIP3091"
       }
     ]
@@ -40093,7 +40093,7 @@
     "name": "eCredits Testnet",
     "chain": "ECS",
     "rpc": [],
-    "faucets": ["https://faucet.tst.ecredits.com"],
+    "faucets": ["https://faucett.ecredits.com"],
     "nativeCurrency": {
       "name": "eCredits",
       "symbol": "ECS",
@@ -40108,7 +40108,7 @@
     "explorers": [
       {
         "name": "eCredits TestNet Explorer",
-        "url": "https://explorer.tst.ecredits.com",
+        "url": "https://explorert.ecredits.com",
         "icon": "ecredits",
         "standard": "EIP3091"
       }
@@ -40119,8 +40119,8 @@
     "name": "eSync Network Testnet",
     "title": "eSync Network Testnet",
     "chain": "ECS",
-    "rpc": ["https://rpc.tst.esync.network"],
-    "faucets": ["https://faucet.tst.ecredits.com"],
+    "rpc": ["https://rpct.esync.network"],
+    "faucets": ["https://faucett.ecredits.com"],
     "nativeCurrency": {
       "name": "eCredits",
       "symbol": "ECS",
@@ -40135,7 +40135,7 @@
     "explorers": [
       {
         "name": "eSync Network Testnet Explorer",
-        "url": "https://explorer.tst.esync.network",
+        "url": "https://explorert.esync.network",
         "icon": "esync",
         "standard": "EIP3091"
       }
@@ -42853,7 +42853,7 @@
   {
     "name": "Tetron Testnet Smart Chain",
     "chain": "Tetron Testnet",
-    "rpc": ["https://test-rpc.tscscan.org"],
+    "rpc": ["https://test-rpccscan.org"],
     "faucets": [],
     "features": [
       {
@@ -42872,7 +42872,7 @@
     "explorers": [
       {
         "name": "Tetron Explorer",
-        "url": "https://testnet.tscscan.org",
+        "url": "https://testnetcscan.org",
         "standard": "EIP3091"
       }
     ]
@@ -42880,7 +42880,7 @@
   {
     "name": "Tetron Smart Chain",
     "chain": "Tetron Mainnet",
-    "rpc": ["https://rpc.tscscan.org"],
+    "rpc": ["https://rpccscan.org"],
     "faucets": [],
     "features": [
       {
@@ -46796,8 +46796,8 @@
     "name": "TTcoin Smart Chain Mainnet",
     "chain": "TSC",
     "icon": "tscscan",
-    "rpc": ["https://mainnet-rpc.tscscan.com"],
-    "faucets": ["https://faucet.tscscan.com"],
+    "rpc": ["https://mainnet-rpccscan.com"],
+    "faucets": ["https://faucetcscan.com"],
     "nativeCurrency": {
       "name": "TTcoin",
       "symbol": "TC",
@@ -49298,7 +49298,7 @@
   {
     "name": "TSC Testnet",
     "chain": "Trust Smart Chain Testnet",
-    "rpc": ["https://testnet.tscscan.io/testrpc"],
+    "rpc": ["https://testnetcscan.io/testrpc"],
     "faucets": [],
     "nativeCurrency": {
       "name": "TAS",
@@ -49313,7 +49313,7 @@
     "explorers": [
       {
         "name": "tscscan",
-        "url": "https://testnet.tscscan.io",
+        "url": "https://testnetcscan.io",
         "icon": "netxscan",
         "standard": "none"
       }

@@ -7,10 +7,10 @@ import type {
   TChainAggregationBalance,
   TTokenPortfolioStats,
   TTokenChainData,
-} from '../types/index.d.ts';
+} from '../types/index.d';
 import _ from 'lodash';
-import { getChainIdByName } from './chain.util.ts';
-import { POPULAR_MEMES } from '../data/constants/tokens.ts';
+import { getChainIdByName } from './chain.util';
+import { POPULAR_MEMES } from '../data/constants/tokens';
 
 export function aggregateMultichainTokenBalance(
   multichainTokenList: TMultichain<TMarketTokenList>
