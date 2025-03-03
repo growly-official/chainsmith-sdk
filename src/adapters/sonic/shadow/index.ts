@@ -241,7 +241,7 @@ export class ShadowExchangeAdapter implements IOnchainTokenAdapter, IMarketDataA
     tokenOut: TContractTokenMetadata
   ): Promise<{
     priceOfTokenAinB: number;
-    priceofTokenBinA: number;
+    priceOfTokenBinA: number;
   }> {
     const client = createClient({
       chain,
@@ -293,6 +293,6 @@ function sqrtPriceX96ToNumber(sqrtPriceX96: bigint, tokenADecimal: number, token
     // Price of token A in value of token B
     priceOfTokenAinB: buyOneOfToken0,
     // Price of token B in value of token A
-    priceofTokenBinA: buyOneOfToken1,
+    priceOfTokenBinA: buyOneOfToken1,
   };
 }
