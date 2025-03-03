@@ -126,7 +126,7 @@ export class ShadowExchangeApiAdapter implements IMarketDataAdapter {
     }
   }
 
-  async getProtocolStatitics(): Promise<TShadowEpochData> {
+  async getProtocolStatistics(): Promise<TShadowEpochData> {
     const res = await axios.get('https://api.shadow.so/info');
     return res.data;
   }
