@@ -1,5 +1,5 @@
 import axios from 'axios';
-import type { TAddress, TChainName, TNftBalance } from 'src/types/index.d.ts';
+import type { TAddress, TChainName, TNftBalance } from '../../../types/index.d.ts';
 import { Logger } from 'tslog';
 import { autoInjectable } from 'tsyringe';
 import type { IOnchainNftAdapter } from '../../../types/adapter.d.ts';
