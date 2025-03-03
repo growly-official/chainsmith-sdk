@@ -27,6 +27,7 @@ export const AdapterRegistry = {
   ShadowExchangeApi: new adapters.ShadowExchangeApiAdapter(),
   ShadowExchange: new adapters.ShadowExchangeAdapter(new EvmTokenPlugin()),
   PaintSwap: new adapters.PaintSwapAdapter(),
+  MetropolisApi: new adapters.MetropolisApiAdapter(),
 };
 
 export const buildDefaultChains = (chainNames: TChainName[]) =>

@@ -29,6 +29,10 @@ export interface IMarketDataAdapter extends IAdapter {
   ): Promise<{ tokens: TMarketToken[]; totalUsdValue: number }>;
 }
 
+export interface IYieldAdapter extends IAdapter {
+  fetchTokensWithYield(chain: TChainName, tokens: TToken[]);
+}
+
 export interface IOnchainActivityAdapter extends IAdapter {
   listAllTokenActivities(
     chain: TChainName,
