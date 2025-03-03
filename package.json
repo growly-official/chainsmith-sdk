@@ -2,7 +2,6 @@
   "name": "chainsmith-sdk",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc",
@@ -25,17 +24,17 @@
     "@tavily/core": "^0.3.1",
     "@uniswap/v2-sdk": "^4.8.0",
     "@uniswap/v3-sdk": "^3.20.0",
-    "ethers": "^6.13.5",
-    "reflect-metadata": "^0.2.2",
-    "tslog": "^4.9.3",
-    "tsyringe": "^4.8.0",
-    "viem": "^2.22.23",
-    "zustand": "^5.0.3",
     "ajv": "^8.12.0",
+    "ethers": "^6.13.5",
     "moment": "^2.29.4",
     "prettier": "^3.4.2",
     "react-icons": "^4.10.1",
-    "typescript": "~5.6.2"
+    "reflect-metadata": "^0.2.2",
+    "tslog": "^4.9.3",
+    "tsyringe": "^4.8.0",
+    "typescript": "^5.8.2",
+    "viem": "^2.22.23",
+    "zustand": "^5.0.3"
   },
   "devDependencies": {
     "@parcel/transformer-typescript-types": "^2.8.3",

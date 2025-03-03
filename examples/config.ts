@@ -1,8 +1,8 @@
-import { rpc, adapters, ChainsmithSdk } from '../src/index.ts';
-import { EvmTokenPlugin } from '../src/plugins/evm/index.ts';
-import { alchemy } from '../src/rpc/index.ts';
-import type { TChainName } from '../src/types/index.d.ts';
-import { buildEvmChains } from '../src/utils/index.ts';
+import { rpc, adapters, ChainsmithSdk } from '..';
+import { EvmTokenPlugin } from '../plugins/evm';
+import { alchemy } from '../rpc';
+import type { TChain, TChainName } from '../types';
+import { buildEvmChains } from '../utils';
 
 export const ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY || '';
 
@@ -13,7 +13,7 @@ export const COINMARKETCAP_API_BASE_URL = 'https://pro-api.coinmarketcap.com';
 export const COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY || '';
 
 export const ETHERSCAN_BASE_URL = 'https://api.etherscan.io/v2/api';
-export const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY;
+export const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || '';
 
 export const AdapterRegistry = {
   Alchemy: new adapters.AlchemyAdapter(ALCHEMY_API_KEY, new EvmTokenPlugin()),
@@ -33,7 +33,7 @@ export const buildDefaultChains = (chainNames: TChainName[]) =>
   buildEvmChains(chainNames, alchemy(ALCHEMY_API_KEY));
 
 export const initChainsmithSdk = (chainNames: TChainName[] = []) => {
-  let chains = [];
+  let chains: TChain[] = [];
   if (chainNames.length > 0) {
     chains = buildDefaultChains(chainNames);
   }

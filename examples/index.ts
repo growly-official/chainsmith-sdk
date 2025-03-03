@@ -1,9 +1,9 @@
 import 'reflect-metadata';
-import { AdapterRegistry, buildDefaultChains } from './config.ts';
-import { Wallets } from '../src/data/index.ts';
-import { ChainsmithSdk } from '../src/index.ts';
-import { buildChainsWithCustomRpcUrls } from '../src/utils/chain.util.ts';
-import { multiple } from '../src/adapters/index.ts';
+import { AdapterRegistry, buildDefaultChains } from './config';
+import { Wallets } from '../data';
+import { ChainsmithSdk } from '..';
+import { buildChainsWithCustomRpcUrls } from '../utils/chain.util';
+import { multiple } from '../adapters';
 
 const chains = buildDefaultChains(['base', 'mainnet', 'optimism']);
 const sdk = ChainsmithSdk.init(chains);
@@ -82,5 +82,5 @@ testExternalities(false, fetchMultichainTokenList);
 testExternalities(false, fetchEvmscanTokenActivitiesWorks);
 testExternalities(false, fetchDexScreenerParis);
 testExternalities(false, fetchChainlistMetadata);
-testExternalities(false, fetchSonicChainData);
+testExternalities(true, fetchSonicChainData);
 testExternalities(true, fetchPaintSwapData);
