@@ -127,31 +127,35 @@ export class MultichainTokenPlugin {
     }
   };
 
-  listChainTokenTransferActivities: WithAdapter<IOnchainActivityAdapter, TGetChainTokenActivities> =
-    adapter => async (walletAddress?: TAddress, chain?: TChain) => {
+  listChainTokenTransferAcitivities: WithAdapter<
+    IOnchainActivityAdapter,
+    TGetChainTokenActivities
+  > = adapter => async (walletAddress?: TAddress, chain?: TChain) => {
+    try {
+      const _chain = chain || this.storagePlugin.readDisk('chains')[0];
+      if (!_chain) throw new Error('No chain provided');
+      return adapter.listAllTokenActivities(
+        _chain.chainName,
+        this.storagePlugin.readRamOrReturn({ walletAddress }),
+        100
+      );
+    } catch (error: any) {
+      this.logger.error(`Failed to get token activities: ${error.message}`);
+      throw new Error(error);
+    }
+  };
+
+  getTokens: WithAdapter<IOnchainTokenAdapter, TGetTokens> =
+    adapter => async (chain?: TChain, walletAddress?: TAddress) => {
       try {
         const _chain = chain || this.storagePlugin.readDisk('chains')[0];
         if (!_chain) throw new Error('No chain provided');
-        return adapter.listAllTokenActivities(
-          chain.chainName,
-          this.storagePlugin.readRamOrReturn({ walletAddress }),
-          100
-        );
-      } catch (error: any) {
-        this.logger.error(`Failed to get token activities: ${error.message}`);
-        throw new Error(error);
-      }
-    };
-
-  getTokens: WithAdapter<IOnchainTokenAdapter, TGetTokens> =
-    adapter => async (chain: TChain, walletAddress?: TAddress) => {
-      try {
         const client = createClient({
-          chain,
+          chain: _chain,
         });
         const _walletAddress = this.storagePlugin.readRamOrReturn({ walletAddress });
         const nativeToken = await this.getNativeToken(client, _walletAddress);
-        const contractTokens = await this.getContractTokens(adapter)(chain, _walletAddress);
+        const contractTokens = await this.getContractTokens(adapter)(_chain, _walletAddress);
         return [nativeToken, ...contractTokens];
       } catch (error: any) {
         this.logger.error(`Failed to get tokens: ${error}`);

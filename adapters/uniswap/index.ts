@@ -88,6 +88,7 @@ export class UniswapSdkAdapter implements IMarketDataAdapter {
     const marketTokens: TMarketToken[] = [];
     for (const token of tokens) {
       const marketToken = await this.fetchTokenWithPrice(chainName, token);
+      if (!marketToken) continue;
       const usdValue = marketToken.usdValue;
       totalUsdValue += usdValue;
       marketTokens.push(marketToken);

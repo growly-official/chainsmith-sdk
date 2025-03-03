@@ -55,7 +55,7 @@ export class EvmscanAdapter implements IOnchainActivityAdapter {
       });
       const currentResultCount = evmScanResp.result.length;
       // Ensure no duplicates are added to the nft array.
-      const uniqueResults = evmScanResp.result.filter(
+      const uniqueResults = (evmScanResp.result as any).filter(
         (item: any) => !tokenActivities.some(activity => activity.hash === item.hash)
       );
       tokenActivities = tokenActivities.concat(uniqueResults as TEVMScanTokenActivity[]);
@@ -100,7 +100,7 @@ export class EvmscanAdapter implements IOnchainActivityAdapter {
       });
       const currentResultCount = evmScanResp.result.length;
       // Ensure no duplicates are added to the nft array.
-      const uniqueResults = evmScanResp.result.filter(
+      const uniqueResults = (evmScanResp.result as any).filter(
         (item: any) => !nftActivities.some(activity => activity.hash === item.hash)
       );
       nftActivities = nftActivities.concat(uniqueResults as TEVMScanTokenActivity[]);
@@ -120,7 +120,7 @@ export class EvmscanAdapter implements IOnchainActivityAdapter {
         to: t.to as TAddress,
         timestamp: t.timeStamp,
 
-        tokenID: t.tokenID,
+        tokenID: t.tokenID || '',
         tokenName: t.tokenName,
         tokenSymbol: t.tokenSymbol,
       };

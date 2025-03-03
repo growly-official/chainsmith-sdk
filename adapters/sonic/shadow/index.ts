@@ -85,6 +85,7 @@ export class ShadowExchangeApiAdapter implements IMarketDataAdapter {
     const marketTokens: TMarketToken[] = [];
     for (const token of tokens) {
       const marketToken = await this.fetchTokenWithPrice(chain, token);
+      if (!marketToken) continue;
       marketTokens.push(marketToken);
       totalUsdValue += marketToken.usdValue * token.balance;
     }
@@ -221,6 +222,7 @@ export class ShadowExchangeAdapter implements IOnchainTokenAdapter, IMarketDataA
     const marketTokens: TMarketToken[] = [];
     for (const token of tokens) {
       const marketToken = await this.fetchTokenWithPrice(chainName, token);
+      if (!marketToken) continue;
       const usdValue = marketToken.usdValue;
       totalUsdValue += usdValue;
       marketTokens.push(marketToken);

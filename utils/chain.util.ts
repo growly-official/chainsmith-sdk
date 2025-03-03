@@ -48,7 +48,7 @@ export function buildChainsWithCustomRpcUrls(
     if (!chain) throw new Error('No chain found');
 
     const builder = new ChainTypeBuilder(chain).withEcosystem(ecosystem);
-    builder.withRpcUrl(chainsWithRpc[chainName]).build();
+    builder.withRpcUrl(chainsWithRpc[chainName] || '').build();
     return builder.build();
   });
 }

@@ -21,7 +21,7 @@ export const calculateTokenActivityStats = (
   const recentTokenActivities = tokenActivities.filter(act => {
     const token = marketData.find(data => data.symbol === act.symbol);
     if (token) {
-      const dateAdded = new Date(token.date_added);
+      const dateAdded = new Date(token.date_added || '');
       const threeMonthsAgo = new Date();
       threeMonthsAgo.setMonth(threeMonthsAgo.getMonth() - 12);
       return dateAdded > threeMonthsAgo;

@@ -52,7 +52,7 @@ export function intersectMultipleArrays(arrays: any[]) {
 
   return arrays
     .reduce((acc, currentArray) => {
-      const intersection = [];
+      const intersection: string[] = [];
       const accSet = new Set(acc);
       for (const element of currentArray) {
         if (accSet.has(element)) {
@@ -65,7 +65,7 @@ export function intersectMultipleArrays(arrays: any[]) {
 }
 
 export function getAllFuncs(toCheck: Record<string, any>) {
-  const props = [];
+  const props: string[] = [];
   let obj = toCheck;
   do {
     props.push(...Object.getOwnPropertyNames(obj));

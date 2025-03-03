@@ -8,7 +8,7 @@ import type {
   TTokenPortfolioStats,
   TTokenChainData,
 } from '../types/index.d';
-import _ from 'lodash';
+import * as _ from 'lodash';
 import { getChainIdByName } from './chain.util';
 import { POPULAR_MEMES } from '../data/constants/tokens';
 

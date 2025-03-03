@@ -96,12 +96,16 @@ export class MultichainPortfolioPlugin {
         const _chain = chain || this.storage.readDisk('chains')[0];
         if (!_chain) throw new Error('No chain provided');
         if (!marketDataAdapter || !onchainTokenAdapter) throw new Error('No adapter found');
-        const tokens = await this.tokenPlugin.getTokens(onchainTokenAdapter)(chain, walletAddress);
+        const tokens = await this.tokenPlugin.getTokens(onchainTokenAdapter)(_chain, walletAddress);
         let totalUsdValue = 0;
         const marketTokens: TMarketToken[] = [];
         for (const token of tokens) {
           try {
-            const marketToken = await marketDataAdapter.fetchTokenWithPrice(chain.chainName, token);
+            const marketToken = await marketDataAdapter.fetchTokenWithPrice(
+              _chain.chainName,
+              token
+            );
+            if (!marketToken) continue;
             totalUsdValue += marketToken.usdValue;
             marketTokens.push(marketToken);
           } catch (e) {
@@ -129,8 +133,8 @@ export class MultichainPortfolioPlugin {
         const _chain = chain || this.storage.readDisk('chains')[0];
         if (!_chain) throw new Error('No chain provided');
         if (!marketDataAdapter || !onchainTokenAdapter) throw new Error('No adapter found');
-        const tokens = await this.tokenPlugin.getTokens(onchainTokenAdapter)(chain, walletAddress);
-        const marketData = await marketDataAdapter.fetchTokensWithPrice(chain.chainName, tokens);
+        const tokens = await this.tokenPlugin.getTokens(onchainTokenAdapter)(_chain, walletAddress);
+        const marketData = await marketDataAdapter.fetchTokensWithPrice(_chain.chainName, tokens);
         return {
           tokens: marketData.tokens,
           totalUsdValue: marketData.totalUsdValue,
