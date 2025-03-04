@@ -1,4 +1,4 @@
-export * from './chains';
-export * from './wallets';
+export * from './chains.ts';
+export * from './wallets.ts';
 export * from './tokens';
-export * as Sonic from './sonic/index';
+export * as Sonic from './sonic/index.ts';

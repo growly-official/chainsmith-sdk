@@ -1,4 +1,4 @@
-import type { TAddress } from '../../types/index';
+import type { TAddress } from '../../types/index.d.ts';
 
 export const LOCAL_TEST_WALLET_1: TAddress = '0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266';
 export const ETH_MAINNET_WALLET_VITALIK: TAddress = '0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045'; // vitalik.eth

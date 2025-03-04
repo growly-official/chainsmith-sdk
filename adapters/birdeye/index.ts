@@ -1,5 +1,5 @@
 import { Logger } from 'tslog';
-import type { IAdapter } from '../../types/adapter';
+import type { IAdapter } from '../../types/adapter.d.ts';
 import { autoInjectable } from 'tsyringe';
 
 @autoInjectable()

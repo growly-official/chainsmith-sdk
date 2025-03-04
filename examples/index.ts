@@ -1,9 +1,9 @@
 import 'reflect-metadata';
-import { AdapterRegistry, buildDefaultChains } from './config';
-import { Wallets } from '../data';
-import { ChainsmithSdk } from '..';
-import { buildChainsWithCustomRpcUrls } from '../utils/chain.util';
-import { multiple } from '../adapters';
+import { AdapterRegistry, buildDefaultChains } from './config.ts';
+import { Wallets } from '../data/index.ts';
+import { ChainsmithSdk } from '../index.ts';
+import { buildChainsWithCustomRpcUrls } from '../utils/chain.util.ts';
+import { multiple } from '../adapters/index.ts';
 
 const chains = buildDefaultChains(['base', 'mainnet', 'optimism']);
 const sdk = ChainsmithSdk.init(chains);

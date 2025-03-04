@@ -1,2 +1,2 @@
-export * from './shadow/index';
-export * from './paintswap/index';
+export * from './shadow/index.ts';
+export * from './paintswap/index.ts';

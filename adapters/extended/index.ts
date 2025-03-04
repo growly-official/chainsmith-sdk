@@ -1,5 +1,5 @@
-import type { IAdapter } from '../../types/adapter';
-import { intersectMultipleArrays, getAllFuncs } from '../../utils/array.util';
+import type { IAdapter } from '../../types/adapter.d.ts';
+import { intersectMultipleArrays, getAllFuncs } from '../../utils/array.util.ts';
 
 const tryAdapters =
   (adapters: IAdapter[], method: string) =>

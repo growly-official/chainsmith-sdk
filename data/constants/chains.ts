@@ -1,6 +1,6 @@
 import * as EvmChainList from 'viem/chains';
-import type { TChainEcosystem } from '../../types/index';
-import { iterateObject } from '../../utils/index';
+import type { TChainEcosystem } from '../../types/index.d.ts';
+import { iterateObject } from '../../utils/index.ts';
 
 export const EcosystemRegistry: Record<
   TChainEcosystem,

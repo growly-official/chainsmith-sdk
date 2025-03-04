@@ -1,4 +1,4 @@
-import type { TContractTokenMetadata } from '../@chaintypes/tokens';
+import { TContractTokenMetadata } from '../../../types/index.ts';
 
 export type TShadowQuoteConfig = {
   tokenIn: TContractTokenMetadata;

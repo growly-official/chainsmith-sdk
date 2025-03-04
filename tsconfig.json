@@ -1,7 +1,8 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
     "composite": true,
-    "module": "commonjs",
+    "module": "NodeNext",
     "declaration": true,
     "noImplicitAny": false,
     "skipLibCheck": true,
@@ -13,6 +14,8 @@
     "outDir": "dist",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
     "useUnknownInCatchVariables": false,
     "target": "ES2021",
     "sourceMap": false,

@@ -14,12 +14,12 @@ import type {
   IOnchainActivityAdapter,
   IOnchainTokenAdapter,
   WithAdapter,
-} from '../../types/index';
+} from '../../types/index.ts';
 import { createClient, formatReadableToken } from '../../wrapper';
 import { Logger } from 'tslog';
-import { getClientChain } from '../../utils/index';
-import { StoragePlugin } from '../storage/index';
-import { EvmTokenPlugin } from '../evm/index';
+import { getClientChain } from '../../utils/index.ts';
+import { StoragePlugin } from '../storage/index.ts';
+import { EvmTokenPlugin } from '../evm/index.ts';
 
 type TGetMultichainTokenActivities = (
   address?: TAddress,

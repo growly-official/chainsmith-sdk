@@ -5,13 +5,13 @@ import type {
   TTokenTransferActivity,
   TNftTransferActivity,
   IOnchainActivityAdapter,
-} from '../../types/index';
-import { getChainByName, objectToQueryString } from '../../utils/index';
-import type { TEVMScanResponse, TEVMScanTokenActivity } from './types.d';
+} from '../../types/index.ts';
+import { getChainByName, objectToQueryString } from '../../utils/index.ts';
+import type { TEVMScanResponse, TEVMScanTokenActivity } from './types.d.ts';
 import axios from 'axios';
 import { autoInjectable } from 'tsyringe';
 
-export * from './utils';
+export * from './utils.ts';
 
 type GetTokenActivityQueryOptions = {
   page: number;
