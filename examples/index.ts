@@ -77,15 +77,12 @@ async function fetchPaintSwapData() {
   console.log(nftBalance);
 }
 
-async function fetchMetropolisApi() {
-  const chains = buildChainsWithCustomRpcUrls({ sonic: 'https://rpc.soniclabs.com' }, 'evm');
-  const sdk = ChainsmithSdk.init(chains);
+async function fetchSonicDapp() {
+  const markets = await AdapterRegistry.SiloV2Api.getSiloMarkets();
+  console.log(markets[0]);
 
-  const portfolio = await sdk.portfolio.getTokenPortfolio([
-    multiple([AdapterRegistry.ShadowExchangeApi, AdapterRegistry.MetropolisApi]),
-    AdapterRegistry.ShadowExchange,
-  ])(Wallets.SONIC_WALLET_PCMINH);
-  console.log(portfolio);
+  const vaults = await AdapterRegistry.MetropolisApi.getVaults(146);
+  console.log(vaults[0]);
 }
 
 testExternalities(false, fetchMultichainTokenPortfolio);
@@ -95,4 +92,4 @@ testExternalities(false, fetchDexScreenerParis);
 testExternalities(false, fetchChainlistMetadata);
 testExternalities(false, fetchSonicChainData);
 testExternalities(false, fetchPaintSwapData);
-testExternalities(true, fetchMetropolisApi);
+testExternalities(true, fetchSonicDapp);
