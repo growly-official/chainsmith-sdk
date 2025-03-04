@@ -1,14 +1,19 @@
 import axios from 'axios';
-import type { TAddress, TChainName, TNftBalance, IOnchainNftAdapter } from '../../../types';
+import type {
+  TAddress,
+  TChainName,
+  TNftBalance,
+  IOnchainNftAdapter,
+} from '../../../types/index.ts';
 import { Logger } from 'tslog';
 import { autoInjectable } from 'tsyringe';
-import { getChainIdByName, objectToQueryString } from '../../../utils/index';
+import { getChainIdByName, objectToQueryString } from '../../../utils/index.ts';
 import type {
   TPaintSwapUserNFT,
   TPaintSwapUserOwnedCollection,
   TPaintSwapUserNFTResp,
   TPaintSwapUserOwnedResp,
-} from './types.d';
+} from './types.d.ts';
 import { formatUnits } from 'viem';
 
 const PAINTSWAP_BASE_URL = 'https://api.paintswap.finance/v2';

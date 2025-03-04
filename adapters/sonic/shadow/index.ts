@@ -1,29 +1,33 @@
-import { getChainByName, getChainIdByName } from '../../../utils/chain.util';
-import { EvmTokenPlugin } from '../../../plugins/index';
-import type { IMarketDataAdapter, IOnchainTokenAdapter } from '../../../types/adapter';
-import type { TAddress, TChain, TChainName } from '../../../types/chains';
-import type { TContractToken, TContractTokenMetadata, TMarketToken } from '../../../types/tokens';
+import { getChainByName, getChainIdByName } from '../../../utils/chain.util.ts';
+import { EvmTokenPlugin } from '../../../plugins/index.ts';
+import type { IMarketDataAdapter, IOnchainTokenAdapter } from '../../../types/adapter.d.ts';
+import type { TAddress, TChain, TChainName } from '../../../types/chains.d.ts';
+import type {
+  TContractToken,
+  TContractTokenMetadata,
+  TMarketToken,
+} from '../../../types/tokens.d.ts';
 import type {
   TShadowEpochData,
   TShadowGetPoolConfig,
   TShadowMixedPairs,
   TShadowToken,
-} from './types.d';
-import { Files } from '../../../data/index';
-import { createClient } from '../../../wrapper';
+} from './types.d.ts';
+import { Files } from '../../../data/index.ts';
+import { createClient } from '../../../wrapper.ts';
 import { autoInjectable } from 'tsyringe';
 import { Logger } from 'tslog';
 import { getContract } from 'viem';
-import { ShadowV3Factory } from '../../../data/constants/sonic/shadow';
-import { shadowPoolFactoryV3Abi, shadowPoolV3Abi } from '../../../data/abis/index';
+import { ShadowV3Factory } from '../../../data/constants/sonic/shadow.ts';
+import { shadowPoolFactoryV3Abi, shadowPoolV3Abi } from '../../../data/abis/index.ts';
 import {
   BRIDGED_USDC,
   BRIDGED_USDT,
   WRAPPED_S,
   SONIC_USDC,
   WETH_S,
-} from '../../../data/constants/sonic/tokens';
-import { isZeroAddress } from '../../../utils/token.util';
+} from '../../../data/constants/sonic/tokens.ts';
+import { isZeroAddress } from '../../../utils/token.util.ts';
 import axios from 'axios';
 
 const STABLE_COINS = [BRIDGED_USDC, BRIDGED_USDT, SONIC_USDC];
@@ -134,7 +138,7 @@ export class ShadowExchangeAdapter implements IOnchainTokenAdapter, IMarketDataA
   name = 'sonic.ShadowExchangeAdapter';
   logger = new Logger({ name: this.name });
 
-  rpcUrl: string;
+  rpcUrl: string = '';
   contractTokenMetadatas: TContractTokenMetadata[];
 
   constructor(private evmPlugin: EvmTokenPlugin) {

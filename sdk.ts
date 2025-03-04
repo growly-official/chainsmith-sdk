@@ -7,8 +7,8 @@ import {
   EvmTokenPlugin,
   EvmChainPlugin,
   SonicPointPlugin,
-} from './plugins/index';
-import type { TChain } from './types';
+} from './plugins/index.ts';
+import type { TChain } from './types/index.ts';
 
 @singleton()
 export default class ChainsmithSdk {
