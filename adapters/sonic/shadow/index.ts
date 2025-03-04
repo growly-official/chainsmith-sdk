@@ -138,7 +138,7 @@ export class ShadowExchangeAdapter implements IOnchainTokenAdapter, IMarketDataA
   name = 'sonic.ShadowExchangeAdapter';
   logger = new Logger({ name: this.name });
 
-  rpcUrl: string = '';
+  rpcUrl = '';
   contractTokenMetadatas: TContractTokenMetadata[];
 
   constructor(private evmPlugin: EvmTokenPlugin) {
