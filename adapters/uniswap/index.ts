@@ -24,6 +24,8 @@ import {
   intoChainTokenSymbolMap,
   fromReadableAmount,
 } from '../../utils/token.util.ts';
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
 
 const Quoter = require('@uniswap/v3-periphery/artifacts/contracts/lens/Quoter.sol/Quoter.json');
 

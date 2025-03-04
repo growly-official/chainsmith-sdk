@@ -8,7 +8,7 @@ import type {
   TTokenPortfolioStats,
   TTokenChainData,
 } from '../types/index.ts';
-import * as _ from 'lodash';
+import _ from 'lodash';
 import { getChainIdByName } from './chain.util.ts';
 import { POPULAR_MEMES } from '../data/constants/tokens.ts';
 
