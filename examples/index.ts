@@ -77,10 +77,19 @@ async function fetchPaintSwapData() {
   console.log(nftBalance);
 }
 
+async function fetchSonicDapp() {
+  const markets = await AdapterRegistry.SiloV2Api.getSiloMarkets();
+  console.log(markets[0]);
+
+  const vaults = await AdapterRegistry.MetropolisApi.getVaults(146);
+  console.log(vaults[0]);
+}
+
 testExternalities(false, fetchMultichainTokenPortfolio);
 testExternalities(false, fetchMultichainTokenList);
 testExternalities(false, fetchEvmscanTokenActivitiesWorks);
 testExternalities(false, fetchDexScreenerParis);
 testExternalities(false, fetchChainlistMetadata);
-testExternalities(true, fetchSonicChainData);
-testExternalities(true, fetchPaintSwapData);
+testExternalities(false, fetchSonicChainData);
+testExternalities(false, fetchPaintSwapData);
+testExternalities(true, fetchSonicDapp);
