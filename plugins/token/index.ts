@@ -15,7 +15,7 @@ import type {
   IOnchainTokenAdapter,
   WithAdapter,
 } from '../../types/index.ts';
-import { createClient, formatReadableToken } from '../../wrapper';
+import { createClient, formatReadableToken } from '../../wrapper.ts';
 import { Logger } from 'tslog';
 import { getClientChain } from '../../utils/index.ts';
 import { StoragePlugin } from '../storage/index.ts';

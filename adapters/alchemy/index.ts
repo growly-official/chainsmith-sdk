@@ -1,6 +1,6 @@
 import { autoInjectable } from 'tsyringe';
 import type { IOnchainTokenAdapter, TAddress, TChain, TContractToken } from '../../types/index.ts';
-import type { TAlchemyRequest, TAlchemyResponse } from './types.d';
+import type { TAlchemyRequest, TAlchemyResponse } from './types.d.ts';
 import { EvmTokenPlugin } from '../../plugins/evm/index.ts';
 import { alchemy } from '../../rpc/index.ts';
 import axios from 'axios';
