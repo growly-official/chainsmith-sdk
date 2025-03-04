@@ -1,7 +1,6 @@
 {
   "name": "chainsmith-sdk",
   "version": "1.0.0",
-  "private": true,
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc",
