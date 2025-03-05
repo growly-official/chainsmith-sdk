@@ -1,3 +1,4 @@
+import { BeetsApiAdapter } from 'adapters/sonic/beets/index.ts';
 import { rpc, adapters, ChainsmithSdk } from '../index.ts';
 import { EvmTokenPlugin } from '../plugins/evm/index.ts';
 import { alchemy } from '../rpc/index.ts';
@@ -31,6 +32,8 @@ export const AdapterRegistry = {
   PaintSwap: new adapters.PaintSwapAdapter(),
   MetropolisApi: new adapters.MetropolisApiAdapter(),
   SiloV2Api: new adapters.SiloV2ApiAdapter(),
+  BeetsApi: new adapters.BeetsApiAdapter(),
+  OriginApi: new adapters.OriginApiAdapter(),
 
   Reservoir: new adapters.ReservoirAdapter(RESERVOIR_API_KEY),
 };

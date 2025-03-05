@@ -94,11 +94,17 @@ async function fetchNFTData() {
 }
 
 async function fetchSonicDapp() {
-  const markets = await AdapterRegistry.SiloV2Api.getSiloMarkets();
-  console.log(markets[0]);
+  // const markets = await AdapterRegistry.SiloV2Api.getSiloMarkets();
+  // console.log(markets[0]);
 
-  const vaults = await AdapterRegistry.MetropolisApi.getVaults(146);
-  console.log(vaults[0]);
+  // const vaults = await AdapterRegistry.MetropolisApi.getVaults(146);
+  // console.log(vaults[0]);
+
+  const sts = await AdapterRegistry.BeetsApi.getStakedSonicMarket();
+  console.log(sts);
+
+  const os = await AdapterRegistry.OriginApi.getStakedSonicMarket();
+  console.log(os);
 }
 
 testExternalities(false, fetchMultichainTokenPortfolio);
@@ -107,5 +113,5 @@ testExternalities(false, fetchEvmscanTokenActivitiesWorks);
 testExternalities(false, fetchDexScreenerParis);
 testExternalities(false, fetchChainlistMetadata);
 testExternalities(false, fetchSonicChainData);
-testExternalities(true, fetchNFTData);
-testExternalities(false, fetchSonicDapp);
+testExternalities(false, fetchNFTData);
+testExternalities(true, fetchSonicDapp);
