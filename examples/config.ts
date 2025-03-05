@@ -15,6 +15,8 @@ export const COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY || '';
 export const ETHERSCAN_BASE_URL = 'https://api.etherscan.io/v2/api';
 export const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || '';
 
+export const RESERVOIR_API_KEY = process.env.RESERVOIR_API_KEY || '';
+
 export const AdapterRegistry = {
   Alchemy: new adapters.AlchemyAdapter(ALCHEMY_API_KEY, new EvmTokenPlugin()),
   CoinMarketcap: new adapters.CoinMarketcapAdapter(
@@ -29,6 +31,8 @@ export const AdapterRegistry = {
   PaintSwap: new adapters.PaintSwapAdapter(),
   MetropolisApi: new adapters.MetropolisApiAdapter(),
   SiloV2Api: new adapters.SiloV2ApiAdapter(),
+
+  Reservoir: new adapters.ReservoirAdapter(RESERVOIR_API_KEY),
 };
 
 export const buildDefaultChains = (chainNames: TChainName[]) =>
