@@ -117,7 +117,7 @@ export interface Gauge {
 export interface Reward {
   id: string;
   rewardPerSecond: string;
-  tokenAddress: TokenAddress;
+  tokenAddress: string;
   __typename: string;
 }
 
@@ -206,6 +206,14 @@ export interface UserBalance {
   totalBalanceUsd: number;
   walletBalance: string;
   walletBalanceUsd: number;
-  stakedBalances: any[];
+  stakedBalances: StakedBalance[];
+  __typename: string;
+}
+
+export interface StakedBalance {
+  balance: string;
+  balanceUsd: number;
+  stakingType: string;
+  stakingId: string;
   __typename: string;
 }
