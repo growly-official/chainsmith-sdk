@@ -100,11 +100,15 @@ async function fetchSonicDapp() {
   // const vaults = await AdapterRegistry.MetropolisApi.getVaults(146);
   // console.log(vaults[0]);
 
-  const sts = await AdapterRegistry.BeetsApi.getStakedSonicMarket();
-  console.log(sts);
+  // const sts = await AdapterRegistry.BeetsApi.getStakedSonicMarket();
+  // console.log(sts);
 
-  const os = await AdapterRegistry.OriginApi.getStakedSonicMarket();
-  console.log(os);
+  const beetsPools = await AdapterRegistry.BeetsApi.getPools();
+  console.log(beetsPools.length);
+  console.log(beetsPools[0]);
+
+  // const os = await AdapterRegistry.OriginApi.getStakedSonicMarket();
+  // console.log(os);
 }
 
 testExternalities(false, fetchMultichainTokenPortfolio);
