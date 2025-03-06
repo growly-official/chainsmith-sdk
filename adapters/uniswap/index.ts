@@ -1,5 +1,5 @@
 import { Logger } from 'tslog';
-import type { TUniswapGetPoolConfig, TUniswapQuoteConfig } from './types.d.ts';
+import type { TUniswapGetPoolConfig, TUniswapQuoteConfig } from './types.js';
 import type {
   TContractToken,
   TMarketToken,
@@ -10,20 +10,20 @@ import type {
   TTokenSymbol,
   TContractTokenMetadata,
   IMarketDataAdapter,
-} from '../../types/index.ts';
-import { Files } from '../../data/index.ts';
+} from '../../types/index.js';
+import { Files } from '../../data/index.js';
 import { CHAIN_TO_ADDRESSES_MAP, Token, WETH9 } from '@uniswap/sdk-core';
 import { computePoolAddress, FeeAmount } from '@uniswap/v3-sdk';
-import { type GetChainRpcEndpoint } from '../../rpc/index.ts';
-import { getChainByName, getChainIdByName } from '../../utils/chain.util.ts';
+import { type GetChainRpcEndpoint } from '../../rpc/index.js';
+import { getChainByName, getChainIdByName } from '../../utils/chain.util.js';
 import { createClient, formatUnits, getContract, http } from 'viem';
-import { UniswapV3PoolAbi } from '../../data/abis/index.ts';
+import { UniswapV3PoolAbi } from '../../data/abis/index.js';
 import { autoInjectable } from 'tsyringe';
 import {
   intoChainTokenAddressMap,
   intoChainTokenSymbolMap,
   fromReadableAmount,
-} from '../../utils/token.util.ts';
+} from '../../utils/token.util.js';
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 

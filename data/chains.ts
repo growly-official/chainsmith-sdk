@@ -1,5 +1,5 @@
-import { EvmChainList } from '../data/index.ts';
-import { IEcosystemRegistry, TChainEcosystem, TChainName } from '../types/index.ts';
+import { EvmChainList } from '../data/index.js';
+import { IEcosystemRegistry, TChainEcosystem, TChainName } from '../types/index.js';
 
 export const EcosystemRegistry: IEcosystemRegistry = {
   evm: {

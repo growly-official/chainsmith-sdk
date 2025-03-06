@@ -1,8 +1,8 @@
 import axios from 'axios';
-import { Files } from '../../data/index.ts';
+import { Files } from '../../data/index.js';
 import { Logger } from 'tslog';
 import { autoInjectable } from 'tsyringe';
-import { intoChainTokenAddressMap } from '../../utils/token.util.ts';
+import { intoChainTokenAddressMap } from '../../utils/token.util.js';
 import type {
   TChainId,
   TChainName,
@@ -12,15 +12,15 @@ import type {
   TTokenId,
   TTokenSymbol,
   IMarketDataAdapter,
-} from '../../types/index.ts';
+} from '../../types/index.js';
 import type {
   TCMCDetailMap,
   TCMCStaticMap,
   TCMCTokenDetail,
   TCMCTokenIDDetail,
   TCMCUSDPrice,
-} from './types.d.ts';
-import { getChainByName } from '../../utils/chain.util.ts';
+} from './types.js';
+import { getChainByName } from '../../utils/chain.util.js';
 
 // Some tokens have a conflict symbol with others, like Ethereum and The Inifinite Garden.
 const NATIVE_TOKEN_MAP = {

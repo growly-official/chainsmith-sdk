@@ -1,7 +1,7 @@
-import type { IAdapter } from '../../types/adapter.d.ts';
+import type { IAdapter } from '../../types/adapter.js';
 import { autoInjectable } from 'tsyringe';
 import { tavily } from '@tavily/core';
-import type { ITavilySearchOptions, TTavilySearchResponse } from './types.d.ts';
+import type { ITavilySearchOptions, TTavilySearchResponse } from './types.js';
 
 export type TavilyClient = ReturnType<typeof tavily>; // declaring manually because original package does not export its types
 

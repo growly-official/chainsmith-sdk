@@ -1,4 +1,3 @@
-
 <img src="https://github.com/user-attachments/assets/e2750716-ef0a-4977-be29-db691126e31b" width="150px"/>
 
 # Chainsmith SDK [WIP]
@@ -32,9 +31,9 @@ Chainsmith SDK is currently in beta development. No production package has been 
 The following example demonstrates how to initialize the SDK using Alchemy as the primary RPC provider for all registered chains.
 
 ```typescript
-import { ChainsmithSdk } from 'chainsmith-sdk/src/index.ts';
-import { alchemy } from 'chainsmith-sdk/src/rpc/index.ts';
-import { buildEvmChains } from 'chainsmith-sdk/src/utils/index.ts';
+import { ChainsmithSdk } from 'chainsmith-sdk/src/index.js';
+import { alchemy } from 'chainsmith-sdk/src/rpc/index.js';
+import { buildEvmChains } from 'chainsmith-sdk/src/utils/index.js';
 
 const ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY || '';
 

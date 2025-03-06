@@ -1,2 +1,2 @@
-export * from './tokens.ts';
-export * as ShadowExchange from './shadow.ts';
+export * from './tokens.js';
+export * as ShadowExchange from './shadow.js';

@@ -4,16 +4,16 @@ import type {
   TChainName,
   TNftBalance,
   IOnchainNftAdapter,
-} from '../../../types/index.ts';
+} from '../../../types/index.js';
 import { Logger } from 'tslog';
 import { autoInjectable } from 'tsyringe';
-import { getChainIdByName, objectToQueryString } from '../../../utils/index.ts';
+import { getChainIdByName, objectToQueryString } from '../../../utils/index.js';
 import type {
   TPaintSwapUserNFT,
   TPaintSwapUserOwnedCollection,
   TPaintSwapUserNFTResp,
   TPaintSwapUserOwnedResp,
-} from './types.d.ts';
+} from './types.js';
 import { formatUnits } from 'viem';
 
 const PAINTSWAP_BASE_URL = 'https://api.paintswap.finance/v2';

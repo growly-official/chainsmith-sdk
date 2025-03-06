@@ -9,16 +9,16 @@ import type {
   TMarketTokenList,
   TMultichain,
   TMarketToken,
-} from '../../types/index.ts';
-import { StoragePlugin } from '../storage/index.ts';
-import { MultichainTokenPlugin } from '../token/index.ts';
-import { aggregateMultichainTokenBalance } from '../../utils/portfolio.util.ts';
+} from '../../types/index.js';
+import { StoragePlugin } from '../storage/index.js';
+import { MultichainTokenPlugin } from '../token/index.js';
+import { aggregateMultichainTokenBalance } from '../../utils/portfolio.util.js';
 import type {
   IGetMultichainTokenPortfolio,
   IGetTokenPortfolio,
   TGetMarketTokens,
   TGetMultichainMarketTokens,
-} from './types.d.ts';
+} from './types.js';
 
 @autoInjectable()
 export class MultichainPortfolioPlugin {

@@ -13,7 +13,7 @@ import type {
   TChainName,
   TWalletClient,
   TCreateWalletClientParameters,
-} from './types/index.ts';
+} from './types/index.js';
 
 const DEFAULT_MULTICAL_BATCH_SIZE = 32 * 1026;
 

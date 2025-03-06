@@ -1,6 +1,6 @@
-export type * from './stats.d.ts';
-export type * from './tokens.d.ts';
-export type * from './chains.d.ts';
-export type * from './client.d.ts';
-export type * from './adapter.d.ts';
-export type * from './nfts.d.ts';
+export type * from './stats.js';
+export type * from './tokens.js';
+export type * from './chains.js';
+export type * from './client.js';
+export type * from './adapter.js';
+export type * from './nfts.js';

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { Logger } from 'tslog';
 import { autoInjectable } from 'tsyringe';
-import type { IYieldAdapter } from '../../../types/adapter.d.ts';
+import type { IYieldAdapter } from '../../../types/adapter.js';
 import type { TOriginSonicDailyStat, TOriginSonicResponse } from './types.js';
 import { TChainName } from 'types/chains.js';
 import { TToken } from 'types/tokens.js';

@@ -1,9 +1,9 @@
-import { BeetsApiAdapter } from 'adapters/sonic/beets/index.ts';
-import { rpc, adapters, ChainsmithSdk } from '../index.ts';
-import { EvmTokenPlugin } from '../plugins/evm/index.ts';
-import { alchemy } from '../rpc/index.ts';
-import type { TChain, TChainName } from '../types/index.ts';
-import { buildEvmChains } from '../utils/index.ts';
+import { BeetsApiAdapter } from 'adapters/sonic/beets/index.js';
+import { rpc, adapters, ChainsmithSdk } from '../index.js';
+import { EvmTokenPlugin } from '../plugins/evm/index.js';
+import { alchemy } from '../rpc/index.js';
+import type { TChain, TChainName } from '../types/index.js';
+import { buildEvmChains } from '../utils/index.js';
 
 export const ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY || '';
 

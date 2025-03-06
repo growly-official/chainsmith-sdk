@@ -1,8 +1,8 @@
 import axios from 'axios';
 import { Logger } from 'tslog';
 import { autoInjectable } from 'tsyringe';
-import type { IYieldAdapter } from '../../../types/adapter.d.ts';
-import type { TAddress, TChainName } from '../../../types/chains.d.ts';
+import type { IYieldAdapter } from '../../../types/adapter.js';
+import type { TAddress, TChainName } from '../../../types/chains.js';
 import type {
   TMetropolisAggregatedInfo,
   TMetropolisClassicV2Pool,

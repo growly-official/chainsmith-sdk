@@ -1,10 +1,10 @@
-import type { TChainId } from '../types/chains.d.ts';
+import type { TChainId } from '../types/chains.js';
 import type {
   TContractTokenMetadata,
   TTokenAddress,
   TTokenListResponse,
   TTokenSymbol,
-} from '../types/tokens.d.ts';
+} from '../types/tokens.js';
 import { BigNumberish, ethers } from 'ethers';
 
 const READABLE_FORM_LEN = 4;

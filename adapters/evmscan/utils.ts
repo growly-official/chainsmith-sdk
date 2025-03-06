@@ -1,5 +1,5 @@
-import type { TTokenTransferActivity } from '../../types/tokens.d.ts';
-import type { TActivityStats } from '../../types/stats.d.ts';
+import type { TTokenTransferActivity } from '../../types/tokens.js';
+import type { TActivityStats } from '../../types/stats.js';
 
 export const calculateEVMStreaksAndMetrics = (
   transactions: TTokenTransferActivity[],

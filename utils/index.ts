@@ -1,8 +1,8 @@
-export * from './array.util.ts';
-export * from './number.util.ts';
-export * from './chain.util.ts';
-export * from './portfolio.util.ts';
-export * from './activity.util.ts';
+export * from './array.util.js';
+export * from './number.util.js';
+export * from './chain.util.js';
+export * from './portfolio.util.js';
+export * from './activity.util.js';
 
 export const getVariableName = (v: object) => {
   return Object.keys(v)[0];

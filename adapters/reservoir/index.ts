@@ -1,9 +1,9 @@
 import axios from 'axios';
-import type { TAddress, TChainName, TNftBalance, IOnchainNftAdapter } from '../../types/index.ts';
+import type { TAddress, TChainName, TNftBalance, IOnchainNftAdapter } from '../../types/index.js';
 import { Logger } from 'tslog';
 import { autoInjectable } from 'tsyringe';
-import { getChainIdByName, objectToQueryString } from '../../utils/index.ts';
-import type { TReservoirNFTCollectionResponse, TReservoirNFTCollectionEntity } from './types.d.ts';
+import { getChainIdByName, objectToQueryString } from '../../utils/index.js';
+import type { TReservoirNFTCollectionResponse, TReservoirNFTCollectionEntity } from './types.js';
 
 import * as EvmChainList from 'viem/chains';
 

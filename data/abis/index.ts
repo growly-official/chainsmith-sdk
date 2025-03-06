@@ -1,8 +1,8 @@
-export * from './erc20.ts';
-export * from './defi/uniswapV2Pool.ts';
-export * from './defi/shadow/shadowQuoterV2.ts';
-export * from './defi/shadow/shadowPoolFactoryV3.ts';
-export * from './defi/shadow/shadowPoolV3.ts';
+export * from './erc20.js';
+export * from './defi/uniswapV2Pool.js';
+export * from './defi/shadow/shadowQuoterV2.js';
+export * from './defi/shadow/shadowPoolFactoryV3.js';
+export * from './defi/shadow/shadowPoolV3.js';
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 

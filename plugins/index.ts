@@ -1,9 +1,9 @@
-export * from './portfolio/index.ts';
-export * from './token/index.ts';
-export * from './social/index.ts';
-export * from './storage/index.ts';
-export * from './score/index.ts';
-export * from './score/sonic.ts';
-export * from './evm/index.ts';
+export * from './portfolio/index.js';
+export * from './token/index.js';
+export * from './social/index.js';
+export * from './storage/index.js';
+export * from './score/index.js';
+export * from './score/sonic.js';
+export * from './evm/index.js';
 
 export type TPlugin = any;

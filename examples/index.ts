@@ -1,11 +1,11 @@
 import 'reflect-metadata';
-import { AdapterRegistry, buildDefaultChains } from './config.ts';
-import { Wallets } from '../data/index.ts';
-import { ChainsmithSdk } from '../index.ts';
-import { buildChainsWithCustomRpcUrls } from '../utils/chain.util.ts';
-import { multiple } from '../adapters/index.ts';
-import type { TNftBalance } from 'types/nfts.d.ts';
-import type { TChainName } from 'types/chains.d.ts';
+import { AdapterRegistry, buildDefaultChains } from './config.js';
+import { Wallets } from '../data/index.js';
+import { ChainsmithSdk } from '../index.js';
+import { buildChainsWithCustomRpcUrls } from '../utils/chain.util.js';
+import { multiple } from '../adapters/index.js';
+import type { TNftBalance } from 'types/nfts.js';
+import type { TChainName } from 'types/chains.js';
 
 const chains = buildDefaultChains(['base', 'mainnet', 'optimism']);
 const sdk = ChainsmithSdk.init(chains);

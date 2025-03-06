@@ -1,6 +1,6 @@
 import { formatUnits, getContract } from 'viem';
-import { stoi } from '../../utils/index.ts';
-import { Abis, Files } from '../../data/index.ts';
+import { stoi } from '../../utils/index.js';
+import { Abis, Files } from '../../data/index.js';
 import type {
   TAddress,
   TBlockNumber,
@@ -13,7 +13,7 @@ import type {
   TMultichain,
   TTokenListResponse,
   TTokenSymbol,
-} from '../../types/index.ts';
+} from '../../types/index.js';
 import { autoInjectable } from 'tsyringe';
 import { Logger } from 'tslog';
 import axios from 'axios';
