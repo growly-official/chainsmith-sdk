@@ -3,8 +3,8 @@ import { Logger } from 'tslog';
 import { autoInjectable } from 'tsyringe';
 import type { IYieldAdapter } from '../../../types/adapter.js';
 import type { TBeetsStakedSonicMarket, TBeetsStakedSonicResponse } from './types.js';
-import { TChainName } from 'types/chains.js';
-import { TToken } from 'types/tokens.js';
+import { TChainName } from '../../../types/chains.js';
+import { TToken } from '../../../types/tokens.js';
 
 const BEETS_BASE_URL = 'https://backend-v3.beets-ftm-node.com/';
 

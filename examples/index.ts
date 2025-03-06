@@ -4,8 +4,8 @@ import { Wallets } from '../data/index.js';
 import { ChainsmithSdk } from '../index.js';
 import { buildChainsWithCustomRpcUrls } from '../utils/chain.util.js';
 import { multiple } from '../adapters/index.js';
-import type { TNftBalance } from 'types/nfts.js';
-import type { TChainName } from 'types/chains.js';
+import type { TNftBalance } from '../types/nfts.js';
+import type { TChainName } from '../types/chains.js';
 
 const chains = buildDefaultChains(['base', 'mainnet', 'optimism']);
 const sdk = ChainsmithSdk.init(chains);

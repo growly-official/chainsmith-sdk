@@ -3,8 +3,8 @@ import { Logger } from 'tslog';
 import { autoInjectable } from 'tsyringe';
 import type { IYieldAdapter } from '../../../types/adapter.js';
 import type { TSiloMarket, TSiloMetrics, TSiloToken } from './types.js';
-import { TChainName } from 'types/chains.js';
-import { TToken } from 'types/tokens.js';
+import { TChainName } from '../../../types/chains.js';
+import { TToken } from '../../../types/tokens.js';
 
 const SILO_V2_BASE_URL = 'https://v2.silo.finance/api/';
 

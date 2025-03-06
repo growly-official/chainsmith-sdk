@@ -3,8 +3,8 @@ import { Logger } from 'tslog';
 import { autoInjectable } from 'tsyringe';
 import type { IYieldAdapter } from '../../../types/adapter.js';
 import type { TOriginSonicDailyStat, TOriginSonicResponse } from './types.js';
-import { TChainName } from 'types/chains.js';
-import { TToken } from 'types/tokens.js';
+import { TChainName } from '../../../types/chains.js';
+import { TToken } from '../../../types/tokens.js';
 
 const ORIGIN_BASE_URL = 'https://origin.squids.live/origin-squid:prod/api/graphql';
 

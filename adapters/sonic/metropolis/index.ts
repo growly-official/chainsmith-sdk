@@ -11,7 +11,7 @@ import type {
   TMetropolisVault,
   TMetropolisVaultPosition,
 } from './types.js';
-import { TToken } from 'types/tokens.js';
+import { TToken } from '../../../types/tokens.js';
 
 const METROPOLIS_BASE_URL = 'https://api-b.metropolis.exchange/api/v1';
 
