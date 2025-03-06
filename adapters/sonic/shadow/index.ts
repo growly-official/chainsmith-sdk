@@ -69,7 +69,7 @@ export class ShadowExchangeApiAdapter implements IMarketDataAdapter {
     token: TContractToken
   ): Promise<TMarketToken | undefined> {
     const tokenDetails = wrapTokenAddressType(token);
-    const tokenMap = await this.#getTokenMap();
+    const tokenMap = await this.getTokenMap();
     const tokenPriceData = tokenMap[tokenDetails.symbol];
     if (!tokenPriceData || Number(tokenPriceData.priceUSD) == 0) throw new Error('No price found');
     return {
@@ -99,7 +99,7 @@ export class ShadowExchangeApiAdapter implements IMarketDataAdapter {
     };
   }
 
-  async #getTokenMap(): Promise<Record<string, TShadowToken>> {
+  private async getTokenMap(): Promise<Record<string, TShadowToken>> {
     try {
       const mixedPairsResult = await this.getMixedPairs();
       if (!this.tokenMap) {
@@ -192,7 +192,7 @@ export class ShadowExchangeAdapter implements IOnchainTokenAdapter, IMarketDataA
             `Fetch pair ${tokenIn.symbol} (${tokenIn.address}) <> ${tokenOut.symbol} (${tokenOut.address})`
           );
           try {
-            const priceResponse = await this.#getPriceFromSqrtPriceX96(chain, tokenIn, tokenOut);
+            const priceResponse = await this.getPriceFromSqrtPriceX96(chain, tokenIn, tokenOut);
             if (priceResponse[key] > 0) {
               marketPrice = priceResponse[key];
               break;
@@ -237,7 +237,7 @@ export class ShadowExchangeAdapter implements IOnchainTokenAdapter, IMarketDataA
     };
   }
 
-  async #getPriceFromSqrtPriceX96(
+  async getPriceFromSqrtPriceX96(
     chain: TChain,
     tokenIn: TContractTokenMetadata,
     tokenOut: TContractTokenMetadata
@@ -248,7 +248,7 @@ export class ShadowExchangeAdapter implements IOnchainTokenAdapter, IMarketDataA
     const client = createClient({
       chain,
     });
-    const poolInfo = await this.#getPoolInfo(chain, {
+    const poolInfo = await this.getPoolInfo(chain, {
       tokenIn,
       tokenOut,
       tickSpacing: 10, // TODO: Investigate the correct ticks
@@ -264,7 +264,7 @@ export class ShadowExchangeAdapter implements IOnchainTokenAdapter, IMarketDataA
     return sqrtPriceX96ToNumber(sqrtPriceX96, tokenIn.decimals, tokenOut.decimals);
   }
 
-  async #getPoolInfo(chain: TChain, config: TShadowGetPoolConfig): Promise<string> {
+  private async getPoolInfo(chain: TChain, config: TShadowGetPoolConfig): Promise<string> {
     this.logger.info(`Get pool info...`);
     try {
       const client = createClient({
