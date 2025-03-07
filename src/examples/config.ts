@@ -33,6 +33,7 @@ export const AdapterRegistry = {
   SiloV2Api: new adapters.SiloV2ApiAdapter(),
   BeetsApi: new adapters.BeetsApiAdapter(),
   OriginApi: new adapters.OriginApiAdapter(),
+  AnglesApi: new adapters.AnglesApiAdapter(),
 
   Reservoir: new adapters.ReservoirAdapter(RESERVOIR_API_KEY),
 };

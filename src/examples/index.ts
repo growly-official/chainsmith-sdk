@@ -103,12 +103,17 @@ async function fetchSonicDapp() {
   // const sts = await AdapterRegistry.BeetsApi.getStakedSonicMarket();
   // console.log(sts);
 
-  const beetsPools = await AdapterRegistry.BeetsApi.getUserPoolsPositions(Wallets.SONIC_WALLET_PCMINH);
+  const beetsPools = await AdapterRegistry.BeetsApi.getUserPoolsPositions(
+    Wallets.SONIC_WALLET_PCMINH
+  );
   console.log(beetsPools.length);
   console.log(beetsPools[0]);
 
   // const os = await AdapterRegistry.OriginApi.getStakedSonicMarket();
   // console.log(os);
+
+  const ans = await AdapterRegistry.AnglesApi.getAnglesMarket();
+  console.log(ans);
 }
 
 testExternalities(false, fetchMultichainTokenPortfolio);

@@ -1,17 +1,9 @@
 import { Logger } from 'tslog';
+import axios from 'axios';
+import type { TSonicEcosystemApp, TSonicUserPointsStats } from './types';
+import { Constants, Files } from '../../data';
 
 const OPENBLOCK_ENDPOINT = 'https://www.data-openblocklabs.com';
-
-export interface TSonicUserPointsStats {
-  user_activity_last_detected: string;
-  wallet_address: string;
-  sonic_points: number;
-  loyalty_multiplier: number;
-  ecosystem_points: number;
-  passive_liquidity_points: number;
-  active_liquidity_points: number;
-  rank: number;
-}
 
 export class SonicPointPlugin {
   logger = new Logger({ name: 'SonicPointPlugin' });
@@ -20,12 +12,10 @@ export class SonicPointPlugin {
     this.logger.info('Fetch Sonic user points stats:', walletAddress);
     const url = `${OPENBLOCK_ENDPOINT}/sonic/user-points-stats?wallet_address=${walletAddress}`;
     try {
-      const data: TSonicUserPointsStats = await fetch(url)
-        .then(res => res.json() as any)
-        .catch(console.error);
-      return data;
-    } catch (error) {
-      console.error(error);
+      const res = await axios.get<TSonicUserPointsStats>(url);
+
+      if (res.data) return res.data;
+
       return {
         user_activity_last_detected: '',
         wallet_address: walletAddress,
@@ -36,6 +26,14 @@ export class SonicPointPlugin {
         active_liquidity_points: 0,
         rank: 0,
       };
+    } catch (error: any) {
+      throw new Error('Error getting Sonic points', error);
     }
+  }
+
+  getSonicActivePointApps(): TSonicEcosystemApp[] {
+    return Files.EcosystemList.SonicEcosystemList.filter(app => {
+      return Constants.Sonic.SONIC_ACTIVE_POINTS_APPS.includes(app._id);
+    });
   }
 }
