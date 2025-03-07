@@ -1,10 +1,10 @@
-import type { TAddress, TChainName, TMarketTokenList, TMultichain, TNftBalance } from '../types';
+import 'reflect-metadata';
 import { initChainsmithSdk } from '..';
 import { multiple } from '../adapters';
 import { Wallets } from '../data';
+import type { TAddress, TChainName, TMarketTokenList, TMultichain, TNftBalance } from '../types';
 import { buildChainsWithCustomRpcUrls } from '../utils';
 import { AdapterRegistry, buildDefaultChains } from './config';
-import 'reflect-metadata';
 
 const chains = buildDefaultChains(['base', 'mainnet', 'optimism']);
 const sdk = initChainsmithSdk(chains);
@@ -71,24 +71,25 @@ async function fetchSonicChainData() {
 }
 
 async function fetchNFTData() {
+  const chains = buildChainsWithCustomRpcUrls({ sonic: 'https://rpc.soniclabs.com' }, 'evm');
+  const sdk = initChainsmithSdk(chains);
+
   let collectibles: TNftBalance[] = [];
 
-  const sonicCollectibles = await AdapterRegistry.PaintSwap.fetchNFTBalance(
+  const sonicCollectibles = await sdk.token.getNftCollectibles(AdapterRegistry.PaintSwap)(
     'sonic',
     Wallets.ETH_MAINNET_WALLET_PCMINH
   );
   collectibles = collectibles.concat(sonicCollectibles);
 
   const evmChains: TChainName[] = ['base', 'mainnet', 'optimism'];
-
   for (const chain of evmChains) {
-    const evmCollectibles = await AdapterRegistry.Reservoir.fetchNFTBalance(
+    const evmCollectibles = await sdk.token.getNftCollectibles(AdapterRegistry.Reservoir)(
       chain,
       Wallets.ETH_MAINNET_WALLET_PCMINH
     );
     collectibles = collectibles.concat(evmCollectibles);
   }
-
   return collectibles;
 }
 
@@ -116,5 +117,5 @@ testExternalities(false, fetchEvmscanTokenActivitiesWorks);
 testExternalities(false, fetchDexScreenerParis);
 testExternalities(false, fetchChainlistMetadata);
 testExternalities(true, fetchSonicChainData);
-testExternalities(false, fetchNFTData);
-testExternalities(false, fetchSonicDapp);
+testExternalities(true, fetchNFTData);
+testExternalities(true, fetchSonicDapp);

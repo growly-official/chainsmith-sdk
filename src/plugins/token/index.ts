@@ -1,21 +1,24 @@
+import { Logger } from 'tslog';
+import { EvmTokenPlugin } from '..';
 import type {
   IMarketDataAdapter,
   IOnchainActivityAdapter,
+  IOnchainNftAdapter,
   IOnchainTokenAdapter,
   TAddress,
   TChain,
+  TChainName,
   TClient,
   TContractToken,
   TMarketToken,
   TMultichain,
   TNativeToken,
+  TNftBalance,
   TToken,
   TTokenAddress,
   TTokenTransferActivity,
   WithAdapter,
 } from '../../types';
-import { Logger } from 'tslog';
-import { EvmTokenPlugin } from '..';
 import { getClientChain } from '../../utils';
 import { createClient, formatReadableToken } from '../../wrapper';
 import { StoragePlugin } from '../storage';
@@ -45,6 +48,11 @@ type TGetTokenPrice = (
 type TGetOwnedTokens = (chain: TChain, walletAddress?: TAddress) => Promise<TContractToken[]>;
 
 type TGetTokens = (chain?: TChain, walletAddress?: TAddress) => Promise<TToken[]>;
+
+type IGetNftColletibles = (
+  chainName?: TChainName,
+  walletAddress?: TAddress
+) => Promise<TNftBalance[]>;
 
 export class MultichainTokenPlugin {
   logger = new Logger({ name: 'MultichainTokenPlugin' });
@@ -166,6 +174,22 @@ export class MultichainTokenPlugin {
         return contractTokens;
       } catch (error: any) {
         this.logger.error(`Failed to get contract tokens: ${error.message}`);
+        throw new Error(error);
+      }
+    };
+
+  getNftCollectibles: WithAdapter<IOnchainNftAdapter, IGetNftColletibles>
+    = adapter => async (chainName?: TChainName, walletAddress?: TAddress) => {
+      try {
+        const _chainName = chainName || this.storagePlugin.readDisk('chains')[0]?.chainName;
+        if (!_chainName) throw new Error('No chain provided');
+        const collectibles = await adapter.fetchNFTBalance(
+          _chainName,
+          this.storagePlugin.readRamOrReturn({ walletAddress })
+        );
+        return collectibles;
+      } catch (error: any) {
+        this.logger.error(`Failed to get collectibles: ${error.message}`);
         throw new Error(error);
       }
     };

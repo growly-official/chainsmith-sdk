@@ -15,7 +15,7 @@ import type {
   TMarketToken,
   TToken,
   TTokenAddress,
-  TTokenSymbol
+  TTokenSymbol,
 } from '../../types';
 import { getChainByName, getChainIdByName } from '../../utils/chain.util';
 import {

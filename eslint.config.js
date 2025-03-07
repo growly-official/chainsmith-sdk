@@ -11,7 +11,7 @@ export default antfu({
     'style/member-delimiter-style': 'off',
     'antfu/if-newline': 'off',
     'perfectionist/sort-imports': 'off',
-    'style/arrow-parens': 'off'
+    'style/arrow-parens': 'off',
   },
   ignores: ['src/examples/*', '**/*.json'],
 });
