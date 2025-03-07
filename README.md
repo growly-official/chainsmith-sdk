@@ -1,11 +1,15 @@
-<img src="https://github.com/user-attachments/assets/e2750716-ef0a-4977-be29-db691126e31b" width="150px"/>
+<div align="center">
 
 # Chainsmith SDK [WIP]
+
+Viem-compatible abstraction library to simplify the interaction with multiple blockchains via user-friendly high level APIs.
 
 [![npm](https://img.shields.io/npm/v/chainsmith-sdk)](https://www.npmjs.com/package/chainsmith-sdk)
 [![License](https://img.shields.io/npm/l/@chainsmith-sdk)](LICENSE)
 
-Viem-compatible abstraction library to simplify the interaction with multiple blockchains via user-friendly high level APIs.
+<img src="https://github.com/user-attachments/assets/e2750716-ef0a-4977-be29-db691126e31b" width="250px"/>
+  
+</div>
 
 ## Current features of the SDK
 
