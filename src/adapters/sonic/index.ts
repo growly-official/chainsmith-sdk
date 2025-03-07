@@ -1,3 +1,4 @@
+export * from './angles';
 export * from './beets';
 export * from './metropolis';
 export * from './origin';

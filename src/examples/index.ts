@@ -109,6 +109,9 @@ async function fetchSonicDapp() {
 
   // const os = await AdapterRegistry.OriginApi.getStakedSonicMarket();
   // console.log(os);
+
+  const ans = await AdapterRegistry.AnglesApi.getAnglesMarket();
+  console.log(ans);
 }
 
 testExternalities(false, fetchMultichainTokenPortfolio);

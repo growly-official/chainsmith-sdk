@@ -30,6 +30,7 @@
     "build": "unbuild",
     "dev": "unbuild --stub",
     "lint": "eslint .",
+    "lint:fix": "eslint --fix --ext .ts .",
     "format": "bunx prettier --config .prettierrc.cjs '**/*.{js,jsx,ts,tsx}' --write",
     "prepublishOnly": "nr build",
     "release": "bumpp && pnpm publish",
