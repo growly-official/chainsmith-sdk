@@ -1,14 +1,13 @@
 import axios from 'axios';
 import { Logger } from 'tslog';
 import type { IYieldAdapter } from '../../../types/adapter.d';
-import type { TChainName } from '../../../types/chains.d';
-import { TAddress } from '../../../types/chains.js';
+import type { TAddress, TChainName } from '../../../types/chains.d';
 import type { TToken } from '../../../types/tokens.d';
 import type { TBeetsStakedSonicMarket, TBeetsStakedSonicResponse } from './types';
 import type {
   TBeetsPool,
   TBeetsPoolsResponse
-} from './types.js';
+} from './types.d.ts';
 
 const BEETS_BASE_URL = 'https://backend-v3.beets-ftm-node.com/';
 
@@ -74,7 +73,6 @@ export class BeetsApiAdapter implements IYieldAdapter {
         let total = 0;
         let totalPools: TBeetsPool[] = [];
 
-        // eslint-disable-next-line no-constant-condition
         do {
           const params = {
             operationName: 'GetPools',
@@ -129,7 +127,7 @@ export class BeetsApiAdapter implements IYieldAdapter {
       }
       return this.pools;
     } catch (error) {
-      throw new Error('Failed to get liquidity pools from Beets');
+      throw new Error(`Failed to get liquidity pools from Beets: ${error}`);
     }
   }
 
@@ -163,7 +161,7 @@ export class BeetsApiAdapter implements IYieldAdapter {
 
       return this.userPoolsPositions;
     } catch (error) {
-      throw new Error('Failed to get liquidity pools from Beets');
+      throw new Error(`Failed to get liquidity pools from Beets: ${error}`);
     }
   }
 }
