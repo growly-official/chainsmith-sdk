@@ -1,0 +1,149 @@
+[
+  {
+    "name": "Connext",
+    "tags": ["bridge"],
+    "description": "Connext is an intent-based modular interoperability protocol for securely passing funds and data between chains with the best possible speed, pricing, and security.",
+    "url": "https://bridge.connext.network/",
+    "imageUrl": "/images/partners/connext.webp"
+  },
+  {
+    "name": "Superbridge",
+    "url": "https://superbridge.app",
+    "description": "Native token bridging interface for OP Stack chains.",
+    "tags": ["bridge"],
+    "imageUrl": "/images/partners/superbridge.webp"
+  },
+  {
+    "name": "Relay",
+    "url": "https://relay.link/",
+    "description": "Instant, low-cost bridging and swapping",
+    "tags": ["bridge"],
+    "imageUrl": "/images/dapps/relay.png"
+  },
+  {
+    "name": "Aerodrome Finance",
+    "url": "http://aerodrome.finance",
+    "description": "The central trading and liquidity marketplace on Base.",
+    "tags": ["defi"],
+    "imageUrl": "/images/partners/aerodrome.webp"
+  },
+  {
+    "name": "0x",
+    "url": "https://0x.org/",
+    "description": "Your one stop shop to build financial products on crypto rails. Enable faster trading, better prices and superior UX in your app.",
+    "tags": ["defi"],
+    "imageUrl": "/images/partners/0x.webp"
+  },
+  {
+    "name": "KyberSwap",
+    "url": "https://kyberswap.com",
+    "description": "KyberSwap is a next-gen decentralized exchange (DEX), aggregator and liquidity protocol that provides superior rates for traders and maximizes returns for liquidity providers in DeFi.",
+    "tags": ["defi"],
+    "imageUrl": "/images/partners/kyber.webp"
+  },
+  {
+    "name": "Moonwell",
+    "url": "https://moonwell.fi",
+    "description": "Moonwell is an open and permissionless lending and borrowing DeFi protocol.",
+    "tags": ["defi-professional"],
+    "imageUrl": "/images/dapps/moonwell.png"
+  },
+  {
+    "name": "Infusion",
+    "tags": ["defi-professional"],
+    "description": "Infusion is an AMM protocol that facilitates deep and stabilized liquidity. It's time-lock component that allows for liquidity to be utilized as an onchain primitive for DApps.",
+    "url": "https://infusion.finance",
+    "imageUrl": "/images/partners/infusion.png"
+  },
+  {
+    "name": "Morpho",
+    "tags": ["defi-professional"],
+    "description": "A permissionless and non-custodial lending protocol. Earn interest on over-collateralized lending and borrow digital assets using immutable infrastructure.",
+    "url": "https://morpho.org/",
+    "imageUrl": "/images/partners/morpho.png"
+  },
+  {
+    "name": "Speedtracer",
+    "tags": ["gaming"],
+    "description": "Trace fast to win",
+    "url": "https://speedtracer.xyz",
+    "imageUrl": "/images/partners/speedtracer.jpg"
+  },
+  {
+    "name": "BasePaint",
+    "url": "https://basepaint.xyz/",
+    "description": "BasePaint is a collaborative pixel art app. Artists come together daily to paint on a shared pixel-art canvas. The next day, the canvas is turned into a 24-hour open edition NFT mint. Once the mint concludes, that day’s artists receive a share of ETH from the mint.",
+    "tags": ["gaming"],
+    "imageUrl": "/images/partners/basepaint.webp"
+  },
+  {
+    "name": "Yield Guild Games",
+    "url": "https://yieldguild.io",
+    "description": "Yield Guild Games (YGG) is the world’s first and biggest web3 gaming guild where players can enrich themselves as they find their community, discover games and level up together.",
+    "tags": ["gaming"],
+    "imageUrl": "/images/partners/yield_guild_games.webp"
+  },
+  {
+    "name": "Based Nouns",
+    "url": "https://nouns.build/dao/base/0x10a5676EC8aE3D6b1F36a6F1A1526136BA7938BF/67",
+    "description": "Empowering web3 innovation through community-driven incubation on the Base network: Welcome to Based Nouns.",
+    "tags": ["dao"],
+    "imageUrl": "/images/partners/nouns.webp"
+  },
+  {
+    "name": "Prophouse",
+    "url": "https://prop.house",
+    "description": "Prop House is public infrastructure by Nouns DAO that helps internet communities incentivize ecosystem development.",
+    "tags": ["dao"],
+    "imageUrl": "/images/partners/prop_house.webp"
+  },
+  {
+    "name": "Vrbs DAO",
+    "tags": ["dao"],
+    "description": "Vrbs is a global, community-run organization that uses money raised by the community to fund open-source technology, art and public-works projects. ",
+    "url": "https://vrbs.build",
+    "imageUrl": "/images/partners/vrbsdao.png"
+  },
+  {
+    "name": "Warpcast",
+    "tags": ["social"],
+    "description": "Warpcast is a Farcaster client.",
+    "url": "https://warpcast.com",
+    "imageUrl": "/images/partners/warpcast.png"
+  },
+  {
+    "name": "Talent Protocol",
+    "tags": ["social"],
+    "description": "Talent Protocol is building the resume for the onchain era of the internet. It unlocks unique reputation data and makes human potential more visible.",
+    "url": "https://talentprotocol.com",
+    "imageUrl": "/images/partners/talent-protocol.png"
+  },
+  {
+    "name": "Zora",
+    "url": "https://zora.co/",
+    "description": "Zora is a new kind of social network to express yourself. Create freely, connect with others, and discover the value of your imagination. Explore art, music, memes, and more.",
+    "tags": ["social"],
+    "imageUrl": "/images/partners/zora.webp"
+  },
+  {
+    "name": "Mint.fun",
+    "url": "https://mint.fun/feed/trending",
+    "description": "The fastest, safest, and most rewarding way to mint all the top new NFT projects.",
+    "tags": ["nft"],
+    "imageUrl": "/images/partners/mint_fun.webp"
+  },
+  {
+    "name": "Guild",
+    "url": "https://guild.xyz",
+    "description": "Guild is an automation platform for onboarding Web3 communities, it can identify NFT holders, active developers, social media influencers and any other custom categories of community members based on their Guild account.",
+    "tags": ["nft"],
+    "imageUrl": "/images/partners/guild.webp"
+  },
+  {
+    "name": "Base Colors",
+    "tags": ["nft"],
+    "description": "Base Colors is the NFT collection for every color on the internet. Own Colors. Name Colors. Base Colors.",
+    "url": "https://basecolors.com",
+    "imageUrl": "/images/partners/basecolors.png"
+  }
+]

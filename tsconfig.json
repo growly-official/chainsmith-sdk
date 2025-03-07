@@ -2,6 +2,8 @@
   "compilerOptions": {
     "target": "ESNext",
     "lib": ["ESNext"],
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "resolveJsonModule": true,
@@ -12,5 +14,6 @@
     "verbatimModuleSyntax": true,
     "skipDefaultLibCheck": true,
     "skipLibCheck": true
-  }
+  },
+  "include": ["src", "examples"]
 }

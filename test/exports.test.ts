@@ -19,8 +19,9 @@ describe.runIf(IS_READY)('exports-snapshot', async () => {
         importMode: 'src',
         cwd: pkg.path,
       })
-      await expect(yaml.dump(manifest.exports, { sortKeys: (a, b) => a.localeCompare(b) }))
-        .toMatchFileSnapshot(`./exports/${pkg.name}.yaml`)
+      await expect(
+        yaml.dump(manifest.exports, { sortKeys: (a, b) => a.localeCompare(b) }),
+      ).toMatchFileSnapshot(`./exports/${pkg.name}.yaml`)
     })
   }
 })
