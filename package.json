@@ -12,7 +12,13 @@
   "keywords": [],
   "sideEffects": false,
   "exports": {
-    ".": "./dist/index.mjs"
+    ".": "./dist/index.mjs",
+    "./rpc": "./dist/data/index.mjs",
+    "./types": "./dist/data/index.mjs",
+    "./data": "./dist/data/index.mjs",
+    "./plugins": "./dist/plugins/index.mjs",
+    "./adapters": "./dist/adapters/index.mjs",
+    "./utils": "./dist/utils/index.mjs"
   },
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
@@ -60,6 +66,7 @@
     "@antfu/ni": "^23.3.1",
     "@antfu/utils": "^9.1.0",
     "@types/js-yaml": "^4.0.9",
+    "@types/lodash": "^4.17.16",
     "@types/node": "^22.13.9",
     "bumpp": "^10.0.3",
     "eslint": "^9.21.0",
