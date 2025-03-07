@@ -14,7 +14,7 @@
   "exports": {
     ".": "./dist/index.mjs",
     "./rpc": "./dist/data/index.mjs",
-    "./types": "./dist/data/index.mjs",
+    "./types": "./dist/types/index.mjs",
     "./data": "./dist/data/index.mjs",
     "./plugins": "./dist/plugins/index.mjs",
     "./adapters": "./dist/adapters/index.mjs",
