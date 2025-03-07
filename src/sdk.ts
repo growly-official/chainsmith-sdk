@@ -1,4 +1,4 @@
-import type { TChain } from './types';
+import 'reflect-metadata';
 import {
   EvmChainPlugin,
   EvmTokenPlugin,
@@ -8,9 +8,9 @@ import {
   SonicPointPlugin,
   StoragePlugin,
 } from './plugins';
-import 'reflect-metadata';
+import type { TChain } from './types';
 
-class ChainsmithSdk {
+export class ChainsmithSdk {
   portfolio: MultichainPortfolioPlugin = new MultichainPortfolioPlugin();
   token: MultichainTokenPlugin = new MultichainTokenPlugin();
   social: MultiPlatformSocialPlugin = new MultiPlatformSocialPlugin();
