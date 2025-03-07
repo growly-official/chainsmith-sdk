@@ -4,7 +4,7 @@ import type { IYieldAdapter } from '../../../types/adapter.d';
 import type { TAddress, TChainName } from '../../../types/chains.d';
 import type { TToken } from '../../../types/tokens.d';
 import type { TBeetsStakedSonicMarket, TBeetsStakedSonicResponse } from './types';
-import type { TBeetsPool, TBeetsPoolsResponse } from './types.d.ts';
+import type { TBeetsPool, TBeetsPoolsResponse } from './types.d';
 
 const BEETS_BASE_URL = 'https://backend-v3.beets-ftm-node.com/';
 

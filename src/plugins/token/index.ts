@@ -49,7 +49,7 @@ type TGetOwnedTokens = (chain: TChain, walletAddress?: TAddress) => Promise<TCon
 
 type TGetTokens = (chain?: TChain, walletAddress?: TAddress) => Promise<TToken[]>;
 
-type IGetNftColletibles = (
+type IGetNftCollectibles = (
   chainName?: TChainName,
   walletAddress?: TAddress
 ) => Promise<TNftBalance[]>;
@@ -178,7 +178,7 @@ export class MultichainTokenPlugin {
       }
     };
 
-  getNftCollectibles: WithAdapter<IOnchainNftAdapter, IGetNftColletibles>
+  getNftCollectibles: WithAdapter<IOnchainNftAdapter, IGetNftCollectibles>
     = adapter => async (chainName?: TChainName, walletAddress?: TAddress) => {
       try {
         const _chainName = chainName || this.storagePlugin.readDisk('chains')[0]?.chainName;
