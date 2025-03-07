@@ -1,29 +1,19 @@
 {
-  "compileOnSave": false,
   "compilerOptions": {
-    "outDir": "./dist",
-    "module": "NodeNext",
-    "declaration": true,
-    "removeComments": true,
+    "target": "ESNext",
+    "lib": ["ESNext"],
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
-    "useUnknownInCatchVariables": false,
-    "target": "ESNext",
-    "allowJs": true,
-    "sourceMap": false,
-    "baseUrl": "./",
-    "skipLibCheck": true,
-    "strictNullChecks": true,
-    "noImplicitAny": false,
-    "strictBindCallApply": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": false,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
     "resolveJsonModule": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noEmit": true,
     "esModuleInterop": true,
-    "strictPropertyInitialization": true,
-    "types": ["node"]
+    "verbatimModuleSyntax": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true
   },
-  "include": ["**/*.ts", "**/*.json"],
-  "exclude": ["**/node_modules", "**/dist"]
+  "include": ["src", "examples"]
 }
