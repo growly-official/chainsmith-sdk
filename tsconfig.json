@@ -15,5 +15,6 @@
     "skipDefaultLibCheck": true,
     "skipLibCheck": true
   },
-  "include": ["src", "examples"]
+  "include": ["src"],
+  "exclude": []
 }
