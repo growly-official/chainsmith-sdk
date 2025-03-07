@@ -1,4 +1,4 @@
-import { EvmChainList } from '../data';
+import { EvmChainList } from '../data/chains';
 import type { GetChainRpcEndpoint } from '../rpc';
 import type {
   TBaseChain,

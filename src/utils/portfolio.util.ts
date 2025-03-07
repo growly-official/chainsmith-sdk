@@ -1,3 +1,5 @@
+import _ from 'lodash';
+import { POPULAR_MEMES } from '../data/constants/tokens';
 import type {
   TChainAggregationBalance,
   TChainName,
@@ -8,8 +10,6 @@ import type {
   TTokenPortfolio,
   TTokenPortfolioStats,
 } from '../types';
-import * as _ from 'lodash';
-import { POPULAR_MEMES } from '../data/constants/tokens';
 import { getChainIdByName } from './chain.util';
 
 export function aggregateMultichainTokenBalance(

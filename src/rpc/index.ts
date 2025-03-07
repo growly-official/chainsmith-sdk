@@ -1,5 +1,5 @@
+import { EvmChainList } from '../data/chains';
 import type { TBaseChain } from '../types';
-import { EvmChainList } from '../data';
 import { getChainDefultRpcUrl } from '../utils/chain.util';
 
 const ALCHEMY_CHAIN_ENDPOINT = {

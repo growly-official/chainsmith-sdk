@@ -20,12 +20,21 @@ importers:
       '@uniswap/v2-sdk':
         specifier: ^4.8.0
         version: 4.15.2
+      '@uniswap/v3-core':
+        specifier: ^1.0.1
+        version: 1.0.1
+      '@uniswap/v3-periphery':
+        specifier: ^1.4.4
+        version: 1.4.4
       '@uniswap/v3-sdk':
         specifier: ^3.25.2
         version: 3.25.2(hardhat@2.22.19(ts-node@10.9.2(@swc/core@1.11.7)(@types/node@22.13.9)(typescript@5.8.2))(typescript@5.8.2))
       ajv:
         specifier: ^8.12.0
         version: 8.17.1
+      axios:
+        specifier: ^1.8.1
+        version: 1.8.1
       esbuild:
         specifier: ^0.25.0
         version: 0.25.0
