@@ -2,6 +2,9 @@
 
 # Chainsmith SDK [WIP]
 
+[![npm](https://img.shields.io/npm/v/chainsmith-sdk)](https://www.npmjs.com/package/chainsmith-sdk)
+[![License](https://img.shields.io/npm/l/@chainsmith-sdk)](LICENSE)
+
 Viem-compatible abstraction library to simplify the interaction with multiple blockchains via user-friendly high level APIs.
 
 ## Current features of the SDK
@@ -12,28 +15,40 @@ Viem-compatible abstraction library to simplify the interaction with multiple bl
 - Chain configuration with modifiable RPC URL settings.
 - Plug-n-play different adapters to plugins depend on the use cases.
 
+## Getting Started
+
+Install the dependency
+
+```
+npm install chainsmith-sdk
+```
+
 ## Supported Adapters
 
 | Name                  | Chain      | Interfaces                               |
 | --------------------- | ---------- | ---------------------------------------- |
 | CoinMarketcapAdapter  | Multichain | IMarketDataAdapter                       |
 | ShadowExchangeAdapter | Sonic      | IMarketDataAdapter, IOnchainTokenAdapter |
+| ShadowExchangeAdapter | Sonic      | IMarketDataAdapter, IOnchainTokenAdapter |
+| ShadowExchangeApiAdapter | Sonic      | IMarketDataAdapter |
 | UniswapSdkAdapter     | EVM chains | IMarketDataAdapter                       |
 | AlchemyAdapter        | Multichain | IOnchainTokenAdapter                     |
+| ReservoirAdapter        | Multichain | IOnchainNftAdapter                     |
+| PaintSwapAdapter        | Sonic | IOnchainNftAdapter                     |
+| BeetsApiAdapter        | Sonic | IYieldAdapter                     |
+| MetropolisApiAdapter        | Sonic | IYieldAdapter                     |
+| OriginApiAdapter        | Sonic | IYieldAdapter                     |
+| SiloV2ApiAdapter        | Sonic | IYieldAdapter                     |
 | EvmscanAdapter        | EVM chains | IOnchainActivityAdapter                  |
-
-## Getting Started
-
-Chainsmith SDK is currently in beta development. No production package has been published yet. To use Chainsmith in your project, install the repository within your project workspace.
 
 ## Initializing the SDK with Shared RPC Providers
 
 The following example demonstrates how to initialize the SDK using Alchemy as the primary RPC provider for all registered chains.
 
 ```typescript
-import { ChainsmithSdk } from 'chainsmith-sdk/src/index.js';
-import { alchemy } from 'chainsmith-sdk/src/rpc/index.js';
-import { buildEvmChains } from 'chainsmith-sdk/src/utils/index.js';
+import { initChainsmithSdk } from 'chainsmith-sdk';
+import { alchemy } from 'chainsmith-sdk/rpc';
+import { buildEvmChains } from 'chainsmith-sdk/utils';
 
 const ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY || '';
 
@@ -43,10 +58,10 @@ export function buildDefaultChains(chainNames: TChainName[]) {
 }
 
 // Build Base, Mainnet, and Optimism chains.
-const chains = buildDefaultChains(['base', 'mainnet', 'optimism']);
+const chains = buildDefaultChains(['sonic', 'mainnet', 'base', 'optimism']);
 
 // Initialize the Chainsmith SDK.
-const sdk = ChainsmithSdk.init(chains);
+const sdk = initChainsmithSdk(chains);
 ```
 
 The `alchemy` function is a built-in RPC endpoint provider in the SDK. If you need to customize the method, refer to the `alchemy` example in the SDK source code.
