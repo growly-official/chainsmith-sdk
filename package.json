@@ -13,28 +13,28 @@
   "sideEffects": false,
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "default": "./dist/index.js"
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
     },
     "./rpc": {
-      "types": "./dist/rpc/index.d.ts",
-      "default": "./dist/rpc/index.js"
+      "types": "./dist/rpc/index.d.mts",
+      "default": "./dist/rpc/index.mjs"
     },
     "./types": {
-      "types": "./dist/types/index.d.ts",
-      "default": "./dist/types/index.js"
+      "types": "./dist/types/index.d.mts",
+      "default": "./dist/types/index.mjs"
     },
     "./data": {
-      "types": "./dist/data/index.d.ts",
-      "default": "./dist/data/index.js"
+      "types": "./dist/data/index.d.mts",
+      "default": "./dist/data/index.mjs"
     },
     "./plugins": {
-      "types": "./dist/plugins/index.d.ts",
-      "default": "./dist/plugins/index.js"
+      "types": "./dist/plugins/index.d.mts",
+      "default": "./dist/plugins/index.mjs"
     },
     "./utils": {
-      "types": "./dist/utils/index.d.ts",
-      "default": "./dist/utils/index.js"
+      "types": "./dist/utils/index.d.mts",
+      "default": "./dist/utils/index.mjs"
     },
     "./adapters/*": "./dist/adapters/*"
   },
