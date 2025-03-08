@@ -1,3 +1,7 @@
+import axios from 'axios';
+import { Logger } from 'tslog';
+import { formatUnits, getContract } from 'viem';
+import { Abis, Files } from '../../data';
 import type {
   TAddress,
   TBlockNumber,
@@ -10,10 +14,6 @@ import type {
   TTokenListResponse,
   TTokenSymbol,
 } from '../../types';
-import axios from 'axios';
-import { Logger } from 'tslog';
-import { formatUnits, getContract } from 'viem';
-import { Abis, Files } from '../../data';
 import { stoi } from '../../utils';
 
 const TOKEN_LIST_URLS = {

@@ -39,8 +39,7 @@
     "./adapters": {
       "types": "./dist/adapters/index.d.mts",
       "default": "./dist/adapters/index.mjs"
-    },
-    "./adapters/*": "./dist/adapters/*/index.mjs"
+    }
   },
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",

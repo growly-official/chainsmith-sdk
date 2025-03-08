@@ -1,3 +1,4 @@
+import { Logger } from 'tslog';
 import type {
   IMarketDataAdapter,
   IOnchainTokenAdapter,
@@ -8,16 +9,17 @@ import type {
   TMultichain,
   WithManyAdapters,
 } from '../../types';
+import { aggregateMultichainTokenBalance } from '../../utils/portfolio.util';
+import { StoragePlugin } from '../storage';
+import { MultichainTokenPlugin } from '../token';
 import type {
   IGetMultichainTokenPortfolio,
   IGetTokenPortfolio,
   TGetMarketTokens,
   TGetMultichainMarketTokens,
 } from './types';
-import { Logger } from 'tslog';
-import { aggregateMultichainTokenBalance } from '../../utils/portfolio.util';
-import { StoragePlugin } from '../storage';
-import { MultichainTokenPlugin } from '../token';
+
+export type * from './types';
 
 export class MultichainPortfolioPlugin {
   logger = new Logger({ name: 'MultichainPortfolioPlugin' });
