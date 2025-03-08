@@ -46,7 +46,7 @@ export interface TShadowPair {
   fee: number;
   feeDistributor: TShadowFeeDistributor | null;
   feeDistributorV2: TShadowFeeDistributor | null;
-  gauge: Gauge | null;
+  gauge: TShadowGauge | null;
   id: string;
   lp_price?: number;
   projectedFees: TShadowProjectedFees;
@@ -68,13 +68,13 @@ export interface TShadowPair {
   feesPerDayVoters?: number;
   lpApr?: number;
   poolDayData?: PoolDayDatum[];
-  poolHourData?: PoolHourDatum[];
+  poolHourData?: TShadowPoolHourDatum[];
   averageUsdInRange?: number;
   dynamicFees?: boolean;
   feeApr?: number;
   feeTier?: string;
   feesUSD?: number;
-  gaugeV2?: GaugeV2 | null;
+  gaugeV2?: TShadowGaugeV2 | null;
   isStable?: boolean;
   liquidity?: number;
   oneTickFeeApr?: number;
@@ -87,7 +87,7 @@ export interface TShadowPair {
   totalValueLockedUSD?: string;
   fee_split?: FeeSplit;
   oneTickEmissionApr?: number;
-  recommendedRanges?: RecommendedRange[];
+  recommendedRanges?: TShadowRecommendedRange[];
   type?: string;
 }
 
@@ -102,7 +102,7 @@ export interface FeeSplit {
   VOTERS: number;
 }
 
-export interface Gauge {
+export interface TShadowGauge {
   id: string;
   isAlive: boolean;
   periodFinish?: { [key: string]: number };
@@ -112,7 +112,7 @@ export interface Gauge {
   xRamRatio?: string;
 }
 
-export interface GaugeV2 {
+export interface TShadowGaugeV2 {
   id: string;
   isAlive: boolean;
   rewardRate: { [key: string]: number };
@@ -136,7 +136,7 @@ export interface PoolDayDatum {
   low?: string;
 }
 
-export interface PoolHourDatum {
+export interface TShadowPoolHourDatum {
   feesUSD: string;
   startOfHour: number;
   tvlUSD?: string;
@@ -150,7 +150,7 @@ export interface TShadowProjectedFees {
   days?: number;
 }
 
-export interface RecommendedRange {
+export interface TShadowRecommendedRange {
   inRangeLiquidityUSD: number;
   lpApr: number;
   name: TShadowName;

@@ -6,7 +6,7 @@ export interface TBeetsStakedSonicResponse {
 }
 
 export interface TBeetsStakedSonicMarket {
-  delegatedValidators: DelegatedValidator[];
+  delegatedValidators: TBeetsDelegatedValidator[];
   exchangeRate: string;
   stakingApr: string;
   totalAssets: string;
@@ -16,7 +16,7 @@ export interface TBeetsStakedSonicMarket {
   __typename: string;
 }
 
-export interface DelegatedValidator {
+export interface TBeetsDelegatedValidator {
   assetsDelegated: string;
   validatorId: string;
   __typename: string;
@@ -43,7 +43,7 @@ export interface TBeetsPool {
   hook: null;
   poolTokens: TBeetsPoolToken[];
   dynamicData: DynamicData;
-  staking: Staking;
+  staking: TBeetsStaking;
   factory: string;
   id: string;
   name: string;
@@ -52,8 +52,8 @@ export interface TBeetsPool {
   pauseManager: string | null;
   poolCreator: string | null;
   symbol: string;
-  type: PoolType;
-  userBalance: UserBalance;
+  type: TBeetsPoolType;
+  userBalance: TBeetsUserBalance;
   __typename: string;
 }
 
@@ -94,27 +94,27 @@ export enum APRItemType {
   Voting = 'VOTING',
 }
 
-export interface Staking {
+export interface TBeetsStaking {
   id: string;
-  type: StakingType;
+  type: TBeetsStakingType;
   chain: string;
   address: string;
-  gauge: Gauge | null;
+  gauge: TBeetsGauge | null;
   aura: null;
   __typename: string;
 }
-export interface Gauge {
+export interface TBeetsGauge {
   id: string;
   gaugeAddress: string;
   version: number;
-  status: Status;
+  status: TBeetsStatus;
   workingSupply?: string;
-  otherGauges?: Gauge[];
-  rewards: Reward[];
+  otherGauges?: TBeetsGauge[];
+  rewards: TBeetsReward[];
   __typename: string;
 }
 
-export interface Reward {
+export interface TBeetsReward {
   id: string;
   rewardPerSecond: string;
   tokenAddress: string;
@@ -145,14 +145,14 @@ export interface TBeetsPoolToken {
   isAllowed: boolean;
   priceRateProvider: null | string;
   logoURI: null | string;
-  priceRateProviderData: PriceRateProviderData | null;
+  priceRateProviderData: TBeetsPriceRateProviderData | null;
   isErc4626: boolean;
   isBufferAllowed: boolean;
-  underlyingToken: UnderlyingToken | null;
+  underlyingToken: TBeetsUnderlyingToken | null;
   erc4626ReviewData: Erc4626ReviewData | null;
 }
 
-export interface UnderlyingToken {
+export interface TBeetsUnderlyingToken {
   chain: string; // camelcase "Sonic"
   chainId: number;
   address: string;
@@ -166,51 +166,51 @@ export interface UnderlyingToken {
   __typename: string;
 }
 
-export interface PriceRateProviderData {
+export interface TBeetsPriceRateProviderData {
   address: string;
   name: string;
   summary: Summary;
   reviewed: boolean;
   warnings: string[];
-  upgradeableComponents: UpgradeableComponent[];
+  upgradeableComponents: TBeetsUpgradeableComponent[];
   reviewFile: string;
   factory: null;
   __typename: string;
 }
 
-export interface UpgradeableComponent {
+export interface TBeetsUpgradeableComponent {
   entryPoint: string;
   implementationReviewed: string;
   __typename: string;
 }
 
-export enum Status {
+export enum TBeetsStatus {
   Active = 'ACTIVE',
   Preferred = 'PREFERRED',
 }
 
-export enum StakingType {
+export enum TBeetsStakingType {
   Gauge = 'GAUGE',
   Reliquary = 'RELIQUARY',
 }
 
-export enum PoolType {
+export enum TBeetsPoolType {
   ComposableStable = 'COMPOSABLE_STABLE',
   Gyroe = 'GYROE',
   Stable = 'STABLE',
   Weighted = 'WEIGHTED',
 }
 
-export interface UserBalance {
+export interface TBeetsUserBalance {
   totalBalance: string;
   totalBalanceUsd: number;
   walletBalance: string;
   walletBalanceUsd: number;
-  stakedBalances: StakedBalance[];
+  stakedBalances: TBeetsStakedBalance[];
   __typename: string;
 }
 
-export interface StakedBalance {
+export interface TBeetsStakedBalance {
   balance: string;
   balanceUsd: number;
   stakingType: string;
