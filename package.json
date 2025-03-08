@@ -1,7 +1,7 @@
 {
   "name": "chainsmith-sdk",
   "type": "module",
-  "version": "1.0.2-alpha.10",
+  "version": "1.0.2-alpha.11",
   "packageManager": "pnpm@10.5.2",
   "description": "_description_",
   "license": "MIT",
