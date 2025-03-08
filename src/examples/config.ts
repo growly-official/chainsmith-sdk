@@ -1,7 +1,23 @@
-import type { TChainName } from '../types';
-import { adapters, rpc } from '..';
+import { rpc } from '..';
+import {
+  AlchemyAdapter,
+  AnglesApiAdapter,
+  BeetsApiAdapter,
+  CoinMarketcapAdapter,
+  DexScreenerAdapter,
+  EvmscanAdapter,
+  MetropolisApiAdapter,
+  OriginApiAdapter,
+  PaintSwapAdapter,
+  ReservoirAdapter,
+  ShadowExchangeAdapter,
+  ShadowExchangeApiAdapter,
+  SiloV2ApiAdapter,
+  UniswapSdkAdapter,
+} from '../adapters';
 import { EvmTokenPlugin } from '../plugins/evm';
 import { alchemy } from '../rpc';
+import type { TChainName } from '../types';
 import { buildEvmChains } from '../utils';
 
 export const ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY || '';
@@ -18,24 +34,20 @@ export const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || '';
 export const RESERVOIR_API_KEY = process.env.RESERVOIR_API_KEY || '';
 
 export const AdapterRegistry = {
-  Alchemy: new adapters.AlchemyAdapter(ALCHEMY_API_KEY, new EvmTokenPlugin()),
-  CoinMarketcap: new adapters.CoinMarketcapAdapter(
-    COINMARKETCAP_API_BASE_URL,
-    COINMARKETCAP_API_KEY
-  ),
-  Uniswap: new adapters.UniswapSdkAdapter(rpc.alchemy(ALCHEMY_API_KEY)),
-  Evmscan: new adapters.EvmscanAdapter(ETHERSCAN_BASE_URL, ETHERSCAN_API_KEY),
-  DexScreener: new adapters.DexScreenerAdapter(),
-  ShadowExchangeApi: new adapters.ShadowExchangeApiAdapter(),
-  ShadowExchange: new adapters.ShadowExchangeAdapter(new EvmTokenPlugin()),
-  PaintSwap: new adapters.PaintSwapAdapter(),
-  MetropolisApi: new adapters.MetropolisApiAdapter(),
-  SiloV2Api: new adapters.SiloV2ApiAdapter(),
-  BeetsApi: new adapters.BeetsApiAdapter(),
-  OriginApi: new adapters.OriginApiAdapter(),
-  AnglesApi: new adapters.AnglesApiAdapter(),
-
-  Reservoir: new adapters.ReservoirAdapter(RESERVOIR_API_KEY),
+  Alchemy: new AlchemyAdapter(ALCHEMY_API_KEY, new EvmTokenPlugin()),
+  CoinMarketcap: new CoinMarketcapAdapter(COINMARKETCAP_API_BASE_URL, COINMARKETCAP_API_KEY),
+  Uniswap: new UniswapSdkAdapter(rpc.alchemy(ALCHEMY_API_KEY)),
+  Evmscan: new EvmscanAdapter(ETHERSCAN_BASE_URL, ETHERSCAN_API_KEY),
+  DexScreener: new DexScreenerAdapter(),
+  ShadowExchangeApi: new ShadowExchangeApiAdapter(),
+  ShadowExchange: new ShadowExchangeAdapter(new EvmTokenPlugin()),
+  PaintSwap: new PaintSwapAdapter(),
+  MetropolisApi: new MetropolisApiAdapter(),
+  SiloV2Api: new SiloV2ApiAdapter(),
+  BeetsApi: new BeetsApiAdapter(),
+  OriginApi: new OriginApiAdapter(),
+  AnglesApi: new AnglesApiAdapter(),
+  Reservoir: new ReservoirAdapter(RESERVOIR_API_KEY),
 };
 
 export function buildDefaultChains(chainNames: TChainName[]) {

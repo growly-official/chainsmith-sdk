@@ -69,12 +69,12 @@ export class ShadowExchangeApiAdapter implements IMarketDataAdapter {
   async fetchTokenWithPrice(_chain: TChainName, token: TToken): Promise<TMarketToken | undefined> {
     const tokenDetails = wrapTokenAddressType(token);
     const tokenMap = await this.getTokenMap();
-    const tokenPriceData = tokenMap[tokenDetails.symbol];
-    if (!tokenPriceData || Number(tokenPriceData.priceUSD) === 0) throw new Error('No price found');
+    const tokenPriceData = tokenMap[tokenDetails.symbol.toUpperCase()];
+    if (!tokenPriceData) throw new Error('No price data found');
     return {
-      ...token,
       ...tokenDetails,
-      usdValue: Number.parseFloat(tokenPriceData.priceUSD) * token.balance,
+      ...token,
+      usdValue: tokenPriceData.price * token.balance,
       marketPrice: tokenPriceData.price,
       tags: [],
     };
@@ -104,7 +104,7 @@ export class ShadowExchangeApiAdapter implements IMarketDataAdapter {
       if (!this.tokenMap) {
         const tokenMap: Record<string, TShadowToken> = {};
         for (const token of mixedPairsResult.tokens) {
-          tokenMap[token.symbol] = token;
+          tokenMap[token.symbol.toUpperCase()] = token;
         }
         this.tokenMap = tokenMap;
       }

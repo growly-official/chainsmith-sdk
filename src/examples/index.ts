@@ -55,15 +55,15 @@ async function fetchChainlistMetadata() {
 async function fetchSonicChainData() {
   const chains = buildChainsWithCustomRpcUrls({ sonic: 'https://rpc.soniclabs.com' }, 'evm');
   const sdk = initChainsmithSdk(chains);
-  // const ownedTokens = await sdk.token.listChainOwnedTokens(AdapterRegistry.ShadowExchange)(
-  //   Wallets.SONIC_WALLET_BEETS_TREASURY
-  // );
-  // console.log(ownedTokens);
+  const ownedTokens = await sdk.token.listChainOwnedTokens(AdapterRegistry.ShadowExchange)(
+    Wallets.SONIC_WALLET_CHUNGTIN
+  );
+  console.log(ownedTokens);
 
   const portfolio = await sdk.portfolio.getTokenPortfolio([
     multiple([AdapterRegistry.ShadowExchangeApi, AdapterRegistry.CoinMarketcap]),
     AdapterRegistry.ShadowExchange,
-  ])(Wallets.SONIC_WALLET_BEETS_TREASURY);
+  ])(Wallets.SONIC_WALLET_CHUNGTIN);
   console.log(portfolio);
 
   const points = await sdk.sonicPoint.fetchUserPointsStats(Wallets.SONIC_WALLET_BEETS_TREASURY);
@@ -121,6 +121,6 @@ testExternalities(false, fetchMultichainTokenList);
 testExternalities(false, fetchEvmscanTokenActivitiesWorks);
 testExternalities(false, fetchDexScreenerParis);
 testExternalities(false, fetchChainlistMetadata);
-testExternalities(false, fetchSonicChainData);
+testExternalities(true, fetchSonicChainData);
 testExternalities(false, fetchNFTData);
-testExternalities(true, fetchSonicDapp);
+testExternalities(false, fetchSonicDapp);
