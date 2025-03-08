@@ -1,7 +1,7 @@
 {
   "name": "chainsmith-sdk",
   "type": "module",
-  "version": "1.0.2-alpha.9",
+  "version": "1.0.2-alpha.10",
   "packageManager": "pnpm@10.5.2",
   "description": "_description_",
   "license": "MIT",
@@ -36,7 +36,11 @@
       "types": "./dist/utils/index.d.mts",
       "default": "./dist/utils/index.mjs"
     },
-    "./adapters/*": "./dist/adapters/*"
+    "./adapters": {
+      "types": "./dist/adapters/index.d.mts",
+      "default": "./dist/adapters/index.mjs"
+    },
+    "./adapters/*": "./dist/adapters/*/index.mjs"
   },
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
