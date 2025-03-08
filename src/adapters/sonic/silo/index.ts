@@ -1,9 +1,11 @@
+import axios from 'axios';
+import { Logger } from 'tslog';
 import type { IYieldAdapter } from '../../../types/adapter.d';
 import type { TChainName } from '../../../types/chains.d';
 import type { TToken } from '../../../types/tokens.d';
 import type { TSiloMarket, TSiloMetrics, TSiloToken } from './types';
-import axios from 'axios';
-import { Logger } from 'tslog';
+
+export type * from './types.d.ts';
 
 const SILO_V2_BASE_URL = 'https://v2.silo.finance/api/';
 

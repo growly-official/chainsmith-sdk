@@ -1,3 +1,5 @@
+import axios from 'axios';
+import { Logger } from 'tslog';
 import type {
   IOnchainActivityAdapter,
   TAddress,
@@ -5,11 +7,10 @@ import type {
   TNftTransferActivity,
   TTokenTransferActivity,
 } from '../../types';
-import type { TEVMScanResponse, TEVMScanTokenActivity } from './types';
-import axios from 'axios';
-import { Logger } from 'tslog';
 import { getChainByName, objectToQueryString } from '../../utils';
+import type { TEVMScanResponse, TEVMScanTokenActivity } from './types';
 
+export type * from './types.d.ts';
 export * from './utils';
 
 interface GetTokenActivityQueryOptions {

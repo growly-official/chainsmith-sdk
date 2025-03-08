@@ -1,6 +1,8 @@
+import { tavily } from '@tavily/core';
 import type { IAdapter } from '../../types/adapter.d';
 import type { ITavilySearchOptions, TTavilySearchResponse } from './types';
-import { tavily } from '@tavily/core';
+
+export type * from './types.d.ts';
 
 export type TavilyClient = ReturnType<typeof tavily>; // declaring manually because original package does not export its types
 

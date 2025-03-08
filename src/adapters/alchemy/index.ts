@@ -1,8 +1,10 @@
+import axios from 'axios';
 import type { EvmTokenPlugin } from '../../plugins/evm';
+import { alchemy } from '../../rpc';
 import type { IOnchainTokenAdapter, TAddress, TChain, TContractToken } from '../../types';
 import type { TAlchemyRequest, TAlchemyResponse } from './types';
-import axios from 'axios';
-import { alchemy } from '../../rpc';
+
+export type * from './types.d.ts';
 
 export class AlchemyAdapter implements IOnchainTokenAdapter {
   name = 'AlchemyAdapter';

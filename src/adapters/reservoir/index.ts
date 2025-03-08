@@ -1,10 +1,11 @@
-import type { IOnchainNftAdapter, TAddress, TChainName, TNftBalance } from '../../types';
-import type { TReservoirNFTCollectionEntity, TReservoirNFTCollectionResponse } from './types';
 import axios from 'axios';
 import { Logger } from 'tslog';
 import * as EvmChainList from 'viem/chains';
-
+import type { IOnchainNftAdapter, TAddress, TChainName, TNftBalance } from '../../types';
 import { getChainIdByName, objectToQueryString } from '../../utils';
+import type { TReservoirNFTCollectionEntity, TReservoirNFTCollectionResponse } from './types';
+
+export type * from './types.d.ts';
 
 const RESERVOIR_CHAIN_ENDPOINT = {
   [EvmChainList.mainnet.id]: reservoirApiUrl(''),

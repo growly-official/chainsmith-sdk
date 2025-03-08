@@ -25,6 +25,8 @@ import {
 } from '../../utils/token.util';
 import type { TUniswapGetPoolConfig, TUniswapQuoteConfig } from './types';
 
+export type * from './types.d.ts';
+
 function wrapUniswapTokenType(token: TToken) {
   if (token.symbol === 'ETH' || !(token as any).address) return WETH9[token.chainId];
   return new Token(token.chainId, (token as any).address, token.decimals, token.symbol, token.name);

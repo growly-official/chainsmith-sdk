@@ -1,18 +1,3 @@
-import type { EvmTokenPlugin } from '../../../plugins';
-import type { IMarketDataAdapter, IOnchainTokenAdapter } from '../../../types/adapter.d';
-import type { TAddress, TChain, TChainName } from '../../../types/chains.d';
-import type {
-  TContractToken,
-  TContractTokenMetadata,
-  TMarketToken,
-  TToken,
-} from '../../../types/tokens.d';
-import type {
-  TShadowEpochData,
-  TShadowGetPoolConfig,
-  TShadowMixedPairs,
-  TShadowToken,
-} from './types';
 import axios from 'axios';
 import { Logger } from 'tslog';
 import { getContract } from 'viem';
@@ -26,9 +11,26 @@ import {
   WETH_S,
   WRAPPED_S,
 } from '../../../data/constants/sonic/tokens';
+import type { EvmTokenPlugin } from '../../../plugins';
+import type { IMarketDataAdapter, IOnchainTokenAdapter } from '../../../types/adapter.d';
+import type { TAddress, TChain, TChainName } from '../../../types/chains.d';
+import type {
+  TContractToken,
+  TContractTokenMetadata,
+  TMarketToken,
+  TToken,
+} from '../../../types/tokens.d';
 import { getChainByName, getChainIdByName } from '../../../utils/chain.util';
 import { isZeroAddress } from '../../../utils/token.util';
 import { createClient } from '../../../wrapper';
+import type {
+  TShadowEpochData,
+  TShadowGetPoolConfig,
+  TShadowMixedPairs,
+  TShadowToken,
+} from './types';
+
+export type * from './types.d.ts';
 
 const STABLE_COINS = [BRIDGED_USDC, BRIDGED_USDT, SONIC_USDC];
 

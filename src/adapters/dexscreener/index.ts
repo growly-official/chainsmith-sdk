@@ -1,8 +1,10 @@
+import { Logger } from 'tslog';
 import type { IAdapter } from '../../types/adapter.d';
 import type { IDexScreenerData, IDexScreenerPair } from './types';
-import { Logger } from 'tslog';
 
 const DEX_SCREENER_ENDPOINT = 'https://api.dexscreener.com/latest/dex';
+
+export type * from './types.d.ts';
 
 export class DexScreenerAdapter implements IAdapter {
   name = 'DexScreenerAdapter';

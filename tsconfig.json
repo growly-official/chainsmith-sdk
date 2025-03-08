@@ -1,9 +1,8 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
     "target": "ESNext",
     "lib": ["ESNext"],
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "resolveJsonModule": true,

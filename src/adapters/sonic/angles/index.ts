@@ -1,9 +1,11 @@
+import axios from 'axios';
+import { Logger } from 'tslog';
 import type { IYieldAdapter } from '../../../types/adapter.d';
 import type { TChainName } from '../../../types/chains.d';
 import type { TToken } from '../../../types/tokens.d';
 import type { TAnglesAPY, TAnglesMarket, TAnglesTVL } from './types';
-import axios from 'axios';
-import { Logger } from 'tslog';
+
+export type * from './types.d.ts';
 
 const ANGLES_BASE_URL = 'https://be.angles.fi/api/v2';
 

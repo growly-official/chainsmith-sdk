@@ -6,6 +6,8 @@ import type { TToken } from '../../../types/tokens.d';
 import type { TBeetsStakedSonicMarket, TBeetsStakedSonicResponse } from './types';
 import type { TBeetsPool, TBeetsPoolsResponse } from './types.d';
 
+export type * from './types.d.ts';
+
 const BEETS_BASE_URL = 'https://backend-v3.beets-ftm-node.com/';
 
 export class BeetsApiAdapter implements IYieldAdapter {

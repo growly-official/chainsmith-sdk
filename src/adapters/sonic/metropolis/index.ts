@@ -1,3 +1,5 @@
+import axios from 'axios';
+import { Logger } from 'tslog';
 import type { IYieldAdapter } from '../../../types/adapter.d';
 import type { TAddress, TChainName } from '../../../types/chains.d';
 import type { TToken } from '../../../types/tokens.d';
@@ -9,8 +11,8 @@ import type {
   TMetropolisVault,
   TMetropolisVaultPosition,
 } from './types';
-import axios from 'axios';
-import { Logger } from 'tslog';
+
+export type * from './types.d.ts';
 
 const METROPOLIS_BASE_URL = 'https://api-b.metropolis.exchange/api/v1';
 
