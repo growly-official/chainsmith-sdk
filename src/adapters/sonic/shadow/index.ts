@@ -74,7 +74,7 @@ export class ShadowExchangeApiAdapter implements IMarketDataAdapter {
     return {
       ...tokenDetails,
       ...token,
-      logoURI: `https://github.com/Shadow-Exchange/shadow-assets/blob/main/blockchains/sonic/assets/${tokenDetails.address}/logo.png`,
+      logoURI: `https://github.com/Shadow-Exchange/shadow-assets/blob/main/blockchains/sonic/assets/${tokenDetails.address}/logo.png?raw=true`,
       usdValue: tokenPriceData.price * token.balance,
       marketPrice: tokenPriceData.price,
       tags: [],
