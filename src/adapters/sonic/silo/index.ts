@@ -1,9 +1,9 @@
 import axios from 'axios';
 import { Logger } from 'tslog';
 import type { IYieldAdapter } from '../../../types/adapter.d';
-import type { TChainName } from '../../../types/chains.d';
+import type { TAddress, TChainName } from '../../../types/chains.d';
 import type { TToken } from '../../../types/tokens.d';
-import type { TSiloMarket, TSiloMetrics, TSiloToken } from './types';
+import type { TSiloMarket, TSiloMetrics, TSiloToken, TSiloUserPositions } from './types';
 
 export type * from './types.d.ts';
 
@@ -15,6 +15,7 @@ export class SiloV2ApiAdapter implements IYieldAdapter {
 
   tokenMap?: Record<string, TSiloToken>;
   markets?: TSiloMarket[];
+  userPoolsPositions?: TSiloUserPositions;
 
   // TODO
   fetchTokensWithYield(_chain: TChainName, _tokens: TToken[]) {
@@ -42,6 +43,18 @@ export class SiloV2ApiAdapter implements IYieldAdapter {
         return res.data;
       }
       return this.markets;
+    } catch (error) {
+      throw new Error(`Failed to get Silo markets: ${error}`);
+    }
+  }
+
+  async getUserPositions(walletAddress: TAddress): Promise<TSiloUserPositions> {
+    try {
+      if (!this.userPoolsPositions) {
+        const res = await axios.get<TSiloUserPositions>(`${SILO_V2_BASE_URL}/dashboard-v2/${walletAddress}`)
+        return res.data;
+      }
+      return this.userPoolsPositions;
     } catch (error) {
       throw new Error(`Failed to get Silo markets: ${error}`);
     }

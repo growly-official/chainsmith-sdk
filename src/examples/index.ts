@@ -94,8 +94,8 @@ async function fetchNFTData() {
 }
 
 async function fetchSonicDapp() {
-  // const markets = await AdapterRegistry.SiloV2Api.getSiloMarkets();
-  // console.log(markets[0]);
+  const siloPositions = await AdapterRegistry.SiloV2Api.getUserPositions(Wallets.SONIC_WALLET_PCMINH);
+  console.log(siloPositions);
 
   // const vaults = await AdapterRegistry.MetropolisApi.getVaults(146);
   // console.log(vaults[0]);
@@ -103,17 +103,17 @@ async function fetchSonicDapp() {
   // const sts = await AdapterRegistry.BeetsApi.getStakedSonicMarket();
   // console.log(sts);
 
-  const beetsPools = await AdapterRegistry.BeetsApi.getUserPoolsPositions(
-    Wallets.SONIC_WALLET_PCMINH
-  );
-  console.log(beetsPools.length);
-  console.log(beetsPools[0]);
+  // const beetsPools = await AdapterRegistry.BeetsApi.getUserPoolsPositions(
+  //   Wallets.SONIC_WALLET_PCMINH
+  // );
+  // console.log(beetsPools.length);
+  // console.log(beetsPools[0]);
 
   // const os = await AdapterRegistry.OriginApi.getStakedSonicMarket();
   // console.log(os);
 
-  const ans = await AdapterRegistry.AnglesApi.getAnglesMarket();
-  console.log(ans);
+  // const ans = await AdapterRegistry.AnglesApi.getAnglesMarket();
+  // console.log(ans);
 }
 
 testExternalities(false, fetchMultichainTokenPortfolio);
@@ -121,6 +121,6 @@ testExternalities(false, fetchMultichainTokenList);
 testExternalities(false, fetchEvmscanTokenActivitiesWorks);
 testExternalities(false, fetchDexScreenerParis);
 testExternalities(false, fetchChainlistMetadata);
-testExternalities(true, fetchSonicChainData);
+testExternalities(false, fetchSonicChainData);
 testExternalities(false, fetchNFTData);
-testExternalities(false, fetchSonicDapp);
+testExternalities(true, fetchSonicDapp);

@@ -6,10 +6,30 @@ export interface TSiloMarket {
   boostedContentKey: null | string;
   silo0: TSiloToken;
   silo1: TSiloToken;
+
+  // User-positions
+  netApr?: string;
+  healthFactor?: string;
+  borrowPowerUsed?: string;
+  isAtRiskOfLiquidation?: boolean;
+  enableLiquidationPrice?: boolean;
 }
 
 export interface TSiloMetrics {
   tvlUsd: string;
+}
+
+export interface TSiloUserPositions {
+  user: string;
+  metrics: UserMetrics;
+  markets: TSiloMarket[];
+  programs: any[];
+  points: number;
+}
+
+export interface UserMetrics {
+  totalDepositedUsd: string;
+  totalBorrowedUsd: string;
 }
 
 export enum SiloProtocolKey {
