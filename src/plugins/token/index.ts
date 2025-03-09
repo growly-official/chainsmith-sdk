@@ -172,7 +172,7 @@ export class MultichainTokenPlugin {
         }
         return chainActivitiesRecord;
       } catch (error: any) {
-        this.logger.error(`Failed to get token activities: ${error.message}`);
+        this.logger.error(`Failed to get NFT activities: ${error.message}`);
         throw new Error(error);
       }
     };

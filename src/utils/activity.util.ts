@@ -23,7 +23,7 @@ export function calculateGasInETH(gasPrice: number, gasUsed: number): number {
 }
 
 export function calculateEVMStreaksAndMetrics(
-  transactions: TEVMScanTransaction[],
+  transactions: TTokenTransferActivity[],
   address: string
 ): TActivityStats {
   const filteredTransactions = transactions.filter(

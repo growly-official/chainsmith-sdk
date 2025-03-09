@@ -25,7 +25,4 @@ export type IGetMultichainNftPortfolio = (
   chains?: TChain[]
 ) => Promise<TNftPortfolio>;
 
-export type IGetNftPortfolio = (
-  walletAddress?: TAddress,
-  chain?: TChain
-) => Promise<TNftPortfolio>;
+export type IGetNftPortfolio = (walletAddress?: TAddress, chain?: TChain) => Promise<TNftPortfolio>;

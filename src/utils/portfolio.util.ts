@@ -8,7 +8,7 @@ import type {
   TTokenAggregationBalance,
   TTokenChainData,
   TTokenPortfolio,
-  TTokenPortfolioStats
+  TTokenPortfolioStats,
 } from '../types';
 import { getChainIdByName } from './chain.util';
 

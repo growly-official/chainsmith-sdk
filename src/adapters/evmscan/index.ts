@@ -78,6 +78,7 @@ export class EvmscanAdapter implements IOnchainActivityAdapter {
       const evmScanResp = await this.getTokenActivities('tokentx', address, chain.id, {
         offset,
       });
+      if (!evmScanResp.result.filter) throw new Error('Failed to get token activities');
       const currentResultCount = evmScanResp.result.length;
       // Ensure no duplicates are added to the nft array.
       const uniqueResults = (evmScanResp.result as any).filter(
@@ -122,6 +123,7 @@ export class EvmscanAdapter implements IOnchainActivityAdapter {
       });
       const currentResultCount = evmScanResp.result.length;
       // Ensure no duplicates are added to the nft array.
+      if (!evmScanResp.result.filter) throw new Error('Failed to get token activities');
       const uniqueResults = (evmScanResp.result as any).filter(
         (item: any) => !nftActivities.some(activity => activity.hash === item.hash)
       );
