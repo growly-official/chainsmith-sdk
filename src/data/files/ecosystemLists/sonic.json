@@ -1,2696 +1,2698 @@
-[
-  {
-    "description": "Launch memecoins and other tokens within seconds with zero initial liquidity.",
-    "telegram": null,
-    "_id": "01ade488-abc2-4fe8-9916-f4af9b5a8e58",
-    "website": "https://degen.express/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/fae983fcef7cc578c082e2bdae93795de7c3dc03-65x64.png",
-    "x": "https://x.com/degenexpress69",
-    "discord": "",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "LaunchPad",
-        "_key": "LaunchPad",
-        "value": "LaunchPad"
-      }
-    ],
-    "title": "Degen Express"
-  },
-  {
-    "telegram": null,
-    "discord": null,
-    "title": "Thunder Dome",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "SocialFi",
-        "_key": "ziO9xEzG",
-        "value": "socialfi"
-      }
-    ],
-    "_id": "05a6d105-394d-4b39-8d91-f9a28b1ab96e",
-    "description": "SocialFi platform that allows users to engage with communities through tickets.",
-    "website": "https://thunderdome.so/#",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/ccd4ea00b51ab6823155e52c4b9d52f65756e3b7-129x129.png",
-    "x": "https://x.com/ThunderDomeSo/highlights"
-  },
-  {
-    "_id": "0641a1e3-4566-4847-b2dd-24de1758f8a0",
-    "title": "Memebox",
-    "website": "https://memebox.fi/",
-    "x": "https://x.com/MemeboxFi",
-    "telegram": null,
-    "discord": "",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Spot Dex",
-        "_key": "5Y1jljZr",
-        "value": "spot-dex"
-      }
-    ],
-    "description": "DEX for memecoin trading, offering secure, efficient, and innovative on-chain tools.",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/e165a18af87f85b07c0f9d675da030218d0b1cd0-65x64.png"
-  },
-  {
-    "_id": "07e3b5db-8881-4dd0-9fd0-03bad48856d5",
-    "title": "Vicuna Finance",
-    "description": "Lending protocol offering automated strategies for leveraged concentrated liquidity.",
-    "website": "https://vicunafinance.com/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/f4e0bf9f5790d6fb28784522616f2df78ba44baa-112x112.png",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Yield",
-        "_key": "dZsTfAXM",
-        "value": "yield"
-      }
-    ],
-    "x": "https://x.com/VicunaFinance",
-    "telegram": null,
-    "discord": "https://discord.gg/vicuna"
-  },
-  {
-    "image": "https://cdn.sanity.io/images/nat2546z/production/31e35f4dc32a34c1da9cd09ba0625fea5a1eec4f-65x64.png",
-    "tags": [
-      {
-        "label": "DeFi Tooling",
-        "_key": "IWwwixLL",
-        "value": "defi-tooling",
-        "_type": "tag"
-      }
-    ],
-    "title": "KyberSwap",
-    "description": "Multichain aggregator and DeFi hub offering tools to trade without intermediaries.",
-    "x": "https://x.com/KyberNetwork",
-    "telegram": null,
-    "discord": "",
-    "_id": "08214924-8d80-422c-bebc-a3daca16126a",
-    "website": "https://kyber.network/"
-  },
-  {
-    "telegram": "https://t.me/navigator_exchange",
-    "discord": "https://discord.com/invite/23gmsJHmYx",
-    "title": "Navigator Exchange",
-    "description": "Transforming DeFi trading with high-leverage access to crypto, forex & commodities.\nBuilt on Sonic\n",
-    "website": "https://www.navigator.exchange/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/ac853db82e6c9396379d6465eb1c29bd39d73471-180x181.png",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Derivatives",
-        "_key": "derivatives",
-        "value": "derivatives"
-      }
-    ],
-    "_id": "0f55c900-ee83-4ba8-bd5f-c3bdbcf04cd5",
-    "x": "https://x.com/NaviExSonic"
-  },
-  {
-    "title": "Origin",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/71f029c3c4a3e29e554091591b40ef591def557f-512x512.svg",
-    "x": "https://x.com/OriginProtocol",
-    "telegram": "https://t.me/originprotocol",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "LST",
-        "_key": "lst",
-        "value": "lst"
-      }
-    ],
-    "_id": "1507b5ac-3725-4080-a0b2-faf0811595d4",
-    "description": "Yield-optimized assets in the realm of LSTs (OS, OETH) and stablecoins (OUSD), backed by audited, battle-tested technology and has had a proven track record since 2017.",
-    "website": "https://www.originprotocol.com/",
-    "discord": "https://discord.com/invite/ogn"
-  },
-  {
-    "telegram": null,
-    "discord": "https://discord.com/invite/9uEHakc",
-    "_id": "172c7647-4863-4b84-be2b-aac3c24506af",
-    "title": "Curve",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Spot Dex",
-        "_key": "YJLszs6T",
-        "value": "spot-dex"
-      }
-    ],
-    "description": "Stableswap AMM that offers efficient trading of stablecoins and volatile assets.",
-    "website": "https://curve.fi/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/0130d55bc7fbef17d5d44940655c8e5c9148855d-65x64.png",
-    "x": "https://x.com/CurveFinance"
-  },
-  {
-    "x": "https://x.com/chainspect_app",
-    "telegram": null,
-    "title": "Chainspect",
-    "website": "https://chainspect.app/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/ec2c8f45b809d1dfb6b49f198786d45f814ef86e-400x400.svg",
-    "discord": "https://discord.com/invite/nnmJf56XYU",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Miscellaneous",
-        "_key": "miscellaneous",
-        "value": "miscellaneous"
-      }
-    ],
-    "_id": "176b2e12-0f91-46a4-9461-0e6963524050",
-    "description": "Blockchain analytics platform specializing in tracking technical metrics for your favorite networks, including Sonic."
-  },
-  {
-    "title": "Yearn",
-    "description": "DeFi yield aggregator, allowing users to earn risk-adjusted yields on their assets.",
-    "website": "https://yearn.fi/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/81c7c2fccd81c6ffa62ae7761cefbf1e6d5bcfb2-65x64.png",
-    "x": "https://x.com/yearnfi",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Yield",
-        "_key": "Zz1FtC8E",
-        "value": "yield"
-      }
-    ],
-    "_id": "19775446-d181-4d3b-97c2-afb664ddc3be",
-    "telegram": null,
-    "discord": "https://t.co/A8mg4EfSIH"
-  },
-  {
-    "description": "Lending protocol that offers risk-isolated markets for a wide range of assets.",
-    "website": "https://app.silo.finance/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/29682a83b3d5f26151f838be1c15275f9667bd10-56x56.png",
-    "x": "https://x.com/SiloFinance",
-    "discord": "https://discord.com/invite/silo-finance",
-    "telegram": null,
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Lending",
-        "_key": "7Vhe2979",
-        "value": "lending"
-      }
-    ],
-    "_id": "1bf33914-1e2c-4f88-9a9c-f5d378d6ce9f",
-    "title": "Silo Finance"
-  },
-  {
-    "_id": "20b08ba0-cc65-45d5-982f-28a150fd3092",
-    "description": "Multi-chain DeFi aggregator giving users access to DeFi opportunities in one place.",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/d83ec306327865d9cd4005a2dda05266bcdb33c6-65x64.png",
-    "x": "https://x.com/rhinofi",
-    "title": "RhinoFi",
-    "website": "https://rhino.fi/",
-    "telegram": null,
-    "discord": "https://t.co/znuRXoaxIj",
-    "tags": [
-      {
-        "_key": "SMkVNApK",
-        "value": "bridge",
-        "_type": "tag",
-        "label": "Bridge"
-      }
-    ]
-  },
-  {
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Infra",
-        "_key": "sUhtle8J",
-        "value": "infra"
-      }
-    ],
-    "_id": "22d11585-d141-4e24-bd25-13a4753da866",
-    "title": "Snapshot",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/8943592a17188cca7c7bc73165e75d294ec6ec90-128x128.png",
-    "telegram": null,
-    "discord": "",
-    "description": "Voting platform that allows DAOs, DeFi protocols, and more to vote on proposals.",
-    "website": "https://snapshot.org/",
-    "x": "https://x.com/SnapshotLabs"
-  },
-  {
-    "image": "https://cdn.sanity.io/images/nat2546z/production/aa5517d4c23d85ec9da8b0aaf723a5c175f14e60-129x129.png",
-    "tags": [
-      {
-        "label": "DeFi Tooling",
-        "_key": "UJRDUuPA",
-        "value": "defi-tooling",
-        "_type": "tag"
-      }
-    ],
-    "title": "Odos Finance",
-    "x": "https://x.com/odosprotocol",
-    "telegram": null,
-    "discord": "https://discord.com/invite/odos",
-    "_id": "256a3729-ad4c-4675-83e2-affcd12b630a",
-    "description": "DEX aggregator that offers optimal swaps, secure self-custody, and atomic swaps.",
-    "website": "https://app.odos.xyz/"
-  },
-  {
-    "x": "https://x.com/stryke_xyz",
-    "discord": "https://discord.com/invite/stryke",
-    "tags": [
-      {
-        "value": "derivatives",
-        "_type": "tag",
-        "label": "Derivatives",
-        "_key": "Qm0pNNgl"
-      }
-    ],
-    "telegram": null,
-    "_id": "2690c5e3-ea18-4865-a613-f625033815a3",
-    "title": "Stryke",
-    "description": "CLAMM that offers options trading while maximizing capital efficiency for LPs.",
-    "website": "https://www.stryke.xyz/en/dashboard",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/44b60daf6e43f9207f7c770c90e021bdcb301f7d-65x64.png"
-  },
-  {
-    "_id": "286d23b2-800c-4f2f-a8e4-bc1b3c2a700d",
-    "title": "Alchemy",
-    "description": "Developer platform that offers advanced Web3 tools, including subgraphs and RPCs.",
-    "website": "https://alchemy.com",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/879ed55d9200883e06108e6e8ac1a58bf8b13add-129x129.png",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Infra",
-        "_key": "F8PSQeEN",
-        "value": "infra"
-      }
-    ],
-    "x": "https://x.com/AlchemyPlatform",
-    "telegram": null,
-    "discord": "https://x.com/AlchemyPlatform"
-  },
-  {
-    "image": "https://cdn.sanity.io/images/nat2546z/production/7dad39119bd1cdc996d28539fff097c6763381bf-1080x1080.png",
-    "discord": "https://discord.com/invite/micro3",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "SocialFi",
-        "_key": "socialfi",
-        "value": "socialfi"
-      }
-    ],
-    "_id": "291a56d4-bd25-4364-853f-2df2aed74346",
-    "title": "Micro3",
-    "description": "Micro3 is a De-SocialFi universe that leverages immersive storytelling and gaming experiences to tokenize global social engagement into Web3 power.",
-    "website": "https://micro3.io/",
-    "x": "https://x.com/Micro3io",
-    "telegram": "https://t.me/micro3official"
-  },
-  {
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Infra",
-        "_key": "tNJ5ZEPd",
-        "value": "infra"
-      }
-    ],
-    "image": "https://cdn.sanity.io/images/nat2546z/production/eb3d97f2809ebd75f4be384d5f03ac99f030945e-129x129.png",
-    "discord": "",
-    "_id": "2b733162-a404-4c0f-9f7d-597088260f4f",
-    "title": "Tenderly",
-    "description": "Web3 infrastructure provider with virtual environments, RPCs, monitoring, and more.",
-    "website": "https://tenderly.co/",
-    "x": "https://x.com/TenderlyApp",
-    "telegram": null
-  },
-  {
-    "x": "https://x.com/Rings_Protocol",
-    "_id": "2e5dd060-acaf-425a-805e-cf977b57fc6e",
-    "telegram": null,
-    "discord": "",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Yield",
-        "_key": "yield",
-        "value": "yield"
-      },
-      {
-        "_type": "tag",
-        "label": "Stablecoins",
-        "_key": "stablecoins",
-        "value": "stablecoins"
-      }
-    ],
-    "title": "Rings",
-    "description": "Scalable yield-bearing stablecoin inspired by Solidly, powered by Veda strategies.",
-    "website": "https://rings.money/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/dfb850a2c6d34051c0f3484b5107075087d7229f-65x64.png"
-  },
-  {
-    "_id": "2f7f87a4-91e7-448b-8819-43044c046464",
-    "description": "Cross-chain aggregation infrastructure for fast and efficient cross-chain swaps.",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/5010e025b2848910009f5d0951a56816de3173d3-64x64.png",
-    "x": "https://x.com/magpieprotocol",
-    "telegram": null,
-    "discord": "https://discord.com/invite/CwJuFeHp6f",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "DeFi Tooling",
-        "_key": "VzfTGtFS",
-        "value": "defi-tooling"
-      }
-    ],
-    "title": "Magpie Protocol",
-    "website": "https://www.magpiefi.xyz/"
-  },
-  {
-    "_id": "2fd85397-7e1a-48e6-b3c7-bd4ebcbf4d39",
-    "description": "User-centric DeFi protocol that combines lending, liquidity, and leverage into a unified, secure product suite. It enables users to borrow and lend assets, offering a seamless experience for optimizing their financial strategies.",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/1e6b4dd878c2b268715eacaedd8afe7ae1b08e0b-65x64.png",
-    "x": "https://x.com/machfi_xyz",
-    "telegram": null,
-    "discord": "",
-    "title": "MachFi",
-    "website": "https://www.machfi.xyz/",
-    "tags": [
-      {
-        "value": "lending",
-        "_type": "tag",
-        "label": "Lending",
-        "_key": "2zNwmgzy"
-      }
-    ]
-  },
-  {
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Spot Dex",
-        "_key": "tdUidfcx",
-        "value": "spot-dex"
-      }
-    ],
-    "title": "SilverSwap",
-    "description": "DeFi hub and DEX for trading, investing regularly, farming, and reward sharing.",
-    "x": "https://discord.com/invite/paintswap",
-    "discord": "",
-    "_id": "3090f035-f93e-4a9f-8348-c3312358320b",
-    "website": "https://SilverSwap.io",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/e249240f552d89347f4b991083e21164540bc644-129x129.png",
-    "telegram": null
-  },
-  {
-    "description": "Peer-to-peer battle card NFT crypto game bringing Universal Basic Income to players through GameFi by utilizing its innovative and sustainable Dual Token Drive Engine",
-    "website": "https://battledogs.fun/sonic",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/5409f359413e1924c3791633ae3b0acc2bcfd792-512x512.png",
-    "x": "https://x.com/battledogsarena",
-    "_id": "312b90fe-e805-44bf-973d-c29e31b654f5",
-    "title": "Battledogs Arena",
-    "telegram": "https://t.me/battledogsarena",
-    "discord": "https://discord.gg/tCdYyJk",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Game",
-        "_key": "game",
-        "value": "game"
-      },
-      {
-        "_type": "tag",
-        "label": "NFT",
-        "_key": "nft",
-        "value": "nft"
-      }
-    ]
-  },
-  {
-    "x": "https://x.com/yel_finance",
-    "telegram": null,
-    "discord": "https://t.co/VH9kD3Jgvn",
-    "title": "Yel Finance",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/8560bc94edd583b646e00477e99a0c9998a6e8ac-65x64.png",
-    "tags": [
-      {
-        "_key": "yield",
-        "value": "yield",
-        "_type": "tag",
-        "label": "Yield"
-      }
-    ],
-    "_id": "31d9b5a8-c75a-45d4-b5b4-570e5697d3f7",
-    "description": "DeFi R&D laboratory that focuses on generating smart and real yield for users.",
-    "website": "https://t.co/mOBUEIbteY"
-  },
-  {
-    "website": "https://contango.exchange/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/806bf4aa7b3b23dcfc4dfde01796906af43e8a1e-65x64.png",
-    "x": "https://x.com/Contango_xyz",
-    "discord": "https://discord.com/invite/x3dync2edA",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Yield",
-        "_key": "yield",
-        "value": "yield"
-      },
-      {
-        "_key": "defi-tooling",
-        "value": "defi-tooling",
-        "_type": "tag",
-        "label": "DeFi Tooling"
-      }
-    ],
-    "_id": "337fd3f0-1fb8-4fd0-9747-447db8faf4dc",
-    "title": "Contango",
-    "description": "On-chain looping protocol that enables users to loop actions and transactions.",
-    "telegram": null
-  },
-  {
-    "discord": "https://discord.gg/sdDkgHJY",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Spot Dex",
-        "_key": "spot-dex",
-        "value": "spot-dex"
-      }
-    ],
-    "website": "https://www.sushi.com/sonic/swap",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/956dfe8b24e0a165ec6843b383512e5231ea38cd-180x180.png",
-    "x": "https://x.com/SushiSwap",
-    "telegram": null,
-    "_id": "34827262-54dd-4d7c-b62d-7fc10044c743",
-    "title": "SushiSwap",
-    "description": "Multi-chain DEX, enabling users to do swaps across 40+ chains. Powered by one of the industry’s most advanced aggregation and swap stacks, Sushi delivers superior liquidity access, best-in-class pricing, and powerful liquidity solutions for LPs."
-  },
-  {
-    "title": "MarginZero",
-    "description": "Trade perps/options, oracle-free, without upfront margins or price-based liquidation.",
-    "website": "https://t.co/zCc8LJp9dn",
-    "x": "https://x.com/marginzero_xyz",
-    "telegram": null,
-    "discord": "",
-    "tags": [
-      {
-        "label": "Derivatives",
-        "_key": "3jj6NVdy",
-        "value": "derivatives",
-        "_type": "tag"
-      }
-    ],
-    "_id": "36d742b8-3f9a-463e-a076-b46df1d18dd3",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/fcf774f7471a857a7d455fe507ab81eabc596206-65x64.png"
-  },
-  {
-    "_id": "373885fd-78f6-4d5a-90e8-fe38c34edd32",
-    "title": "Yoko",
-    "description": "Create and customize AI personas for storytelling, customer service, or personal assistance—no coding required. Design bots that engage effortlessly.",
-    "website": "https://yoko.live",
-    "x": "https://x.com/yokodotlive",
-    "discord": null,
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "AI",
-        "_key": "ai",
-        "value": "ai"
-      },
-      {
-        "_type": "tag",
-        "label": "LaunchPad",
-        "_key": "LaunchPad",
-        "value": "LaunchPad"
-      }
-    ],
-    "image": "https://cdn.sanity.io/images/nat2546z/production/185fe305b51ecf662c5945c082fa44ea76a1cbf0-345x345.png",
-    "telegram": "https://t.me/yokodotlive"
-  },
-  {
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "GambleFi",
-        "_key": "81G9PVjZ",
-        "value": "gamblefi"
-      }
-    ],
-    "description": "On-chain casino that lets users play games with assets, like blackjack and roulette.",
-    "x": null,
-    "discord": "",
-    "_id": "3c7f3d63-b950-4b35-bcfa-0e543a7b22b2",
-    "title": "PlusBet",
-    "website": "https://www.plus.bet/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/07d8428e7c1effb6f108ae99efdaa4af88df5e5b-65x64.png",
-    "telegram": null
-  },
-  {
-    "_id": "4161edcf-538f-40f3-ac0d-e713b25d1b29",
-    "title": "Rivo",
-    "description": "Investing platform combining a multi-chain contract wallet with a yield marketplace.",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/713d6bada34adf85b760ed2a886c2adca8b6a13f-129x129.png",
-    "x": "https://x.com/rivoxyz/",
-    "discord": "",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Yield",
-        "_key": "2syKulyI",
-        "value": "yield"
-      }
-    ],
-    "website": "https://rivo.xyz/",
-    "telegram": null
-  },
-  {
-    "tags": [
-      {
-        "label": "Derivatives",
-        "_key": "derivatives",
-        "value": "derivatives",
-        "_type": "tag"
-      }
-    ],
-    "_id": "42ec5019-4d68-449d-ac26-0279427eceac",
-    "title": "Spectra",
-    "website": "https://app.spectra.finance/pools",
-    "x": "https://x.com/spectra_finance",
-    "telegram": null,
-    "description": "Decentralized interest rate derivatives protocol that allows permissionless creation pools, fixed rates, and trade yield via Yield Token and Principal Token, minted on top of ERC-4626 interest-bearing tokens.",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/85d2a23cc88d00b2a982d83ea3319b01281350fe-400x400.jpg",
-    "discord": "https://discord.com/invite/n4Un5nZhCp"
-  },
-  {
-    "_id": "44ce1ff8-2924-4eed-8761-edf227ecbb6c",
-    "title": "Orange Finance",
-    "description": "Automated liquidity management protocol at the forefront of LPDfi innovation.",
-    "website": "https://app.orangefinance.io/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/73987928b038138eb23b37d75be452ac1f9fa8c1-65x64.png",
-    "x": "https://x.com/0xOrangeFinance",
-    "telegram": null,
-    "discord": "",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Yield",
-        "_key": "lbTXxBn5",
-        "value": "yield"
-      }
-    ]
-  },
-  {
-    "_id": "486b60ba-4c21-4fad-8acd-f428aa4dd1e0",
-    "description": "Blockchain intelligence platform to prevent digital asset fraud and financial crime.\n",
-    "website": "https://www.trmlabs.com/",
-    "x": "",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Infra",
-        "_key": "OPuuCS0P",
-        "value": "infra"
-      }
-    ],
-    "title": "TRM",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/ddf76f38a9882afe65fc4de57ff24d5328f24f9e-65x64.png",
-    "telegram": null,
-    "discord": ""
-  },
-  {
-    "_id": "496c8ca5-f2d1-4a29-aec1-3cabe1f10e02",
-    "description": "A modular and permissionles yield tokenization platform that enables scalability",
-    "website": "https://napier.finance/",
-    "x": "https://x.com/NapierFinance",
-    "telegram": null,
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Derivatives",
-        "_key": "derivatives",
-        "value": "derivatives"
-      }
-    ],
-    "title": "Napier Finance",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/f777d61961e5b772dd81ceb5a04aaf2c12b8999d-400x400.jpg",
-    "discord": "https://discord.com/invite/Yeay7qPsrE"
-  },
-  {
-    "_id": "4f33caf4-05df-45c7-99bc-87aabb9cc6f1",
-    "website": "https://www.euler.finance/",
-    "x": "https://x.com/eulerfinance",
-    "discord": "http://discord.euler.finance",
-    "tags": [
-      {
-        "value": "lending",
-        "_type": "tag",
-        "label": "Lending",
-        "_key": "lending"
-      }
-    ],
-    "title": "Euler",
-    "description": "Euler is a flexible platform for decentralized lending and borrowing, designed to adapt and grow with the evolving world of DeFi.",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/bd0658865c51c0494fc04604daaa43148aec1eb8-181x180.png",
-    "telegram": null
-  },
-  {
-    "_id": "517ef082-ed3f-46cf-bf81-91aae41a5c94",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/6a94165717a2d5ab13db6b05c4c9e2ff7301b363-506x493.png",
-    "x": "https://x.com/snftpro",
-    "telegram": null,
-    "discord": null,
-    "title": "SNFT",
-    "description": "Multi-chain NFT marketplace and launchpad.",
-    "website": "https://snft.pro/",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "NFT",
-        "_key": "nft",
-        "value": "nft"
-      }
-    ]
-  },
-  {
-    "discord": "",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "LST",
-        "_key": "E5sAIet4",
-        "value": "lst"
-      }
-    ],
-    "_id": "52b6ee15-8b09-4d0e-9855-0c160b6ab8e1",
-    "title": "Dinero",
-    "description": "DeFi platform with a suite of products to scale yield for users and institutions.",
-    "website": "https://dinero.xyz/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/e9fe590f5067651f6b284710c60362efe8a1b395-65x64.png",
-    "x": "https://x.com/dinero_xyz",
-    "telegram": null
-  },
-  {
-    "_id": "52e436da-d374-48a1-a3b7-3f4aef60a87f",
-    "title": "Unstoppable Domains",
-    "website": "https://unstoppabledomains.com/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/896b322bf02d5ef05ac7fbec524454e3ef05b3b2-65x64.png",
-    "tags": [
-      {
-        "label": "Miscellaneous",
-        "_key": "hj4mAMe2",
-        "value": "miscellaneous",
-        "_type": "tag"
-      }
-    ],
-    "description": "Official on-chain domain provider on Sonic, powering digital identities with .sonic.",
-    "x": "https://x.com/unstoppableweb",
-    "telegram": null,
-    "discord": ""
-  },
-  {
-    "title": "OpenOcean",
-    "description": "DEX aggregator with cross-chain swaps, gasless limit orders, DCA tool, and more.",
-    "website": "https://app.openocean.finance/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/183a43bd34eabec4b044766cd959c1418d0f3f4e-129x129.png",
-    "_id": "55f551e6-dad7-470a-8be9-9a1d9517237a",
-    "x": "https://x.com/OpenOceanGlobal",
-    "telegram": null,
-    "discord": "https://discord.com/invite/C7PHQaKdNX",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "DeFi Tooling",
-        "_key": "kl3jaYsS",
-        "value": "defi-tooling"
-      }
-    ]
-  },
-  {
-    "title": "WOOFi",
-    "x": "https://x.com/_WOOFi",
-    "discord": null,
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Spot Dex",
-        "_key": "spot-dex",
-        "value": "spot-dex"
-      }
-    ],
-    "_id": "56e389f2-7d30-4026-aaa8-fdcd1e87e3c1",
-    "description": "WOOFi is a leading decentralized application that has all the crypto tools you need to swap, trade, and earn, in one convenient place.",
-    "website": "https://woofi.com/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/89c42521d6a91be318ae7bf85fa8ba68daa9e14d-1080x1080.png",
-    "telegram": null
-  },
-  {
-    "image": "https://cdn.sanity.io/images/nat2546z/production/0e6672b2dbb29d0c047482888a3c6efac146abee-466x466.png",
-    "x": "https://x.com/BoomDEX",
-    "discord": null,
-    "_id": "59132c26-3a07-4c39-bf67-97dc3a5b9d02",
-    "title": "Boom Markets",
-    "description": "Professional perpetual trading, simplified. Up to 50x leverage on Sonic.",
-    "website": "https://boom.markets",
-    "telegram": "https://t.me/+ENSTayUVOfg5OTVk",
-    "tags": [
-      {
-        "value": "derivatives",
-        "_type": "tag",
-        "label": "Derivatives",
-        "_key": "derivatives"
-      }
-    ]
-  },
-  {
-    "telegram": null,
-    "description": "Liquidity management protocols turning single-token deposits into optimized yields.",
-    "website": "https://www.ichi.org/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/425975d6e9f546986ecc56ef50c3258f0cf8ca35-65x64.png",
-    "discord": "",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Yield",
-        "_key": "yield",
-        "value": "yield"
-      },
-      {
-        "_type": "tag",
-        "label": "alm",
-        "_key": "alm",
-        "value": "alm"
-      }
-    ],
-    "_id": "5bc56e70-ef42-49f1-abea-51f77dd4bbf9",
-    "title": "Ichi",
-    "x": "https://x.com/ichifoundation/"
-  },
-  {
-    "title": "Multisender.app",
-    "telegram": "https://t.me/MultiSender",
-    "discord": null,
-    "_id": "5c3f0429-b8df-4d9a-8fb8-2843e961b648",
-    "description": "Facilitates airdrops and other mass transactions on a multitude of networks, including Sonic. The batch transfer algorithm and automated transaction generation enable users to do mass transfers in three clicks, while all the sensitive transaction data is handled by their wallet software, ensuring security.",
-    "website": "https://classic.multisender.app/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/5a91a92cc71ea12e784a4584890e34a86294cb41-319x319.jpg",
-    "x": "https://x.com/multi_sender",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "DeFi Tooling",
-        "_key": "defi-tooling",
-        "value": "defi-tooling"
-      }
-    ]
-  },
-  {
-    "title": "Bellum Exchange",
-    "website": "https://bellum.exchange/",
-    "telegram": null,
-    "discord": "",
-    "_id": "5c750b46-bdba-4920-8b60-822d3daa2425",
-    "description": "Token launchpad that offers safe launches and community-focused LP distribution.",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/fa12237327cdccfe22213ffbf8e8288ff1454426-129x129.png",
-    "x": "https://x.com/BellumExchange",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "DeFi Tooling",
-        "_key": "k95SUYEk",
-        "value": "defi-tooling"
-      }
-    ]
-  },
-  {
-    "description": "Perpetuals DEX offering up to 500x leverage using any token, with gasless trading.",
-    "website": "https://www.lynx.finance/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/354d795053c90189ebe5284f629c6eaf888fb94f-129x129.png",
-    "x": "https://x.com/lynx_protocol",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Derivatives",
-        "_key": "VrZQvhRf",
-        "value": "derivatives"
-      }
-    ],
-    "telegram": null,
-    "discord": "https://t.co/UE6hcnVD1k",
-    "_id": "5d7b1a06-2f89-49f7-8f09-93edeb90a661",
-    "title": "Lynx"
-  },
-  {
-    "title": "Biconomy",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/3916ea7df00161720f65a46b04f1f579533e7cf4-65x64.png",
-    "x": "",
-    "telegram": null,
-    "_id": "5e96ccee-dc2c-4b40-8f57-1c567d603b87",
-    "description": "AA platform for apps to integrate gasless transactions, social logins, and more.",
-    "website": "https://www.biconomy.io/",
-    "discord": "",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Infra",
-        "_key": "4rzS4UFD",
-        "value": "infra"
-      }
-    ]
-  },
-  {
-    "_id": "605f571b-e0be-4d16-842b-26f32102ae54",
-    "description": "Providing the tools and infrastructure necessary to operate both on-chain and off-chain, ensuring a reliable, robust, secure, and consistent environment for any scenario.",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/9c6854b71be8d0645efbf0447eeae14f4ff37c31-3300x3300.png",
-    "discord": "https://discord.com/invite/nZQZ2Br9yc",
-    "title": "Archly",
-    "website": "https://www.archly.fi/",
-    "x": "https://x.com/ArchlyFinance",
-    "telegram": "https://t.me/ArchlyFinance",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Spot Dex",
-        "_key": "spot-dex",
-        "value": "spot-dex"
-      },
-      {
-        "value": "defi-tooling",
-        "_type": "tag",
-        "label": "DeFi Tooling",
-        "_key": "defi-tooling"
-      },
-      {
-        "_type": "tag",
-        "label": "Infra",
-        "_key": "infra",
-        "value": "infra"
-      }
-    ]
-  },
-  {
-    "image": "https://cdn.sanity.io/images/nat2546z/production/f6a384c05fbb5656e7085fff214a0737d5421d1d-65x64.png",
-    "discord": "",
-    "_id": "628b8232-c39e-4940-8c35-ae5f8d5db966",
-    "x": "https://x.com/SolvProtocol",
-    "telegram": null,
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "BTCFi",
-        "_key": "dM65ILwU",
-        "value": "btcfi"
-      }
-    ],
-    "title": "Solv Protocol",
-    "description": "On-chain Bitcoin reserve unlocking DeFi potential of Bitcoin with SolvBTC tokens.",
-    "website": "https://solv.finance/"
-  },
-  {
-    "_id": "63099298-c638-4a3d-9f0a-86e1affcfcb5",
-    "description": "Deep-liquidity, low-slippage DEX offering an on-chain order book and 1-click LP.",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/905abebbc8c09414e400093283198c194bbc0c9c-65x64.png",
-    "discord": "",
-    "tags": [
-      {
-        "label": "Spot Dex",
-        "_key": "c8ZNUN0I",
-        "value": "spot-dex",
-        "_type": "tag"
-      }
-    ],
-    "title": "Xpress",
-    "website": "",
-    "x": "",
-    "telegram": null
-  },
-  {
-    "title": "ZNS",
-    "description": "Decentralized naming solution for personalized Web3 identities.",
-    "website": "https://www.znsconnect.io/",
-    "tags": [
-      {
-        "label": "Infra",
-        "_key": "infra",
-        "value": "infra",
-        "_type": "tag"
-      }
-    ],
-    "_id": "630c4ef6-9f33-4bf9-92cf-f79dc3e5b02c",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/2d7e7e16ce0ece0f7556bf50031282efb6c4227e-1080x1080.png",
-    "x": "https://x.com/ZNSConnect",
-    "telegram": "https://t.me/znsconnect",
-    "discord": "https://discord.com/invite/2rrkuqT8pB"
-  },
-  {
-    "title": "Sonic Name Service",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/343f65a57076acd2eb9b310bef46142c4c8d8147-1953x1935.png",
-    "x": "https://x.com/SonicSNS",
-    "discord": null,
-    "description": "Decentralized naming platform exclusively built on Sonic. It provides human-readable .s domain names that can be mapped to wallet addresses, smart contracts, and decentralized websites.",
-    "website": "https://sns.net/",
-    "telegram": "https://t.me/SonicSNS",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Infra",
-        "_key": "infra",
-        "value": "infra"
-      },
-      {
-        "label": "Miscellaneous",
-        "_key": "miscellaneous",
-        "value": "miscellaneous",
-        "_type": "tag"
-      }
-    ],
-    "_id": "631a97da-90c8-4f60-afa1-8490fc74f985"
-  },
-  {
-    "website": "https://owlto.finance/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/85a90fb70486f628f616d8ae494e8dd4264fba6d-65x64.png",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Bridge",
-        "_key": "E3c3Qiax",
-        "value": "bridge"
-      }
-    ],
-    "description": "AI-driven liquidity protocol to bridge stablecoins from other chains to Sonic.",
-    "x": "",
-    "telegram": null,
-    "discord": "",
-    "_id": "64bb1943-6536-44ee-abf9-a8954113b6fd",
-    "title": "Owlto Finance"
-  },
-  {
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Lending",
-        "_key": "BtNGIa1m",
-        "value": "lending"
-      }
-    ],
-    "_id": "64ca3e9c-af1b-4da7-84a9-765ec946eab1",
-    "title": "Debita Finance",
-    "description": "Peer-to-peer lending platform offering custom collateral, interest rates, and more.",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/672d49bb9fc5ac54e7c9f5470466effcef6ecb4d-129x129.png",
-    "website": "https://debita.org/",
-    "x": "https://x.com/DebitaFinance",
-    "telegram": null,
-    "discord": "https://discord.com/invite/ymYuc35uVw"
-  },
-  {
-    "_id": "6a18f582-e203-4703-8fd5-eb9eea54211d",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/4009dd44e505c08a8e1e4fb1c0211643b8266ae2-360x360.png",
-    "x": "https://x.com/paint_swap",
-    "telegram": null,
-    "discord": "https://discord.com/invite/paintswap",
-    "title": "PaintSwap",
-    "description": "Decentralized NFT marketplace allowing users to buy, sell, and create NFTs.",
-    "website": "https://paintswap.finance/",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "NFT",
-        "_key": "UX9yShvD",
-        "value": "nft"
-      }
-    ]
-  },
-  {
-    "description": "Non-custodial, smart contract wallet offering multi-signature management and AA.",
-    "website": "https://safe.global/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/2c49053a93e7b584254180915860f803246aacc3-129x129.png",
-    "x": "https://x.com/safe",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Infra",
-        "_key": "atXYmUUY",
-        "value": "infra"
-      }
-    ],
-    "_id": "72c5b932-5b1c-4542-a773-9bfe5941ecbb",
-    "title": "Safe",
-    "telegram": null,
-    "discord": ""
-  },
-  {
-    "_id": "72d93ab4-23a0-4e32-b7dd-8d406452e703",
-    "title": " Beefy Finance",
-    "description": "Decentralized, multi-chain yield optimizer allowing users to earn compound interest.",
-    "website": "https://beefy.com/",
-    "x": "https://x.com/beefyfinance",
-    "telegram": null,
-    "discord": "",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/683487012ec39dc6af7b4cc4dc90eb17626e8603-65x64.png",
-    "tags": [
-      {
-        "label": "Yield",
-        "_key": "yield",
-        "value": "yield",
-        "_type": "tag"
-      },
-      {
-        "_type": "tag",
-        "label": "alm",
-        "_key": "alm",
-        "value": "alm"
-      }
-    ]
-  },
-  {
-    "_id": "732fb301-b7d7-43ef-9b77-e5ef70817f7c",
-    "title": "ZeroLend",
-    "website": "https://zerolend.xyz/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/dcec1653dd2be8e510d232d67a1894eda7966dac-65x64.png",
-    "x": "https://x.com/zerolendxyz",
-    "tags": [
-      {
-        "label": "Lending",
-        "_key": "0KHilKM4",
-        "value": "lending",
-        "_type": "tag"
-      }
-    ],
-    "description": "Lending market with a focus on LRTs, governance, RWAs, and account abstraction.",
-    "telegram": null,
-    "discord": "https://discord.com/invite/zerolend"
-  },
-  {
-    "_id": "73935599-c4a4-4956-afe8-d9c5946d417e",
-    "website": "https://fluid.instadapp.io/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/6802898622bd54fdaacabc77f479f008c9727c23-129x129.png",
-    "x": "",
-    "telegram": null,
-    "discord": "",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Lending",
-        "_key": "x7d1i5Qa",
-        "value": "lending"
-      }
-    ],
-    "title": "Fluid",
-    "description": "Lending protocol with a focus on liquidity consolidation and automated limits."
-  },
-  {
-    "website": "https://mclb.org/",
-    "discord": "https://discord.com/invite/mclb",
-    "title": "Millennium Club",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/b78e1b92c5e806d7bc618684eabd537915dba3ce-129x129.png",
-    "x": "https://x.com/MillenniumClub3",
-    "telegram": null,
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "LST",
-        "_key": "6KWhnsdK",
-        "value": "lst"
-      }
-    ],
-    "_id": "74118381-c409-4c6f-b5a3-def99ab29ee1",
-    "description": "Decentralized organization with DeFi products like fBomb, mFTM, and DAO governance."
-  },
-  {
-    "_id": "7429d2a3-2d5e-4456-a422-d558630f1831",
-    "description": "One-click access to DeFi. Effortlessly deploy and actively manage liquidity across all defi instruments to unlock the most optimized and frictionless yield.",
-    "website": "https://lucidly.finance/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/d4d688d1e5eeae7ae51e8b2298b4ab427249c61a-183x180.png",
-    "telegram": "https://t.me/bullishbeers",
-    "title": "Lucidly Finance",
-    "x": "https://x.com/LucidlyFinance",
-    "discord": "https://discord.gg/6TZX89RPWW",
-    "tags": [
-      {
-        "label": "Yield",
-        "_key": "yield",
-        "value": "yield",
-        "_type": "tag"
-      }
-    ]
-  },
-  {
-    "title": "DexFi",
-    "description": "Multi-chain yield aggregator and AiLM (Automated Intelligent Liquidity Manager) designed to automate v3 liquidity management by harnessing the power of AI.",
-    "website": "https://dexfi.com/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/0f9178027e3b727a8f13b51bd0c8d2fc210a9ea9-1000x1000.png",
-    "x": "https://x.com/DexFinance",
-    "telegram": "https://t.me/dexfinance",
-    "_id": "7514f16f-cf5a-4407-895e-5241cafe8601",
-    "discord": "https://discord.gg/dexfinance",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Yield",
-        "_key": "yield",
-        "value": "yield"
-      },
-      {
-        "_key": "alm",
-        "value": "alm",
-        "_type": "tag",
-        "label": "alm"
-      }
-    ]
-  },
-  {
-    "_id": "78b4099c-effd-4324-b7d6-d82dd194ea74",
-    "title": "Stability",
-    "description": "DeFi platform optimizing rewards with AI vaults, maximizing APYs with flexibility.",
-    "tags": [
-      {
-        "_key": "1NQnEmEo",
-        "value": "yield",
-        "_type": "tag",
-        "label": "Yield"
-      }
-    ],
-    "website": "https://stability.farm/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/3cad85f6d82d84efbda61acb2396c67708b577bd-64x64.png",
-    "x": "",
-    "telegram": null,
-    "discord": ""
-  },
-  {
-    "_id": "7a7250f9-1180-4737-9bfd-4def72445332",
-    "title": "Enclabs",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/d770e53590cefc3d3d2b7e2f0ee586f0af4af6be-400x400.png",
-    "discord": "https://discord.gg/h4XtXFKQ4G",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Lending",
-        "_key": "lending",
-        "value": "lending"
-      }
-    ],
-    "description": "Risk-adjusted and isolated lending markets on Sonic.",
-    "website": "https://enclabs.finance",
-    "x": "https://x.com/EnclabsFi",
-    "telegram": "https://t.me/EnclabsFinance"
-  },
-  {
-    "_id": "7b1b634f-b1b1-4a1d-8670-8ee99ba92e65",
-    "title": "SwapX",
-    "x": "",
-    "telegram": null,
-    "tags": [
-      {
-        "label": "Spot Dex",
-        "_key": "RQfeXS5F",
-        "value": "spot-dex",
-        "_type": "tag"
-      }
-    ],
-    "description": "V4 DEX with concentrated liquidity and active management, powered by Algebra.",
-    "website": "https://swapx.fi/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/9b5bf28beeb23a5093fd7787d89453a832debc3e-129x129.png",
-    "discord": ""
-  },
-  {
-    "_id": "7d7a9dc5-33e9-402e-abe1-571ce77fdf60",
-    "title": "Rabby",
-    "description": "Recommended Web3 wallet for an improved and seamless user experience on Sonic.",
-    "website": "https://rabby.io/",
-    "discord": "",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Infra",
-        "_key": "infra",
-        "value": "infra"
-      }
-    ],
-    "image": "https://cdn.sanity.io/images/nat2546z/production/e64950fc41abf199feafb3338dff443adf89867f-65x64.png",
-    "x": "",
-    "telegram": null
-  },
-  {
-    "telegram": "https://t.me/joinsideshiftai",
-    "discord": null,
-    "tags": [
-      {
-        "value": "bridge",
-        "_type": "tag",
-        "label": "Bridge",
-        "_key": "bridge"
-      }
-    ],
-    "website": "https://sideshift.ai/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/5d0fc9d18ad965195c8f0b49314bada40016d684-400x400.png",
-    "_id": "8165db15-a82b-4ec3-9d08-bc819e974bb4",
-    "title": "SideShift.ai",
-    "description": "Direct to Wallet Trading. Trade between BTC, ETH, S and 100+ other coins. Sent directly to your wallet.\n",
-    "x": "https://x.com/sideshiftai"
-  },
-  {
-    "_id": "84c839ac-752b-4960-8e6a-8b1e1e3753bd",
-    "title": "SuperSonic",
-    "description": "DEX offering 1000x leverage, optimal swaps, and a launchpad, powered by Algebra.",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/76248778fbc861118d882418ead6a94c108c9d2c-129x129.png",
-    "x": "https://x.com/SuperSonicDEX",
-    "telegram": null,
-    "discord": "",
-    "website": "https://www.supersonic.trade/",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Spot Dex",
-        "_key": "aUbTsbE7",
-        "value": "spot-dex"
-      }
-    ]
-  },
-  {
-    "website": "https://stargate.finance/bridge?srcChain=arbitrum&srcToken=0xaf88d065e77c8cC2239327C5EDb3A432268e5831&dstChain=sonic&dstToken=0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/65efab8c0ea3a9ed773c457b0ff3e3c8c14e66ea-181x181.png",
-    "discord": "https://discord.com/invite/pgt5dYN",
-    "_id": "85a0c48d-66a4-468b-be7d-29895ddc2855",
-    "title": "Stargate",
-    "description": "Stargate is a fully composable liquidity transport protocol that lives at the heart of Omnichain DeFi",
-    "x": "https://x.com/StargateFinance",
-    "telegram": "https://t.me/joinchat/LEM0ELklmO1kODdh",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Bridge",
-        "_key": "bridge",
-        "value": "bridge"
-      }
-    ]
-  },
-  {
-    "discord": "https://discord.com/invite/debridge",
-    "tags": [
-      {
-        "_key": "bridge",
-        "value": "bridge",
-        "_type": "tag",
-        "label": "Bridge"
-      }
-    ],
-    "image": "https://cdn.sanity.io/images/nat2546z/production/7b72daae47f0662da92a64768da924921702fdcb-181x180.png",
-    "_id": "85f794a0-1b8c-48b0-b980-34df1170b20b",
-    "title": "deBridge",
-    "description": "Bridge that moves at lightspeed. By removing the bottlenecks and risks of liquidity pools, deBridge enables value and information to flow across the DeFiverse virtually instantly with deep liquidity and guaranteed rates.",
-    "website": "https://app.debridge.finance/?address=&inputChain=7565164&outputChain=146&inputCurrency=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&outputCurrency=0x29219dd400f2bf60e5a23d13be72b486d4038894&dlnMode=simple",
-    "x": "https://x.com/deBridgeFinance",
-    "telegram": "https://t.me/deBridge_finance"
-  },
-  {
-    "title": "Soneta",
-    "description": "Borrow $ONE with custom assets and interest rates, redeemable for $1 of collateral.",
-    "website": "https://www.soneta.xyz/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/b168d9ef1b14bed8bae791291d340581798433bb-65x64.png",
-    "x": "https://x.com/soneta_xyz",
-    "telegram": null,
-    "discord": "",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Stablecoins",
-        "_key": "pwtzcfw2",
-        "value": "stablecoins"
-      }
-    ],
-    "_id": "862139d2-a93a-4ea4-a5c0-0cc2930a7337"
-  },
-  {
-    "discord": "",
-    "tags": [
-      {
-        "_key": "lNwgdd4i",
-        "value": "yield",
-        "_type": "tag",
-        "label": "Yield"
-      }
-    ],
-    "title": "Gravity Finance",
-    "description": "1-click investment strategies with profit maximization and liquidation protection.",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/134ccf0ec52748135d7f008e083d2c28adaac684-65x64.png",
-    "x": "https://x.com/Gravity_Finance",
-    "_id": "87dc8b16-0f90-452c-99a0-922e45a464a8",
-    "website": "https://www.gravityfinance.io/home",
-    "telegram": null
-  },
-  {
-    "title": "Gearbox",
-    "description": "On-chain credit platform offering 10x leverage, DeFi access, and passive yields.",
-    "x": "https://x.com/GearboxProtocol",
-    "tags": [
-      {
-        "label": "Yield",
-        "_key": "aLMJEL0l",
-        "value": "yield",
-        "_type": "tag"
-      }
-    ],
-    "_id": "8de63d9d-7826-4a4b-818b-8b06b0ff0628",
-    "website": "https://gearbox.fi/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/d8465b5815dbfab13d3046694894326f9bf3aed8-65x64.png",
-    "telegram": null,
-    "discord": ""
-  },
-  {
-    "description": "CDP-based stablecoin protocol with dynamic collateral to unlock capital efficiency.",
-    "website": "https://app.jigsaw.finance/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/98c5a6b2bc71bc65c2d96e5fc5e7795f2d74dfee-65x64.png",
-    "x": "https://x.com/jigsawdefi",
-    "telegram": null,
-    "discord": "",
-    "_id": "90195853-3607-4c74-9e12-24db4e70fb42",
-    "title": "Jigsaw Finance",
-    "tags": [
-      {
-        "_key": "M6k6CY4J",
-        "value": "stablecoins",
-        "_type": "tag",
-        "label": "Stablecoins"
-      }
-    ]
-  },
-  {
-    "website": "https://defive.com/",
-    "x": "https://x.com/0xdefive",
-    "discord": "https://discord.com/invite/S6hNJ7WW6r",
-    "description": "DeFi in a swift, simple and sustainable way while having fun and earning.",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/f3dfca47ed9985dbf96d20ee684ae72fbb9daeb8-129x129.png",
-    "telegram": null,
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Spot Dex",
-        "_key": "HUAjbDjB",
-        "value": "spot-dex"
-      }
-    ],
-    "_id": "927d6c97-53f3-4fcc-8b14-ec19e0aedf08",
-    "title": "DeFive"
-  },
-  {
-    "_id": "92d1ac61-37e9-4f9b-a514-5a39a26bd42b",
-    "title": "Frax",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/d7a3b0681c36da6018e6fc6b6d61503fcc40fda1-65x64.png",
-    "telegram": "https://t.me/fraxfinance",
-    "description": "Stablecoin ecosystem offering FRAX, frxETH, and FSX with yield-bearing versions.",
-    "website": "https://frax.finance/",
-    "x": "https://x.com/fraxfinance",
-    "discord": "",
-    "tags": [
-      {
-        "label": "Stablecoins",
-        "_key": "TpTIN6Ol",
-        "value": "stablecoins",
-        "_type": "tag"
-      }
-    ]
-  },
-  {
-    "image": "https://cdn.sanity.io/images/nat2546z/production/ea3399cba354e00f7984b0b62071b866932c2c73-129x129.png",
-    "x": "https://x.com/EstforKingdom",
-    "telegram": null,
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Game",
-        "_key": "6N43GnaN",
-        "value": "game"
-      }
-    ],
-    "_id": "95cf1991-ea22-4a3a-9779-40155ba3b0d4",
-    "description": "Medieval Web3 MMORPG offering clan battles, quests, pets, in-game economy, and more.",
-    "discord": "https://discord.com/invite/paintswap",
-    "title": "Estfor Kingdom",
-    "website": "https://estfor.com/"
-  },
-  {
-    "_id": "9da4a36a-cbbe-4dc0-ac1f-e6379a6ac805",
-    "description": "Non-custodial instant crypto exchange service which supports 2000+ cryptocurrencies on over 100 chains and offers more than 800k pairs.",
-    "website": "https://simpleswap.io/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/ac6cb7df91ea3304887513f3f519ff56a384cff7-400x400.jpg",
-    "telegram": "https://t.me/Simpleswap",
-    "discord": "https://discord.gg/3D3JwTnsk5",
-    "title": "SimpleSwap",
-    "x": "https://twitter.com/SimpleSwap_io",
-    "tags": [
-      {
-        "value": "spot-dex",
-        "_type": "tag",
-        "label": "Spot Dex",
-        "_key": "spot-dex"
-      }
-    ]
-  },
-  {
-    "_id": "a17c2da6-5344-49b4-bf31-240afd4cd985",
-    "website": "https://app.vaultcraft.io/vaults",
-    "telegram": null,
-    "title": "VaultCraft",
-    "description": "Yield-optimizing protocol for deploying custom, cross-chain yield strategies.",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/97d031b6aa44e8133525e86fbe3e7422f3e13a67-65x64.png",
-    "x": "https://x.com/VaultCraft_io",
-    "discord": "",
-    "tags": [
-      {
-        "value": "yield",
-        "_type": "tag",
-        "label": "Yield",
-        "_key": "aq883esj"
-      }
-    ]
-  },
-  {
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Bridge",
-        "_key": "al130Cw9",
-        "value": "bridge"
-      }
-    ],
-    "discord": "",
-    "_id": "a18ac1be-9883-49e9-a3e1-46e653f15657",
-    "title": "EYWA",
-    "description": "Cross-chain trading and yield protocol unifying liquidity by aggregating Curve pools.",
-    "website": "https://app.crosscurve.fi/swap",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/7fee3f272e03c5569d4ba6218aa679fde9b81048-128x128.png",
-    "x": "https://x.com/eywaprotocol",
-    "telegram": null
-  },
-  {
-    "title": "Meson Finance",
-    "description": "Meson Finance is building one of the largest cross-chain bridging protocols, enabling seamless transfers of major digital assets like BTC, ETH, USDT, USDC across over 60 supported blockchains.\n",
-    "website": "https://meson.fi",
-    "x": "https://x.com/mesonfi",
-    "telegram": null,
-    "discord": "https://discord.gg/mesonfi",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Bridge",
-        "_key": "bridge",
-        "value": "bridge"
-      },
-      {
-        "_key": "infra",
-        "value": "infra",
-        "_type": "tag",
-        "label": "Infra"
-      }
-    ],
-    "_id": "a1bf9ab7-8803-4700-9673-4e416cf3f4e2",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/e44c1a5337b1bada4ad25fc51878fb7ae26d6ac5-180x181.png"
-  },
-  {
-    "telegram": null,
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "DeFi Tooling",
-        "_key": "T0oT9Pp8",
-        "value": "defi-tooling"
-      }
-    ],
-    "website": "https://llamapay.io/",
-    "discord": "",
-    "_id": "a31749aa-2781-4a4e-8b71-a3a1d73474be",
-    "title": "LlamaPay",
-    "description": "Stream assets, set up recurring subscriptions, and schedule payments, in one place.",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/6f6ba264eacba567a572dada99c7f0becac2354e-101x101.svg",
-    "x": "https://x.com/llamapay_io"
-  },
-  {
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Swap",
-        "_key": "Swap",
-        "value": "Swap"
-      },
-      {
-        "_type": "tag",
-        "label": "Cross-Chain",
-        "_key": "Cross-Chain",
-        "value": "Cross-Chain"
-      },
-      {
-        "value": "Chain Abstraction",
-        "_type": "tag",
-        "label": "Chain Abstraction",
-        "_key": "Chain Abstraction"
-      },
-      {
-        "value": "Interoperability",
-        "_type": "tag",
-        "label": "Interoperability",
-        "_key": "Interoperability"
-      },
-      {
-        "value": "bridge",
-        "_type": "tag",
-        "label": "Bridge",
-        "_key": "bridge"
-      }
-    ],
-    "image": "https://cdn.sanity.io/images/nat2546z/production/5f37390626453980ef0358de6cf735efffc2e73c-400x400.jpg",
-    "x": "https://x.com/BungeeExchange",
-    "telegram": null,
-    "_id": "a46738bc-80ab-4fa4-86fc-7f7136d152f6",
-    "title": "Bungee Protocol",
-    "description": "Bungee Protocol is a global liquidity marketplace that enables users to perform actions across chains. It's designed to optimise the experience for end users, powered by Socket Protocol.",
-    "website": "https://new.bungee.exchange/",
-    "discord": "https://discord.com/invite/DrvfYq6fvc"
-  },
-  {
-    "title": "1inch",
-    "description": "DEX aggregator offering competitive swap prices, cross-chain swaps, and limit orders.",
-    "website": "https://1inch.io/",
-    "discord": "",
-    "_id": "a4b74b3a-2adc-46d6-8b71-6c5aef6bc4c3",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/44e34948f85e31e6c241917bc7c026b7357495f6-65x64.png",
-    "x": "https://x.com/1inch",
-    "telegram": null,
-    "tags": [
-      {
-        "value": "defi-tooling",
-        "_type": "tag",
-        "label": "DeFi Tooling",
-        "_key": "OiD1mBfz"
-      }
-    ]
-  },
-  {
-    "title": "Gamma Finance",
-    "website": "https://www.gamma.xyz/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/9c7e3f0641ba58381890f9f8a0571a14c5a341b2-65x64.png",
-    "x": "https://x.com/gammastrategies",
-    "telegram": null,
-    "tags": [
-      {
-        "value": "yield",
-        "_type": "tag",
-        "label": "Yield",
-        "_key": "yield"
-      },
-      {
-        "_type": "tag",
-        "label": "alm",
-        "_key": "alm",
-        "value": "alm"
-      }
-    ],
-    "_id": "a5bccfee-7f7c-4951-8342-5881cf324a71",
-    "description": "Protocol offering active liquidity management and market-making strategies.",
-    "discord": ""
-  },
-  {
-    "_id": "a949dfb9-8203-4a04-9b88-527b8a625793",
-    "title": "Solidly",
-    "description": "Capital-efficient, multi-chain DEX offering advanced AMM design and incentives.",
-    "x": "https://x.com/SolidlyLabs",
-    "telegram": null,
-    "discord": "",
-    "website": "https://solidly.com/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/0564abef0af6b3127b2cfe75736e3c8a015c678c-65x64.png",
-    "tags": [
-      {
-        "_key": "spot-dex",
-        "value": "spot-dex",
-        "_type": "tag",
-        "label": "Spot Dex"
-      }
-    ]
-  },
-  {
-    "title": "Fireblocks",
-    "description": "Secure, enterprise-grade platform for managing, storing, and scaling digital assets.",
-    "website": "https://www.fireblocks.com/",
-    "x": "https://x.com/FireblocksHQ",
-    "telegram": null,
-    "discord": "",
-    "tags": [
-      {
-        "_key": "ckgmpG9M",
-        "value": "institutional",
-        "_type": "tag",
-        "label": "Institutional"
-      }
-    ],
-    "_id": "a9b33fef-8f29-42a6-8531-5d9f97d73661",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/9133c9fe8492eeb1efc991d602c7f7196f74591c-65x64.png"
-  },
-  {
-    "telegram": null,
-    "discord": "https://discord.com/invite/layer3",
-    "description": "Protocol allowing apps to boost activity and reward users with customizable quests.",
-    "website": "https://app.layer3.xyz",
-    "tags": [
-      {
-        "value": "miscellaneous",
-        "_type": "tag",
-        "label": "Miscellaneous",
-        "_key": "7SK9APXo"
-      }
-    ],
-    "_id": "aa58eeec-3625-450d-b543-3a3dbe049279",
-    "title": "Layer3",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/c2ca6496344f8369a96f1edec68bc211c3670b2c-65x64.png",
-    "x": "https://x.com/layer3xyz"
-  },
-  {
-    "website": "https://www.sonic.market/",
-    "x": "https://x.com/sonic_market",
-    "discord": "",
-    "tags": [
-      {
-        "value": "spot-dex",
-        "_type": "tag",
-        "label": "Spot Dex",
-        "_key": "xELag371"
-      }
-    ],
-    "description": "On-chain order book DEX combining CEX efficiency with DeFi transparency and security.",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/4889753c54dd68dd1a7d82b6f955cd622aff0473-65x64.png",
-    "telegram": null,
-    "_id": "ab83a701-0047-42be-ac63-03d1ebdbe570",
-    "title": "Sonic Market"
-  },
-  {
-    "telegram": "https://t.me/tokenPocket_en",
-    "tags": [
-      {
-        "value": "infra",
-        "_type": "tag",
-        "label": "Infra",
-        "_key": "infra"
-      }
-    ],
-    "_id": "ac9a09ad-40c4-4738-8dff-2b781a7b25e2",
-    "website": "https://www.tokenpocket.pro/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/0fe9f873abe9de55a94c451cc700c172d4eed1b2-512x512.png",
-    "discord": null,
-    "title": "TokenPocket",
-    "description": "A leading multi-chain self-custodial wallet and supports EVM-compatible networks. The recovery phrase and private key are stored directly on the user’s device, giving them complete control over their crypto assets.",
-    "x": "https://x.com/TokenPocket_TP"
-  },
-  {
-    "_id": "afdfd0b4-9dc2-4944-beaa-3f68b22080d6",
-    "title": "Paladin",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/acd552bbb47607e40540ad07beedfaed938fb06b-1000x1000.png",
-    "x": "https://x.com/Paladin_vote",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Miscellaneous",
-        "_key": "miscellaneous",
-        "value": "miscellaneous"
-      }
-    ],
-    "description": "Vote incentive marketplace that allows users to earn more with their locked assets.",
-    "website": "https://paladin.vote/#/",
-    "telegram": null,
-    "discord": "https://discord.com/invite/gxda4HgYXy"
-  },
-  {
-    "x": "https://x.com/beets_fi",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Spot Dex",
-        "_key": "j3wjdiju",
-        "value": "spot-dex"
-      },
-      {
-        "label": "LST",
-        "_key": "VbqyQH2w",
-        "value": "lst",
-        "_type": "tag"
-      }
-    ],
-    "_id": "b06cbd77-67a1-40ad-8dfc-ced9973638d1",
-    "title": "Beets",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/ed68c61fdda6ff2210799b0186907e4e4eb439fa-64x64.png",
-    "telegram": null,
-    "discord": "https://beets.fi/discord",
-    "description": "Leading hub for liquid-staked S providing users with a flexible DEX tech stack.",
-    "website": "https://beets.fi/"
-  },
-  {
-    "telegram": null,
-    "discord": "",
-    "website": "https://metropolis.exchange/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/1de4eba67cb784fa399852bc8c34d3953d393abc-129x129.png",
-    "tags": [
-      {
-        "value": "spot-dex",
-        "_type": "tag",
-        "label": "Spot Dex",
-        "_key": "1IHfwzdi"
-      }
-    ],
-    "_id": "b06f1942-29c7-4a69-b542-a5173881a583",
-    "title": "Metropolis",
-    "description": "Liquidity book DLMM DEX with zero-slippage and liquidity flexibility for more yield.",
-    "x": "https://x.com/MetropolisDEX"
-  },
-  {
-    "discord": null,
-    "description": "Professional-grade crypto trading and sniping toolkit designed to optimize token launches and provide instant market insights for data-driven decisions.",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "DeFi Tooling",
-        "_key": "defi-tooling",
-        "value": "defi-tooling"
-      }
-    ],
-    "_id": "b14a6f74-9e37-4d6d-a7dd-fab3002eef1f",
-    "title": "Blazing Bot",
-    "website": "https://app.blazingbot.com/dashboard/pro/sonic",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/5cde0813a6138a7b3b4c8d7472401b0a01b42ec8-400x400.png",
-    "x": "https://x.com/blazingbotapp",
-    "telegram": "https://tr.ee/4dJkoBJoQ_"
-  },
-  {
-    "discord": "",
-    "tags": [
-      {
-        "value": "derivatives",
-        "_type": "tag",
-        "label": "Derivatives",
-        "_key": "ZRcyGzsL"
-      }
-    ],
-    "_id": "b2101a4e-102e-4843-9111-1b209ca16a9b",
-    "title": "Vertex",
-    "x": "https://x.com/vertex_protocol",
-    "description": "Cross-margined order book DEX offering spot, perps, and an integrated money market.",
-    "website": "https://vertexprotocol.com/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/84566deeb835af285c25e6eaa8226afa4b634fc5-65x64.png",
-    "telegram": null
-  },
-  {
-    "image": "https://cdn.sanity.io/images/nat2546z/production/51685c4e70c61344d2364f95c291512854fec2e4-400x400.jpg",
-    "x": "https://x.com/symbiosis_fi",
-    "_id": "b4d27ea6-fdd0-44a0-9dc2-aae05d9db64a",
-    "description": "Cross-chain DEX and bridge that you can use to bridge to S, ETH, USDC, and all other tokens from 37 chains. ",
-    "telegram": "https://t.me/symbiosis_finance",
-    "discord": "https://discord.com/invite/YHgDSJ42eG",
-    "tags": [
-      {
-        "value": "bridge",
-        "_type": "tag",
-        "label": "Bridge",
-        "_key": "bridge"
-      },
-      {
-        "_key": "spot-dex",
-        "value": "spot-dex",
-        "_type": "tag",
-        "label": "Spot Dex"
-      }
-    ],
-    "title": "Symbiosis",
-    "website": "https://app.symbiosis.finance/"
-  },
-  {
-    "_id": "b506c629-b0dc-481a-ba01-79bd849b4ca2",
-    "title": "OpenBlock",
-    "description": "Enterprise-grade blockchain data and modeling platform, powered by ZK proofs.",
-    "website": "https://www.openblocklabs.com/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/630320dac56396eadfab3a57d6d36c0b12880742-129x129.png",
-    "x": "https://x.com/openblocklabs",
-    "telegram": null,
-    "discord": "",
-    "tags": [
-      {
-        "_key": "30lyYsoX",
-        "value": "airdrop",
-        "_type": "tag",
-        "label": "Airdrop"
-      }
-    ]
-  },
-  {
-    "_id": "b54d22cd-2e1c-4390-9191-db073b4ebe88",
-    "website": "https://www.pendle.finance/",
-    "telegram": null,
-    "tags": [
-      {
-        "value": "derivatives",
-        "_type": "tag",
-        "label": "Derivatives",
-        "_key": "OF5okCsG"
-      }
-    ],
-    "title": "Pendle",
-    "description": "Yield-trading protocol offering yield tokenization, yield longing, and fixed yield.",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/77c5513fc48aebc3391cf2e64051dda6d6a552ab-65x64.png",
-    "x": "https://x.com/pendle_fi",
-    "discord": ""
-  },
-  {
-    "x": "https://x.com/sacra_fi",
-    "telegram": null,
-    "discord": "",
-    "tags": [
-      {
-        "_key": "Fu8RUwUw",
-        "value": "game",
-        "_type": "tag",
-        "label": "Game"
-      }
-    ],
-    "description": "Decentralized RPG game with P&E mechanics combining true ownership and incentives.",
-    "_id": "b5904026-70a2-4957-bcf8-11a44af889a4",
-    "title": "Sacra: Falling of Myrd",
-    "website": "https://sacra.game/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/cff2f75c10d41d526679c9660ef87c2e28174903-65x64.png"
-  },
-  {
-    "title": "Blockchain Bureau",
-    "description": "Non-partisan custodian of blockchain data, enabling accurate credit risk insights.",
-    "website": "https://blockchainbureau.com/",
-    "x": "https://x.com/TheBlockBureau",
-    "telegram": null,
-    "discord": "",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "DeFi Tooling",
-        "_key": "UG6m9bZa",
-        "value": "defi-tooling"
-      }
-    ],
-    "_id": "b636c562-e18c-4857-9e6a-02ec8886e7ca",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/d53fcb2bcf1f6f698d597d71bb92a0d9bf96f43e-129x129.png"
-  },
-  {
-    "title": "Avalon",
-    "description": "BTCFi platform offering CeDeFi and decentralized lending powered by BTC-backed USDa.",
-    "website": "https://www.avalonfinance.xyz/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/29e9816115de6d8ef970ba38ea5e5d5ab3004ffb-65x64.png",
-    "x": "https://x.com/avalonfinance_",
-    "_id": "b6fcb16e-df90-446f-b7fa-5d3e663f71a2",
-    "telegram": null,
-    "discord": "",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Lending",
-        "_key": "xDOpajbI",
-        "value": "lending"
-      }
-    ]
-  },
-  {
-    "_id": "ba005d6b-9e56-48da-88c0-e6fb3a14ebc0",
-    "title": "Allora Network",
-    "description": "Self-improving decentralized AI network offering builders AI for their apps.",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/fe534ce61a308d17614d53d9028b7d3e2f9592bf-1726x1726.webp",
-    "telegram": null,
-    "tags": [
-      {
-        "value": "ai",
-        "_type": "tag",
-        "label": "AI",
-        "_key": "Nt5YYfWU"
-      }
-    ],
-    "website": "https://allora.network/",
-    "x": "https://x.com/AlloraNetwork",
-    "discord": ""
-  },
-  {
-    "_id": "bd9de138-7021-42a5-8209-6771603deb67",
-    "title": "Nitro by Router",
-    "website": "https://app.routernitro.com/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/f12fb20809215a9269c6d6213e823ca8e02e960f-65x64.png",
-    "x": "https://x.com/NitroByRouter",
-    "discord": "",
-    "description": "Trustless, modular cross-chain bridge enabling seamless multi-chain DeFi access.",
-    "telegram": null,
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Bridge",
-        "_key": "Cf2EjknQ",
-        "value": "bridge"
-      }
-    ]
-  },
-  {
-    "description": "Blockchain data platform presenting data in human-readable, streamlined dashboards",
-    "website": "https://dune.com/home",
-    "x": "https://x.com/dune",
-    "_id": "bdc23e39-4d77-41e8-91ac-f74379c903bd",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/c1e3633797d0f9f7ba6addc47eac8f541151ffaf-129x129.png",
-    "telegram": null,
-    "discord": "",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Infra",
-        "_key": "8QobNMiB",
-        "value": "infra"
-      }
-    ],
-    "title": "Dune"
-  },
-  {
-    "_id": "be1b8fc2-eb35-41b2-891d-19d3fdf6d4b7",
-    "description": "Observability platform for apps to gain insights, secure assets, and troubleshoot.",
-    "website": "https://www.sentio.xyz/",
-    "telegram": null,
-    "title": "Sentio",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/48d4bf21f5f8c9c02f4bee3ecaf39982dbddb97e-129x129.png",
-    "x": "https://x.com/sentioxyz",
-    "discord": "",
-    "tags": [
-      {
-        "label": "Infra",
-        "_key": "H0Y0o1l4",
-        "value": "infra",
-        "_type": "tag"
-      }
-    ]
-  },
-  {
-    "description": "Building $atS and $atETH, two synthetic assets designed to generate real yields for users.",
-    "website": "https://atoll.money/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/c9456e7c3f1504b9f042318c8d1a34319b59d694-187x187.jpg",
-    "x": "https://x.com/atoll_protocol",
-    "_id": "c5168b7b-0c32-4919-a013-c89fc1cdce34",
-    "title": "Atoll Protocol",
-    "telegram": null,
-    "discord": "https://discord.com/invite/f9DhtJGUuT",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Stablecoins",
-        "_key": "stablecoins",
-        "value": "stablecoins"
-      }
-    ]
-  },
-  {
-    "_id": "c62f238c-3c13-45bd-b75e-676f847ad551",
-    "title": "API3",
-    "description": "Decentralized oracles connecting apps to direct, secure, and transparent data feeds.",
-    "website": "https://api3.org/",
-    "x": "https://x.com/API3DAO",
-    "telegram": null,
-    "discord": "",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/6cae0db5865dc3a33bd1dc40c2722847d8ea8d75-64x64.png",
-    "tags": [
-      {
-        "_key": "infra",
-        "value": "infra",
-        "_type": "tag",
-        "label": "Infra"
-      },
-      {
-        "_type": "tag",
-        "label": "Oracle",
-        "_key": "oracle",
-        "value": "oracle"
-      }
-    ]
-  },
-  {
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Oracle",
-        "_key": "oracle",
-        "value": "oracle"
-      }
-    ],
-    "telegram": null,
-    "discord": "",
-    "_id": "c7efb66b-454f-48b0-b28f-8d7dba54269e",
-    "title": "Stork",
-    "description": "Oracle protocol offering sub-millisecond feeds, powered by a data publisher network.",
-    "website": "https://www.stork.network/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/e2f73d9b1183f93841364ab167526b0f8827f427-129x129.png",
-    "x": "https://x.com/StorkOracle"
-  },
-  {
-    "title": "RabbitX",
-    "description": "Memecoin perpetuals exchange offering up to 20x leverage and multi-chain liquidity.",
-    "website": "https://t.co/KAe1x934aF",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/32764ac3a7f5402975bc617fe73a3d986aa7ea91-400x400.jpg",
-    "discord": "https://discord.com/invite/rabbitx",
-    "x": "https://x.com/rabbitx_io",
-    "telegram": null,
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Derivatives",
-        "_key": "dv21Cez3",
-        "value": "derivatives"
-      }
-    ],
-    "_id": "cb8f1161-117b-4744-b674-4a82a16c736a"
-  },
-  {
-    "description": "Rush is a DeFi gaming platform combining traditional gambling with yield generation, where users can stake tokens to participate in both risk-based games with multipliers and no-loss lottery pools. \nThe platform features multiple earning opportunities through staking rewards, protocol fee sharing, and prize pools, with users able to choose between safe no-loss participation or high-multiplier games while earning continuous rewards based on their chosen risk level.",
-    "website": "https://www.sonicrush.xyz",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/fdddb6c0cd66531f7d61e506090d9b56ad23fbbb-400x400.jpg",
-    "x": "https://x.com/sonicrush_xyz",
-    "discord": "https://discord.com/invite/wCPZM6sFky",
-    "tags": [
-      {
-        "label": "GambleFi",
-        "_key": "gamblefi",
-        "value": "gamblefi",
-        "_type": "tag"
-      }
-    ],
-    "_id": "cc0248c1-e883-4da2-91b5-ef74955c3bdd",
-    "title": "Sonic Rush",
-    "telegram": "https://t.me/+3D2oOlkbV_M5MWZk"
-  },
-  {
-    "_id": "cc53ca6e-bb6a-4b89-916e-3177cae9fd26",
-    "website": "https://app.interport.fi/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/fdc7ae036d29466142e079ba04c9be6e36fa759f-180x180.png",
-    "x": "https://x.com/interportfi",
-    "discord": "https://discord.gg/interport",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Bridge",
-        "_key": "bridge",
-        "value": "bridge"
-      }
-    ],
-    "title": "Interport Finance",
-    "description": "Interport Finance is a cross-chain hub enabling seamless bridging, swaps, and gas transfers across 25+ blockchains. It ensures secure, efficient, and cost-effective transactions, powered by top cross-chain technologies",
-    "telegram": "https://t.me/interport_fi"
-  },
-  {
-    "title": "Stable Jack",
-    "website": "https://www.stablejack.xyz/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/eec253039a98fc5f1a296b5cd4720f7ab0953716-65x64.png",
-    "telegram": "https://t.me/stablejack",
-    "_id": "cd72f447-3f01-416a-b7c4-08b7d2def6f1",
-    "description": "Marketplace to trade yield and volatility with options and liquidation-free exposure.",
-    "x": "https://x.com/StableJack_xyz",
-    "discord": "https://discord.com/invite/stablejack",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Derivatives",
-        "_key": "derivatives",
-        "value": "derivatives"
-      }
-    ]
-  },
-  {
-    "telegram": "https://t.me/SpookySwapCommunity",
-    "description": "Portal to DeFi built on Uni v3 — launch, trade, farm, stake, and earn rewards.",
-    "x": "https://x.com/SpookySwap",
-    "discord": "https://discord.com/invite/6c8g4B83pA",
-    "tags": [
-      {
-        "label": "Spot Dex",
-        "_key": "spot-dex",
-        "value": "spot-dex",
-        "_type": "tag"
-      }
-    ],
-    "_id": "ce494ee1-1d2d-4d7f-a763-341f2d308995",
-    "title": "SpookySwap",
-    "website": "https://spooky.fi/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/9030e5bee14cfe46fe7e9a1655d9a66bd13605cc-150x148.png"
-  },
-  {
-    "discord": "https://discord.com/invite/PVxBZKFr46",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Oracle",
-        "_key": "oracle",
-        "value": "oracle"
-      }
-    ],
-    "telegram": "https://t.me/redstonefinance/",
-    "_id": "ce900fb8-71f1-4ae7-bbe0-79a613d24967",
-    "title": "RedStone",
-    "description": "Oracle provider offering customizable, secure, and cost-efficient data streams.",
-    "website": "https://redstone.finance/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/34b7eda1f99a4c5e9381a48dca93f6226f93a6a8-65x64.png",
-    "x": "https://x.com/redstone_defi"
-  },
-  {
-    "image": "https://cdn.sanity.io/images/nat2546z/production/72f031d083672c937602316e8882d89426e4012e-180x180.png",
-    "telegram": null,
-    "discord": "",
-    "tags": [
-      {
-        "value": "infra",
-        "_type": "tag",
-        "label": "Infra",
-        "_key": "infra"
-      },
-      {
-        "_type": "tag",
-        "label": "Oracle",
-        "_key": "oracle",
-        "value": "oracle"
-      }
-    ],
-    "description": "Decentralized oracle networks powering on-chain finance and interoperability.",
-    "website": "https://chain.link/",
-    "x": "https://x.com/Chainlink",
-    "_id": "cff26217-d0e2-4457-bfa9-bfadce54ab40",
-    "title": "Chainlink"
-  },
-  {
-    "description": "One-stop gas refuel bridge for over 300+ chains and counting. Instantly bridge to multiple destination blockchains with just a single inbound fueling transaction.",
-    "telegram": null,
-    "website": "https://gas.zip",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/265fc1a9f63f5f149506dad913cb713e58581e6b-2000x2000.svg",
-    "x": "https://x.com/gasdotzip",
-    "discord": "https://discord.com/invite/gasdotzip",
-    "tags": [
-      {
-        "label": "Bridge",
-        "_key": "bridge",
-        "value": "bridge",
-        "_type": "tag"
-      }
-    ],
-    "_id": "d4700398-5645-4984-9821-58327a0f998b",
-    "title": "Gas.zip"
-  },
-  {
-    "description": "ZK-tech-based cross-chain protocol offers fast, secure, and instant transfer.",
-    "x": "https://x.com/orbiter_finance",
-    "telegram": null,
-    "discord": "https://discord.com/invite/FbztTBvnBT",
-    "_id": "d69976c2-ad2d-467b-a832-e754bad52b1f",
-    "title": "Orbiter Finance",
-    "website": "https://www.orbiter.finance/en?src_chain=42161&tgt_chain=146&src_token=USDC",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/6ee0367d639a8365c2c0a634a8fae83f860159e4-400x400.png",
-    "tags": [
-      {
-        "label": "Bridge",
-        "_key": "bridge",
-        "value": "bridge",
-        "_type": "tag"
-      }
-    ]
-  },
-  {
-    "_id": "d7ce8daf-8a71-4295-9bea-335260f54a1e",
-    "description": "The $SNAKE token is designed to maintain a peg to $S, with a supply mechanism that adjusts dynamically based on market conditions.\n\nThe protocol follows a multi-token model inspired by previous algorithmic stablecoin systems and consists of the following tokens:\n\n∙ Snake ($SNAKE)\n∙ Snake Shares ($gSNAKE)",
-    "website": "https://snake.finance/",
-    "telegram": "https://t.me/SnakeOnSonic",
-    "discord": "https://discord.gg/Qb7PDAxTfw",
-    "title": "Snake Finance",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/0c54a82d2749f7738fc404bd690d0b45cba814a3-192x192.png",
-    "x": "https://x.com/SnakeOnSonic",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Miscellaneous",
-        "_key": "miscellaneous",
-        "value": "miscellaneous"
-      },
-      {
-        "_type": "tag",
-        "label": "Stablecoins",
-        "_key": "stablecoins",
-        "value": "stablecoins"
-      }
-    ]
-  },
-  {
-    "telegram": null,
-    "discord": "",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "RWA",
-        "_key": "IQdJDPJx",
-        "value": "rwa"
-      }
-    ],
-    "title": "Backed",
-    "description": "Real-world asset tokenization platform providing compliant, 1:1 backed tokens.",
-    "website": "https://backed.fi/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/944d67172426a5678a1d06468f71cc00ea8df761-65x64.png",
-    "_id": "da668bca-a5ca-4f34-a86d-c4123d53e5ea",
-    "x": "https://x.com/BackedFi"
-  },
-  {
-    "title": "Penpie",
-    "website": "https://www.pendle.magpiexyz.io/stake",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/e26e9d1445c83756bb007000961cd42c99956759-94x94.png",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Yield",
-        "_key": "PAzvogXd",
-        "value": "yield"
-      }
-    ],
-    "_id": "dbd10c69-78ea-424a-965f-ac0fc0d011d5",
-    "description": "DeFi platform providing Pendle users with effective yield and boosting services.",
-    "x": "https://x.com/Penpiexyz_io",
-    "telegram": null,
-    "discord": ""
-  },
-  {
-    "_id": "deb2795c-230c-41b4-9176-f1d9bcf8b8dd",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/1f2f58671b3fa5abc990f12aacf6df0eaa16f17e-65x64.png",
-    "telegram": "https://t.me/StakeStone",
-    "title": "StakeStone",
-    "description": "Omni-chain liquidity protocol offering $STONE, a cross-chain, liquid-staked ETH.",
-    "website": "https://stakestone.io/#/home",
-    "x": "https://x.com/Stake_stone",
-    "discord": "https://discord.com/invite/pSbxSdKxqf",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "BTCFi",
-        "_key": "5qxRQPkB",
-        "value": "btcfi"
-      }
-    ]
-  },
-  {
-    "description": "Oracle network delivering secure, low-latency market data and RNG for DeFi apps.",
-    "website": "https://www.pyth.network/",
-    "x": "https://x.com/PythNetwork",
-    "telegram": "https://t.me/Pyth_Network",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Oracle",
-        "_key": "oracle",
-        "value": "oracle"
-      }
-    ],
-    "image": "https://cdn.sanity.io/images/nat2546z/production/bba8f5c21f59187c39a4cb8de69fb2c3be73b4df-129x129.png",
-    "discord": "https://discord.com/invite/PythNetwork",
-    "_id": "df8705fd-c659-4e45-be62-0492fc31665b",
-    "title": "Pyth Network"
-  },
-  {
-    "_id": "dfdf53de-233b-420e-aadb-7eaeda963555",
-    "description": "DEX that uses a vote-escrowed model to drive liquidity to the highest-volume pairs.",
-    "website": "https://equalizer.exchange/",
-    "telegram": null,
-    "discord": "https://discord.com/invite/6ubHeztmYV",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Spot Dex",
-        "_key": "N6tMdirD",
-        "value": "spot-dex"
-      }
-    ],
-    "title": "Equalizer",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/d650b977ccf33d44c713bdc61c9b46459daab21b-129x129.png",
-    "x": "https://x.com/Equalizer0x"
-  },
-  {
-    "_id": "e1423b9a-a3a5-4323-b6db-45d5022ab8b6",
-    "title": "SQD",
-    "discord": "https://discord.com/invite/hellosqd",
-    "tags": [
-      {
-        "_key": "A0SuPBT5",
-        "value": "infra",
-        "_type": "tag",
-        "label": "Infra"
-      }
-    ],
-    "description": "Data access layer that offers developers raw historical on-chain data at low cost.",
-    "website": "https://www.sqd.dev/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/dbb74672d3866223927196cf9e338661f36f5de2-65x64.png",
-    "x": "https://x.com/hellosqd",
-    "telegram": "https://t.me/subsquid"
-  },
-  {
-    "discord": "https://discord.com/invite/shadowexchange",
-    "_id": "e4989d4e-02cf-41a8-932c-2c701b0087a3",
-    "title": "Shadow Exchange",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Spot Dex",
-        "_key": "bRz9aO9e",
-        "value": "spot-dex"
-      }
-    ],
-    "description": "CLAMM offering competitive farming rewards and dynamic fees with custom fee splits.",
-    "website": "https://www.shadow.so/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/9c8aebf1be6d6f1aaca8c1de7c1cf3af7b222bdf-607x607.png",
-    "x": "https://x.com/ShadowOnSonic",
-    "telegram": null
-  },
-  {
-    "_id": "e58808b6-bd23-489e-8484-d634f63f8a46",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/318ba17a53bd48f7399deb372c2f32b5ffad9bb8-65x64.png",
-    "telegram": null,
-    "title": "Impermax Finance",
-    "description": "Protocol enabling market makers to borrow against LP positions and earn yield.",
-    "website": "https://www.impermax.finance/",
-    "x": "https://x.com/ImpermaxFinance",
-    "discord": "https://discord.com/invite/KxbR3qJXGC",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Yield",
-        "_key": "1qiGLuku",
-        "value": "yield"
-      }
-    ]
-  },
-  {
-    "telegram": null,
-    "x": "https://x.com/merkl_xyz",
-    "discord": "https://discord.com/invite/Gs8MUrUVP3",
-    "tags": [
-      {
-        "value": "infra",
-        "_type": "tag",
-        "label": "Infra",
-        "_key": "infra"
-      },
-      {
-        "_key": "defi-tooling",
-        "value": "defi-tooling",
-        "_type": "tag",
-        "label": "DeFi Tooling"
-      }
-    ],
-    "_id": "e78c17cd-5cd2-44f2-80f9-c504cdb9e7fc",
-    "title": "Merkl",
-    "description": "Incentive distribution platform.",
-    "website": "https://app.merkl.xyz/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/ebad216d02943fba20491063ffd2e0b3bfde7be8-400x400.jpg"
-  },
-  {
-    "description": "Automation platform offering contract automation, gasless transactions, and VRF.",
-    "website": "https://www.gelato.network/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/044405192eea91c6f16a910d23d060126c12d058-129x129.png",
-    "x": "https://x.com/gelatonetwork",
-    "telegram": "https://t.me/gelatonetwork",
-    "discord": "https://discord.com/invite/ApbA39BKyJ",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Infra",
-        "_key": "ZkRIdYHF",
-        "value": "infra"
-      }
-    ],
-    "_id": "e7c75a42-0a97-4c18-8b7e-dc03b47b4511",
-    "title": "Gelato"
-  },
-  {
-    "_id": "eab06383-5d05-4575-afbb-40ccc2bd6761",
-    "title": "Fordefi",
-    "description": "Multi-party computation (MPC) wallet platform to securely self-custody assets.",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/985b867a3988126739ec3f7d884c7ebea0d8e1f7-65x64.png",
-    "x": "https://x.com/FordefiHQ",
-    "telegram": null,
-    "discord": "",
-    "website": "https://fordefi.com/",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Institutional",
-        "_key": "YC8Ou61Y",
-        "value": "institutional"
-      }
-    ]
-  },
-  {
-    "_id": "eac30ac8-fd53-4cb3-ba9a-6ea02c6ef989",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/676926de2885ca771cfe8782d21eeb0d95033c1d-1001x1001.png",
-    "x": "https://x.com/OrderlyNetwork",
-    "discord": "https://discord.com/invite/orderlynetwork",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Infra",
-        "_key": "infra",
-        "value": "infra"
-      },
-      {
-        "_type": "tag",
-        "label": "Derivatives",
-        "_key": "derivatives",
-        "value": "derivatives"
-      }
-    ],
-    "title": "Orderly Network",
-    "description": "Permissionless liquidity layer. Built on omnichain infrastructure, Orderly incepts deep liquidity for any asset across blockchains. It empowers developers to connect and offer a comprehensive selection of financial products for retail and professional traders alike, without the risks of wrapped asset movement through cross-chain bridging.",
-    "website": "https://orderly.network/",
-    "telegram": "https://t.me/OrderlyNetworkAnnouncements"
-  },
-  {
-    "description": "Multi-chain comprehensive platform to create, deploy, and manage NFT collections and communities.",
-    "telegram": "https://t.me/nfts2me",
-    "discord": "https://discord.com/invite/Usmgxj2Msk",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "NFT",
-        "_key": "nft",
-        "value": "nft"
-      }
-    ],
-    "title": "NFTs2Me",
-    "website": "https://nfts2me.com/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/33e8f942c7b9bbdceda6ce8e9eb80d7c11b51d2e-541x541.png",
-    "x": "https://twitter.com/NFTs2Me",
-    "_id": "eb0263d8-dc56-43dc-a8f8-f8792f6f35c7"
-  },
-  {
-    "telegram": null,
-    "discord": "https://discord.com/invite/sbbKp5SrQy",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Yield",
-        "_key": "yield",
-        "value": "yield"
-      },
-      {
-        "_type": "tag",
-        "label": "alm",
-        "_key": "alm",
-        "value": "alm"
-      }
-    ],
-    "_id": "f1b94ff8-4713-4acc-94b6-b5b03e52f766",
-    "description": "Multi-chain compute protocol with next-generation automated liquidity management.",
-    "website": "https://steer.finance/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/5492bfc712fa878d7cccf05fd38450024b27b57c-180x180.png",
-    "title": "Steer Protocol",
-    "x": "https://x.com/steerprotocol"
-  },
-  {
-    "title": "Entangle",
-    "description": "Entangle: Infrastructure for the Infinite Web3\n\nEntangle provides a decentralized framework connecting blockchains, data, AI, and real-world applications. It enables developers to build scalable, automated systems across multiple ecosystems, supporting AI, robotics, and Real World Assets (RWA).\n\nKey Components:\n\n🔹 Universal Interoperability Protocol (UIP) – A fully abstracted network for seamless cross-chain communication across EVM and non-EVM ecosystems.\n\n🔹 Universal Data Feeds (UDF) – Secure, verifiable, and fast data streams for AI, DeFi, and GameFi, bridging Web2 and Web3.\n\n🔹 Universal Token Standard (UTS) – A framework for interoperable token creation with universal liquidity and programmable utility.\n\n🔹 Universal Proof of Compute (UPC) – A system for verifying off-chain computations, supporting AI, DeFi, and Web3 applications.\n\nEntangle provides the infrastructure for decentralized applications to scale, interoperate, and automate complex systems.",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/357ede4176455a4fbbd51379a1eba8a573a61451-400x400.jpg",
-    "x": "https://x.com/Entanglefi",
-    "discord": "https://discord.com/invite/entangle",
-    "_id": "f365454a-934e-4093-9b3c-da15ba0ffcd9",
-    "website": "https://entangle.fi/",
-    "telegram": "https://t.me/entangle_community ",
-    "tags": [
-      {
-        "label": "Bridge",
-        "_key": "bridge",
-        "value": "bridge",
-        "_type": "tag"
-      },
-      {
-        "_type": "tag",
-        "label": "Oracle",
-        "_key": "oracle",
-        "value": "oracle"
-      },
-      {
-        "_type": "tag",
-        "label": "DeFi Tooling",
-        "_key": "defi-tooling",
-        "value": "defi-tooling"
-      },
-      {
-        "_key": "ai",
-        "value": "ai",
-        "_type": "tag",
-        "label": "AI"
-      }
-    ]
-  },
-  {
-    "_id": "f4c7644d-a7d1-49ee-8d88-2cfa4d690112",
-    "title": "Eggs Finance",
-    "website": "https://eggs.finance/",
-    "x": "https://x.com/eggsonsonic",
-    "telegram": "http://t.me/eggsfinance",
-    "discord": null,
-    "description": "DeFi platform offering yield and lending products through a deflationary token model—secured by S.",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/a23619821fa0cc4f9ae98cfda84a3e5da69a7ce2-1080x1080.svg",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Yield",
-        "_key": "yield",
-        "value": "yield"
-      },
-      {
-        "_type": "tag",
-        "label": "Lending",
-        "_key": "lending",
-        "value": "lending"
-      }
-    ]
-  },
-  {
-    "description": "Unlocking seamless DeFi lending with innovative yield strategies and community-driven rewards.",
-    "website": "https://aurumfi.io/",
-    "telegram": null,
-    "tags": [
-      {
-        "label": "Lending",
-        "_key": "lending",
-        "value": "lending",
-        "_type": "tag"
-      },
-      {
-        "_type": "tag",
-        "label": "Yield",
-        "_key": "yield",
-        "value": "yield"
-      }
-    ],
-    "image": "https://cdn.sanity.io/images/nat2546z/production/af11ede2bb9087a69297ac406633bfc67d929294-400x400.jpg",
-    "x": "https://x.com/AurumFi_Sonic",
-    "discord": "https://discord.com/invite/yE6BS3F5dD",
-    "_id": "f5f66e8b-4b37-4bbc-ba3c-8e73185cf35c",
-    "title": "Aurum"
-  },
-  {
-    "description": "Smart order router offering DEX aggregation, OTC trading, and API integration.",
-    "x": "https://x.com/hypersonic_ex",
-    "discord": "",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "DeFi Tooling",
-        "_key": "wjnqbIE8",
-        "value": "defi-tooling"
-      }
-    ],
-    "website": "https://hypersonic.exchange/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/35d1a83592f34a04a5fd3391dced8bfe03a5af76-129x129.png",
-    "telegram": null,
-    "_id": "f76bcebf-3faf-4e74-bef3-d97b211a2a68",
-    "title": "Hypersonic"
-  },
-  {
-    "telegram": null,
-    "tags": [
-      {
-        "label": "AI",
-        "_key": "sSKvciEg",
-        "value": "ai",
-        "_type": "tag"
-      }
-    ],
-    "description": "AI platform enabling token creation via Telegram, Twitter, and app integrations.",
-    "website": "https://blorm.xyz/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/531cacc599584fe3eb963cd560640fea3c171051-65x64.png",
-    "discord": "",
-    "_id": "f83cb7e1-288b-4867-85a7-9f202f257628",
-    "title": "Blorm",
-    "x": "https://x.com/blorm_"
-  },
-  {
-    "title": "LazyBear",
-    "x": "https://x.com/LazyBearSonic",
-    "discord": null,
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "LaunchPad",
-        "_key": "LaunchPad",
-        "value": "LaunchPad"
-      }
-    ],
-    "_id": "f9b7c04b-efe6-4b3b-9dad-be98d6c1e8ff",
-    "description": "Token launchpad. Safe, customizable token launches. Community-focused LP distribution to holders.",
-    "website": "https://lazybear.cc/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/5cb2c42855a5799c2755c083c5c06730c90226e7-400x400.jpg",
-    "telegram": "https://t.me/LazyBearPortal"
-  },
-  {
-    "_id": "fa4c4ffe-419b-4ad8-a732-52960f848166",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/7950180861b12da10c609a78c76c4e25b73d7f53-65x64.png",
-    "x": "https://x.com/popsiclefinance",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Spot Dex",
-        "_key": "BVgGBlML",
-        "value": "spot-dex"
-      }
-    ],
-    "title": "WAGMI",
-    "description": "DeFi protocol offering advanced liquidity strategies, auto-rebalancing, and leverage.",
-    "website": "https://wagmi.com/",
-    "telegram": "https://t.me/realwagmi",
-    "discord": "https://discord.com/invite/GDwhREgj5E"
-  },
-  {
-    "_id": "fdb25197-b58a-4bea-91cf-9e9ca2499cf4",
-    "title": "Rubic",
-    "description": "Rate finder, which aggregates 90+ blockchains and testnets and 360+ DEXs and bridges, for users and apps.",
-    "discord": "https://discord.com/invite/7EYzPbWKFQ",
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "Bridge",
-        "_key": "bridge",
-        "value": "bridge"
-      }
-    ],
-    "website": "https://rubic.exchange/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/09cb02d000417b09731665796d41ac4fdce1fc2e-180x180.png",
-    "x": "https://x.com/CryptoRubic",
-    "telegram": "https://t.me/cryptorubic_chat"
-  },
-  {
-    "_id": "fdf6454d-2bc2-441a-9712-7091eadcc7d8",
-    "description": "Wallet infrastructure enabling secure, seedless, and user-friendly Web3 logins.",
-    "website": "https://web3auth.io/",
-    "image": "https://cdn.sanity.io/images/nat2546z/production/70d64960488bc09b6d86a24a3c1888ef3c6ca3c4-65x64.png",
-    "discord": "https://discord.com/invite/gqzGEbHyj5",
-    "title": "Web3Auth",
-    "x": "https://x.com/web3auth",
-    "telegram": null,
-    "tags": [
-      {
-        "_type": "tag",
-        "label": "DeFi Tooling",
-        "_key": "tNnWJqpJ",
-        "value": "defi-tooling"
-      }
-    ]
-  }
-]
+{
+  "data": [
+    {
+      "description": "Launch memecoins and other tokens within seconds with zero initial liquidity.",
+      "telegram": null,
+      "_id": "01ade488-abc2-4fe8-9916-f4af9b5a8e58",
+      "website": "https://degen.express/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/fae983fcef7cc578c082e2bdae93795de7c3dc03-65x64.png",
+      "x": "https://x.com/degenexpress69",
+      "discord": "",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "LaunchPad",
+          "_key": "LaunchPad",
+          "value": "LaunchPad"
+        }
+      ],
+      "title": "Degen Express"
+    },
+    {
+      "telegram": null,
+      "discord": null,
+      "title": "Thunder Dome",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "SocialFi",
+          "_key": "ziO9xEzG",
+          "value": "socialfi"
+        }
+      ],
+      "_id": "05a6d105-394d-4b39-8d91-f9a28b1ab96e",
+      "description": "SocialFi platform that allows users to engage with communities through tickets.",
+      "website": "https://thunderdome.so/#",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/ccd4ea00b51ab6823155e52c4b9d52f65756e3b7-129x129.png",
+      "x": "https://x.com/ThunderDomeSo/highlights"
+    },
+    {
+      "_id": "0641a1e3-4566-4847-b2dd-24de1758f8a0",
+      "title": "Memebox",
+      "website": "https://memebox.fi/",
+      "x": "https://x.com/MemeboxFi",
+      "telegram": null,
+      "discord": "",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Spot Dex",
+          "_key": "5Y1jljZr",
+          "value": "spot-dex"
+        }
+      ],
+      "description": "DEX for memecoin trading, offering secure, efficient, and innovative on-chain tools.",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/e165a18af87f85b07c0f9d675da030218d0b1cd0-65x64.png"
+    },
+    {
+      "_id": "07e3b5db-8881-4dd0-9fd0-03bad48856d5",
+      "title": "Vicuna Finance",
+      "description": "Lending protocol offering automated strategies for leveraged concentrated liquidity.",
+      "website": "https://vicunafinance.com/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/f4e0bf9f5790d6fb28784522616f2df78ba44baa-112x112.png",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Yield",
+          "_key": "dZsTfAXM",
+          "value": "yield"
+        }
+      ],
+      "x": "https://x.com/VicunaFinance",
+      "telegram": null,
+      "discord": "https://discord.gg/vicuna"
+    },
+    {
+      "image": "https://cdn.sanity.io/images/nat2546z/production/31e35f4dc32a34c1da9cd09ba0625fea5a1eec4f-65x64.png",
+      "tags": [
+        {
+          "label": "DeFi Tooling",
+          "_key": "IWwwixLL",
+          "value": "defi-tooling",
+          "_type": "tag"
+        }
+      ],
+      "title": "KyberSwap",
+      "description": "Multichain aggregator and DeFi hub offering tools to trade without intermediaries.",
+      "x": "https://x.com/KyberNetwork",
+      "telegram": null,
+      "discord": "",
+      "_id": "08214924-8d80-422c-bebc-a3daca16126a",
+      "website": "https://kyber.network/"
+    },
+    {
+      "telegram": "https://t.me/navigator_exchange",
+      "discord": "https://discord.com/invite/23gmsJHmYx",
+      "title": "Navigator Exchange",
+      "description": "Transforming DeFi trading with high-leverage access to crypto, forex & commodities.\nBuilt on Sonic\n",
+      "website": "https://www.navigator.exchange/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/ac853db82e6c9396379d6465eb1c29bd39d73471-180x181.png",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Derivatives",
+          "_key": "derivatives",
+          "value": "derivatives"
+        }
+      ],
+      "_id": "0f55c900-ee83-4ba8-bd5f-c3bdbcf04cd5",
+      "x": "https://x.com/NaviExSonic"
+    },
+    {
+      "title": "Origin",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/71f029c3c4a3e29e554091591b40ef591def557f-512x512.svg",
+      "x": "https://x.com/OriginProtocol",
+      "telegram": "https://t.me/originprotocol",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "LST",
+          "_key": "lst",
+          "value": "lst"
+        }
+      ],
+      "_id": "1507b5ac-3725-4080-a0b2-faf0811595d4",
+      "description": "Yield-optimized assets in the realm of LSTs (OS, OETH) and stablecoins (OUSD), backed by audited, battle-tested technology and has had a proven track record since 2017.",
+      "website": "https://www.originprotocol.com/",
+      "discord": "https://discord.com/invite/ogn"
+    },
+    {
+      "telegram": null,
+      "discord": "https://discord.com/invite/9uEHakc",
+      "_id": "172c7647-4863-4b84-be2b-aac3c24506af",
+      "title": "Curve",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Spot Dex",
+          "_key": "YJLszs6T",
+          "value": "spot-dex"
+        }
+      ],
+      "description": "Stableswap AMM that offers efficient trading of stablecoins and volatile assets.",
+      "website": "https://curve.fi/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/0130d55bc7fbef17d5d44940655c8e5c9148855d-65x64.png",
+      "x": "https://x.com/CurveFinance"
+    },
+    {
+      "x": "https://x.com/chainspect_app",
+      "telegram": null,
+      "title": "Chainspect",
+      "website": "https://chainspect.app/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/ec2c8f45b809d1dfb6b49f198786d45f814ef86e-400x400.svg",
+      "discord": "https://discord.com/invite/nnmJf56XYU",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Miscellaneous",
+          "_key": "miscellaneous",
+          "value": "miscellaneous"
+        }
+      ],
+      "_id": "176b2e12-0f91-46a4-9461-0e6963524050",
+      "description": "Blockchain analytics platform specializing in tracking technical metrics for your favorite networks, including Sonic."
+    },
+    {
+      "title": "Yearn",
+      "description": "DeFi yield aggregator, allowing users to earn risk-adjusted yields on their assets.",
+      "website": "https://yearn.fi/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/81c7c2fccd81c6ffa62ae7761cefbf1e6d5bcfb2-65x64.png",
+      "x": "https://x.com/yearnfi",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Yield",
+          "_key": "Zz1FtC8E",
+          "value": "yield"
+        }
+      ],
+      "_id": "19775446-d181-4d3b-97c2-afb664ddc3be",
+      "telegram": null,
+      "discord": "https://t.co/A8mg4EfSIH"
+    },
+    {
+      "description": "Lending protocol that offers risk-isolated markets for a wide range of assets.",
+      "website": "https://app.silo.finance/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/29682a83b3d5f26151f838be1c15275f9667bd10-56x56.png",
+      "x": "https://x.com/SiloFinance",
+      "discord": "https://discord.com/invite/silo-finance",
+      "telegram": null,
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Lending",
+          "_key": "7Vhe2979",
+          "value": "lending"
+        }
+      ],
+      "_id": "1bf33914-1e2c-4f88-9a9c-f5d378d6ce9f",
+      "title": "Silo Finance"
+    },
+    {
+      "_id": "20b08ba0-cc65-45d5-982f-28a150fd3092",
+      "description": "Multi-chain DeFi aggregator giving users access to DeFi opportunities in one place.",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/d83ec306327865d9cd4005a2dda05266bcdb33c6-65x64.png",
+      "x": "https://x.com/rhinofi",
+      "title": "RhinoFi",
+      "website": "https://rhino.fi/",
+      "telegram": null,
+      "discord": "https://t.co/znuRXoaxIj",
+      "tags": [
+        {
+          "_key": "SMkVNApK",
+          "value": "bridge",
+          "_type": "tag",
+          "label": "Bridge"
+        }
+      ]
+    },
+    {
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Infra",
+          "_key": "sUhtle8J",
+          "value": "infra"
+        }
+      ],
+      "_id": "22d11585-d141-4e24-bd25-13a4753da866",
+      "title": "Snapshot",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/8943592a17188cca7c7bc73165e75d294ec6ec90-128x128.png",
+      "telegram": null,
+      "discord": "",
+      "description": "Voting platform that allows DAOs, DeFi protocols, and more to vote on proposals.",
+      "website": "https://snapshot.org/",
+      "x": "https://x.com/SnapshotLabs"
+    },
+    {
+      "image": "https://cdn.sanity.io/images/nat2546z/production/aa5517d4c23d85ec9da8b0aaf723a5c175f14e60-129x129.png",
+      "tags": [
+        {
+          "label": "DeFi Tooling",
+          "_key": "UJRDUuPA",
+          "value": "defi-tooling",
+          "_type": "tag"
+        }
+      ],
+      "title": "Odos Finance",
+      "x": "https://x.com/odosprotocol",
+      "telegram": null,
+      "discord": "https://discord.com/invite/odos",
+      "_id": "256a3729-ad4c-4675-83e2-affcd12b630a",
+      "description": "DEX aggregator that offers optimal swaps, secure self-custody, and atomic swaps.",
+      "website": "https://app.odos.xyz/"
+    },
+    {
+      "x": "https://x.com/stryke_xyz",
+      "discord": "https://discord.com/invite/stryke",
+      "tags": [
+        {
+          "value": "derivatives",
+          "_type": "tag",
+          "label": "Derivatives",
+          "_key": "Qm0pNNgl"
+        }
+      ],
+      "telegram": null,
+      "_id": "2690c5e3-ea18-4865-a613-f625033815a3",
+      "title": "Stryke",
+      "description": "CLAMM that offers options trading while maximizing capital efficiency for LPs.",
+      "website": "https://www.stryke.xyz/en/dashboard",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/44b60daf6e43f9207f7c770c90e021bdcb301f7d-65x64.png"
+    },
+    {
+      "_id": "286d23b2-800c-4f2f-a8e4-bc1b3c2a700d",
+      "title": "Alchemy",
+      "description": "Developer platform that offers advanced Web3 tools, including subgraphs and RPCs.",
+      "website": "https://alchemy.com",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/879ed55d9200883e06108e6e8ac1a58bf8b13add-129x129.png",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Infra",
+          "_key": "F8PSQeEN",
+          "value": "infra"
+        }
+      ],
+      "x": "https://x.com/AlchemyPlatform",
+      "telegram": null,
+      "discord": "https://x.com/AlchemyPlatform"
+    },
+    {
+      "image": "https://cdn.sanity.io/images/nat2546z/production/7dad39119bd1cdc996d28539fff097c6763381bf-1080x1080.png",
+      "discord": "https://discord.com/invite/micro3",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "SocialFi",
+          "_key": "socialfi",
+          "value": "socialfi"
+        }
+      ],
+      "_id": "291a56d4-bd25-4364-853f-2df2aed74346",
+      "title": "Micro3",
+      "description": "Micro3 is a De-SocialFi universe that leverages immersive storytelling and gaming experiences to tokenize global social engagement into Web3 power.",
+      "website": "https://micro3.io/",
+      "x": "https://x.com/Micro3io",
+      "telegram": "https://t.me/micro3official"
+    },
+    {
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Infra",
+          "_key": "tNJ5ZEPd",
+          "value": "infra"
+        }
+      ],
+      "image": "https://cdn.sanity.io/images/nat2546z/production/eb3d97f2809ebd75f4be384d5f03ac99f030945e-129x129.png",
+      "discord": "",
+      "_id": "2b733162-a404-4c0f-9f7d-597088260f4f",
+      "title": "Tenderly",
+      "description": "Web3 infrastructure provider with virtual environments, RPCs, monitoring, and more.",
+      "website": "https://tenderly.co/",
+      "x": "https://x.com/TenderlyApp",
+      "telegram": null
+    },
+    {
+      "x": "https://x.com/Rings_Protocol",
+      "_id": "2e5dd060-acaf-425a-805e-cf977b57fc6e",
+      "telegram": null,
+      "discord": "",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Yield",
+          "_key": "yield",
+          "value": "yield"
+        },
+        {
+          "_type": "tag",
+          "label": "Stablecoins",
+          "_key": "stablecoins",
+          "value": "stablecoins"
+        }
+      ],
+      "title": "Rings",
+      "description": "Scalable yield-bearing stablecoin inspired by Solidly, powered by Veda strategies.",
+      "website": "https://rings.money/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/dfb850a2c6d34051c0f3484b5107075087d7229f-65x64.png"
+    },
+    {
+      "_id": "2f7f87a4-91e7-448b-8819-43044c046464",
+      "description": "Cross-chain aggregation infrastructure for fast and efficient cross-chain swaps.",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/5010e025b2848910009f5d0951a56816de3173d3-64x64.png",
+      "x": "https://x.com/magpieprotocol",
+      "telegram": null,
+      "discord": "https://discord.com/invite/CwJuFeHp6f",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "DeFi Tooling",
+          "_key": "VzfTGtFS",
+          "value": "defi-tooling"
+        }
+      ],
+      "title": "Magpie Protocol",
+      "website": "https://www.magpiefi.xyz/"
+    },
+    {
+      "_id": "2fd85397-7e1a-48e6-b3c7-bd4ebcbf4d39",
+      "description": "User-centric DeFi protocol that combines lending, liquidity, and leverage into a unified, secure product suite. It enables users to borrow and lend assets, offering a seamless experience for optimizing their financial strategies.",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/1e6b4dd878c2b268715eacaedd8afe7ae1b08e0b-65x64.png",
+      "x": "https://x.com/machfi_xyz",
+      "telegram": null,
+      "discord": "",
+      "title": "MachFi",
+      "website": "https://www.machfi.xyz/",
+      "tags": [
+        {
+          "value": "lending",
+          "_type": "tag",
+          "label": "Lending",
+          "_key": "2zNwmgzy"
+        }
+      ]
+    },
+    {
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Spot Dex",
+          "_key": "tdUidfcx",
+          "value": "spot-dex"
+        }
+      ],
+      "title": "SilverSwap",
+      "description": "DeFi hub and DEX for trading, investing regularly, farming, and reward sharing.",
+      "x": "https://discord.com/invite/paintswap",
+      "discord": "",
+      "_id": "3090f035-f93e-4a9f-8348-c3312358320b",
+      "website": "https://SilverSwap.io",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/e249240f552d89347f4b991083e21164540bc644-129x129.png",
+      "telegram": null
+    },
+    {
+      "description": "Peer-to-peer battle card NFT crypto game bringing Universal Basic Income to players through GameFi by utilizing its innovative and sustainable Dual Token Drive Engine",
+      "website": "https://battledogs.fun/sonic",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/5409f359413e1924c3791633ae3b0acc2bcfd792-512x512.png",
+      "x": "https://x.com/battledogsarena",
+      "_id": "312b90fe-e805-44bf-973d-c29e31b654f5",
+      "title": "Battledogs Arena",
+      "telegram": "https://t.me/battledogsarena",
+      "discord": "https://discord.gg/tCdYyJk",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Game",
+          "_key": "game",
+          "value": "game"
+        },
+        {
+          "_type": "tag",
+          "label": "NFT",
+          "_key": "nft",
+          "value": "nft"
+        }
+      ]
+    },
+    {
+      "x": "https://x.com/yel_finance",
+      "telegram": null,
+      "discord": "https://t.co/VH9kD3Jgvn",
+      "title": "Yel Finance",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/8560bc94edd583b646e00477e99a0c9998a6e8ac-65x64.png",
+      "tags": [
+        {
+          "_key": "yield",
+          "value": "yield",
+          "_type": "tag",
+          "label": "Yield"
+        }
+      ],
+      "_id": "31d9b5a8-c75a-45d4-b5b4-570e5697d3f7",
+      "description": "DeFi R&D laboratory that focuses on generating smart and real yield for users.",
+      "website": "https://t.co/mOBUEIbteY"
+    },
+    {
+      "website": "https://contango.exchange/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/806bf4aa7b3b23dcfc4dfde01796906af43e8a1e-65x64.png",
+      "x": "https://x.com/Contango_xyz",
+      "discord": "https://discord.com/invite/x3dync2edA",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Yield",
+          "_key": "yield",
+          "value": "yield"
+        },
+        {
+          "_key": "defi-tooling",
+          "value": "defi-tooling",
+          "_type": "tag",
+          "label": "DeFi Tooling"
+        }
+      ],
+      "_id": "337fd3f0-1fb8-4fd0-9747-447db8faf4dc",
+      "title": "Contango",
+      "description": "On-chain looping protocol that enables users to loop actions and transactions.",
+      "telegram": null
+    },
+    {
+      "discord": "https://discord.gg/sdDkgHJY",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Spot Dex",
+          "_key": "spot-dex",
+          "value": "spot-dex"
+        }
+      ],
+      "website": "https://www.sushi.com/sonic/swap",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/956dfe8b24e0a165ec6843b383512e5231ea38cd-180x180.png",
+      "x": "https://x.com/SushiSwap",
+      "telegram": null,
+      "_id": "34827262-54dd-4d7c-b62d-7fc10044c743",
+      "title": "SushiSwap",
+      "description": "Multi-chain DEX, enabling users to do swaps across 40+ chains. Powered by one of the industry’s most advanced aggregation and swap stacks, Sushi delivers superior liquidity access, best-in-class pricing, and powerful liquidity solutions for LPs."
+    },
+    {
+      "title": "MarginZero",
+      "description": "Trade perps/options, oracle-free, without upfront margins or price-based liquidation.",
+      "website": "https://t.co/zCc8LJp9dn",
+      "x": "https://x.com/marginzero_xyz",
+      "telegram": null,
+      "discord": "",
+      "tags": [
+        {
+          "label": "Derivatives",
+          "_key": "3jj6NVdy",
+          "value": "derivatives",
+          "_type": "tag"
+        }
+      ],
+      "_id": "36d742b8-3f9a-463e-a076-b46df1d18dd3",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/fcf774f7471a857a7d455fe507ab81eabc596206-65x64.png"
+    },
+    {
+      "_id": "373885fd-78f6-4d5a-90e8-fe38c34edd32",
+      "title": "Yoko",
+      "description": "Create and customize AI personas for storytelling, customer service, or personal assistance—no coding required. Design bots that engage effortlessly.",
+      "website": "https://yoko.live",
+      "x": "https://x.com/yokodotlive",
+      "discord": null,
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "AI",
+          "_key": "ai",
+          "value": "ai"
+        },
+        {
+          "_type": "tag",
+          "label": "LaunchPad",
+          "_key": "LaunchPad",
+          "value": "LaunchPad"
+        }
+      ],
+      "image": "https://cdn.sanity.io/images/nat2546z/production/185fe305b51ecf662c5945c082fa44ea76a1cbf0-345x345.png",
+      "telegram": "https://t.me/yokodotlive"
+    },
+    {
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "GambleFi",
+          "_key": "81G9PVjZ",
+          "value": "gamblefi"
+        }
+      ],
+      "description": "On-chain casino that lets users play games with assets, like blackjack and roulette.",
+      "x": null,
+      "discord": "",
+      "_id": "3c7f3d63-b950-4b35-bcfa-0e543a7b22b2",
+      "title": "PlusBet",
+      "website": "https://www.plus.bet/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/07d8428e7c1effb6f108ae99efdaa4af88df5e5b-65x64.png",
+      "telegram": null
+    },
+    {
+      "_id": "4161edcf-538f-40f3-ac0d-e713b25d1b29",
+      "title": "Rivo",
+      "description": "Investing platform combining a multi-chain contract wallet with a yield marketplace.",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/713d6bada34adf85b760ed2a886c2adca8b6a13f-129x129.png",
+      "x": "https://x.com/rivoxyz/",
+      "discord": "",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Yield",
+          "_key": "2syKulyI",
+          "value": "yield"
+        }
+      ],
+      "website": "https://rivo.xyz/",
+      "telegram": null
+    },
+    {
+      "tags": [
+        {
+          "label": "Derivatives",
+          "_key": "derivatives",
+          "value": "derivatives",
+          "_type": "tag"
+        }
+      ],
+      "_id": "42ec5019-4d68-449d-ac26-0279427eceac",
+      "title": "Spectra",
+      "website": "https://app.spectra.finance/pools",
+      "x": "https://x.com/spectra_finance",
+      "telegram": null,
+      "description": "Decentralized interest rate derivatives protocol that allows permissionless creation pools, fixed rates, and trade yield via Yield Token and Principal Token, minted on top of ERC-4626 interest-bearing tokens.",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/85d2a23cc88d00b2a982d83ea3319b01281350fe-400x400.jpg",
+      "discord": "https://discord.com/invite/n4Un5nZhCp"
+    },
+    {
+      "_id": "44ce1ff8-2924-4eed-8761-edf227ecbb6c",
+      "title": "Orange Finance",
+      "description": "Automated liquidity management protocol at the forefront of LPDfi innovation.",
+      "website": "https://app.orangefinance.io/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/73987928b038138eb23b37d75be452ac1f9fa8c1-65x64.png",
+      "x": "https://x.com/0xOrangeFinance",
+      "telegram": null,
+      "discord": "",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Yield",
+          "_key": "lbTXxBn5",
+          "value": "yield"
+        }
+      ]
+    },
+    {
+      "_id": "486b60ba-4c21-4fad-8acd-f428aa4dd1e0",
+      "description": "Blockchain intelligence platform to prevent digital asset fraud and financial crime.\n",
+      "website": "https://www.trmlabs.com/",
+      "x": "",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Infra",
+          "_key": "OPuuCS0P",
+          "value": "infra"
+        }
+      ],
+      "title": "TRM",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/ddf76f38a9882afe65fc4de57ff24d5328f24f9e-65x64.png",
+      "telegram": null,
+      "discord": ""
+    },
+    {
+      "_id": "496c8ca5-f2d1-4a29-aec1-3cabe1f10e02",
+      "description": "A modular and permissionles yield tokenization platform that enables scalability",
+      "website": "https://napier.finance/",
+      "x": "https://x.com/NapierFinance",
+      "telegram": null,
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Derivatives",
+          "_key": "derivatives",
+          "value": "derivatives"
+        }
+      ],
+      "title": "Napier Finance",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/f777d61961e5b772dd81ceb5a04aaf2c12b8999d-400x400.jpg",
+      "discord": "https://discord.com/invite/Yeay7qPsrE"
+    },
+    {
+      "_id": "4f33caf4-05df-45c7-99bc-87aabb9cc6f1",
+      "website": "https://www.euler.finance/",
+      "x": "https://x.com/eulerfinance",
+      "discord": "http://discord.euler.finance",
+      "tags": [
+        {
+          "value": "lending",
+          "_type": "tag",
+          "label": "Lending",
+          "_key": "lending"
+        }
+      ],
+      "title": "Euler",
+      "description": "Euler is a flexible platform for decentralized lending and borrowing, designed to adapt and grow with the evolving world of DeFi.",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/bd0658865c51c0494fc04604daaa43148aec1eb8-181x180.png",
+      "telegram": null
+    },
+    {
+      "_id": "517ef082-ed3f-46cf-bf81-91aae41a5c94",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/6a94165717a2d5ab13db6b05c4c9e2ff7301b363-506x493.png",
+      "x": "https://x.com/snftpro",
+      "telegram": null,
+      "discord": null,
+      "title": "SNFT",
+      "description": "Multi-chain NFT marketplace and launchpad.",
+      "website": "https://snft.pro/",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "NFT",
+          "_key": "nft",
+          "value": "nft"
+        }
+      ]
+    },
+    {
+      "discord": "",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "LST",
+          "_key": "E5sAIet4",
+          "value": "lst"
+        }
+      ],
+      "_id": "52b6ee15-8b09-4d0e-9855-0c160b6ab8e1",
+      "title": "Dinero",
+      "description": "DeFi platform with a suite of products to scale yield for users and institutions.",
+      "website": "https://dinero.xyz/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/e9fe590f5067651f6b284710c60362efe8a1b395-65x64.png",
+      "x": "https://x.com/dinero_xyz",
+      "telegram": null
+    },
+    {
+      "_id": "52e436da-d374-48a1-a3b7-3f4aef60a87f",
+      "title": "Unstoppable Domains",
+      "website": "https://unstoppabledomains.com/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/896b322bf02d5ef05ac7fbec524454e3ef05b3b2-65x64.png",
+      "tags": [
+        {
+          "label": "Miscellaneous",
+          "_key": "hj4mAMe2",
+          "value": "miscellaneous",
+          "_type": "tag"
+        }
+      ],
+      "description": "Official on-chain domain provider on Sonic, powering digital identities with .sonic.",
+      "x": "https://x.com/unstoppableweb",
+      "telegram": null,
+      "discord": ""
+    },
+    {
+      "title": "OpenOcean",
+      "description": "DEX aggregator with cross-chain swaps, gasless limit orders, DCA tool, and more.",
+      "website": "https://app.openocean.finance/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/183a43bd34eabec4b044766cd959c1418d0f3f4e-129x129.png",
+      "_id": "55f551e6-dad7-470a-8be9-9a1d9517237a",
+      "x": "https://x.com/OpenOceanGlobal",
+      "telegram": null,
+      "discord": "https://discord.com/invite/C7PHQaKdNX",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "DeFi Tooling",
+          "_key": "kl3jaYsS",
+          "value": "defi-tooling"
+        }
+      ]
+    },
+    {
+      "title": "WOOFi",
+      "x": "https://x.com/_WOOFi",
+      "discord": null,
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Spot Dex",
+          "_key": "spot-dex",
+          "value": "spot-dex"
+        }
+      ],
+      "_id": "56e389f2-7d30-4026-aaa8-fdcd1e87e3c1",
+      "description": "WOOFi is a leading decentralized application that has all the crypto tools you need to swap, trade, and earn, in one convenient place.",
+      "website": "https://woofi.com/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/89c42521d6a91be318ae7bf85fa8ba68daa9e14d-1080x1080.png",
+      "telegram": null
+    },
+    {
+      "image": "https://cdn.sanity.io/images/nat2546z/production/0e6672b2dbb29d0c047482888a3c6efac146abee-466x466.png",
+      "x": "https://x.com/BoomDEX",
+      "discord": null,
+      "_id": "59132c26-3a07-4c39-bf67-97dc3a5b9d02",
+      "title": "Boom Markets",
+      "description": "Professional perpetual trading, simplified. Up to 50x leverage on Sonic.",
+      "website": "https://boom.markets",
+      "telegram": "https://t.me/+ENSTayUVOfg5OTVk",
+      "tags": [
+        {
+          "value": "derivatives",
+          "_type": "tag",
+          "label": "Derivatives",
+          "_key": "derivatives"
+        }
+      ]
+    },
+    {
+      "telegram": null,
+      "description": "Liquidity management protocols turning single-token deposits into optimized yields.",
+      "website": "https://www.ichi.org/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/425975d6e9f546986ecc56ef50c3258f0cf8ca35-65x64.png",
+      "discord": "",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Yield",
+          "_key": "yield",
+          "value": "yield"
+        },
+        {
+          "_type": "tag",
+          "label": "alm",
+          "_key": "alm",
+          "value": "alm"
+        }
+      ],
+      "_id": "5bc56e70-ef42-49f1-abea-51f77dd4bbf9",
+      "title": "Ichi",
+      "x": "https://x.com/ichifoundation/"
+    },
+    {
+      "title": "Multisender.app",
+      "telegram": "https://t.me/MultiSender",
+      "discord": null,
+      "_id": "5c3f0429-b8df-4d9a-8fb8-2843e961b648",
+      "description": "Facilitates airdrops and other mass transactions on a multitude of networks, including Sonic. The batch transfer algorithm and automated transaction generation enable users to do mass transfers in three clicks, while all the sensitive transaction data is handled by their wallet software, ensuring security.",
+      "website": "https://classic.multisender.app/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/5a91a92cc71ea12e784a4584890e34a86294cb41-319x319.jpg",
+      "x": "https://x.com/multi_sender",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "DeFi Tooling",
+          "_key": "defi-tooling",
+          "value": "defi-tooling"
+        }
+      ]
+    },
+    {
+      "title": "Bellum Exchange",
+      "website": "https://bellum.exchange/",
+      "telegram": null,
+      "discord": "",
+      "_id": "5c750b46-bdba-4920-8b60-822d3daa2425",
+      "description": "Token launchpad that offers safe launches and community-focused LP distribution.",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/fa12237327cdccfe22213ffbf8e8288ff1454426-129x129.png",
+      "x": "https://x.com/BellumExchange",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "DeFi Tooling",
+          "_key": "k95SUYEk",
+          "value": "defi-tooling"
+        }
+      ]
+    },
+    {
+      "description": "Perpetuals DEX offering up to 500x leverage using any token, with gasless trading.",
+      "website": "https://www.lynx.finance/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/354d795053c90189ebe5284f629c6eaf888fb94f-129x129.png",
+      "x": "https://x.com/lynx_protocol",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Derivatives",
+          "_key": "VrZQvhRf",
+          "value": "derivatives"
+        }
+      ],
+      "telegram": null,
+      "discord": "https://t.co/UE6hcnVD1k",
+      "_id": "5d7b1a06-2f89-49f7-8f09-93edeb90a661",
+      "title": "Lynx"
+    },
+    {
+      "title": "Biconomy",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/3916ea7df00161720f65a46b04f1f579533e7cf4-65x64.png",
+      "x": "",
+      "telegram": null,
+      "_id": "5e96ccee-dc2c-4b40-8f57-1c567d603b87",
+      "description": "AA platform for apps to integrate gasless transactions, social logins, and more.",
+      "website": "https://www.biconomy.io/",
+      "discord": "",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Infra",
+          "_key": "4rzS4UFD",
+          "value": "infra"
+        }
+      ]
+    },
+    {
+      "_id": "605f571b-e0be-4d16-842b-26f32102ae54",
+      "description": "Providing the tools and infrastructure necessary to operate both on-chain and off-chain, ensuring a reliable, robust, secure, and consistent environment for any scenario.",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/9c6854b71be8d0645efbf0447eeae14f4ff37c31-3300x3300.png",
+      "discord": "https://discord.com/invite/nZQZ2Br9yc",
+      "title": "Archly",
+      "website": "https://www.archly.fi/",
+      "x": "https://x.com/ArchlyFinance",
+      "telegram": "https://t.me/ArchlyFinance",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Spot Dex",
+          "_key": "spot-dex",
+          "value": "spot-dex"
+        },
+        {
+          "value": "defi-tooling",
+          "_type": "tag",
+          "label": "DeFi Tooling",
+          "_key": "defi-tooling"
+        },
+        {
+          "_type": "tag",
+          "label": "Infra",
+          "_key": "infra",
+          "value": "infra"
+        }
+      ]
+    },
+    {
+      "image": "https://cdn.sanity.io/images/nat2546z/production/f6a384c05fbb5656e7085fff214a0737d5421d1d-65x64.png",
+      "discord": "",
+      "_id": "628b8232-c39e-4940-8c35-ae5f8d5db966",
+      "x": "https://x.com/SolvProtocol",
+      "telegram": null,
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "BTCFi",
+          "_key": "dM65ILwU",
+          "value": "btcfi"
+        }
+      ],
+      "title": "Solv Protocol",
+      "description": "On-chain Bitcoin reserve unlocking DeFi potential of Bitcoin with SolvBTC tokens.",
+      "website": "https://solv.finance/"
+    },
+    {
+      "_id": "63099298-c638-4a3d-9f0a-86e1affcfcb5",
+      "description": "Deep-liquidity, low-slippage DEX offering an on-chain order book and 1-click LP.",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/905abebbc8c09414e400093283198c194bbc0c9c-65x64.png",
+      "discord": "",
+      "tags": [
+        {
+          "label": "Spot Dex",
+          "_key": "c8ZNUN0I",
+          "value": "spot-dex",
+          "_type": "tag"
+        }
+      ],
+      "title": "Xpress",
+      "website": "",
+      "x": "",
+      "telegram": null
+    },
+    {
+      "title": "ZNS",
+      "description": "Decentralized naming solution for personalized Web3 identities.",
+      "website": "https://www.znsconnect.io/",
+      "tags": [
+        {
+          "label": "Infra",
+          "_key": "infra",
+          "value": "infra",
+          "_type": "tag"
+        }
+      ],
+      "_id": "630c4ef6-9f33-4bf9-92cf-f79dc3e5b02c",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/2d7e7e16ce0ece0f7556bf50031282efb6c4227e-1080x1080.png",
+      "x": "https://x.com/ZNSConnect",
+      "telegram": "https://t.me/znsconnect",
+      "discord": "https://discord.com/invite/2rrkuqT8pB"
+    },
+    {
+      "title": "Sonic Name Service",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/343f65a57076acd2eb9b310bef46142c4c8d8147-1953x1935.png",
+      "x": "https://x.com/SonicSNS",
+      "discord": null,
+      "description": "Decentralized naming platform exclusively built on Sonic. It provides human-readable .s domain names that can be mapped to wallet addresses, smart contracts, and decentralized websites.",
+      "website": "https://sns.net/",
+      "telegram": "https://t.me/SonicSNS",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Infra",
+          "_key": "infra",
+          "value": "infra"
+        },
+        {
+          "label": "Miscellaneous",
+          "_key": "miscellaneous",
+          "value": "miscellaneous",
+          "_type": "tag"
+        }
+      ],
+      "_id": "631a97da-90c8-4f60-afa1-8490fc74f985"
+    },
+    {
+      "website": "https://owlto.finance/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/85a90fb70486f628f616d8ae494e8dd4264fba6d-65x64.png",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Bridge",
+          "_key": "E3c3Qiax",
+          "value": "bridge"
+        }
+      ],
+      "description": "AI-driven liquidity protocol to bridge stablecoins from other chains to Sonic.",
+      "x": "",
+      "telegram": null,
+      "discord": "",
+      "_id": "64bb1943-6536-44ee-abf9-a8954113b6fd",
+      "title": "Owlto Finance"
+    },
+    {
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Lending",
+          "_key": "BtNGIa1m",
+          "value": "lending"
+        }
+      ],
+      "_id": "64ca3e9c-af1b-4da7-84a9-765ec946eab1",
+      "title": "Debita Finance",
+      "description": "Peer-to-peer lending platform offering custom collateral, interest rates, and more.",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/672d49bb9fc5ac54e7c9f5470466effcef6ecb4d-129x129.png",
+      "website": "https://debita.org/",
+      "x": "https://x.com/DebitaFinance",
+      "telegram": null,
+      "discord": "https://discord.com/invite/ymYuc35uVw"
+    },
+    {
+      "_id": "6a18f582-e203-4703-8fd5-eb9eea54211d",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/4009dd44e505c08a8e1e4fb1c0211643b8266ae2-360x360.png",
+      "x": "https://x.com/paint_swap",
+      "telegram": null,
+      "discord": "https://discord.com/invite/paintswap",
+      "title": "PaintSwap",
+      "description": "Decentralized NFT marketplace allowing users to buy, sell, and create NFTs.",
+      "website": "https://paintswap.finance/",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "NFT",
+          "_key": "UX9yShvD",
+          "value": "nft"
+        }
+      ]
+    },
+    {
+      "description": "Non-custodial, smart contract wallet offering multi-signature management and AA.",
+      "website": "https://safe.global/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/2c49053a93e7b584254180915860f803246aacc3-129x129.png",
+      "x": "https://x.com/safe",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Infra",
+          "_key": "atXYmUUY",
+          "value": "infra"
+        }
+      ],
+      "_id": "72c5b932-5b1c-4542-a773-9bfe5941ecbb",
+      "title": "Safe",
+      "telegram": null,
+      "discord": ""
+    },
+    {
+      "_id": "72d93ab4-23a0-4e32-b7dd-8d406452e703",
+      "title": " Beefy Finance",
+      "description": "Decentralized, multi-chain yield optimizer allowing users to earn compound interest.",
+      "website": "https://beefy.com/",
+      "x": "https://x.com/beefyfinance",
+      "telegram": null,
+      "discord": "",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/683487012ec39dc6af7b4cc4dc90eb17626e8603-65x64.png",
+      "tags": [
+        {
+          "label": "Yield",
+          "_key": "yield",
+          "value": "yield",
+          "_type": "tag"
+        },
+        {
+          "_type": "tag",
+          "label": "alm",
+          "_key": "alm",
+          "value": "alm"
+        }
+      ]
+    },
+    {
+      "_id": "732fb301-b7d7-43ef-9b77-e5ef70817f7c",
+      "title": "ZeroLend",
+      "website": "https://zerolend.xyz/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/dcec1653dd2be8e510d232d67a1894eda7966dac-65x64.png",
+      "x": "https://x.com/zerolendxyz",
+      "tags": [
+        {
+          "label": "Lending",
+          "_key": "0KHilKM4",
+          "value": "lending",
+          "_type": "tag"
+        }
+      ],
+      "description": "Lending market with a focus on LRTs, governance, RWAs, and account abstraction.",
+      "telegram": null,
+      "discord": "https://discord.com/invite/zerolend"
+    },
+    {
+      "_id": "73935599-c4a4-4956-afe8-d9c5946d417e",
+      "website": "https://fluid.instadapp.io/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/6802898622bd54fdaacabc77f479f008c9727c23-129x129.png",
+      "x": "",
+      "telegram": null,
+      "discord": "",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Lending",
+          "_key": "x7d1i5Qa",
+          "value": "lending"
+        }
+      ],
+      "title": "Fluid",
+      "description": "Lending protocol with a focus on liquidity consolidation and automated limits."
+    },
+    {
+      "website": "https://mclb.org/",
+      "discord": "https://discord.com/invite/mclb",
+      "title": "Millennium Club",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/b78e1b92c5e806d7bc618684eabd537915dba3ce-129x129.png",
+      "x": "https://x.com/MillenniumClub3",
+      "telegram": null,
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "LST",
+          "_key": "6KWhnsdK",
+          "value": "lst"
+        }
+      ],
+      "_id": "74118381-c409-4c6f-b5a3-def99ab29ee1",
+      "description": "Decentralized organization with DeFi products like fBomb, mFTM, and DAO governance."
+    },
+    {
+      "_id": "7429d2a3-2d5e-4456-a422-d558630f1831",
+      "description": "One-click access to DeFi. Effortlessly deploy and actively manage liquidity across all defi instruments to unlock the most optimized and frictionless yield.",
+      "website": "https://lucidly.finance/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/d4d688d1e5eeae7ae51e8b2298b4ab427249c61a-183x180.png",
+      "telegram": "https://t.me/bullishbeers",
+      "title": "Lucidly Finance",
+      "x": "https://x.com/LucidlyFinance",
+      "discord": "https://discord.gg/6TZX89RPWW",
+      "tags": [
+        {
+          "label": "Yield",
+          "_key": "yield",
+          "value": "yield",
+          "_type": "tag"
+        }
+      ]
+    },
+    {
+      "title": "DexFi",
+      "description": "Multi-chain yield aggregator and AiLM (Automated Intelligent Liquidity Manager) designed to automate v3 liquidity management by harnessing the power of AI.",
+      "website": "https://dexfi.com/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/0f9178027e3b727a8f13b51bd0c8d2fc210a9ea9-1000x1000.png",
+      "x": "https://x.com/DexFinance",
+      "telegram": "https://t.me/dexfinance",
+      "_id": "7514f16f-cf5a-4407-895e-5241cafe8601",
+      "discord": "https://discord.gg/dexfinance",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Yield",
+          "_key": "yield",
+          "value": "yield"
+        },
+        {
+          "_key": "alm",
+          "value": "alm",
+          "_type": "tag",
+          "label": "alm"
+        }
+      ]
+    },
+    {
+      "_id": "78b4099c-effd-4324-b7d6-d82dd194ea74",
+      "title": "Stability",
+      "description": "DeFi platform optimizing rewards with AI vaults, maximizing APYs with flexibility.",
+      "tags": [
+        {
+          "_key": "1NQnEmEo",
+          "value": "yield",
+          "_type": "tag",
+          "label": "Yield"
+        }
+      ],
+      "website": "https://stability.farm/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/3cad85f6d82d84efbda61acb2396c67708b577bd-64x64.png",
+      "x": "",
+      "telegram": null,
+      "discord": ""
+    },
+    {
+      "_id": "7a7250f9-1180-4737-9bfd-4def72445332",
+      "title": "Enclabs",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/d770e53590cefc3d3d2b7e2f0ee586f0af4af6be-400x400.png",
+      "discord": "https://discord.gg/h4XtXFKQ4G",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Lending",
+          "_key": "lending",
+          "value": "lending"
+        }
+      ],
+      "description": "Risk-adjusted and isolated lending markets on Sonic.",
+      "website": "https://enclabs.finance",
+      "x": "https://x.com/EnclabsFi",
+      "telegram": "https://t.me/EnclabsFinance"
+    },
+    {
+      "_id": "7b1b634f-b1b1-4a1d-8670-8ee99ba92e65",
+      "title": "SwapX",
+      "x": "",
+      "telegram": null,
+      "tags": [
+        {
+          "label": "Spot Dex",
+          "_key": "RQfeXS5F",
+          "value": "spot-dex",
+          "_type": "tag"
+        }
+      ],
+      "description": "V4 DEX with concentrated liquidity and active management, powered by Algebra.",
+      "website": "https://swapx.fi/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/9b5bf28beeb23a5093fd7787d89453a832debc3e-129x129.png",
+      "discord": ""
+    },
+    {
+      "_id": "7d7a9dc5-33e9-402e-abe1-571ce77fdf60",
+      "title": "Rabby",
+      "description": "Recommended Web3 wallet for an improved and seamless user experience on Sonic.",
+      "website": "https://rabby.io/",
+      "discord": "",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Infra",
+          "_key": "infra",
+          "value": "infra"
+        }
+      ],
+      "image": "https://cdn.sanity.io/images/nat2546z/production/e64950fc41abf199feafb3338dff443adf89867f-65x64.png",
+      "x": "",
+      "telegram": null
+    },
+    {
+      "telegram": "https://t.me/joinsideshiftai",
+      "discord": null,
+      "tags": [
+        {
+          "value": "bridge",
+          "_type": "tag",
+          "label": "Bridge",
+          "_key": "bridge"
+        }
+      ],
+      "website": "https://sideshift.ai/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/5d0fc9d18ad965195c8f0b49314bada40016d684-400x400.png",
+      "_id": "8165db15-a82b-4ec3-9d08-bc819e974bb4",
+      "title": "SideShift.ai",
+      "description": "Direct to Wallet Trading. Trade between BTC, ETH, S and 100+ other coins. Sent directly to your wallet.\n",
+      "x": "https://x.com/sideshiftai"
+    },
+    {
+      "_id": "84c839ac-752b-4960-8e6a-8b1e1e3753bd",
+      "title": "SuperSonic",
+      "description": "DEX offering 1000x leverage, optimal swaps, and a launchpad, powered by Algebra.",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/76248778fbc861118d882418ead6a94c108c9d2c-129x129.png",
+      "x": "https://x.com/SuperSonicDEX",
+      "telegram": null,
+      "discord": "",
+      "website": "https://www.supersonic.trade/",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Spot Dex",
+          "_key": "aUbTsbE7",
+          "value": "spot-dex"
+        }
+      ]
+    },
+    {
+      "website": "https://stargate.finance/bridge?srcChain=arbitrum&srcToken=0xaf88d065e77c8cC2239327C5EDb3A432268e5831&dstChain=sonic&dstToken=0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/65efab8c0ea3a9ed773c457b0ff3e3c8c14e66ea-181x181.png",
+      "discord": "https://discord.com/invite/pgt5dYN",
+      "_id": "85a0c48d-66a4-468b-be7d-29895ddc2855",
+      "title": "Stargate",
+      "description": "Stargate is a fully composable liquidity transport protocol that lives at the heart of Omnichain DeFi",
+      "x": "https://x.com/StargateFinance",
+      "telegram": "https://t.me/joinchat/LEM0ELklmO1kODdh",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Bridge",
+          "_key": "bridge",
+          "value": "bridge"
+        }
+      ]
+    },
+    {
+      "discord": "https://discord.com/invite/debridge",
+      "tags": [
+        {
+          "_key": "bridge",
+          "value": "bridge",
+          "_type": "tag",
+          "label": "Bridge"
+        }
+      ],
+      "image": "https://cdn.sanity.io/images/nat2546z/production/7b72daae47f0662da92a64768da924921702fdcb-181x180.png",
+      "_id": "85f794a0-1b8c-48b0-b980-34df1170b20b",
+      "title": "deBridge",
+      "description": "Bridge that moves at lightspeed. By removing the bottlenecks and risks of liquidity pools, deBridge enables value and information to flow across the DeFiverse virtually instantly with deep liquidity and guaranteed rates.",
+      "website": "https://app.debridge.finance/?address=&inputChain=7565164&outputChain=146&inputCurrency=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&outputCurrency=0x29219dd400f2bf60e5a23d13be72b486d4038894&dlnMode=simple",
+      "x": "https://x.com/deBridgeFinance",
+      "telegram": "https://t.me/deBridge_finance"
+    },
+    {
+      "title": "Soneta",
+      "description": "Borrow $ONE with custom assets and interest rates, redeemable for $1 of collateral.",
+      "website": "https://www.soneta.xyz/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/b168d9ef1b14bed8bae791291d340581798433bb-65x64.png",
+      "x": "https://x.com/soneta_xyz",
+      "telegram": null,
+      "discord": "",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Stablecoins",
+          "_key": "pwtzcfw2",
+          "value": "stablecoins"
+        }
+      ],
+      "_id": "862139d2-a93a-4ea4-a5c0-0cc2930a7337"
+    },
+    {
+      "discord": "",
+      "tags": [
+        {
+          "_key": "lNwgdd4i",
+          "value": "yield",
+          "_type": "tag",
+          "label": "Yield"
+        }
+      ],
+      "title": "Gravity Finance",
+      "description": "1-click investment strategies with profit maximization and liquidation protection.",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/134ccf0ec52748135d7f008e083d2c28adaac684-65x64.png",
+      "x": "https://x.com/Gravity_Finance",
+      "_id": "87dc8b16-0f90-452c-99a0-922e45a464a8",
+      "website": "https://www.gravityfinance.io/home",
+      "telegram": null
+    },
+    {
+      "title": "Gearbox",
+      "description": "On-chain credit platform offering 10x leverage, DeFi access, and passive yields.",
+      "x": "https://x.com/GearboxProtocol",
+      "tags": [
+        {
+          "label": "Yield",
+          "_key": "aLMJEL0l",
+          "value": "yield",
+          "_type": "tag"
+        }
+      ],
+      "_id": "8de63d9d-7826-4a4b-818b-8b06b0ff0628",
+      "website": "https://gearbox.fi/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/d8465b5815dbfab13d3046694894326f9bf3aed8-65x64.png",
+      "telegram": null,
+      "discord": ""
+    },
+    {
+      "description": "CDP-based stablecoin protocol with dynamic collateral to unlock capital efficiency.",
+      "website": "https://app.jigsaw.finance/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/98c5a6b2bc71bc65c2d96e5fc5e7795f2d74dfee-65x64.png",
+      "x": "https://x.com/jigsawdefi",
+      "telegram": null,
+      "discord": "",
+      "_id": "90195853-3607-4c74-9e12-24db4e70fb42",
+      "title": "Jigsaw Finance",
+      "tags": [
+        {
+          "_key": "M6k6CY4J",
+          "value": "stablecoins",
+          "_type": "tag",
+          "label": "Stablecoins"
+        }
+      ]
+    },
+    {
+      "website": "https://defive.com/",
+      "x": "https://x.com/0xdefive",
+      "discord": "https://discord.com/invite/S6hNJ7WW6r",
+      "description": "DeFi in a swift, simple and sustainable way while having fun and earning.",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/f3dfca47ed9985dbf96d20ee684ae72fbb9daeb8-129x129.png",
+      "telegram": null,
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Spot Dex",
+          "_key": "HUAjbDjB",
+          "value": "spot-dex"
+        }
+      ],
+      "_id": "927d6c97-53f3-4fcc-8b14-ec19e0aedf08",
+      "title": "DeFive"
+    },
+    {
+      "_id": "92d1ac61-37e9-4f9b-a514-5a39a26bd42b",
+      "title": "Frax",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/d7a3b0681c36da6018e6fc6b6d61503fcc40fda1-65x64.png",
+      "telegram": "https://t.me/fraxfinance",
+      "description": "Stablecoin ecosystem offering FRAX, frxETH, and FSX with yield-bearing versions.",
+      "website": "https://frax.finance/",
+      "x": "https://x.com/fraxfinance",
+      "discord": "",
+      "tags": [
+        {
+          "label": "Stablecoins",
+          "_key": "TpTIN6Ol",
+          "value": "stablecoins",
+          "_type": "tag"
+        }
+      ]
+    },
+    {
+      "image": "https://cdn.sanity.io/images/nat2546z/production/ea3399cba354e00f7984b0b62071b866932c2c73-129x129.png",
+      "x": "https://x.com/EstforKingdom",
+      "telegram": null,
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Game",
+          "_key": "6N43GnaN",
+          "value": "game"
+        }
+      ],
+      "_id": "95cf1991-ea22-4a3a-9779-40155ba3b0d4",
+      "description": "Medieval Web3 MMORPG offering clan battles, quests, pets, in-game economy, and more.",
+      "discord": "https://discord.com/invite/paintswap",
+      "title": "Estfor Kingdom",
+      "website": "https://estfor.com/"
+    },
+    {
+      "_id": "9da4a36a-cbbe-4dc0-ac1f-e6379a6ac805",
+      "description": "Non-custodial instant crypto exchange service which supports 2000+ cryptocurrencies on over 100 chains and offers more than 800k pairs.",
+      "website": "https://simpleswap.io/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/ac6cb7df91ea3304887513f3f519ff56a384cff7-400x400.jpg",
+      "telegram": "https://t.me/Simpleswap",
+      "discord": "https://discord.gg/3D3JwTnsk5",
+      "title": "SimpleSwap",
+      "x": "https://twitter.com/SimpleSwap_io",
+      "tags": [
+        {
+          "value": "spot-dex",
+          "_type": "tag",
+          "label": "Spot Dex",
+          "_key": "spot-dex"
+        }
+      ]
+    },
+    {
+      "_id": "a17c2da6-5344-49b4-bf31-240afd4cd985",
+      "website": "https://app.vaultcraft.io/vaults",
+      "telegram": null,
+      "title": "VaultCraft",
+      "description": "Yield-optimizing protocol for deploying custom, cross-chain yield strategies.",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/97d031b6aa44e8133525e86fbe3e7422f3e13a67-65x64.png",
+      "x": "https://x.com/VaultCraft_io",
+      "discord": "",
+      "tags": [
+        {
+          "value": "yield",
+          "_type": "tag",
+          "label": "Yield",
+          "_key": "aq883esj"
+        }
+      ]
+    },
+    {
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Bridge",
+          "_key": "al130Cw9",
+          "value": "bridge"
+        }
+      ],
+      "discord": "",
+      "_id": "a18ac1be-9883-49e9-a3e1-46e653f15657",
+      "title": "EYWA",
+      "description": "Cross-chain trading and yield protocol unifying liquidity by aggregating Curve pools.",
+      "website": "https://app.crosscurve.fi/swap",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/7fee3f272e03c5569d4ba6218aa679fde9b81048-128x128.png",
+      "x": "https://x.com/eywaprotocol",
+      "telegram": null
+    },
+    {
+      "title": "Meson Finance",
+      "description": "Meson Finance is building one of the largest cross-chain bridging protocols, enabling seamless transfers of major digital assets like BTC, ETH, USDT, USDC across over 60 supported blockchains.\n",
+      "website": "https://meson.fi",
+      "x": "https://x.com/mesonfi",
+      "telegram": null,
+      "discord": "https://discord.gg/mesonfi",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Bridge",
+          "_key": "bridge",
+          "value": "bridge"
+        },
+        {
+          "_key": "infra",
+          "value": "infra",
+          "_type": "tag",
+          "label": "Infra"
+        }
+      ],
+      "_id": "a1bf9ab7-8803-4700-9673-4e416cf3f4e2",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/e44c1a5337b1bada4ad25fc51878fb7ae26d6ac5-180x181.png"
+    },
+    {
+      "telegram": null,
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "DeFi Tooling",
+          "_key": "T0oT9Pp8",
+          "value": "defi-tooling"
+        }
+      ],
+      "website": "https://llamapay.io/",
+      "discord": "",
+      "_id": "a31749aa-2781-4a4e-8b71-a3a1d73474be",
+      "title": "LlamaPay",
+      "description": "Stream assets, set up recurring subscriptions, and schedule payments, in one place.",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/6f6ba264eacba567a572dada99c7f0becac2354e-101x101.svg",
+      "x": "https://x.com/llamapay_io"
+    },
+    {
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Swap",
+          "_key": "Swap",
+          "value": "Swap"
+        },
+        {
+          "_type": "tag",
+          "label": "Cross-Chain",
+          "_key": "Cross-Chain",
+          "value": "Cross-Chain"
+        },
+        {
+          "value": "Chain Abstraction",
+          "_type": "tag",
+          "label": "Chain Abstraction",
+          "_key": "Chain Abstraction"
+        },
+        {
+          "value": "Interoperability",
+          "_type": "tag",
+          "label": "Interoperability",
+          "_key": "Interoperability"
+        },
+        {
+          "value": "bridge",
+          "_type": "tag",
+          "label": "Bridge",
+          "_key": "bridge"
+        }
+      ],
+      "image": "https://cdn.sanity.io/images/nat2546z/production/5f37390626453980ef0358de6cf735efffc2e73c-400x400.jpg",
+      "x": "https://x.com/BungeeExchange",
+      "telegram": null,
+      "_id": "a46738bc-80ab-4fa4-86fc-7f7136d152f6",
+      "title": "Bungee Protocol",
+      "description": "Bungee Protocol is a global liquidity marketplace that enables users to perform actions across chains. It's designed to optimise the experience for end users, powered by Socket Protocol.",
+      "website": "https://new.bungee.exchange/",
+      "discord": "https://discord.com/invite/DrvfYq6fvc"
+    },
+    {
+      "title": "1inch",
+      "description": "DEX aggregator offering competitive swap prices, cross-chain swaps, and limit orders.",
+      "website": "https://1inch.io/",
+      "discord": "",
+      "_id": "a4b74b3a-2adc-46d6-8b71-6c5aef6bc4c3",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/44e34948f85e31e6c241917bc7c026b7357495f6-65x64.png",
+      "x": "https://x.com/1inch",
+      "telegram": null,
+      "tags": [
+        {
+          "value": "defi-tooling",
+          "_type": "tag",
+          "label": "DeFi Tooling",
+          "_key": "OiD1mBfz"
+        }
+      ]
+    },
+    {
+      "title": "Gamma Finance",
+      "website": "https://www.gamma.xyz/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/9c7e3f0641ba58381890f9f8a0571a14c5a341b2-65x64.png",
+      "x": "https://x.com/gammastrategies",
+      "telegram": null,
+      "tags": [
+        {
+          "value": "yield",
+          "_type": "tag",
+          "label": "Yield",
+          "_key": "yield"
+        },
+        {
+          "_type": "tag",
+          "label": "alm",
+          "_key": "alm",
+          "value": "alm"
+        }
+      ],
+      "_id": "a5bccfee-7f7c-4951-8342-5881cf324a71",
+      "description": "Protocol offering active liquidity management and market-making strategies.",
+      "discord": ""
+    },
+    {
+      "_id": "a949dfb9-8203-4a04-9b88-527b8a625793",
+      "title": "Solidly",
+      "description": "Capital-efficient, multi-chain DEX offering advanced AMM design and incentives.",
+      "x": "https://x.com/SolidlyLabs",
+      "telegram": null,
+      "discord": "",
+      "website": "https://solidly.com/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/0564abef0af6b3127b2cfe75736e3c8a015c678c-65x64.png",
+      "tags": [
+        {
+          "_key": "spot-dex",
+          "value": "spot-dex",
+          "_type": "tag",
+          "label": "Spot Dex"
+        }
+      ]
+    },
+    {
+      "title": "Fireblocks",
+      "description": "Secure, enterprise-grade platform for managing, storing, and scaling digital assets.",
+      "website": "https://www.fireblocks.com/",
+      "x": "https://x.com/FireblocksHQ",
+      "telegram": null,
+      "discord": "",
+      "tags": [
+        {
+          "_key": "ckgmpG9M",
+          "value": "institutional",
+          "_type": "tag",
+          "label": "Institutional"
+        }
+      ],
+      "_id": "a9b33fef-8f29-42a6-8531-5d9f97d73661",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/9133c9fe8492eeb1efc991d602c7f7196f74591c-65x64.png"
+    },
+    {
+      "telegram": null,
+      "discord": "https://discord.com/invite/layer3",
+      "description": "Protocol allowing apps to boost activity and reward users with customizable quests.",
+      "website": "https://app.layer3.xyz",
+      "tags": [
+        {
+          "value": "miscellaneous",
+          "_type": "tag",
+          "label": "Miscellaneous",
+          "_key": "7SK9APXo"
+        }
+      ],
+      "_id": "aa58eeec-3625-450d-b543-3a3dbe049279",
+      "title": "Layer3",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/c2ca6496344f8369a96f1edec68bc211c3670b2c-65x64.png",
+      "x": "https://x.com/layer3xyz"
+    },
+    {
+      "website": "https://www.sonic.market/",
+      "x": "https://x.com/sonic_market",
+      "discord": "",
+      "tags": [
+        {
+          "value": "spot-dex",
+          "_type": "tag",
+          "label": "Spot Dex",
+          "_key": "xELag371"
+        }
+      ],
+      "description": "On-chain order book DEX combining CEX efficiency with DeFi transparency and security.",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/4889753c54dd68dd1a7d82b6f955cd622aff0473-65x64.png",
+      "telegram": null,
+      "_id": "ab83a701-0047-42be-ac63-03d1ebdbe570",
+      "title": "Sonic Market"
+    },
+    {
+      "telegram": "https://t.me/tokenPocket_en",
+      "tags": [
+        {
+          "value": "infra",
+          "_type": "tag",
+          "label": "Infra",
+          "_key": "infra"
+        }
+      ],
+      "_id": "ac9a09ad-40c4-4738-8dff-2b781a7b25e2",
+      "website": "https://www.tokenpocket.pro/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/0fe9f873abe9de55a94c451cc700c172d4eed1b2-512x512.png",
+      "discord": null,
+      "title": "TokenPocket",
+      "description": "A leading multi-chain self-custodial wallet and supports EVM-compatible networks. The recovery phrase and private key are stored directly on the user’s device, giving them complete control over their crypto assets.",
+      "x": "https://x.com/TokenPocket_TP"
+    },
+    {
+      "_id": "afdfd0b4-9dc2-4944-beaa-3f68b22080d6",
+      "title": "Paladin",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/acd552bbb47607e40540ad07beedfaed938fb06b-1000x1000.png",
+      "x": "https://x.com/Paladin_vote",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Miscellaneous",
+          "_key": "miscellaneous",
+          "value": "miscellaneous"
+        }
+      ],
+      "description": "Vote incentive marketplace that allows users to earn more with their locked assets.",
+      "website": "https://paladin.vote/#/",
+      "telegram": null,
+      "discord": "https://discord.com/invite/gxda4HgYXy"
+    },
+    {
+      "x": "https://x.com/beets_fi",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Spot Dex",
+          "_key": "j3wjdiju",
+          "value": "spot-dex"
+        },
+        {
+          "label": "LST",
+          "_key": "VbqyQH2w",
+          "value": "lst",
+          "_type": "tag"
+        }
+      ],
+      "_id": "b06cbd77-67a1-40ad-8dfc-ced9973638d1",
+      "title": "Beets",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/ed68c61fdda6ff2210799b0186907e4e4eb439fa-64x64.png",
+      "telegram": null,
+      "discord": "https://beets.fi/discord",
+      "description": "Leading hub for liquid-staked S providing users with a flexible DEX tech stack.",
+      "website": "https://beets.fi/"
+    },
+    {
+      "telegram": null,
+      "discord": "",
+      "website": "https://metropolis.exchange/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/1de4eba67cb784fa399852bc8c34d3953d393abc-129x129.png",
+      "tags": [
+        {
+          "value": "spot-dex",
+          "_type": "tag",
+          "label": "Spot Dex",
+          "_key": "1IHfwzdi"
+        }
+      ],
+      "_id": "b06f1942-29c7-4a69-b542-a5173881a583",
+      "title": "Metropolis",
+      "description": "Liquidity book DLMM DEX with zero-slippage and liquidity flexibility for more yield.",
+      "x": "https://x.com/MetropolisDEX"
+    },
+    {
+      "discord": null,
+      "description": "Professional-grade crypto trading and sniping toolkit designed to optimize token launches and provide instant market insights for data-driven decisions.",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "DeFi Tooling",
+          "_key": "defi-tooling",
+          "value": "defi-tooling"
+        }
+      ],
+      "_id": "b14a6f74-9e37-4d6d-a7dd-fab3002eef1f",
+      "title": "Blazing Bot",
+      "website": "https://app.blazingbot.com/dashboard/pro/sonic",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/5cde0813a6138a7b3b4c8d7472401b0a01b42ec8-400x400.png",
+      "x": "https://x.com/blazingbotapp",
+      "telegram": "https://tr.ee/4dJkoBJoQ_"
+    },
+    {
+      "discord": "",
+      "tags": [
+        {
+          "value": "derivatives",
+          "_type": "tag",
+          "label": "Derivatives",
+          "_key": "ZRcyGzsL"
+        }
+      ],
+      "_id": "b2101a4e-102e-4843-9111-1b209ca16a9b",
+      "title": "Vertex",
+      "x": "https://x.com/vertex_protocol",
+      "description": "Cross-margined order book DEX offering spot, perps, and an integrated money market.",
+      "website": "https://vertexprotocol.com/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/84566deeb835af285c25e6eaa8226afa4b634fc5-65x64.png",
+      "telegram": null
+    },
+    {
+      "image": "https://cdn.sanity.io/images/nat2546z/production/51685c4e70c61344d2364f95c291512854fec2e4-400x400.jpg",
+      "x": "https://x.com/symbiosis_fi",
+      "_id": "b4d27ea6-fdd0-44a0-9dc2-aae05d9db64a",
+      "description": "Cross-chain DEX and bridge that you can use to bridge to S, ETH, USDC, and all other tokens from 37 chains. ",
+      "telegram": "https://t.me/symbiosis_finance",
+      "discord": "https://discord.com/invite/YHgDSJ42eG",
+      "tags": [
+        {
+          "value": "bridge",
+          "_type": "tag",
+          "label": "Bridge",
+          "_key": "bridge"
+        },
+        {
+          "_key": "spot-dex",
+          "value": "spot-dex",
+          "_type": "tag",
+          "label": "Spot Dex"
+        }
+      ],
+      "title": "Symbiosis",
+      "website": "https://app.symbiosis.finance/"
+    },
+    {
+      "_id": "b506c629-b0dc-481a-ba01-79bd849b4ca2",
+      "title": "OpenBlock",
+      "description": "Enterprise-grade blockchain data and modeling platform, powered by ZK proofs.",
+      "website": "https://www.openblocklabs.com/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/630320dac56396eadfab3a57d6d36c0b12880742-129x129.png",
+      "x": "https://x.com/openblocklabs",
+      "telegram": null,
+      "discord": "",
+      "tags": [
+        {
+          "_key": "30lyYsoX",
+          "value": "airdrop",
+          "_type": "tag",
+          "label": "Airdrop"
+        }
+      ]
+    },
+    {
+      "_id": "b54d22cd-2e1c-4390-9191-db073b4ebe88",
+      "website": "https://www.pendle.finance/",
+      "telegram": null,
+      "tags": [
+        {
+          "value": "derivatives",
+          "_type": "tag",
+          "label": "Derivatives",
+          "_key": "OF5okCsG"
+        }
+      ],
+      "title": "Pendle",
+      "description": "Yield-trading protocol offering yield tokenization, yield longing, and fixed yield.",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/77c5513fc48aebc3391cf2e64051dda6d6a552ab-65x64.png",
+      "x": "https://x.com/pendle_fi",
+      "discord": ""
+    },
+    {
+      "x": "https://x.com/sacra_fi",
+      "telegram": null,
+      "discord": "",
+      "tags": [
+        {
+          "_key": "Fu8RUwUw",
+          "value": "game",
+          "_type": "tag",
+          "label": "Game"
+        }
+      ],
+      "description": "Decentralized RPG game with P&E mechanics combining true ownership and incentives.",
+      "_id": "b5904026-70a2-4957-bcf8-11a44af889a4",
+      "title": "Sacra: Falling of Myrd",
+      "website": "https://sacra.game/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/cff2f75c10d41d526679c9660ef87c2e28174903-65x64.png"
+    },
+    {
+      "title": "Blockchain Bureau",
+      "description": "Non-partisan custodian of blockchain data, enabling accurate credit risk insights.",
+      "website": "https://blockchainbureau.com/",
+      "x": "https://x.com/TheBlockBureau",
+      "telegram": null,
+      "discord": "",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "DeFi Tooling",
+          "_key": "UG6m9bZa",
+          "value": "defi-tooling"
+        }
+      ],
+      "_id": "b636c562-e18c-4857-9e6a-02ec8886e7ca",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/d53fcb2bcf1f6f698d597d71bb92a0d9bf96f43e-129x129.png"
+    },
+    {
+      "title": "Avalon",
+      "description": "BTCFi platform offering CeDeFi and decentralized lending powered by BTC-backed USDa.",
+      "website": "https://www.avalonfinance.xyz/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/29e9816115de6d8ef970ba38ea5e5d5ab3004ffb-65x64.png",
+      "x": "https://x.com/avalonfinance_",
+      "_id": "b6fcb16e-df90-446f-b7fa-5d3e663f71a2",
+      "telegram": null,
+      "discord": "",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Lending",
+          "_key": "xDOpajbI",
+          "value": "lending"
+        }
+      ]
+    },
+    {
+      "_id": "ba005d6b-9e56-48da-88c0-e6fb3a14ebc0",
+      "title": "Allora Network",
+      "description": "Self-improving decentralized AI network offering builders AI for their apps.",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/fe534ce61a308d17614d53d9028b7d3e2f9592bf-1726x1726.webp",
+      "telegram": null,
+      "tags": [
+        {
+          "value": "ai",
+          "_type": "tag",
+          "label": "AI",
+          "_key": "Nt5YYfWU"
+        }
+      ],
+      "website": "https://allora.network/",
+      "x": "https://x.com/AlloraNetwork",
+      "discord": ""
+    },
+    {
+      "_id": "bd9de138-7021-42a5-8209-6771603deb67",
+      "title": "Nitro by Router",
+      "website": "https://app.routernitro.com/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/f12fb20809215a9269c6d6213e823ca8e02e960f-65x64.png",
+      "x": "https://x.com/NitroByRouter",
+      "discord": "",
+      "description": "Trustless, modular cross-chain bridge enabling seamless multi-chain DeFi access.",
+      "telegram": null,
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Bridge",
+          "_key": "Cf2EjknQ",
+          "value": "bridge"
+        }
+      ]
+    },
+    {
+      "description": "Blockchain data platform presenting data in human-readable, streamlined dashboards",
+      "website": "https://dune.com/home",
+      "x": "https://x.com/dune",
+      "_id": "bdc23e39-4d77-41e8-91ac-f74379c903bd",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/c1e3633797d0f9f7ba6addc47eac8f541151ffaf-129x129.png",
+      "telegram": null,
+      "discord": "",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Infra",
+          "_key": "8QobNMiB",
+          "value": "infra"
+        }
+      ],
+      "title": "Dune"
+    },
+    {
+      "_id": "be1b8fc2-eb35-41b2-891d-19d3fdf6d4b7",
+      "description": "Observability platform for apps to gain insights, secure assets, and troubleshoot.",
+      "website": "https://www.sentio.xyz/",
+      "telegram": null,
+      "title": "Sentio",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/48d4bf21f5f8c9c02f4bee3ecaf39982dbddb97e-129x129.png",
+      "x": "https://x.com/sentioxyz",
+      "discord": "",
+      "tags": [
+        {
+          "label": "Infra",
+          "_key": "H0Y0o1l4",
+          "value": "infra",
+          "_type": "tag"
+        }
+      ]
+    },
+    {
+      "description": "Building $atS and $atETH, two synthetic assets designed to generate real yields for users.",
+      "website": "https://atoll.money/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/c9456e7c3f1504b9f042318c8d1a34319b59d694-187x187.jpg",
+      "x": "https://x.com/atoll_protocol",
+      "_id": "c5168b7b-0c32-4919-a013-c89fc1cdce34",
+      "title": "Atoll Protocol",
+      "telegram": null,
+      "discord": "https://discord.com/invite/f9DhtJGUuT",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Stablecoins",
+          "_key": "stablecoins",
+          "value": "stablecoins"
+        }
+      ]
+    },
+    {
+      "_id": "c62f238c-3c13-45bd-b75e-676f847ad551",
+      "title": "API3",
+      "description": "Decentralized oracles connecting apps to direct, secure, and transparent data feeds.",
+      "website": "https://api3.org/",
+      "x": "https://x.com/API3DAO",
+      "telegram": null,
+      "discord": "",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/6cae0db5865dc3a33bd1dc40c2722847d8ea8d75-64x64.png",
+      "tags": [
+        {
+          "_key": "infra",
+          "value": "infra",
+          "_type": "tag",
+          "label": "Infra"
+        },
+        {
+          "_type": "tag",
+          "label": "Oracle",
+          "_key": "oracle",
+          "value": "oracle"
+        }
+      ]
+    },
+    {
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Oracle",
+          "_key": "oracle",
+          "value": "oracle"
+        }
+      ],
+      "telegram": null,
+      "discord": "",
+      "_id": "c7efb66b-454f-48b0-b28f-8d7dba54269e",
+      "title": "Stork",
+      "description": "Oracle protocol offering sub-millisecond feeds, powered by a data publisher network.",
+      "website": "https://www.stork.network/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/e2f73d9b1183f93841364ab167526b0f8827f427-129x129.png",
+      "x": "https://x.com/StorkOracle"
+    },
+    {
+      "title": "RabbitX",
+      "description": "Memecoin perpetuals exchange offering up to 20x leverage and multi-chain liquidity.",
+      "website": "https://t.co/KAe1x934aF",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/32764ac3a7f5402975bc617fe73a3d986aa7ea91-400x400.jpg",
+      "discord": "https://discord.com/invite/rabbitx",
+      "x": "https://x.com/rabbitx_io",
+      "telegram": null,
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Derivatives",
+          "_key": "dv21Cez3",
+          "value": "derivatives"
+        }
+      ],
+      "_id": "cb8f1161-117b-4744-b674-4a82a16c736a"
+    },
+    {
+      "description": "Rush is a DeFi gaming platform combining traditional gambling with yield generation, where users can stake tokens to participate in both risk-based games with multipliers and no-loss lottery pools. \nThe platform features multiple earning opportunities through staking rewards, protocol fee sharing, and prize pools, with users able to choose between safe no-loss participation or high-multiplier games while earning continuous rewards based on their chosen risk level.",
+      "website": "https://www.sonicrush.xyz",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/fdddb6c0cd66531f7d61e506090d9b56ad23fbbb-400x400.jpg",
+      "x": "https://x.com/sonicrush_xyz",
+      "discord": "https://discord.com/invite/wCPZM6sFky",
+      "tags": [
+        {
+          "label": "GambleFi",
+          "_key": "gamblefi",
+          "value": "gamblefi",
+          "_type": "tag"
+        }
+      ],
+      "_id": "cc0248c1-e883-4da2-91b5-ef74955c3bdd",
+      "title": "Sonic Rush",
+      "telegram": "https://t.me/+3D2oOlkbV_M5MWZk"
+    },
+    {
+      "_id": "cc53ca6e-bb6a-4b89-916e-3177cae9fd26",
+      "website": "https://app.interport.fi/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/fdc7ae036d29466142e079ba04c9be6e36fa759f-180x180.png",
+      "x": "https://x.com/interportfi",
+      "discord": "https://discord.gg/interport",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Bridge",
+          "_key": "bridge",
+          "value": "bridge"
+        }
+      ],
+      "title": "Interport Finance",
+      "description": "Interport Finance is a cross-chain hub enabling seamless bridging, swaps, and gas transfers across 25+ blockchains. It ensures secure, efficient, and cost-effective transactions, powered by top cross-chain technologies",
+      "telegram": "https://t.me/interport_fi"
+    },
+    {
+      "title": "Stable Jack",
+      "website": "https://www.stablejack.xyz/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/eec253039a98fc5f1a296b5cd4720f7ab0953716-65x64.png",
+      "telegram": "https://t.me/stablejack",
+      "_id": "cd72f447-3f01-416a-b7c4-08b7d2def6f1",
+      "description": "Marketplace to trade yield and volatility with options and liquidation-free exposure.",
+      "x": "https://x.com/StableJack_xyz",
+      "discord": "https://discord.com/invite/stablejack",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Derivatives",
+          "_key": "derivatives",
+          "value": "derivatives"
+        }
+      ]
+    },
+    {
+      "telegram": "https://t.me/SpookySwapCommunity",
+      "description": "Portal to DeFi built on Uni v3 — launch, trade, farm, stake, and earn rewards.",
+      "x": "https://x.com/SpookySwap",
+      "discord": "https://discord.com/invite/6c8g4B83pA",
+      "tags": [
+        {
+          "label": "Spot Dex",
+          "_key": "spot-dex",
+          "value": "spot-dex",
+          "_type": "tag"
+        }
+      ],
+      "_id": "ce494ee1-1d2d-4d7f-a763-341f2d308995",
+      "title": "SpookySwap",
+      "website": "https://spooky.fi/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/9030e5bee14cfe46fe7e9a1655d9a66bd13605cc-150x148.png"
+    },
+    {
+      "discord": "https://discord.com/invite/PVxBZKFr46",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Oracle",
+          "_key": "oracle",
+          "value": "oracle"
+        }
+      ],
+      "telegram": "https://t.me/redstonefinance/",
+      "_id": "ce900fb8-71f1-4ae7-bbe0-79a613d24967",
+      "title": "RedStone",
+      "description": "Oracle provider offering customizable, secure, and cost-efficient data streams.",
+      "website": "https://redstone.finance/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/34b7eda1f99a4c5e9381a48dca93f6226f93a6a8-65x64.png",
+      "x": "https://x.com/redstone_defi"
+    },
+    {
+      "image": "https://cdn.sanity.io/images/nat2546z/production/72f031d083672c937602316e8882d89426e4012e-180x180.png",
+      "telegram": null,
+      "discord": "",
+      "tags": [
+        {
+          "value": "infra",
+          "_type": "tag",
+          "label": "Infra",
+          "_key": "infra"
+        },
+        {
+          "_type": "tag",
+          "label": "Oracle",
+          "_key": "oracle",
+          "value": "oracle"
+        }
+      ],
+      "description": "Decentralized oracle networks powering on-chain finance and interoperability.",
+      "website": "https://chain.link/",
+      "x": "https://x.com/Chainlink",
+      "_id": "cff26217-d0e2-4457-bfa9-bfadce54ab40",
+      "title": "Chainlink"
+    },
+    {
+      "description": "One-stop gas refuel bridge for over 300+ chains and counting. Instantly bridge to multiple destination blockchains with just a single inbound fueling transaction.",
+      "telegram": null,
+      "website": "https://gas.zip",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/265fc1a9f63f5f149506dad913cb713e58581e6b-2000x2000.svg",
+      "x": "https://x.com/gasdotzip",
+      "discord": "https://discord.com/invite/gasdotzip",
+      "tags": [
+        {
+          "label": "Bridge",
+          "_key": "bridge",
+          "value": "bridge",
+          "_type": "tag"
+        }
+      ],
+      "_id": "d4700398-5645-4984-9821-58327a0f998b",
+      "title": "Gas.zip"
+    },
+    {
+      "description": "ZK-tech-based cross-chain protocol offers fast, secure, and instant transfer.",
+      "x": "https://x.com/orbiter_finance",
+      "telegram": null,
+      "discord": "https://discord.com/invite/FbztTBvnBT",
+      "_id": "d69976c2-ad2d-467b-a832-e754bad52b1f",
+      "title": "Orbiter Finance",
+      "website": "https://www.orbiter.finance/en?src_chain=42161&tgt_chain=146&src_token=USDC",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/6ee0367d639a8365c2c0a634a8fae83f860159e4-400x400.png",
+      "tags": [
+        {
+          "label": "Bridge",
+          "_key": "bridge",
+          "value": "bridge",
+          "_type": "tag"
+        }
+      ]
+    },
+    {
+      "_id": "d7ce8daf-8a71-4295-9bea-335260f54a1e",
+      "description": "The $SNAKE token is designed to maintain a peg to $S, with a supply mechanism that adjusts dynamically based on market conditions.\n\nThe protocol follows a multi-token model inspired by previous algorithmic stablecoin systems and consists of the following tokens:\n\n∙ Snake ($SNAKE)\n∙ Snake Shares ($gSNAKE)",
+      "website": "https://snake.finance/",
+      "telegram": "https://t.me/SnakeOnSonic",
+      "discord": "https://discord.gg/Qb7PDAxTfw",
+      "title": "Snake Finance",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/0c54a82d2749f7738fc404bd690d0b45cba814a3-192x192.png",
+      "x": "https://x.com/SnakeOnSonic",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Miscellaneous",
+          "_key": "miscellaneous",
+          "value": "miscellaneous"
+        },
+        {
+          "_type": "tag",
+          "label": "Stablecoins",
+          "_key": "stablecoins",
+          "value": "stablecoins"
+        }
+      ]
+    },
+    {
+      "telegram": null,
+      "discord": "",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "RWA",
+          "_key": "IQdJDPJx",
+          "value": "rwa"
+        }
+      ],
+      "title": "Backed",
+      "description": "Real-world asset tokenization platform providing compliant, 1:1 backed tokens.",
+      "website": "https://backed.fi/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/944d67172426a5678a1d06468f71cc00ea8df761-65x64.png",
+      "_id": "da668bca-a5ca-4f34-a86d-c4123d53e5ea",
+      "x": "https://x.com/BackedFi"
+    },
+    {
+      "title": "Penpie",
+      "website": "https://www.pendle.magpiexyz.io/stake",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/e26e9d1445c83756bb007000961cd42c99956759-94x94.png",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Yield",
+          "_key": "PAzvogXd",
+          "value": "yield"
+        }
+      ],
+      "_id": "dbd10c69-78ea-424a-965f-ac0fc0d011d5",
+      "description": "DeFi platform providing Pendle users with effective yield and boosting services.",
+      "x": "https://x.com/Penpiexyz_io",
+      "telegram": null,
+      "discord": ""
+    },
+    {
+      "_id": "deb2795c-230c-41b4-9176-f1d9bcf8b8dd",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/1f2f58671b3fa5abc990f12aacf6df0eaa16f17e-65x64.png",
+      "telegram": "https://t.me/StakeStone",
+      "title": "StakeStone",
+      "description": "Omni-chain liquidity protocol offering $STONE, a cross-chain, liquid-staked ETH.",
+      "website": "https://stakestone.io/#/home",
+      "x": "https://x.com/Stake_stone",
+      "discord": "https://discord.com/invite/pSbxSdKxqf",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "BTCFi",
+          "_key": "5qxRQPkB",
+          "value": "btcfi"
+        }
+      ]
+    },
+    {
+      "description": "Oracle network delivering secure, low-latency market data and RNG for DeFi apps.",
+      "website": "https://www.pyth.network/",
+      "x": "https://x.com/PythNetwork",
+      "telegram": "https://t.me/Pyth_Network",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Oracle",
+          "_key": "oracle",
+          "value": "oracle"
+        }
+      ],
+      "image": "https://cdn.sanity.io/images/nat2546z/production/bba8f5c21f59187c39a4cb8de69fb2c3be73b4df-129x129.png",
+      "discord": "https://discord.com/invite/PythNetwork",
+      "_id": "df8705fd-c659-4e45-be62-0492fc31665b",
+      "title": "Pyth Network"
+    },
+    {
+      "_id": "dfdf53de-233b-420e-aadb-7eaeda963555",
+      "description": "DEX that uses a vote-escrowed model to drive liquidity to the highest-volume pairs.",
+      "website": "https://equalizer.exchange/",
+      "telegram": null,
+      "discord": "https://discord.com/invite/6ubHeztmYV",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Spot Dex",
+          "_key": "N6tMdirD",
+          "value": "spot-dex"
+        }
+      ],
+      "title": "Equalizer",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/d650b977ccf33d44c713bdc61c9b46459daab21b-129x129.png",
+      "x": "https://x.com/Equalizer0x"
+    },
+    {
+      "_id": "e1423b9a-a3a5-4323-b6db-45d5022ab8b6",
+      "title": "SQD",
+      "discord": "https://discord.com/invite/hellosqd",
+      "tags": [
+        {
+          "_key": "A0SuPBT5",
+          "value": "infra",
+          "_type": "tag",
+          "label": "Infra"
+        }
+      ],
+      "description": "Data access layer that offers developers raw historical on-chain data at low cost.",
+      "website": "https://www.sqd.dev/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/dbb74672d3866223927196cf9e338661f36f5de2-65x64.png",
+      "x": "https://x.com/hellosqd",
+      "telegram": "https://t.me/subsquid"
+    },
+    {
+      "discord": "https://discord.com/invite/shadowexchange",
+      "_id": "e4989d4e-02cf-41a8-932c-2c701b0087a3",
+      "title": "Shadow Exchange",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Spot Dex",
+          "_key": "bRz9aO9e",
+          "value": "spot-dex"
+        }
+      ],
+      "description": "CLAMM offering competitive farming rewards and dynamic fees with custom fee splits.",
+      "website": "https://www.shadow.so/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/9c8aebf1be6d6f1aaca8c1de7c1cf3af7b222bdf-607x607.png",
+      "x": "https://x.com/ShadowOnSonic",
+      "telegram": null
+    },
+    {
+      "_id": "e58808b6-bd23-489e-8484-d634f63f8a46",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/318ba17a53bd48f7399deb372c2f32b5ffad9bb8-65x64.png",
+      "telegram": null,
+      "title": "Impermax Finance",
+      "description": "Protocol enabling market makers to borrow against LP positions and earn yield.",
+      "website": "https://www.impermax.finance/",
+      "x": "https://x.com/ImpermaxFinance",
+      "discord": "https://discord.com/invite/KxbR3qJXGC",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Yield",
+          "_key": "1qiGLuku",
+          "value": "yield"
+        }
+      ]
+    },
+    {
+      "telegram": null,
+      "x": "https://x.com/merkl_xyz",
+      "discord": "https://discord.com/invite/Gs8MUrUVP3",
+      "tags": [
+        {
+          "value": "infra",
+          "_type": "tag",
+          "label": "Infra",
+          "_key": "infra"
+        },
+        {
+          "_key": "defi-tooling",
+          "value": "defi-tooling",
+          "_type": "tag",
+          "label": "DeFi Tooling"
+        }
+      ],
+      "_id": "e78c17cd-5cd2-44f2-80f9-c504cdb9e7fc",
+      "title": "Merkl",
+      "description": "Incentive distribution platform.",
+      "website": "https://app.merkl.xyz/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/ebad216d02943fba20491063ffd2e0b3bfde7be8-400x400.jpg"
+    },
+    {
+      "description": "Automation platform offering contract automation, gasless transactions, and VRF.",
+      "website": "https://www.gelato.network/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/044405192eea91c6f16a910d23d060126c12d058-129x129.png",
+      "x": "https://x.com/gelatonetwork",
+      "telegram": "https://t.me/gelatonetwork",
+      "discord": "https://discord.com/invite/ApbA39BKyJ",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Infra",
+          "_key": "ZkRIdYHF",
+          "value": "infra"
+        }
+      ],
+      "_id": "e7c75a42-0a97-4c18-8b7e-dc03b47b4511",
+      "title": "Gelato"
+    },
+    {
+      "_id": "eab06383-5d05-4575-afbb-40ccc2bd6761",
+      "title": "Fordefi",
+      "description": "Multi-party computation (MPC) wallet platform to securely self-custody assets.",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/985b867a3988126739ec3f7d884c7ebea0d8e1f7-65x64.png",
+      "x": "https://x.com/FordefiHQ",
+      "telegram": null,
+      "discord": "",
+      "website": "https://fordefi.com/",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Institutional",
+          "_key": "YC8Ou61Y",
+          "value": "institutional"
+        }
+      ]
+    },
+    {
+      "_id": "eac30ac8-fd53-4cb3-ba9a-6ea02c6ef989",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/676926de2885ca771cfe8782d21eeb0d95033c1d-1001x1001.png",
+      "x": "https://x.com/OrderlyNetwork",
+      "discord": "https://discord.com/invite/orderlynetwork",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Infra",
+          "_key": "infra",
+          "value": "infra"
+        },
+        {
+          "_type": "tag",
+          "label": "Derivatives",
+          "_key": "derivatives",
+          "value": "derivatives"
+        }
+      ],
+      "title": "Orderly Network",
+      "description": "Permissionless liquidity layer. Built on omnichain infrastructure, Orderly incepts deep liquidity for any asset across blockchains. It empowers developers to connect and offer a comprehensive selection of financial products for retail and professional traders alike, without the risks of wrapped asset movement through cross-chain bridging.",
+      "website": "https://orderly.network/",
+      "telegram": "https://t.me/OrderlyNetworkAnnouncements"
+    },
+    {
+      "description": "Multi-chain comprehensive platform to create, deploy, and manage NFT collections and communities.",
+      "telegram": "https://t.me/nfts2me",
+      "discord": "https://discord.com/invite/Usmgxj2Msk",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "NFT",
+          "_key": "nft",
+          "value": "nft"
+        }
+      ],
+      "title": "NFTs2Me",
+      "website": "https://nfts2me.com/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/33e8f942c7b9bbdceda6ce8e9eb80d7c11b51d2e-541x541.png",
+      "x": "https://twitter.com/NFTs2Me",
+      "_id": "eb0263d8-dc56-43dc-a8f8-f8792f6f35c7"
+    },
+    {
+      "telegram": null,
+      "discord": "https://discord.com/invite/sbbKp5SrQy",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Yield",
+          "_key": "yield",
+          "value": "yield"
+        },
+        {
+          "_type": "tag",
+          "label": "alm",
+          "_key": "alm",
+          "value": "alm"
+        }
+      ],
+      "_id": "f1b94ff8-4713-4acc-94b6-b5b03e52f766",
+      "description": "Multi-chain compute protocol with next-generation automated liquidity management.",
+      "website": "https://steer.finance/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/5492bfc712fa878d7cccf05fd38450024b27b57c-180x180.png",
+      "title": "Steer Protocol",
+      "x": "https://x.com/steerprotocol"
+    },
+    {
+      "title": "Entangle",
+      "description": "Entangle: Infrastructure for the Infinite Web3\n\nEntangle provides a decentralized framework connecting blockchains, data, AI, and real-world applications. It enables developers to build scalable, automated systems across multiple ecosystems, supporting AI, robotics, and Real World Assets (RWA).\n\nKey Components:\n\n🔹 Universal Interoperability Protocol (UIP) – A fully abstracted network for seamless cross-chain communication across EVM and non-EVM ecosystems.\n\n🔹 Universal Data Feeds (UDF) – Secure, verifiable, and fast data streams for AI, DeFi, and GameFi, bridging Web2 and Web3.\n\n🔹 Universal Token Standard (UTS) – A framework for interoperable token creation with universal liquidity and programmable utility.\n\n🔹 Universal Proof of Compute (UPC) – A system for verifying off-chain computations, supporting AI, DeFi, and Web3 applications.\n\nEntangle provides the infrastructure for decentralized applications to scale, interoperate, and automate complex systems.",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/357ede4176455a4fbbd51379a1eba8a573a61451-400x400.jpg",
+      "x": "https://x.com/Entanglefi",
+      "discord": "https://discord.com/invite/entangle",
+      "_id": "f365454a-934e-4093-9b3c-da15ba0ffcd9",
+      "website": "https://entangle.fi/",
+      "telegram": "https://t.me/entangle_community ",
+      "tags": [
+        {
+          "label": "Bridge",
+          "_key": "bridge",
+          "value": "bridge",
+          "_type": "tag"
+        },
+        {
+          "_type": "tag",
+          "label": "Oracle",
+          "_key": "oracle",
+          "value": "oracle"
+        },
+        {
+          "_type": "tag",
+          "label": "DeFi Tooling",
+          "_key": "defi-tooling",
+          "value": "defi-tooling"
+        },
+        {
+          "_key": "ai",
+          "value": "ai",
+          "_type": "tag",
+          "label": "AI"
+        }
+      ]
+    },
+    {
+      "_id": "f4c7644d-a7d1-49ee-8d88-2cfa4d690112",
+      "title": "Eggs Finance",
+      "website": "https://eggs.finance/",
+      "x": "https://x.com/eggsonsonic",
+      "telegram": "http://t.me/eggsfinance",
+      "discord": null,
+      "description": "DeFi platform offering yield and lending products through a deflationary token model—secured by S.",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/a23619821fa0cc4f9ae98cfda84a3e5da69a7ce2-1080x1080.svg",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Yield",
+          "_key": "yield",
+          "value": "yield"
+        },
+        {
+          "_type": "tag",
+          "label": "Lending",
+          "_key": "lending",
+          "value": "lending"
+        }
+      ]
+    },
+    {
+      "description": "Unlocking seamless DeFi lending with innovative yield strategies and community-driven rewards.",
+      "website": "https://aurumfi.io/",
+      "telegram": null,
+      "tags": [
+        {
+          "label": "Lending",
+          "_key": "lending",
+          "value": "lending",
+          "_type": "tag"
+        },
+        {
+          "_type": "tag",
+          "label": "Yield",
+          "_key": "yield",
+          "value": "yield"
+        }
+      ],
+      "image": "https://cdn.sanity.io/images/nat2546z/production/af11ede2bb9087a69297ac406633bfc67d929294-400x400.jpg",
+      "x": "https://x.com/AurumFi_Sonic",
+      "discord": "https://discord.com/invite/yE6BS3F5dD",
+      "_id": "f5f66e8b-4b37-4bbc-ba3c-8e73185cf35c",
+      "title": "Aurum"
+    },
+    {
+      "description": "Smart order router offering DEX aggregation, OTC trading, and API integration.",
+      "x": "https://x.com/hypersonic_ex",
+      "discord": "",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "DeFi Tooling",
+          "_key": "wjnqbIE8",
+          "value": "defi-tooling"
+        }
+      ],
+      "website": "https://hypersonic.exchange/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/35d1a83592f34a04a5fd3391dced8bfe03a5af76-129x129.png",
+      "telegram": null,
+      "_id": "f76bcebf-3faf-4e74-bef3-d97b211a2a68",
+      "title": "Hypersonic"
+    },
+    {
+      "telegram": null,
+      "tags": [
+        {
+          "label": "AI",
+          "_key": "sSKvciEg",
+          "value": "ai",
+          "_type": "tag"
+        }
+      ],
+      "description": "AI platform enabling token creation via Telegram, Twitter, and app integrations.",
+      "website": "https://blorm.xyz/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/531cacc599584fe3eb963cd560640fea3c171051-65x64.png",
+      "discord": "",
+      "_id": "f83cb7e1-288b-4867-85a7-9f202f257628",
+      "title": "Blorm",
+      "x": "https://x.com/blorm_"
+    },
+    {
+      "title": "LazyBear",
+      "x": "https://x.com/LazyBearSonic",
+      "discord": null,
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "LaunchPad",
+          "_key": "LaunchPad",
+          "value": "LaunchPad"
+        }
+      ],
+      "_id": "f9b7c04b-efe6-4b3b-9dad-be98d6c1e8ff",
+      "description": "Token launchpad. Safe, customizable token launches. Community-focused LP distribution to holders.",
+      "website": "https://lazybear.cc/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/5cb2c42855a5799c2755c083c5c06730c90226e7-400x400.jpg",
+      "telegram": "https://t.me/LazyBearPortal"
+    },
+    {
+      "_id": "fa4c4ffe-419b-4ad8-a732-52960f848166",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/7950180861b12da10c609a78c76c4e25b73d7f53-65x64.png",
+      "x": "https://x.com/popsiclefinance",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Spot Dex",
+          "_key": "BVgGBlML",
+          "value": "spot-dex"
+        }
+      ],
+      "title": "WAGMI",
+      "description": "DeFi protocol offering advanced liquidity strategies, auto-rebalancing, and leverage.",
+      "website": "https://wagmi.com/",
+      "telegram": "https://t.me/realwagmi",
+      "discord": "https://discord.com/invite/GDwhREgj5E"
+    },
+    {
+      "_id": "fdb25197-b58a-4bea-91cf-9e9ca2499cf4",
+      "title": "Rubic",
+      "description": "Rate finder, which aggregates 90+ blockchains and testnets and 360+ DEXs and bridges, for users and apps.",
+      "discord": "https://discord.com/invite/7EYzPbWKFQ",
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "Bridge",
+          "_key": "bridge",
+          "value": "bridge"
+        }
+      ],
+      "website": "https://rubic.exchange/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/09cb02d000417b09731665796d41ac4fdce1fc2e-180x180.png",
+      "x": "https://x.com/CryptoRubic",
+      "telegram": "https://t.me/cryptorubic_chat"
+    },
+    {
+      "_id": "fdf6454d-2bc2-441a-9712-7091eadcc7d8",
+      "description": "Wallet infrastructure enabling secure, seedless, and user-friendly Web3 logins.",
+      "website": "https://web3auth.io/",
+      "image": "https://cdn.sanity.io/images/nat2546z/production/70d64960488bc09b6d86a24a3c1888ef3c6ca3c4-65x64.png",
+      "discord": "https://discord.com/invite/gqzGEbHyj5",
+      "title": "Web3Auth",
+      "x": "https://x.com/web3auth",
+      "telegram": null,
+      "tags": [
+        {
+          "_type": "tag",
+          "label": "DeFi Tooling",
+          "_key": "tNnWJqpJ",
+          "value": "defi-tooling"
+        }
+      ]
+    }
+  ]
+}

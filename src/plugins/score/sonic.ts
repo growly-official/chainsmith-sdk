@@ -32,7 +32,7 @@ export class SonicPointPlugin {
   }
 
   getSonicActivePointApps(): TSonicEcosystemApp[] {
-    return Files.EcosystemList.SonicEcosystemList.filter(app => {
+    return Files.EcosystemList.SonicEcosystemList.data.filter(app => {
       return Constants.Sonic.SONIC_ACTIVE_POINTS_APPS.includes(app._id);
     });
   }

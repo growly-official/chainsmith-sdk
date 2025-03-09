@@ -56,7 +56,7 @@
     "prepublishOnly": "nr build",
     "release": "bumpp && pnpm publish",
     "start": "tsx ./src/index.ts",
-    "example": "tsx ./src/examples/index.ts",
+    "example": "tsx -r dotenv/config ./src/examples/index.ts",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
     "prepare": "simple-git-hooks"

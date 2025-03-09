@@ -7,8 +7,8 @@ import type {
   TNftTransferActivity,
   TTokenTransferActivity,
 } from '../../types';
-import { getChainByName, objectToQueryString } from '../../utils';
-import type { TEVMScanResponse, TEVMScanTokenActivity } from './types';
+import { getChainByName, getChainIdByName, objectToQueryString } from '../../utils';
+import type { TEVMScanResponse, TEVMScanTokenActivity, TEVMScanTransaction } from './types';
 
 export type * from './types.d.ts';
 export * from './utils';
@@ -30,6 +30,36 @@ export class EvmscanAdapter implements IOnchainActivityAdapter {
   constructor(apiUrl: string, apiKey: string) {
     this.apiUrl = apiUrl;
     this.apiKey = apiKey;
+  }
+
+  async listAllTransactions(
+    chainName: TChainName,
+    address: TAddress
+  ): Promise<TEVMScanTransaction[]> {
+    const chainId = getChainIdByName(chainName);
+    const action = 'txlist';
+
+    const query = `chainid=${chainId}&module=account&action=${action}&address=${address}&apikey=${this.apiKey}`;
+    let attempts = 0;
+    while (attempts < 3) {
+      try {
+        const res = await axios.get<TEVMScanResponse>(`${this.apiUrl}?${query}`, {
+          headers: {
+            'Content-Type': 'application/json',
+            'User-Agent': 'PostmanRuntime/7.40.0',
+          },
+        });
+
+        if (res?.status === 200) {
+          return res.data.result as TEVMScanTransaction[];
+        }
+        attempts++;
+      } catch (error) {
+        console.error(`Fetch attempt ${attempts} failed:`, error);
+        attempts++;
+      }
+    }
+    return [];
   }
 
   async listAllTokenActivities(

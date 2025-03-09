@@ -55,19 +55,27 @@ async function fetchChainlistMetadata() {
 async function fetchSonicChainData() {
   const chains = buildChainsWithCustomRpcUrls({ sonic: 'https://rpc.soniclabs.com' }, 'evm');
   const sdk = initChainsmithSdk(chains);
-  const ownedTokens = await sdk.token.listChainOwnedTokens(AdapterRegistry.ShadowExchange)(
-    Wallets.SONIC_WALLET_CHUNGTIN
-  );
-  console.log(ownedTokens);
+  // const ownedTokens = await sdk.token.listChainOwnedTokens(AdapterRegistry.ShadowExchange)(
+  //   Wallets.SONIC_WALLET_CHUNGTIN
+  // );
+  // console.log(ownedTokens);
 
-  const portfolio = await sdk.portfolio.getTokenPortfolio([
-    multiple([AdapterRegistry.ShadowExchangeApi, AdapterRegistry.CoinMarketcap]),
-    AdapterRegistry.ShadowExchange,
-  ])(Wallets.SONIC_WALLET_CHUNGTIN);
-  console.log(portfolio);
+  // const portfolio = await sdk.portfolio.getTokenPortfolio([
+  //   multiple([AdapterRegistry.ShadowExchangeApi, AdapterRegistry.CoinMarketcap]),
+  //   AdapterRegistry.ShadowExchange,
+  // ])(Wallets.SONIC_WALLET_CHUNGTIN);
+  // console.log(portfolio);
 
-  const points = await sdk.sonicPoint.fetchUserPointsStats(Wallets.SONIC_WALLET_BEETS_TREASURY);
-  console.log(points);
+  // const points = await sdk.sonicPoint.fetchUserPointsStats(Wallets.SONIC_WALLET_BEETS_TREASURY);
+  // console.log(points);
+
+  
+  
+  const apps = sdk.sonicPoint.getSonicActivePointApps();
+  console.log('AP Apps:',apps.length);
+
+  const sonicTxs = await AdapterRegistry.Evmscan.listAllTransactions('sonic',Wallets.SONIC_WALLET_CHUNGTIN)
+  return(sonicTxs.length)
 }
 
 async function fetchNFTData() {
@@ -94,7 +102,9 @@ async function fetchNFTData() {
 }
 
 async function fetchSonicDapp() {
-  const siloPositions = await AdapterRegistry.SiloV2Api.getUserPositions(Wallets.SONIC_WALLET_PCMINH);
+  const siloPositions = await AdapterRegistry.SiloV2Api.getUserPositions(
+    Wallets.SONIC_WALLET_PCMINH
+  );
   console.log(siloPositions);
 
   // const vaults = await AdapterRegistry.MetropolisApi.getVaults(146);
@@ -121,6 +131,6 @@ testExternalities(false, fetchMultichainTokenList);
 testExternalities(false, fetchEvmscanTokenActivitiesWorks);
 testExternalities(false, fetchDexScreenerParis);
 testExternalities(false, fetchChainlistMetadata);
-testExternalities(false, fetchSonicChainData);
+testExternalities(true, fetchSonicChainData);
 testExternalities(false, fetchNFTData);
-testExternalities(true, fetchSonicDapp);
+testExternalities(false, fetchSonicDapp);
