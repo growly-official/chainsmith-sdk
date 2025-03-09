@@ -14,6 +14,7 @@ import type {
   TMultichain,
   TNativeToken,
   TNftBalance,
+  TNftTransferActivity,
   TToken,
   TTokenAddress,
   TTokenTransferActivity,
@@ -32,6 +33,16 @@ type TGetChainTokenActivities = (
   address?: TAddress,
   chain?: TChain
 ) => Promise<TTokenTransferActivity[]>;
+
+type TGetMultichainNftActivities = (
+  address?: TAddress,
+  chains?: TChain[]
+) => Promise<TMultichain<TNftTransferActivity[]>>;
+
+type TGetChainNftActivities = (
+  address?: TAddress,
+  chain?: TChain
+) => Promise<TNftTransferActivity[]>;
 
 type TGetMultichainOwnedTokens = (
   address?: TAddress,
@@ -136,6 +147,42 @@ export class MultichainTokenPlugin {
         const _chain = chain || this.storagePlugin.readDisk('chains')[0];
         if (!_chain) throw new Error('No chain provided');
         return adapter.listAllTokenActivities(
+          _chain.chainName,
+          this.storagePlugin.readRamOrReturn({ walletAddress }),
+          100
+        );
+      } catch (error: any) {
+        this.logger.error(`Failed to get token activities: ${error.message}`);
+        throw new Error(error);
+      }
+    };
+
+  listMultichainNftTransferActivities: WithAdapter<
+    IOnchainActivityAdapter,
+    TGetMultichainNftActivities
+  > = adapter => async (walletAddress?: TAddress, chains?: TChain[]) => {
+      try {
+        const chainActivitiesRecord: TMultichain<TNftTransferActivity[]> = {};
+        for (const chain of this.storagePlugin.readDiskOrReturn({ chains })) {
+          chainActivitiesRecord[chain.chainName] = await adapter.listAllNftActivities(
+            chain.chainName,
+            this.storagePlugin.readRamOrReturn({ walletAddress }),
+            100
+          );
+        }
+        return chainActivitiesRecord;
+      } catch (error: any) {
+        this.logger.error(`Failed to get token activities: ${error.message}`);
+        throw new Error(error);
+      }
+    };
+
+  listChainNftTransferActivities: WithAdapter<IOnchainActivityAdapter, TGetChainNftActivities>
+    = adapter => async (walletAddress?: TAddress, chain?: TChain) => {
+      try {
+        const _chain = chain || this.storagePlugin.readDisk('chains')[0];
+        if (!_chain) throw new Error('No chain provided');
+        return adapter.listAllNftActivities(
           _chain.chainName,
           this.storagePlugin.readRamOrReturn({ walletAddress }),
           100

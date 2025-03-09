@@ -1,6 +1,10 @@
 import type { TAddress, TChainId } from './chains';
 import type { TTokenSymbol } from './tokens';
 
+export type TMarketNft = TNftBalance & {
+  usdValue: number;
+};
+
 export type TNftBalance = TNftCollectionMetadata & {
   balance: number;
 };

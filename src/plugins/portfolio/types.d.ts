@@ -1,4 +1,4 @@
-import type { TMarketTokenList, TTokenPortfolio } from '../../types';
+import type { TMarketTokenList, TNftPortfolio, TTokenPortfolio } from '../../types';
 
 export type TGetMultichainMarketTokens = (
   walletAddress?: TAddress,
@@ -19,3 +19,13 @@ export type IGetTokenPortfolio = (
   walletAddress?: TAddress,
   chain?: TChain
 ) => Promise<TTokenPortfolio>;
+
+export type IGetMultichainNftPortfolio = (
+  walletAddress?: TAddress,
+  chains?: TChain[]
+) => Promise<TNftPortfolio>;
+
+export type IGetNftPortfolio = (
+  walletAddress?: TAddress,
+  chain?: TChain
+) => Promise<TNftPortfolio>;
