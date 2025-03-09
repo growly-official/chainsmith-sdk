@@ -1,4 +1,5 @@
 import type { TMultichain } from './chains';
+import type { TMarketNft } from './nfts';
 import type { TMarketToken, TTokenMetadataPrice, TTokenSymbol } from './tokens';
 
 export interface TChainStats {
@@ -16,6 +17,25 @@ export interface TActivityStats {
   longestStreakDays: number;
   currentStreakDays: number;
   activityPeriod: number;
+}
+export interface TDeFiActivityStats {
+  sumCount: number;
+  dexCount: number;
+  swapCount: number;
+  lendCount: number;
+}
+
+export interface TNFTActivityStats {
+  sumCount: number;
+  mintCount: number;
+  buyCount: number;
+  saleCount: number;
+  tradeCount: number;
+}
+
+export interface TMarketNftList {
+  totalUsdValue: number;
+  nfts: TMarketNft[];
 }
 
 export interface TMarketTokenList {
@@ -55,6 +75,12 @@ export type TTokenPortfolioStats = TTokenPortfolio & {
   sumMemeUSDValue: number;
   mostValuableToken: TTokenChainData;
 };
+
+export interface TNftPortfolio {
+  totalUsdValue: number;
+  mostValuableNFTCollection: TMarketNft | undefined;
+  chainRecordsWithNfts: TMultichain<TMarketNftList>;
+}
 
 export type TNumberInPercentage = number;
 

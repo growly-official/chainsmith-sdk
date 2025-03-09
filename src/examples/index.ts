@@ -3,7 +3,7 @@ import { initChainsmithSdk } from '..';
 import { multiple } from '../adapters';
 import { Wallets } from '../data';
 import type { TAddress, TChainName, TMarketTokenList, TMultichain, TNftBalance } from '../types';
-import { buildChainsWithCustomRpcUrls } from '../utils';
+import { buildChainsWithCustomRpcUrls, calculateEVMStreaksAndMetrics, calculateDeFiActivityStats, calculateNFTActivityStats, findLongestHoldingToken, calculateMultichainTokenPortfolio } from '../utils';
 import { AdapterRegistry, buildDefaultChains } from './config';
 
 const chains = buildDefaultChains(['base', 'mainnet', 'optimism']);
@@ -69,13 +69,14 @@ async function fetchSonicChainData() {
   // const points = await sdk.sonicPoint.fetchUserPointsStats(Wallets.SONIC_WALLET_BEETS_TREASURY);
   // console.log(points);
 
-  
-  
   const apps = sdk.sonicPoint.getSonicActivePointApps();
-  console.log('AP Apps:',apps.length);
+  console.log('AP Apps:', apps.length);
 
-  const sonicTxs = await AdapterRegistry.Evmscan.listAllTransactions('sonic',Wallets.SONIC_WALLET_CHUNGTIN)
-  return(sonicTxs.length)
+  const sonicTxs = await AdapterRegistry.Evmscan.listAllTransactions(
+    'sonic',
+    Wallets.SONIC_WALLET_CHUNGTIN
+  );
+  return sonicTxs.length;
 }
 
 async function fetchNFTData() {
@@ -126,11 +127,59 @@ async function fetchSonicDapp() {
   // console.log(ans);
 }
 
+async function fetchOnchainBusterStats() {
+  let chains = buildChainsWithCustomRpcUrls({ sonic: 'https://rpc.soniclabs.com' }, 'evm')
+
+  chains = chains.concat(buildDefaultChains(['base', 'mainnet', 'optimism']))
+
+  const sdk = initChainsmithSdk(chains);
+  const wallet = Wallets.ETH_MAINNET_WALLET_PCMINH
+
+  // TODO: Mock evm transactions -> Need to have Multichain adapter
+  const evmTransactions = await AdapterRegistry.Evmscan.listAllTransactions(
+    'base',
+    wallet
+  );
+
+  const tokenActivities = await sdk.token.listMultichainTokenTransferActivities(
+    AdapterRegistry.Evmscan
+  )(wallet);
+
+  const nftActivities = await sdk.token.listMultichainNftTransferActivities(
+    AdapterRegistry.Evmscan
+  )(wallet);
+
+  // const tokenPortfolio = await sdk.portfolio.getMultichainMarketTokenList([
+  //   AdapterRegistry.CoinMarketcap,
+  //   AdapterRegistry.Alchemy,
+  // ])(wallet);
+  // const portfolioStats = calculateMultichainTokenPortfolio(tokenPortfolio)
+  // console.log('Portfolio stats:',portfolioStats)
+
+  // TODO: Fetch NFT Portfolio
+  // const nftBalance = await fetchNFTData()
+
+  const txStats = calculateEVMStreaksAndMetrics(evmTransactions, wallet)
+  console.log('txStats:',txStats)
+
+  const longestHoldingTokenByChain = Object.entries(
+    tokenActivities
+  ).map(([chain, activities]) => {
+    return findLongestHoldingToken(chain as TChainName, activities, wallet);
+  });
+  console.log('Longest token holding', longestHoldingTokenByChain)
+
+  const nftActivityStats = calculateNFTActivityStats(Object.values(nftActivities).flat(),wallet)
+  console.log('Nft activity stats:',nftActivityStats)
+}
+
 testExternalities(false, fetchMultichainTokenPortfolio);
 testExternalities(false, fetchMultichainTokenList);
 testExternalities(false, fetchEvmscanTokenActivitiesWorks);
 testExternalities(false, fetchDexScreenerParis);
 testExternalities(false, fetchChainlistMetadata);
-testExternalities(true, fetchSonicChainData);
+testExternalities(false, fetchSonicChainData);
 testExternalities(false, fetchNFTData);
 testExternalities(false, fetchSonicDapp);
+
+testExternalities(true, fetchOnchainBusterStats);

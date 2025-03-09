@@ -11,7 +11,6 @@ import { getChainByName, getChainIdByName, objectToQueryString } from '../../uti
 import type { TEVMScanResponse, TEVMScanTokenActivity, TEVMScanTransaction } from './types';
 
 export type * from './types.d.ts';
-export * from './utils';
 
 interface GetTokenActivityQueryOptions {
   page: number;

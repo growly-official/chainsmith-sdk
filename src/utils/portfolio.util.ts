@@ -8,7 +8,7 @@ import type {
   TTokenAggregationBalance,
   TTokenChainData,
   TTokenPortfolio,
-  TTokenPortfolioStats,
+  TTokenPortfolioStats
 } from '../types';
 import { getChainIdByName } from './chain.util';
 
@@ -94,9 +94,4 @@ export function calculateMultichainTokenPortfolio(
     mostValuableToken: mostValuableToken as any,
     ...multichainTokenPortfolio,
   };
-}
-
-export function calculateGasInETH(gasPrice: number, gasUsed: number) {
-  const gwei = 10 ** 9;
-  return (gasPrice / gwei) * (gasUsed / gwei);
 }
