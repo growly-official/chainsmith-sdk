@@ -1,6 +1,6 @@
 import { EvmChainList } from '../data/chains';
 import type { TBaseChain } from '../types';
-import { getChainDefultRpcUrl } from '../utils/chain.util';
+import { getChainDefaultRpcUrl } from '../utils/chain.util';
 
 const ALCHEMY_CHAIN_ENDPOINT = {
   [EvmChainList.mainnet.id]: alchemyRpcUrl('eth-mainnet'),
@@ -21,10 +21,10 @@ export type GetChainRpcEndpoint = (chain: TBaseChain) => string;
 
 export const alchemy: (apiKey: string) => GetChainRpcEndpoint = (apiKey: string) => chain => {
   const endpoint = (ALCHEMY_CHAIN_ENDPOINT as any)[chain.id];
-  if (!endpoint) return getChainDefultRpcUrl(chain) || '';
+  if (!endpoint) return getChainDefaultRpcUrl(chain) || '';
   return `${endpoint}/v2/${apiKey}`;
 };
 
-function alchemyRpcUrl(chainId: string) {
+export function alchemyRpcUrl(chainId: string) {
   return `https://${chainId}.g.alchemy.com`;
 }

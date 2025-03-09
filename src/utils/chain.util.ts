@@ -32,7 +32,7 @@ export function getClientChain(client: TClient): TBaseChain {
   return chain;
 }
 
-export const getChainDefultRpcUrl = (chain: TBaseChain) => chain.rpcUrls.default.http[0];
+export const getChainDefaultRpcUrl = (chain: TBaseChain) => chain.rpcUrls.default.http[0];
 
 export function buildEvmChains(chains: TChainName[], chainRpcUrl: GetChainRpcEndpoint): TChain[] {
   return buildChains(chains, 'evm', chainRpcUrl);
