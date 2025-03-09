@@ -51,7 +51,9 @@ export class SiloV2ApiAdapter implements IYieldAdapter {
   async getUserPositions(walletAddress: TAddress): Promise<TSiloUserPositions> {
     try {
       if (!this.userPoolsPositions) {
-        const res = await axios.get<TSiloUserPositions>(`${SILO_V2_BASE_URL}/dashboard-v2/${walletAddress}`)
+        const res = await axios.get<TSiloUserPositions>(
+          `${SILO_V2_BASE_URL}/dashboard-v2/${walletAddress}`
+        );
         return res.data;
       }
       return this.userPoolsPositions;
