@@ -11,6 +11,10 @@ const ALCHEMY_CHAIN_ENDPOINT = {
   [EvmChainList.arbitrum.id]: alchemyRpcUrl('arb-mainnet'),
   [EvmChainList.sonic.id]: alchemyRpcUrl('sonic-mainnet'),
   [EvmChainList.gnosis.id]: alchemyRpcUrl('gnosis-mainnet'),
+  [EvmChainList.berachain.id]: alchemyRpcUrl('berachain-mainnet'),
+  [EvmChainList.zksync.id]: alchemyRpcUrl('zksync-mainnet'),
+  [EvmChainList.abstract.id]: alchemyRpcUrl('abstract-mainnet'),
+  [EvmChainList.avalanche.id]: alchemyRpcUrl('avax-mainnet'),
 };
 
 export type GetChainRpcEndpoint = (chain: TBaseChain) => string;
