@@ -7,7 +7,7 @@ Viem-compatible abstraction library to simplify the interaction with multiple bl
 [![npm](https://img.shields.io/npm/v/chainsmith-sdk)](https://www.npmjs.com/package/chainsmith-sdk)
 [![License](https://img.shields.io/npm/l/@chainsmith-sdk)](LICENSE)
 
-![image](https://github.com/user-attachments/assets/14d0de75-c345-4c9b-bafa-fb84c505d8d6)
+![Group 3 (1)](https://github.com/user-attachments/assets/b6c30502-6505-4fe7-9e27-7c1fb3c17b3a)
 
 
 </div>
