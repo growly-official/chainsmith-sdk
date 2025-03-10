@@ -105,7 +105,12 @@ export class ShadowExchangeApiAdapter implements IMarketDataAdapter {
       if (!this.tokenMap) {
         const tokenMap: Record<string, TShadowToken> = {};
         for (const token of mixedPairsResult.tokens) {
-          tokenMap[token.symbol.toUpperCase()] = token;
+          const isShadowToken = token.symbol.toUpperCase() === 'SHADOW';
+          const isCorrectShadowId = token.id === '0x3333b97138d4b086720b5ae8a7844b1345a33333';
+
+          if (!isShadowToken || isCorrectShadowId) {
+            tokenMap[token.symbol.toUpperCase()] = token;
+          }
         }
         this.tokenMap = tokenMap;
       }

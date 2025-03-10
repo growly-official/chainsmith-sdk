@@ -9,7 +9,6 @@ Viem-compatible abstraction library to simplify the interaction with multiple bl
 
 ![Group 3 (1)](https://github.com/user-attachments/assets/b6c30502-6505-4fe7-9e27-7c1fb3c17b3a)
 
-
 </div>
 
 ## Current features of the SDK
