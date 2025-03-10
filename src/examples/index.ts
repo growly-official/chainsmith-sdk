@@ -51,21 +51,21 @@ async function testFetchSonicChainData() {
   const sonicChains = buildChainsWithCustomRpcUrls({ sonic: 'https://rpc.soniclabs.com' }, 'evm');
   const sdk = initChainsmithSdk(sonicChains);
 
-  const ownedTokens = await sdk.token.listChainOwnedTokens(AdapterRegistry.ShadowExchange)(
-    Wallets.SONIC_WALLET_CHUNGTIN
-  );
-  console.log(ownedTokens);
+  // const ownedTokens = await sdk.token.listChainOwnedTokens(AdapterRegistry.ShadowExchange)(
+  //   Wallets.SONIC_WALLET_CHUNGTIN
+  // );
+  // console.log(ownedTokens);
 
   const portfolio = await sdk.portfolio.getTokenPortfolio([
-    multiple([AdapterRegistry.ShadowExchangeApi, AdapterRegistry.CoinMarketcap]),
+    multiple([AdapterRegistry.ShadowExchangeApi, AdapterRegistry.BeetsApi, AdapterRegistry.CoinMarketcap]),
     AdapterRegistry.ShadowExchange,
-  ])(Wallets.SONIC_WALLET_CHUNGTIN);
+  ])(Wallets.SONIC_WALLET_PCMINH);
   console.log(portfolio);
 
-  const points = await sdk.sonicPoint.fetchUserPointsStats(Wallets.SONIC_WALLET_BEETS_TREASURY);
-  console.log(points);
+  // const points = await sdk.sonicPoint.fetchUserPointsStats(Wallets.SONIC_WALLET_BEETS_TREASURY);
+  // console.log(points);
 
-  return await AdapterRegistry.Evmscan.listAllTransactions('sonic', Wallets.SONIC_WALLET_CHUNGTIN);
+  // return await AdapterRegistry.Evmscan.listAllTransactions('sonic', Wallets.SONIC_WALLET_CHUNGTIN);
 }
 
 async function testFetchNFTData() {
@@ -86,7 +86,7 @@ testExternalities(false, testFetchEvmscanTokenActivities);
 testExternalities(false, testFetchDexScreenerParis);
 testExternalities(false, testFetchMultichainTokenPortfolio);
 testExternalities(false, testFetchChainlistMetadata);
-testExternalities(false, testFetchSonicChainData);
+testExternalities(true, testFetchSonicChainData);
 testExternalities(false, testFetchNFTData);
 // Onchain Buster tests
 testExternalities(false, OnchainBusterTestSuite.testCalculateEvmTxStats);

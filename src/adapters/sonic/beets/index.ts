@@ -1,18 +1,25 @@
 import axios from 'axios';
 import { Logger } from 'tslog';
-import type { IYieldAdapter } from '../../../types/adapter.d';
+import type { IMarketDataAdapter, IYieldAdapter } from '../../../types/adapter.d';
 import type { TAddress, TChainName } from '../../../types/chains.d';
-import type { TToken } from '../../../types/tokens.d';
-import type { TBeetsStakedSonicMarket, TBeetsStakedSonicResponse } from './types';
-import type { TBeetsPool, TBeetsPoolsResponse } from './types.d';
+import type { TMarketToken, TToken } from '../../../types/tokens.d';
+import type {
+  TBeetsPool,
+  TBeetsPoolsResponse,
+  TBeetsPoolToken,
+  TBeetsStakedSonicMarket,
+  TBeetsStakedSonicResponse,
+} from './types';
 
 export type * from './types.d.ts';
 
 const BEETS_BASE_URL = 'https://backend-v3.beets-ftm-node.com/';
 
-export class BeetsApiAdapter implements IYieldAdapter {
+export class BeetsApiAdapter implements IYieldAdapter, IMarketDataAdapter {
   name = 'sonic.BeetsApiAdapter';
   logger = new Logger({ name: this.name });
+
+  tokenMap?: Record<string, TBeetsPoolToken>;
 
   stsMarket?: TBeetsStakedSonicMarket;
   pools?: TBeetsPool[];
@@ -21,6 +28,62 @@ export class BeetsApiAdapter implements IYieldAdapter {
   // TODO
   fetchTokensWithYield(_chain: TChainName, _tokens: TToken[]) {
     throw new Error('not implemented');
+  }
+
+  async fetchTokenWithPrice(_chain: TChainName, token: TToken): Promise<TMarketToken | undefined> {
+    const tokenMap = await this.getTokenMap();
+    const tokenPriceData = tokenMap[token.symbol];
+    if (!tokenPriceData) throw new Error('No price data found');
+
+    const poolBalance = Number.parseFloat(tokenPriceData.balance)
+    const poolBalanceUSD = Number.parseFloat(tokenPriceData.balanceUSD)
+
+    const usdValue = poolBalance === 0 ? 0 : poolBalanceUSD / poolBalance
+    return {
+      ...token,
+      logoURI: tokenPriceData.logoURI || '',
+      usdValue: usdValue * token.balance,
+      marketPrice: usdValue,
+      tags: [],
+    };
+  }
+
+  async fetchTokensWithPrice(
+    chain: TChainName,
+    tokens: TToken[]
+  ): Promise<{ tokens: TMarketToken[]; totalUsdValue: number }> {
+    let totalUsdValue = 0;
+    const marketTokens: TMarketToken[] = [];
+    for (const token of tokens) {
+      const marketToken = await this.fetchTokenWithPrice(chain, token);
+      if (!marketToken) continue;
+      marketTokens.push(marketToken);
+      totalUsdValue += marketToken.usdValue * token.balance;
+    }
+    return {
+      tokens: marketTokens,
+      totalUsdValue,
+    };
+  }
+
+  private async getTokenMap(): Promise<Record<string, TBeetsPoolToken>> {
+    try {
+      const pools = await this.getPools();
+      if (!this.tokenMap) {
+        const tokenMap: Record<string, TBeetsPoolToken> = {};
+
+        pools.flatMap((pool) => pool.poolTokens).forEach(token => {
+          if (!tokenMap[token.symbol]) {
+            tokenMap[token.symbol] = token;
+          }
+        });
+
+        this.tokenMap = tokenMap;
+      }
+      return this.tokenMap;
+    } catch (error) {
+      throw new Error(`Failed to get token map: ${error}`);
+    }
   }
 
   // Markets
