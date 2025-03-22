@@ -11,7 +11,7 @@ import type {
   TTokenId,
   TTokenSymbol,
 } from '../../types';
-import { getChainByName } from '../../utils/chain.util';
+import { getChainByName } from '../../utils';
 import { intoChainTokenAddressMap } from '../../utils/token.util';
 import type {
   TCMCDetailMap,

@@ -1,5 +1,5 @@
 import { tavily } from '@tavily/core';
-import type { IAdapter } from '../../types/adapter.d';
+import type { IAdapter } from '../../types';
 import type { ITavilySearchOptions, TTavilySearchResponse } from './types';
 
 export type * from './types.d.ts';

@@ -1,5 +1,5 @@
-import type { IAdapter } from '../../types/adapter.d';
-import { getAllFuncs, intersectMultipleArrays } from '../../utils/array.util';
+import type { IAdapter } from '../../types';
+import { getAllFuncs, intersectMultipleArrays } from '../../utils';
 
 function tryAdapters(adapters: IAdapter[], method: string) {
   return async (...args: any[]) => {
@@ -17,6 +17,12 @@ function tryAdapters(adapters: IAdapter[], method: string) {
   };
 }
 
+/**
+ * Combine multiple adapters into a single adapter that tries each one in order.
+ *
+ * @params adapters - List of orders that matches the provided type.
+ * @returns{IAdapter} - Combined single adapter
+ */
 export function multiple<T extends IAdapter>(adapters: T[]): T {
   // Get the intersection of method names across all adapters
   const commonMethods = intersectMultipleArrays(adapters.map(getAllFuncs));

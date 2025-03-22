@@ -1,4 +1,4 @@
-import type { TMultichain } from '../network/chains';
+import type { TMultichain } from '../network';
 import type { TMarketNft } from './nfts';
 import type { TMarketToken, TTokenMetadataPrice, TTokenSymbol } from './tokens';
 

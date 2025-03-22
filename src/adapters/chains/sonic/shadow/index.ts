@@ -10,17 +10,20 @@ import {
   SONIC_USDC,
   WETH_S,
   WRAPPED_S,
-} from '../../../../data/constants/sonic/tokens';
+} from '../../../../data/constants/sonic';
 import type { EvmTokenPlugin } from '../../../../plugins';
-import type { IMarketDataAdapter, IOnchainTokenAdapter } from '../../../../types/adapter';
-import type { TAddress, TChain, TChainName } from '../../../../types/network/chains';
 import type {
+  IMarketDataAdapter,
+  IOnchainTokenAdapter,
+  TAddress,
+  TChain,
+  TChainName,
   TContractToken,
   TContractTokenMetadata,
   TMarketToken,
   TToken,
-} from '../../../../types/data/tokens';
-import { getChainByName, getChainIdByName } from '../../../../utils/chain.util';
+} from '../../../../types';
+import { getChainByName, getChainIdByName } from '../../../../utils';
 import { isZeroAddress } from '../../../../utils/token.util';
 import { createClient } from '../../../../wrapper';
 import type {
@@ -210,9 +213,7 @@ export class ShadowExchangeAdapter implements IOnchainTokenAdapter, IMarketDataA
           }
         }
         if (marketPrice > 0) break;
-      } catch {
-        continue;
-      }
+      } catch {}
     }
     const usdValue = marketPrice * token.balance;
     if (usdValue === 0) throw new Error('No price found');

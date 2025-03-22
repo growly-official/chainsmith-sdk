@@ -1,4 +1,4 @@
-import type { IAdapter } from '../../types/adapter.d';
+import type { IAdapter } from '../../types';
 import { Logger } from 'tslog';
 
 export class BirdEyeAdapter implements IAdapter {

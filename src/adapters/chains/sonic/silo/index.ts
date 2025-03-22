@@ -1,8 +1,6 @@
 import axios from 'axios';
 import { Logger } from 'tslog';
-import type { IYieldAdapter } from '../../../../types/adapter';
-import type { TAddress, TChainName } from '../../../../types/network/chains';
-import type { TToken } from '../../../../types/data/tokens';
+import type { IYieldAdapter, TAddress, TChainName, TToken } from '../../../../types';
 import type { TSiloMarket, TSiloMetrics, TSiloToken, TSiloUserPositions } from './types';
 
 export type * from './types.d.ts';

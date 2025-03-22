@@ -17,7 +17,7 @@ import type {
   TTokenAddress,
   TTokenSymbol,
 } from '../../types';
-import { getChainByName, getChainIdByName } from '../../utils/chain.util';
+import { getChainByName, getChainIdByName } from '../../utils';
 import {
   fromReadableAmount,
   intoChainTokenAddressMap,

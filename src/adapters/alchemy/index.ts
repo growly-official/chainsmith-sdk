@@ -1,5 +1,5 @@
 import axios from 'axios';
-import type { EvmTokenPlugin } from '../../plugins/evm';
+import type { EvmTokenPlugin } from '../../plugins';
 import { alchemy } from '../../rpc';
 import type { IOnchainTokenAdapter, TAddress, TChain, TContractToken } from '../../types';
 import type { TAlchemyRequest, TAlchemyResponse } from './types';

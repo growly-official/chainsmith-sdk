@@ -1,5 +1,5 @@
 /**
- * Conver string to number
+ * Convert string to number
  *
  * @param str String convertible value
  */
