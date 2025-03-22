@@ -108,5 +108,9 @@
   },
   "lint-staged": {
     "*": "eslint --fix"
+  },
+  "engines": {
+    "node": ">=23.0.9",
+    "pnpm": ">=10.5.2"
   }
 }
