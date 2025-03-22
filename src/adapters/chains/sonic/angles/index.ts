@@ -1,8 +1,8 @@
 import axios from 'axios';
 import { Logger } from 'tslog';
-import type { IYieldAdapter } from '../../../types/adapter.d';
-import type { TChainName } from '../../../types/chains.d';
-import type { TToken } from '../../../types/tokens.d';
+import type { IYieldAdapter } from '../../../../types/adapter';
+import type { TChainName } from '../../../../types/network/chains';
+import type { TToken } from '../../../../types/data/tokens';
 import type { TAnglesAPY, TAnglesMarket, TAnglesTVL } from './types';
 
 export type * from './types.d.ts';

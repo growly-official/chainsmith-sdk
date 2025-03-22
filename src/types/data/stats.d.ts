@@ -1,4 +1,4 @@
-import type { TMultichain } from './chains';
+import type { TMultichain } from '../network/chains';
 import type { TMarketNft } from './nfts';
 import type { TMarketToken, TTokenMetadataPrice, TTokenSymbol } from './tokens';
 
@@ -18,6 +18,7 @@ export interface TActivityStats {
   currentStreakDays: number;
   activityPeriod: number;
 }
+
 export interface TDeFiActivityStats {
   sumCount: number;
   dexCount: number;

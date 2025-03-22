@@ -1,4 +1,4 @@
-import type { TAddress, TChainId, TChainName } from './chains';
+import type { TAddress, TChainId, TChainName } from '../network/chains';
 
 export type TTokenAddress = TAddress;
 export type TTokenId = number;
@@ -41,6 +41,7 @@ export type TContractTokenMetadata = TTokenMetadata & {
 export type TNativeTokenMetadata = TTokenMetadata & {
   type: 'native';
 };
+
 export interface TTokenListResponse {
   name: string;
   timestamp?: string;

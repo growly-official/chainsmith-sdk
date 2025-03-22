@@ -57,7 +57,11 @@ async function testFetchSonicChainData() {
   // console.log(ownedTokens);
 
   const portfolio = await sdk.portfolio.getTokenPortfolio([
-    multiple([AdapterRegistry.ShadowExchangeApi, AdapterRegistry.BeetsApi, AdapterRegistry.CoinMarketcap]),
+    multiple([
+      AdapterRegistry.ShadowExchangeApi,
+      AdapterRegistry.BeetsApi,
+      AdapterRegistry.CoinMarketcap,
+    ]),
     AdapterRegistry.ShadowExchange,
   ])(Wallets.SONIC_WALLET_PCMINH);
   console.log(portfolio);

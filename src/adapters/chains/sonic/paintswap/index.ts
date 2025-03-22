@@ -1,8 +1,8 @@
 import axios from 'axios';
 import { Logger } from 'tslog';
 import { formatUnits } from 'viem';
-import type { IOnchainNftAdapter, TAddress, TChainName, TNftBalance } from '../../../types';
-import { getChainIdByName, objectToQueryString } from '../../../utils';
+import type { IOnchainNftAdapter, TAddress, TChainName, TNftBalance } from '../../../../types';
+import { getChainIdByName, objectToQueryString } from '../../../../utils';
 import type {
   TPaintSwapUserNFT,
   TPaintSwapUserNFTResp,

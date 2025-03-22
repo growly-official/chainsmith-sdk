@@ -1,28 +1,28 @@
 import axios from 'axios';
 import { Logger } from 'tslog';
 import { getContract } from 'viem';
-import { Files } from '../../../data';
-import { shadowPoolFactoryV3Abi, shadowPoolV3Abi } from '../../../data/abis';
-import { ShadowV3Factory } from '../../../data/constants/sonic/shadow';
+import { Files } from '../../../../data';
+import { shadowPoolFactoryV3Abi, shadowPoolV3Abi } from '../../../../data/abis';
+import { ShadowV3Factory } from '../../../../data/constants/sonic/shadow';
 import {
   BRIDGED_USDC,
   BRIDGED_USDT,
   SONIC_USDC,
   WETH_S,
   WRAPPED_S,
-} from '../../../data/constants/sonic/tokens';
-import type { EvmTokenPlugin } from '../../../plugins';
-import type { IMarketDataAdapter, IOnchainTokenAdapter } from '../../../types/adapter.d';
-import type { TAddress, TChain, TChainName } from '../../../types/chains.d';
+} from '../../../../data/constants/sonic/tokens';
+import type { EvmTokenPlugin } from '../../../../plugins';
+import type { IMarketDataAdapter, IOnchainTokenAdapter } from '../../../../types/adapter';
+import type { TAddress, TChain, TChainName } from '../../../../types/network/chains';
 import type {
   TContractToken,
   TContractTokenMetadata,
   TMarketToken,
   TToken,
-} from '../../../types/tokens.d';
-import { getChainByName, getChainIdByName } from '../../../utils/chain.util';
-import { isZeroAddress } from '../../../utils/token.util';
-import { createClient } from '../../../wrapper';
+} from '../../../../types/data/tokens';
+import { getChainByName, getChainIdByName } from '../../../../utils/chain.util';
+import { isZeroAddress } from '../../../../utils/token.util';
+import { createClient } from '../../../../wrapper';
 import type {
   TShadowEpochData,
   TShadowGetPoolConfig,

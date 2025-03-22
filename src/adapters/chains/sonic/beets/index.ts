@@ -1,8 +1,8 @@
 import axios from 'axios';
 import { Logger } from 'tslog';
-import type { IMarketDataAdapter, IYieldAdapter } from '../../../types/adapter.d';
-import type { TAddress, TChainName } from '../../../types/chains.d';
-import type { TMarketToken, TToken } from '../../../types/tokens.d';
+import type { IMarketDataAdapter, IYieldAdapter } from '../../../../types/adapter';
+import type { TAddress, TChainName } from '../../../../types/network/chains';
+import type { TMarketToken, TToken } from '../../../../types/data/tokens';
 import type {
   TBeetsPool,
   TBeetsPoolsResponse,
@@ -35,10 +35,10 @@ export class BeetsApiAdapter implements IYieldAdapter, IMarketDataAdapter {
     const tokenPriceData = tokenMap[token.symbol];
     if (!tokenPriceData) throw new Error('No price data found');
 
-    const poolBalance = Number.parseFloat(tokenPriceData.balance)
-    const poolBalanceUSD = Number.parseFloat(tokenPriceData.balanceUSD)
+    const poolBalance = Number.parseFloat(tokenPriceData.balance);
+    const poolBalanceUSD = Number.parseFloat(tokenPriceData.balanceUSD);
 
-    const usdValue = poolBalance === 0 ? 0 : poolBalanceUSD / poolBalance
+    const usdValue = poolBalance === 0 ? 0 : poolBalanceUSD / poolBalance;
     return {
       ...token,
       logoURI: tokenPriceData.logoURI || '',
@@ -72,11 +72,13 @@ export class BeetsApiAdapter implements IYieldAdapter, IMarketDataAdapter {
       if (!this.tokenMap) {
         const tokenMap: Record<string, TBeetsPoolToken> = {};
 
-        pools.flatMap((pool) => pool.poolTokens).forEach(token => {
-          if (!tokenMap[token.symbol]) {
-            tokenMap[token.symbol] = token;
-          }
-        });
+        pools
+          .flatMap(pool => pool.poolTokens)
+          .forEach(token => {
+            if (!tokenMap[token.symbol]) {
+              tokenMap[token.symbol] = token;
+            }
+          });
 
         this.tokenMap = tokenMap;
       }

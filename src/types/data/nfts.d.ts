@@ -1,4 +1,4 @@
-import type { TAddress, TChainId } from './chains';
+import type { TAddress, TChainId } from '../network/chains';
 import type { TTokenSymbol } from './tokens';
 
 export type TMarketNft = TNftBalance & {

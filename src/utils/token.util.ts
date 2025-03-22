@@ -1,11 +1,11 @@
 import type { BigNumberish } from 'ethers';
-import type { TChainId } from '../types/chains.d';
+import type { TChainId } from '../types/network/chains';
 import type {
   TContractTokenMetadata,
   TTokenAddress,
   TTokenListResponse,
   TTokenSymbol,
-} from '../types/tokens.d';
+} from '../types/data/tokens';
 import { ethers } from 'ethers';
 
 const READABLE_FORM_LEN = 4;
